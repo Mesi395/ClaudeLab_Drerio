@@ -1,0 +1,226 @@
+# hk markers v1: dedifferentiated. Generated from cited claims (markers/sources/hk_corpus_claims.tsv); see README.md.
+schema: zf.markers/v1
+axis: dedifferentiated
+annotation: GRCz11, Ensembl release 92 (Cell Ranger 3.0.2, Hu et al. 2022)
+genes:
+- symbol: gata4
+  ensembl: ENSDARG00000098952
+  role: core
+  source: https://doi.org/10.1038/nature08804
+  evidence: 'Regenerating CMs re-express embryonic gata4 (reporter + Cre lineage tracing); gata4:EGFP is the standard dedifferentiation
+    reporter. Sources: doi:10.1038/nature08804 Abstract/Results (gata4 reporter, lineage tracing) [reporter]; doi:10.1161/CIRCRESAHA.119.316167
+    Results (Tg(gata4:EGFP) used as dedifferentiation marker) [reporter]'
+  caveat: Resection model; low mRNA counts expected.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: hand2
+  ensembl: ENSDARG00000008305
+  role: core
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Detected along the wound edge at 7 dpa with nkx2.5, mustn1b and pkma (embryonic TF re-expression). Sources: doi:10.1038/s41467-025-59070-0
+    Results, Fig. 1b, Suppl. Fig. 3e [spatial]'
+  caveat: Li frame it as a BZ subpopulation; low counts.
+  status: candidate
+  proposed_by: spatial_data
+  flags: []
+- symbol: nkx2.5
+  ensembl: ENSDARG00000018004
+  role: core
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Embryonic cardiac TF re-expressed by BZ CMs. Sources: doi:10.1038/s41467-025-59070-0 Results, Fig. 1b, Suppl.
+    Fig. 3e [spatial]; doi:10.7554/eLife.50163 Introduction (cites Lepilina 2006) [literature]; doi:10.1038/s41467-022-30468-4
+    title [literature, unverified]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: tbx20
+  ensembl: ENSDARG00000005150
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Embryonic cardiac TF re-expressed by BZ CMs. Sources: doi:10.7554/eLife.50163 Introduction (cites Lepilina 2006)
+    [literature]; doi:10.3389/fcell.2020.00738 title [literature, unverified]'
+  caveat: evidence secondary/title-level
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: runx1
+  ensembl: ENSDARG00000087646
+  role: core
+  source: https://doi.org/10.1161/CIRCRESAHA.119.316167
+  evidence: 'Named a CM dedifferentiation marker (Beisaw 2020). Sources: doi:10.1161/CIRCRESAHA.119.316167 Results, Figure
+    7b [literature]'
+  caveat: Shown in neonatal rat CMs by qPCR, not in fish; low counts.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: pkma
+  ensembl: ENSDARG00000099730
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Glycolysis induced in BZ CMs (ISH); glycolytic dedifferentiation marker. Sources: doi:10.7554/eLife.50163 Figure
+    4c ISH 7 dpi [ISH]; doi:10.15252/embr.201949752 Results (pkma in regenerating CMs) [literature]; doi:10.1038/s41467-025-59169-4
+    Suppl. Fig. 1D,E (with embCMHC, mustn1b:EGFP) [literature]'
+  caveat: 'Glycolysis also tops Li BZm activ. GSEA: injury overlap expected.'
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: hk1
+  ensembl: ENSDARG00000039452
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Rate-limiting glycolytic enzyme induced in BZ CMs at 3 and 7 dpi (ISH). Sources: doi:10.7554/eLife.50163 Figure
+    4c; Figure 3-figure supplement 1a,b ISH [ISH]; doi:10.1038/s44161-025-00718-x Results, Fig. 5f (1 dpci glycolysis module)
+    [literature]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ldha
+  ensembl: ENSDARG00000101251
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Induced in BZ CMs (ISH). Sources: doi:10.7554/eLife.50163 Figure 1-figure supplement 4b ISH 7 dpi [ISH]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: pdk2a
+  ensembl: ENSDARG00000020876
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Diverts pyruvate from TCA; induced in BZ CMs (ISH). Sources: doi:10.7554/eLife.50163 Figure 4c ISH 7 dpi [ISH]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: pgk1
+  ensembl: ENSDARG00000054191
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Glycolytic gene up in Honkoop BZ cluster 7. Sources: doi:10.7554/eLife.50163 Honkoop 2019 Figure 1-source data
+    3 (Diff. Gene Cl7vsCl2) log2FC 2.46 [sorted-cells]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: eno1a
+  ensembl: ENSDARG00000022456
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Glycolytic gene up in Honkoop BZ cluster 7. Sources: doi:10.7554/eLife.50163 Honkoop 2019 Figure 1-source data
+    3 (Diff. Gene Cl7vsCl2) log2FC 2.73 [sorted-cells]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: tpi1b
+  ensembl: ENSDARG00000040988
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Glycolytic gene up in Honkoop BZ cluster 7. Sources: doi:10.7554/eLife.50163 Honkoop 2019 Figure 1-source data
+    3 (Diff. Gene Cl7vsCl2) log2FC 2.07 [sorted-cells]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: myom1b
+  ensembl: ENSDARG00000104836
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Embryonic sarcomere gene expressed in BZ CMs at 7 dpi, absent at 3 dpi. Sources: doi:10.7554/eLife.50163 Figure
+    3-figure supplement 1c,d ISH [ISH]; doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration
+    (BZm prolif. 0.66) [spatial]'
+  caveat: Late (7 dpi) gene; also Li BZm prolif./re-diff.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cox7a1
+  ensembl: ENSDARG00000069464
+  role: non_specific
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Secondary maturity-loss gene (expected DOWN). Sources: doi:10.7554/eLife.50163 Honkoop 2019 Figure 1-source data
+    3 (Diff. Gene Cl7vsCl2) log2FC 2.65 [sorted-cells]'
+  caveat: 'Contradicted: UP in Honkoop BZ cluster 7 (2.65) and in Li BZm re-diff.; detection loss also tracks depth.'
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ckma
+  ensembl: ENSDARG00000035327
+  role: non_specific
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Secondary maturity-loss gene (expected DOWN). Sources: doi:10.7554/eLife.50163 Honkoop 2019 Figure 1-source data
+    3 (Diff. Gene Cl7vsCl2) log2FC 2.48 [sorted-cells]'
+  caveat: 'Contradicted: UP in Honkoop cluster 7 (2.48) and Li BZm re-diff. (1.05).'
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: pgam2
+  ensembl: ENSDARG00000057571
+  role: non_specific
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Secondary maturity-loss gene (expected DOWN). Sources: doi:10.7554/eLife.50163 Honkoop 2019 Figure 1-source data
+    3 (Diff. Gene Cl7vsCl2) log2FC 2.72 [sorted-cells]'
+  caveat: 'Contradicted: UP in Honkoop cluster 7 (2.72) and Li BZm re-diff.'
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: tnnc2
+  ensembl: ENSDARG00000070835
+  role: non_specific
+  source: https://doi.org/10.1016/j.ydbio.2021.03.014
+  evidence: 'Reporter up on injury (Tsedeke 2021; team draft). Sources: doi:10.1016/j.ydbio.2021.03.014 reporter line (via
+    team draft) [reporter, unverified]'
+  caveat: unverified
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: gapdh
+  ensembl: ENSDARG00000043457
+  role: non_specific
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Up in Honkoop cluster 7. Sources: doi:10.7554/eLife.50163 Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2)
+    log2FC 1.94 [sorted-cells]'
+  caveat: Housekeeping; tracks depth.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ttn.1
+  ensembl: ENSDARG00000000563
+  role: library_size_suspect
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'Hu 2022 marker of the authors'' published small dedifferentiated cluster. Sources: doi:10.1038/s41588-022-01129-5
+    Results (cluster genes ttn.1, ttn.2, bves, synpo2lb) [literature]'
+  caveat: 'Long, abundant transcript (ENSDARG00000000563 = ttnb); also top of Honkoop cluster 7 (4.81): likely tracks depth/quality.'
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ttn.2
+  ensembl: ENSDARG00000028213
+  role: library_size_suspect
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'Hu 2022 marker of the authors'' published small dedifferentiated cluster. Sources: doi:10.1038/s41588-022-01129-5
+    Results [literature]'
+  caveat: ENSDARG00000028213 = ttna; Honkoop cluster 7 (4.46); likely depth.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: bves
+  ensembl: ENSDARG00000058548
+  role: library_size_suspect
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'Hu 2022 cluster gene. Sources: doi:10.1038/s41588-022-01129-5 Results [literature]'
+  caveat: likely depth
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: synpo2lb
+  ensembl: ENSDARG00000078696
+  role: library_size_suspect
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'Hu 2022 cluster gene. Sources: doi:10.1038/s41588-022-01129-5 Results [literature]'
+  caveat: likely depth
+  status: candidate
+  proposed_by: literature_review
+  flags: []

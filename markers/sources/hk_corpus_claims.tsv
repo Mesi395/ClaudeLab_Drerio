@@ -1,0 +1,116 @@
+state	gene	direction	doi	source_location	evidence_type	in_data	caveat	verified
+border_zone	nppb	up	https://doi.org/10.7554/eLife.50163	Figure 1-figure supplement 4a (ISH 7 dpi)	ISH	yes	Also expressed by activated endocardium in Li 2025 (ambient/doublet risk); present in all 4 BZm domains so not state-specific within the BZ.	yes
+border_zone	nppb	up	https://doi.org/10.1038/s41467-025-59070-0	Fig. 2b FISH; Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. log2FC 2.82)	spatial	yes	resection model	yes
+border_zone	nppb	up	https://doi.org/10.1016/j.devcel.2015.12.010	tomo-seq border-zone peak (via team draft)	spatial	yes	Wu supplement download blocked; not re-read	no
+border_zone	mustn1b	up	https://doi.org/10.7554/eLife.50163	Results, Figure 1e (cluster 7)	sorted-cells	yes		yes
+border_zone	mustn1b	up	https://doi.org/10.1038/s41467-025-59169-4	Results (scRNA BZ CM markers)	literature	yes		yes
+border_zone	mustn1b	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 1.57, dediff. 1.15, prolif. 1.10, re-diff. 1.01)	spatial	yes	resection model	yes
+border_zone	csrp3	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 3.64	sorted-cells	yes	cluster 2 comparator is mitochondrial-transcript-rich	yes
+border_zone	csrp3	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 1.63)	spatial	yes		yes
+border_zone	flnca	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 4.23	sorted-cells	yes		yes
+border_zone	flnca	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 2.67)	spatial	yes		yes
+border_zone	xirp1	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 4.09	sorted-cells	yes		yes
+border_zone	xirp1	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 1.87)	spatial	yes		yes
+border_zone	xirp2a	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 3.62	sorted-cells	yes	single source in v1	yes
+border_zone	ankrd1a	up	https://doi.org/10.1016/j.cdev.2026.204082	title	literature	yes	unverified, title only	no
+border_zone	crip2	up	https://doi.org/10.1016/j.devcel.2015.12.010	tomo-seq border-zone gene list (via team draft)	spatial	yes	unverified	no
+border_zone	vwa1	up	https://doi.org/10.1016/j.devcel.2015.12.010	tomo-seq border-zone gene list (via team draft)	spatial	yes	unverified	no
+border_zone	psmd14	up	https://doi.org/10.1016/j.devcel.2015.12.010	tomo-seq border-zone gene list (via team draft)	spatial	yes	unverified	no
+border_zone	tagln	up	https://doi.org/10.1038/s41467-025-59169-4	Results (scRNA BZ CM markers)	literature	yes	Smooth-muscle/fibroblast gene; Li 2025 uses it for SMC domains at 14-28 dpa: ambient risk, kept out of core.	yes
+border_zone	tagln	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 3.24	sorted-cells	yes	Smooth-muscle/fibroblast gene; Li 2025 uses it for SMC domains at 14-28 dpa: ambient risk, kept out of core.	yes
+border_zone	myl6	up	https://doi.org/10.1038/s41467-025-59169-4	Results (scRNA BZ CM markers)	literature	yes	Non-muscle myosin light chain, broadly expressed.	yes
+border_zone	desma	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 1.89)	spatial	yes	Also a remote-myocardium marker in Li 2025; general CM gene.	yes
+injury_responsive	tnfrsf11b	up	https://doi.org/10.1038/s41467-025-59070-0	Results + Fig. 2b FISH; Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 3.32)	spatial	yes	resection model	yes
+injury_responsive	rln3a	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 2.22)	spatial	yes	resection model	yes
+injury_responsive	hspb9	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 2.21)	spatial	yes	resection model	yes
+injury_responsive	kcnh6a	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 1.64)	spatial	yes	resection model	yes
+injury_responsive	sdc4	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 1.18)	spatial	yes	resection model	yes
+injury_responsive	slc38a3b	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 1.08)	spatial	yes	resection model	yes
+injury_responsive	klf1	up	https://doi.org/10.1126/science.abe2762	myocardial loss/gain of function (via team draft)	literature	yes	unverified	no
+injury_responsive	ifrd1	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 1.44)	spatial	yes	Immediate-early-like gene (TIS7); kept out of the IEG-free core.	yes
+injury_responsive	eif4a1a	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 1.22)	spatial	yes	Translation initiation factor; tracks ribosome/depth.	yes
+injury_responsive	socs3a	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 1.33)	spatial	yes	In dissociation core set (van den Brink 2017; Neuschulz 2022): read only after conditioning on the dissociation axis.	yes
+injury_responsive	socs3a	up	https://doi.org/10.1038/nmeth.4437	Suppl. Table 1/7 (dissociation-induced)	literature	yes	via r2_controls	no
+dedifferentiated	gata4	up	https://doi.org/10.1038/nature08804	Abstract/Results (gata4 reporter, lineage tracing)	reporter	yes	Resection model; low mRNA counts expected.	yes
+dedifferentiated	gata4	up	https://doi.org/10.1161/CIRCRESAHA.119.316167	Results (Tg(gata4:EGFP) used as dedifferentiation marker)	reporter	yes	Resection model; low mRNA counts expected.	yes
+dedifferentiated	hand2	up	https://doi.org/10.1038/s41467-025-59070-0	Results, Fig. 1b, Suppl. Fig. 3e	spatial	yes	resection model	yes
+dedifferentiated	nkx2.5	up	https://doi.org/10.1038/s41467-025-59070-0	Results, Fig. 1b, Suppl. Fig. 3e	spatial	yes		yes
+dedifferentiated	nkx2.5	up	https://doi.org/10.7554/eLife.50163	Introduction (cites Lepilina 2006)	literature	yes	secondary citation	yes
+dedifferentiated	nkx2.5	up	https://doi.org/10.1038/s41467-022-30468-4	title	literature	yes	title only	no
+dedifferentiated	tbx20	up	https://doi.org/10.7554/eLife.50163	Introduction (cites Lepilina 2006)	literature	yes	secondary citation	yes
+dedifferentiated	tbx20	up	https://doi.org/10.3389/fcell.2020.00738	title	literature	yes	title only	no
+dedifferentiated	runx1	up	https://doi.org/10.1161/CIRCRESAHA.119.316167	Results, Figure 7b	literature	yes	rat neonatal CMs	yes
+dedifferentiated	pkma	up	https://doi.org/10.7554/eLife.50163	Figure 4c ISH 7 dpi	ISH	yes	Glycolysis also tops Li BZm activ. GSEA: injury overlap expected.	yes
+dedifferentiated	pkma	up	https://doi.org/10.15252/embr.201949752	Results (pkma in regenerating CMs)	literature	yes	Glycolysis also tops Li BZm activ. GSEA: injury overlap expected.	yes
+dedifferentiated	pkma	up	https://doi.org/10.1038/s41467-025-59169-4	Suppl. Fig. 1D,E (with embCMHC, mustn1b:EGFP)	literature	yes	Glycolysis also tops Li BZm activ. GSEA: injury overlap expected.	yes
+dedifferentiated	hk1	up	https://doi.org/10.7554/eLife.50163	Figure 4c; Figure 3-figure supplement 1a,b ISH	ISH	yes		yes
+dedifferentiated	hk1	up	https://doi.org/10.1038/s44161-025-00718-x	Results, Fig. 5f (1 dpci glycolysis module)	literature	yes		yes
+dedifferentiated	ldha	up	https://doi.org/10.7554/eLife.50163	Figure 1-figure supplement 4b ISH 7 dpi	ISH	yes		yes
+dedifferentiated	pdk2a	up	https://doi.org/10.7554/eLife.50163	Figure 4c ISH 7 dpi	ISH	yes		yes
+dedifferentiated	pgk1	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 2.46	sorted-cells	yes		yes
+dedifferentiated	eno1a	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 2.73	sorted-cells	yes		yes
+dedifferentiated	tpi1b	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 2.07	sorted-cells	yes		yes
+dedifferentiated	myom1b	up	https://doi.org/10.7554/eLife.50163	Figure 3-figure supplement 1c,d ISH	ISH	yes	Late (7 dpi) gene; also Li BZm prolif./re-diff.	yes
+dedifferentiated	myom1b	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm prolif. 0.66)	spatial	yes	Late (7 dpi) gene; also Li BZm prolif./re-diff.	yes
+dedifferentiated	cox7a1	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 2.65	sorted-cells	yes	contradicts the down claim	yes
+dedifferentiated	ckma	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 2.48	sorted-cells	yes	contradicts the down claim	yes
+dedifferentiated	pgam2	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 2.72	sorted-cells	yes	contradicts the down claim	yes
+dedifferentiated	tnnc2	up	https://doi.org/10.1016/j.ydbio.2021.03.014	reporter line (via team draft)	reporter	yes	unverified	no
+dedifferentiated	gapdh	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 1.94	sorted-cells	yes	Housekeeping; tracks depth.	yes
+dedifferentiated	ttn.1	up	https://doi.org/10.1038/s41588-022-01129-5	Results (cluster genes ttn.1, ttn.2, bves, synpo2lb)	literature	yes	Long, abundant transcript (ENSDARG00000000563 = ttnb); also top of Honkoop cluster 7 (4.81): likely tracks depth/quality.	yes
+dedifferentiated	ttn.2	up	https://doi.org/10.1038/s41588-022-01129-5	Results	literature	yes	ENSDARG00000028213 = ttna; Honkoop cluster 7 (4.46); likely depth.	yes
+dedifferentiated	bves	up	https://doi.org/10.1038/s41588-022-01129-5	Results	literature	yes	likely depth	yes
+dedifferentiated	synpo2lb	up	https://doi.org/10.1038/s41588-022-01129-5	Results	literature	yes	likely depth	yes
+proliferating	pcna	up	https://doi.org/10.1038/s41467-025-59070-0	Results, Fig. 2a; Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm prolif. 0.65)	spatial	yes	S-phase/DNA repair: polyploid or repairing CMs score without dividing.	yes
+proliferating	cdk1	up	https://doi.org/10.1038/s41467-025-59070-0	Results, Fig. 2a; Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm prolif. 0.33, pct.2 0.014)	spatial	yes		yes
+proliferating	plk1	up	https://doi.org/10.1038/nature08899	Abstract/Results	literature	yes		yes
+proliferating	mcm5	up	https://doi.org/10.1038/s44161-025-00718-x	Results, Fig. 5b	literature	yes		yes
+proliferating	aurkb	up	https://doi.org/10.7554/eLife.50163	figure legend panel d (Aurkb immunofluorescence, P7 mouse cardiac cultures)	literature	yes	mouse	yes
+proliferating	aurkb	up	https://doi.org/10.3390/cells15161455	Results, Figure 4M,N (qRT-PCR)	literature	yes	mouse CMs	yes
+proliferating	ccnb1	up	https://doi.org/10.3390/cells15161455	Results, Figure 4M,N (qRT-PCR)	literature	yes	mouse CMs	yes
+proliferating	mki67	up	https://doi.org/10.1126/science.aad0501	G2/M gene list (as redistributed in Seurat cc.genes)	literature	yes	Table S5 not opened	no
+proliferating	top2a	up	https://doi.org/10.1126/science.aad0501	S/G2M gene list (as redistributed in Seurat cc.genes)	literature	yes	Table S5 not opened	no
+proliferating	birc5a	up	https://doi.org/10.1126/science.aad0501	S/G2M gene list (as redistributed in Seurat cc.genes)	literature	yes	Table S5 not opened	no
+proliferating	cenpf	up	https://doi.org/10.1126/science.aad0501	S/G2M gene list (as redistributed in Seurat cc.genes)	literature	yes	Table S5 not opened	no
+proliferating	ube2c	up	https://doi.org/10.1126/science.aad0501	S/G2M gene list (as redistributed in Seurat cc.genes)	literature	yes	Table S5 not opened	no
+proliferating	nusap1	up	https://doi.org/10.1126/science.aad0501	S/G2M gene list (as redistributed in Seurat cc.genes)	literature	yes	Table S5 not opened	no
+proliferating	cdc20	up	https://doi.org/10.1126/science.aad0501	S/G2M gene list (as redistributed in Seurat cc.genes)	literature	yes	Table S5 not opened	no
+proliferating	mcm2	up	https://doi.org/10.1126/science.aad0501	S/G2M gene list (as redistributed in Seurat cc.genes)	literature	yes	Table S5 not opened	no
+ambiguous	nppa	up	https://doi.org/10.7554/eLife.50163	nppa:mCitrine FACS + scRNA (Figure 1)	reporter	yes	Atrial identity gene and ventricular trabecular marker at baseline: scores atrial CMs and depth. Out of every core.	yes
+ambiguous	nppa	up	https://doi.org/10.1038/s41588-022-01129-5	Results (nppa in dedifferentiated cluster)	literature	yes	Atrial identity gene and ventricular trabecular marker at baseline: scores atrial CMs and depth. Out of every core.	yes
+ambiguous	nppa	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 0.85, pct.2 0.81)	spatial	yes	Atrial identity gene and ventricular trabecular marker at baseline: scores atrial CMs and depth. Out of every core.	yes
+ambiguous	hspb11	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 2.73)	spatial	yes	Two independent states claim it; also a Li remote marker.	yes
+ambiguous	hspb11	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 3.76	sorted-cells	yes	Two independent states claim it; also a Li remote marker.	yes
+ambiguous	hspb6	up	https://doi.org/10.1038/s41467-025-59070-0	Results; Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 2.08)	spatial	yes		yes
+ambiguous	hspb6	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 2.86	sorted-cells	yes		yes
+ambiguous	rrad	up	https://doi.org/10.1038/s41467-025-59070-0	Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 1.84, dediff. 1.15)	spatial	yes	Spans injury/dedifferentiation; IEG-like.	yes
+ambiguous	aldoaa	up	https://doi.org/10.1038/s41588-022-01129-5	Results (main CM cluster: atp5pd, aldoaa)	literature	yes	Opposite readings between papers.	yes
+ambiguous	aldoaa	up	https://doi.org/10.7554/eLife.50163	Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 2.92	sorted-cells	yes	Opposite readings between papers.	yes
+dissociation	atf3	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_mouseCM_orthologs, dissoc_neuschulz_zf_EV1_37C, dissoc_vdB2017_mouse_orthologs, dissoc_vd)	literature	yes	control axis	no
+dissociation	btg2	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_vdB2017_mouse_orthologs, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	cebpb	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_vdB2017_mouse_orthologs, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	cebpd	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_vdB2017_mouse_orthologs, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	dnajb1b	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV4_shared, dissoc_vdB2017_mouse_orthologs)	literature	yes	control axis	no
+dissociation	dusp1	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_vdB2017_mouse_orthologs, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	egr1	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_neuschulz_zf_EV4_shared, dissoc_vdB2017_mouse_orthologs, dissoc_vdB201)	literature	yes	control axis	no
+dissociation	fosab	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_mouseCM_orthologs, dissoc_neuschulz_zf_EV1_37C, dissoc_neuschulz_zf_EV4_shared, dissoc_vd)	literature	yes	control axis	no
+dissociation	fosb	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_neuschulz_zf_EV4_shared, dissoc_vdB2017_mouse_orthologs)	literature	yes	control axis	no
+dissociation	gadd45ba	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	hsp70.1	up	https://doi.org/10.15252/msb.202211147	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_neuschulz_zf_EV4_shared)	literature	yes	control axis	no
+dissociation	hsp70.2	up	https://doi.org/10.15252/msb.202211147	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_neuschulz_zf_EV4_shared)	literature	yes	control axis	no
+dissociation	hsp70.3	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_neuschulz_zf_EV4_shared, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	hsp70l	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_neuschulz_zf_EV4_shared, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	hsp90aa1.1	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV4_shared, dissoc_vdB2017_mouse_orthologs)	literature	yes	control axis	no
+dissociation	hsp90aa1.2	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_vdB2017_mouse_orthologs, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	hspb1	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_vdB2017_mouse_orthologs, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	hsph1	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV4_shared, dissoc_vdB2017_mouse_orthologs)	literature	yes	control axis	no
+dissociation	ier2a	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_vdB2017_mouse_orthologs)	literature	yes	control axis	no
+dissociation	ier2b	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_vdB2017_mouse_orthologs)	literature	yes	control axis	no
+dissociation	ier5	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	jdp2b	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_neuschulz_zf_EV4_shared, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	jun	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_mouseCM_orthologs, dissoc_vdB2017_mouse_orthologs, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	junba	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_neuschulz_zf_EV4_shared, dissoc_vdB2017_mouse_orthologs, dissoc_vdB201)	literature	yes	control axis	no
+dissociation	junbb	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_vdB2017_mouse_orthologs, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	ppp1r15a	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_vdB2017_mouse_orthologs, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	socs3a	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_neuschulz_zf_EV1_37C, dissoc_vdB2017_mouse_orthologs, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no
+dissociation	ubc	up	https://doi.org/10.1038/nmeth.4437	r2_controls dissoc_core (supported by: dissoc_vdB2017_mouse_orthologs, dissoc_vdB2017_zebrafish_fin)	literature	yes	control axis	no

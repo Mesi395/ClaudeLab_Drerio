@@ -1,0 +1,60 @@
+# hk markers v1: ambiguous. Generated from cited claims (markers/sources/hk_corpus_claims.tsv); see README.md.
+schema: zf.markers/v1
+axis: ambiguous
+annotation: GRCz11, Ensembl release 92 (Cell Ranger 3.0.2, Hu et al. 2022)
+genes:
+- symbol: nppa
+  ensembl: ENSDARG00000052960
+  role: non_specific
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Claimed for BZ (Honkoop reporter/sort), dedifferentiation (Hu 2022) and activated BZm (Li 2025). Sources: doi:10.7554/eLife.50163
+    nppa:mCitrine FACS + scRNA (Figure 1) [reporter]; doi:10.1038/s41588-022-01129-5 Results (nppa in dedifferentiated cluster)
+    [literature]; doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 0.85,
+    pct.2 0.81) [spatial]'
+  caveat: 'Atrial identity gene and ventricular trabecular marker at baseline: scores atrial CMs and depth. Out of every core.'
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: hspb11
+  ensembl: ENSDARG00000002204
+  role: non_specific
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Top Li BZm activ. gene (injury) and Honkoop BZ cluster 7 gene. Sources: doi:10.1038/s41467-025-59070-0 Li 2025
+    Supplementary Data 2, sheet Stereo-seq regeneration (BZm activ. 2.73) [spatial]; doi:10.7554/eLife.50163 Honkoop 2019
+    Figure 1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 3.76 [sorted-cells]'
+  caveat: Two independent states claim it; also a Li remote marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: hspb6
+  ensembl: ENSDARG00000077236
+  role: non_specific
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Li BZm activ. (injury) and Honkoop BZ cluster 7. Sources: doi:10.1038/s41467-025-59070-0 Results; Li 2025 Supplementary
+    Data 2, sheet Stereo-seq regeneration (BZm activ. 2.08) [spatial]; doi:10.7554/eLife.50163 Honkoop 2019 Figure 1-source
+    data 3 (Diff. Gene Cl7vsCl2) log2FC 2.86 [sorted-cells]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: rrad
+  ensembl: ENSDARG00000052011
+  role: non_specific
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Li BZm activ., dediff. and re-diff. Sources: doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary Data 2, sheet
+    Stereo-seq regeneration (BZm activ. 1.84, dediff. 1.15) [spatial]'
+  caveat: Spans injury/dedifferentiation; IEG-like.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: aldoaa
+  ensembl: ENSDARG00000011665
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'Hu 2022 marker of the main ventricular cluster; Honkoop BZ cluster 7 (2.92); glycolysis. Sources: doi:10.1038/s41588-022-01129-5
+    Results (main CM cluster: atp5pd, aldoaa) [literature]; doi:10.7554/eLife.50163 Honkoop 2019 Figure 1-source data 3 (Diff.
+    Gene Cl7vsCl2) log2FC 2.92 [sorted-cells]'
+  caveat: Opposite readings between papers.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
