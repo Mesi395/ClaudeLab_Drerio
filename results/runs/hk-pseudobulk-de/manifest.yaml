@@ -1,0 +1,26 @@
+schema: zf.run/v1
+run_id: hk-pseudobulk-de
+started: '2026-11-07T16:34:52+01:00'
+command: uv run python scripts/pseudobulk_de.py
+git:
+  commit: 4cded0ca070a4756ba8c6aa0912228db2b15dfcb
+  dirty: true
+versions:
+  zf: 0.1.0
+  scanpy: 1.12.5
+  anndata: 0.13.4
+  numpy: 2.5.4
+inputs:
+- path: data/cm_labelfree.h5ad
+  sha256: 49f63f83357167ca6be7af870d4e3e42352d16ac0e0e34743088b7a53c82f1c3
+- path: data/derived/cm_flags.tsv
+  sha256: 8ad52a057fd5a30f332cd8ba171946393c18dee4925d385f598e4d15e2d759b3
+- path: data/derived/ambient_genes.tsv
+  sha256: 1f4b724754413956b13a42b3a16242811c09cdcaee2afb3e352ff4d141c73789
+params:
+  min_cells: 30
+  padj: 0.05
+  lfc: 1.0
+  top_n: 30
+  T: 600
+outcomes: {}

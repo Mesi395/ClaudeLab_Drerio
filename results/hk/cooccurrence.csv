@@ -1,0 +1,36 @@
+pair,time,n_hearts,rho_median,excess_median,hearts_p_hi,hearts_p_lo,hearts_excess_pos,sign_p_two_sided,pos_both,pos_both_expected,verdict
+border_zone~dedifferentiated,dpi_3,4,0.11238843589441694,0.10751556484558186,0,0,4,0.125,0,0.0,not shown
+border_zone~dedifferentiated,dpi_30,3,0.0683277552194164,0.04720571865834214,0,0,3,0.25,0,0.0,not shown
+border_zone~dedifferentiated,dpi_7,7,0.06955797553315984,0.05410792943363075,2,0,6,0.125,0,0.0,not shown
+border_zone~dedifferentiated,uninjured,4,0.11413940566887282,0.07133902163627498,1,0,4,0.125,0,0.0,not shown
+border_zone~proliferating,dpi_3,4,0.03660818626202482,0.018771508345140756,1,0,3,0.625,0,0.0,not shown
+border_zone~proliferating,dpi_30,3,0.01167456633305058,0.0020810320138069417,0,0,2,1.0,0,0.0,not shown
+border_zone~proliferating,dpi_7,7,0.006376878208864006,-0.013142138186301389,0,1,2,0.453125,0,0.0,not shown
+border_zone~proliferating,uninjured,4,-0.016431869793468765,-0.034701938585344524,0,0,1,0.625,0,0.0,not shown
+dedifferentiated~proliferating,dpi_3,4,-0.00043023007874500984,-0.011440616286520069,0,0,2,1.0,0,0.0,not shown
+dedifferentiated~proliferating,dpi_30,3,0.00836441481707187,0.0024373459177045656,0,0,2,1.0,0,0.0,not shown
+dedifferentiated~proliferating,dpi_7,7,-0.009984226767404463,-0.014199237062031425,1,0,3,1.0,0,0.0,not shown
+dedifferentiated~proliferating,uninjured,4,0.029495061139735525,0.022026261267210245,0,0,3,0.625,0,0.0,not shown
+dissociation_half_a~dissociation_half_b,dpi_3,4,0.6171885757210412,0.6252433953265344,4,0,4,0.125,0,0.0,co-occur
+dissociation_half_a~dissociation_half_b,dpi_30,3,0.5182063856457292,0.4431606014834433,3,0,3,0.25,0,0.0,co-occur
+dissociation_half_a~dissociation_half_b,dpi_7,7,0.3762745218732343,0.36663551544129624,7,0,7,0.015625,0,0.0,co-occur
+dissociation_half_a~dissociation_half_b,uninjured,4,0.3975516789957231,0.4372605006943243,4,0,4,0.125,0,0.0,co-occur
+injury_responsive~border_zone,dpi_3,4,0.11065542084387703,0.08270790403438824,2,0,4,0.125,0,0.0,not shown
+injury_responsive~border_zone,dpi_30,3,0.04639990735128401,0.03333794507285964,0,0,2,1.0,0,0.0,not shown
+injury_responsive~border_zone,dpi_7,7,0.029342229615502962,0.004046661252192032,1,0,4,1.0,0,0.0,not shown
+injury_responsive~border_zone,uninjured,4,0.048806536161302275,0.05998236999063961,1,0,4,0.125,0,0.0,not shown
+injury_responsive~dedifferentiated,dpi_3,4,0.031720357933808944,0.01942059005394134,0,0,4,0.125,0,0.0,not shown
+injury_responsive~dedifferentiated,dpi_30,3,0.015814590490822303,0.016551265977438955,0,1,2,1.0,0,0.0,not shown
+injury_responsive~dedifferentiated,dpi_7,7,0.0007288976397981665,-0.0035212407231188627,0,0,2,0.453125,0,0.0,not shown
+injury_responsive~dedifferentiated,uninjured,4,0.005160519676109093,0.024283347785592227,0,0,3,0.625,0,0.0,not shown
+injury_responsive~proliferating,dpi_3,4,-0.0008083931123368457,-0.013906894674663807,1,0,2,1.0,0,0.0,not shown
+injury_responsive~proliferating,dpi_30,3,-0.012514554416563734,-0.012971064220045408,0,0,1,1.0,0,0.0,not shown
+injury_responsive~proliferating,dpi_7,7,-0.023429492364144607,-0.03364615276988225,0,0,1,0.125,0,0.0,not shown
+injury_responsive~proliferating,uninjured,4,0.00794148323233709,-0.020198694261220746,0,0,1,0.625,0,0.0,not shown
+border_zone~dedifferentiated,all,18,0.07677541904725821,0.059695626213158035,3,0,17,0.00014495849609375,0,0.0,not shown
+border_zone~proliferating,all,18,0.009025722270957293,-0.011433848885046038,1,1,8,0.8145294189453125,0,0.0,not shown
+dedifferentiated~proliferating,all,18,0.0058223281657853,0.00379839668298674,1,0,10,0.8145294189453125,0,0.0,not shown
+dissociation_half_a~dissociation_half_b,all,18,0.41977477255671114,0.43216113520556054,18,0,18,7.62939453125e-06,0,0.0,co-occur
+injury_responsive~border_zone,all,18,0.06721422088533888,0.06133441490735231,4,0,14,0.0308837890625,0,0.0,not shown
+injury_responsive~dedifferentiated,all,18,0.012273987116262052,0.009390291765771165,0,1,11,0.480682373046875,0,0.0,not shown
+injury_responsive~proliferating,all,18,-0.010987883715024047,-0.01927530423747545,1,0,5,0.09625244140625,0,0.0,not shown

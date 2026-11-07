@@ -73,3 +73,39 @@ reports the within-heart partial ρ of injury with dissociation and the injury v
 without the top 10% dissociation cells of each heart (`results/hk/injury_vs_dissociation.csv`).
 The ventricle − atrium contrast per heart (`results/hk/chamber_contrast.csv`) separates the two:
 dissociation hits both chambers alike, a local injury response is ventricle-only.
+
+## Level 2: the heart as the unit (added 2026-11-07 17:10)
+
+At about 600 UMIs per cell, a set of 3 to 10 marker genes gives a per-cell call almost no counts,
+so rules 1–8 report every state as undetectable per cell. The unit this depth supports is the
+heart. Every threshold below was fixed before the result was looked at.
+
+1. **Pseudobulk.** Sum counts per heart × chamber; DESeq2 (pydeseq2) with hearts as replicates
+   (4 uninjured vs 4 at 3 dpi, ventricle). An injury × chamber interaction model gives the
+   ventricle-specific part. Everything is re-run on counts thinned to 600 UMIs per cell.
+   Code: `scripts/pseudobulk_de.py`.
+2. **Set test.** For each gene set, the mean Wald statistic against 500 decoy sets drawn
+   bin-for-bin on log mean expression, mitochondrial genes dropped; z and empirical one-sided p.
+   Code: `scripts/pseudobulk_set_test.py`.
+3. **Calibration.** All 70 ways to split the 8 hearts 4 vs 4. The observed DEG count and each set
+   score are ranked among them; the smallest p this design allows is 1/70 = 0.014.
+   Code: `scripts/pseudobulk_permutation.py`.
+4. **Negative control in time.** The same model at 30 dpi vs uninjured. An injury programme
+   should fade; a shift that stays as high belongs to the control group or to handling.
+5. **Confound split.** Each border-zone set is also scored without its AP-1 genes, because
+   dissociation induces them; the dissociation set runs as the positive control.
+
+A programme is called an injury effect only if it passes 2, 3 and 4 and survives 5. Result
+(`results/FINDINGS.md` 13–15): glycolysis and dedifferentiation pass; the border-zone shift
+passes 2 and 3 but fails 4 and 5.
+
+## Which annotation to trust: latent-class agreement
+
+A Dawid–Skene latent-class model over up to five labellers (two protocol arms, two split-half marker sets and the published
+annotation) estimates each labeller's sensitivity and specificity without an answer key; the
+bootstrap resamples hearts. Our labellers share genes, so the model partly measures their
+agreement with each other. The published labels are read only by this comparison step, after all
+calls are frozen. Code: `scripts/compare_to_annotation.py` (PR #18).
+Limit: our per-cell calls are almost all negative at this depth, so agreement with the published
+annotation is κ = 0 by construction; the comparison rests on prevalence (published dedifferentiated
+cluster 25% of cells, latent estimate 2.5%), not on cell-by-cell agreement.
