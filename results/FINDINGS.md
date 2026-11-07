@@ -164,3 +164,20 @@ multi-gene chamber score, 200-resample bootstrap.
       hint for the memory core is partly circular: whole-heart cells are assigned to a chamber by
       myh7/myh7l vs myh6 (`src/zf/io.py`), and myh7 is a memory-core gene. Only the border-zone
       set's hint (no myh7) remains, and it is exploratory.
+
+19. **Every cell, or a subgroup? (plan section 2F, pre-registered in af1018a; NaN handling fixed in
+    5ab8dba, same numbers)** (`cell_tail*.csv`). Per ventricle heart, cells thinned to exactly 600
+    UMIs; tail excess (share above the heart's decoy 95th percentile, minus the decoys' share) and
+    dispersion excess (variance-to-mean beyond detection-matched decoys). Both ignore a uniform shift
+    (synthetic check in the script). Results:
+    - **Glycolysis: every cell shifts** at 7 and 3 dpi: tail excess -0.014 and -0.016, dispersion
+      excess -0.07 and -0.13 (p 0.84, 0.86), while the heart-level level rose (item 18). A small
+      subgroup cannot be excluded: with 3 genes at 600 UMIs this test sees a subgroup only if it is
+      large or strong (the synthetic 10%-of-cells x5 case gives tail +0.07).
+    - **Dedifferentiated at 3 dpi: every cell shifts** (dispersion excess +0.01, p 0.49).
+    - **Memory border-zone core and injury-responsive: hints of a subgroup, not shown.** Dispersion
+      excess at 3 dpi +0.64 (p 0.029) and 7 dpi +0.49 (p 0.048) for the core; injury-responsive 7 dpi
+      +0.17 (p 0.030); core tail excess at 3 dpi p 0.043. None reaches BH q 0.05 (min 0.12). A border
+      zone is by definition a subgroup near the wound, so this is the expected direction; the core
+      also shares genes with the handling set.
+    - **Proliferating: not computable** (its genes are undetected in some hearts at 600 UMIs).
