@@ -1,0 +1,17 @@
+# Candidate markers: border-zone-like cardiomyocytes.
+# Status: draft for Eme's review. Symbols checked against GRCz11 release 92 (GEO Hr11 features).
+state: border_zone
+genes:
+  - {gene: nppa, source: "https://doi.org/10.7554/eLife.50163", evidence: "nppa:mCitrine reporter, FACS, SORT-seq (Honkoop 2019)", caveat: "partly overlaps dedifferentiated CMs at 7 dpi (Hu 2022)"}
+  - {gene: nppb, source: "https://doi.org/10.1016/j.devcel.2015.12.010", evidence: "tomo-seq border-zone peak (Wu 2016); ISH (Honkoop 2019)", caveat: "top gene of a dedifferentiated domain in Li 2025"}
+  - {gene: mustn1b, source: "https://doi.org/10.7554/eLife.50163", evidence: "ISH; scRNA cluster (Honkoop 2019)", caveat: ""}
+  - {gene: crip2, source: "https://doi.org/10.1016/j.devcel.2015.12.010", evidence: "tomo-seq border-zone peak (Wu 2016)", caveat: ""}
+  - {gene: vwa1, source: "https://doi.org/10.1016/j.devcel.2015.12.010", evidence: "tomo-seq border-zone peak (Wu 2016)", caveat: ""}
+  - {gene: psmd14, source: "https://doi.org/10.1016/j.devcel.2015.12.010", evidence: "tomo-seq border-zone peak (Wu 2016)", caveat: ""}
+# Also high in fibroblasts or smooth muscle: doublet and ambient-RNA risk. Use only after the confound checks.
+non_specific:
+  - {gene: myl6, source: "https://doi.org/10.1016/j.devcel.2015.12.010"}
+  - {gene: tagln, source: "https://doi.org/10.1038/s41467-025-59169-4"}
+  - {gene: ctgfa, source: "https://doi.org/10.1038/s41467-025-59169-4", note: "named ccn2a in newer annotations"}
+  - {gene: cyr61, source: "https://doi.org/10.1038/s41467-025-59169-4", note: "named ccn1 in newer annotations"}
+# vmhc (Honkoop 2019) is absent from this annotation; ask Eme whether myh7 or myh7l stands for it.

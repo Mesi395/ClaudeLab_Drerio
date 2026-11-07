@@ -1,0 +1,16 @@
+# Candidate markers: dedifferentiated cardiomyocytes.
+# Status: draft for Eme's review. Symbols checked against GRCz11 release 92 (GEO Hr11 features).
+state: dedifferentiated
+genes:
+  - {gene: myom1b, source: "https://doi.org/10.7554/eLife.50163", evidence: "ISH at 7 dpi, absent at 3 dpi (Honkoop 2019)", caveat: ""}
+  - {gene: tnnc2, source: "https://doi.org/10.1016/j.ydbio.2021.03.014", evidence: "reporter line, up on injury (Tsedeke 2021)", caveat: ""}
+  - {gene: gata4, source: "https://doi.org/10.1038/nature08804", evidence: "reporter and Cre lineage tracing (Kikuchi 2010)", caveat: "resection model; low mRNA"}
+# Hu 2022 markers of its ttn.2 cluster. Highly expressed CM genes are the likeliest to track
+# library size. Keep them as a separate axis and test against log total UMIs per library.
+library_size_suspects:
+  - {gene: ttn.1, source: "https://doi.org/10.1038/s41588-022-01129-5"}
+  - {gene: ttn.2, source: "https://doi.org/10.1038/s41588-022-01129-5"}
+  - {gene: bves, source: "https://doi.org/10.1038/s41588-022-01129-5"}
+  - {gene: synpo2lb, source: "https://doi.org/10.1038/s41588-022-01129-5"}
+# Glycolysis genes (hk1, pkma, pdk2a, ldha; Honkoop 2019, Fukuda 2020) are left out:
+# Lekkos 2025 reports oxidative phosphorylation highest in border-zone CMs, so the direction is contested.

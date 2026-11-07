@@ -1,0 +1,16 @@
+# Candidate markers: injury-responsive (early, activated) cardiomyocytes.
+# Status: draft for Eme's review. Symbols checked against GRCz11 release 92 (GEO Hr11 features).
+state: injury_responsive
+genes:
+  - {gene: tnfrsf11b, source: "https://doi.org/10.1038/s41467-025-59070-0", evidence: "Stereo-seq, scRNA, FISH (Li 2025)", caveat: "resection model"}
+  - {gene: hspb6, source: "https://doi.org/10.1038/s41467-025-59070-0", evidence: "Stereo-seq, scRNA (Li 2025)", caveat: "resection model"}
+  - {gene: hspb11, source: "https://doi.org/10.1038/s41467-025-59070-0", evidence: "Stereo-seq, scRNA (Li 2025)", caveat: "resection model"}
+  - {gene: klf1, source: "https://doi.org/10.1126/science.abe2762", evidence: "myocardial loss and gain of function (Ogawa 2021)", caveat: "likely low counts in 10x data"}
+# AP-1 genes are kept apart: dissociation induces them. Score them as a separate axis
+# and compare uninjured libraries before using them as an injury marker.
+dissociation_sensitive:
+  - {gene: jun, source: "https://doi.org/10.1161/CIRCRESAHA.119.316167"}
+  - {gene: junba, source: "https://doi.org/10.1161/CIRCRESAHA.119.316167"}
+  - {gene: junbb, source: "https://doi.org/10.1161/CIRCRESAHA.119.316167"}
+  - {gene: fosab, source: "https://doi.org/10.1038/s41467-025-59169-4"}
+  - {gene: fosl1a, source: "https://doi.org/10.1038/s41467-025-59169-4"}

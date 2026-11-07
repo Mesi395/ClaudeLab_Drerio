@@ -1,0 +1,17 @@
+# Candidate markers: proliferating cardiomyocytes.
+# Status: draft for Eme's review. Symbols checked against GRCz11 release 92 (GEO Hr11 features).
+state: proliferating
+genes:
+  - {gene: pcna, source: "https://doi.org/10.1038/s41467-025-59070-0", evidence: "Stereo-seq; PCNA immunostaining (Li 2025)", caveat: "polyploid CMs can score S phase without dividing"}
+  - {gene: cdk1, source: "https://doi.org/10.1038/s41467-025-59070-0", evidence: "Stereo-seq (Li 2025)", caveat: ""}
+  - {gene: mcm5, source: "https://doi.org/10.1038/s44161-025-00718-x", evidence: "scRNA reanalysis (Lekkos 2025)", caveat: ""}
+# Our own ortholog mapping of general cell-cycle genes (Tirosh 2016 sets), not from a zebrafish CM paper.
+# Cycling non-CMs can leak these through ambient RNA.
+cell_cycle_orthologs_ours:
+  - {gene: mki67, source: "https://doi.org/10.1126/science.aad0501"}
+  - {gene: top2a, source: "https://doi.org/10.1126/science.aad0501"}
+  - {gene: mcm2, source: "https://doi.org/10.1126/science.aad0501"}
+  - {gene: ccnb1, source: "https://doi.org/10.1126/science.aad0501"}
+  - {gene: cdc20, source: "https://doi.org/10.1126/science.aad0501"}
+  - {gene: aurkb, source: "https://doi.org/10.1126/science.aad0501"}
+  - {gene: ccna2, source: "https://doi.org/10.1126/science.aad0501"}
