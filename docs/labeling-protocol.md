@@ -64,7 +64,7 @@ that rewards depth.
 
 ## Dissociation control (domain input 2026-11-07 15:09)
 
-Cells were dissociated enzymatically at 37 °C, which induces immediate-early and heat-shock
+Cells were dissociated enzymatically at 37 °C (per the data owner), which induces immediate-early and heat-shock
 genes (van den Brink 2017, doi:10.1038/nmeth.4437; Neuschulz 2022, doi:10.15252/msb.202211147).
 `dissociation_control` is scored through rules 1–8 like an axis, but it is never a state. Its
 per-heart level is in `results/hk/dissociation_per_heart.csv`. The injury axis is not regressed
