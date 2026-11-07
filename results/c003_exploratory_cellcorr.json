@@ -1,0 +1,8 @@
+{
+  "commit": "fea5089afcb9d799f117c4195f90d705a1399368",
+  "dirty_tree": true,
+  "command": "uv run python scripts/c003_exploratory_cellcorr.py data/clean/hu2022_cm_allgenes_sanitized.h5ad results",
+  "input": "data/clean/hu2022_cm_allgenes_sanitized.h5ad",
+  "label": "exploratory, added after seeing C003 results",
+  "time": "2026-11-07T15:38:36+01:00"
+}

@@ -1,0 +1,170 @@
+state: border_zone_like
+status: candidate
+note: 'Only Honkoop 2019 is a cryoinjury single-cell source (sorted nppa:mCitrine CMs, 7 dpi, SORT-seq,
+  352 cells). vmhc is a ventricle-identity gene: chamber confound (AV libraries).'
+genes:
+- symbol: nppa
+  source: 10.7554/eLife.50163
+  model: cryoinjury
+  time: 7 dpi
+  resolution: single cell (sorted reporter)
+  read: full text 0-100k chars
+  evidence: R-E2
+  c002_depth:
+    median_rho_logtot: 0.163
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: mustn1b
+  source: 10.7554/eLife.50163
+  model: cryoinjury
+  time: 7 dpi
+  resolution: single cell (sorted reporter)
+  read: full text 0-100k chars
+  evidence: R-E2
+  c002_depth:
+    median_rho_logtot: 0.18
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: myh7
+  alias_in_source: vmhc
+  alias_check: ZFIN ZDB-GENE-991123-5 lists vmhc as previous name of myh7 (R-E7)
+  source: 10.7554/eLife.50163
+  model: cryoinjury
+  time: 7 dpi
+  resolution: single cell (sorted reporter)
+  read: full text 0-100k chars
+  evidence: R-E2
+  flag: chamber identity gene; confounded with AV
+  c002_depth:
+    median_rho_logtot: 0.07
+    background_p05_p95:
+    - 0.096
+    - 0.167
+    tracks_depth: true
+    direction: down_with_depth
+    evidence: results/c002_gene_depth.csv (R-E11)
+  c002_symbol_check: 'ZFIN: vmhc is a previous name of myh7 (ZDB-GENE-991123-5); myh7l is a different
+    gene, previously vmhcl (ZDB-GENE-061027-393). Kept myh7 as sourced; it is detected in few CMs here
+    (R-E9). Not substituted.'
+- symbol: hk1
+  source: 10.7554/eLife.50163
+  model: cryoinjury
+  time: 7 dpi
+  resolution: in situ hybridisation
+  read: full text 0-100k chars
+  evidence: R-E2
+  c002_depth:
+    median_rho_logtot: 0.25
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: pkma
+  source: 10.7554/eLife.50163
+  model: cryoinjury
+  time: 7 dpi
+  resolution: in situ hybridisation
+  read: full text 0-100k chars
+  evidence: R-E2
+  c002_depth:
+    median_rho_logtot: 0.276
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: true
+    direction: up_with_depth
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: pdk2a
+  source: 10.7554/eLife.50163
+  model: cryoinjury
+  time: 7 dpi
+  resolution: in situ hybridisation
+  read: full text 0-100k chars
+  evidence: R-E2
+  c002_depth:
+    median_rho_logtot: 0.271
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: true
+    direction: up_with_depth
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: ldha
+  source: 10.7554/eLife.50163
+  model: cryoinjury
+  time: 7 dpi
+  resolution: qPCR
+  read: full text 0-100k chars
+  evidence: R-E2
+  c002_depth:
+    median_rho_logtot: 0.276
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: true
+    direction: up_with_depth
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: slc2a1a
+  source: 10.7554/eLife.50163
+  model: cryoinjury
+  time: 7 dpi
+  resolution: single cell / ISH
+  read: full text 0-100k chars
+  evidence: R-E2
+- symbol: nppb
+  source: 10.1016/j.devcel.2015.12.010
+  model: cryoinjury
+  time: 3 and 7 dpi
+  resolution: tomo-seq section (tissue)
+  read: search summary of a supplementary figure
+  evidence: R-E5
+  c002_depth:
+    median_rho_logtot: 0.24
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: mmp14b
+  source: 10.1038/s41467-025-59169-4
+  model: cryoinjury (assumed
+  not checked): null
+  time: not checked
+  resolution: single cell
+  read: abstract
+  evidence: R-E4
+  flag: expressed in several cell types; ambient risk
+  c002_depth:
+    median_rho_logtot: 0.052
+    background_p05_p95:
+    - 0.034
+    - 0.08
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: ankrd1a
+  source: 10.1016/j.cdev.2026.204082
+  model: cryoinjury
+  time: 15 hpi onward
+  resolution: reporter imaging
+  read: abstract
+  evidence: R-E4
+  c002_depth:
+    median_rho_logtot: 0.045
+    background_p05_p95:
+    - 0.023
+    - 0.072
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)

@@ -1,0 +1,97 @@
+state: injury_responsive
+status: candidate
+note: Early "activated" myocardium. No cryoinjury single-cell source with a named gene list was read in
+  full; sources below are a partial full-text summary (Li 2025) and abstracts.
+timing_mismatch: Li 2025 places the activated stage at 6 hpa. Our earliest timepoint is 3 dpi, so the
+  data may hold no cells at the stage these genes were defined for.
+genes:
+- symbol: nppa
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: activated stage (6 hpa-1 dpa)
+  resolution: stereo-seq spot
+  read: partial full text (SUP-E4)
+  evidence: R-E3
+  c002_depth:
+    median_rho_logtot: 0.163
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: nppb
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: activated stage
+  resolution: stereo-seq spot
+  read: partial full text (SUP-E4)
+  evidence: R-E3
+  c002_depth:
+    median_rho_logtot: 0.24
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: tnfrsf11b
+  source: 10.1038/s41467-025-59070-0
+  model: resection; detected also 6 h post-cryoinjury (Suppl. Fig. 7b)
+  time: activated stage
+  resolution: stereo-seq spot
+  read: partial full text (SUP-E4)
+  evidence: R-E3
+  c002_depth:
+    median_rho_logtot: 0.077
+    background_p05_p95:
+    - 0.058
+    - 0.105
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: hspb6
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: activated stage
+  resolution: stereo-seq spot
+  read: partial full text (SUP-E4)
+  evidence: R-E3
+  c002_depth:
+    median_rho_logtot: 0.182
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: hspb11
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: activated stage
+  resolution: stereo-seq spot
+  read: partial full text (SUP-E4)
+  evidence: R-E3
+  c002_depth:
+    median_rho_logtot: 0.259
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: true
+    direction: up_with_depth
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: ankrd1a
+  source: 10.1016/j.cdev.2026.204082
+  model: cryoinjury
+  time: from 15 hpi, sustained
+  resolution: reporter imaging + transcriptome
+  read: abstract
+  evidence: R-E4
+  c002_depth:
+    median_rho_logtot: 0.045
+    background_p05_p95:
+    - 0.023
+    - 0.072
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)

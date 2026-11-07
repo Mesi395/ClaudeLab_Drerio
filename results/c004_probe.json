@@ -1,0 +1,44 @@
+{
+  "commit": "fea5089afcb9d799f117c4195f90d705a1399368",
+  "dirty_tree": true,
+  "command": "uv run python scripts/c004_probe.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers results",
+  "input": "data/clean/hu2022_cm_allgenes_sanitized.h5ad",
+  "chamber_rule_chosen": "B",
+  "chamber_rule_usable": true,
+  "chamber_balanced_accuracy": {
+    "A": 0.8667,
+    "B": 0.9906
+  },
+  "chamber_mean_coverage": {
+    "A": 0.3578,
+    "B": 0.7347
+  },
+  "agent_state_counts": {
+    "border_zone_like": 186,
+    "dedifferentiated": 199,
+    "injury_responsive": 1188,
+    "proliferating": 407,
+    "unassigned": 30064
+  },
+  "agent_chamber_counts": {
+    "ventricle": 14024,
+    "unassigned": 9204,
+    "atrium": 8816
+  },
+  "label_file_format": {
+    "file": "c004_agent_labels.csv",
+    "key": "cell = obs_names of the sanitised h5ad (one row per cell, 32,044 rows)",
+    "agent_state": "one of border_zone_like, dedifferentiated, injury_responsive, proliferating, unassigned",
+    "agent_states_all": "semicolon-separated high axes (empty if none)",
+    "agent_chamber": "atrium | ventricle | unassigned",
+    "score_<axis>": "thinned score_genes per axis",
+    "rule": "research/cm-state-axes/cycles/C004/reading-rules.md section 4"
+  },
+  "params": {
+    "target_umis": 500,
+    "seed": 0,
+    "n_null": 100,
+    "min_cells": 50
+  },
+  "time": "2026-11-07T15:45:19+01:00"
+}

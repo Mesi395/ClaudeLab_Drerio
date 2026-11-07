@@ -1,0 +1,76 @@
+{
+  "axes_passing_tail": [
+    "dedifferentiated",
+    "injury_responsive"
+  ],
+  "shared_genes_removed": [
+    "ankrd1a",
+    "mustn1b",
+    "nppa",
+    "nppb"
+  ],
+  "disjoint_sets": {
+    "border_zone_like": [
+      "myh7",
+      "hk1",
+      "pkma",
+      "pdk2a",
+      "ldha",
+      "mmp14b"
+    ],
+    "dedifferentiated": [
+      "desma",
+      "nkx2.5",
+      "tbx20",
+      "gata4",
+      "hand2",
+      "mef2cb",
+      "cacybp"
+    ],
+    "injury_responsive": [
+      "tnfrsf11b",
+      "hspb6",
+      "hspb11"
+    ],
+    "proliferating": [
+      "pcna",
+      "cdk1",
+      "ccng1",
+      "ccng2",
+      "foxm1",
+      "cenpf"
+    ]
+  },
+  "pairs": {
+    "border_zone_like|dedifferentiated": {
+      "frac_hearts_above_null95": 0.0,
+      "frac_hearts_below_null05": 0.0,
+      "verdict": "mixed"
+    },
+    "border_zone_like|injury_responsive": {
+      "frac_hearts_above_null95": 0.0,
+      "frac_hearts_below_null05": 0.0,
+      "verdict": "mixed"
+    },
+    "border_zone_like|proliferating": {
+      "frac_hearts_above_null95": 0.05555555555555555,
+      "frac_hearts_below_null05": 0.05555555555555555,
+      "verdict": "mixed"
+    },
+    "dedifferentiated|injury_responsive": {
+      "frac_hearts_above_null95": 0.1111111111111111,
+      "frac_hearts_below_null05": 0.0,
+      "verdict": "mixed"
+    },
+    "dedifferentiated|proliferating": {
+      "frac_hearts_above_null95": 0.0,
+      "frac_hearts_below_null05": 0.05555555555555555,
+      "verdict": "mixed"
+    },
+    "injury_responsive|proliferating": {
+      "frac_hearts_above_null95": 0.0,
+      "frac_hearts_below_null05": 0.16666666666666666,
+      "verdict": "mixed"
+    }
+  }
+}

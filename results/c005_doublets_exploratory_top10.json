@@ -1,0 +1,8 @@
+{
+  "commit": "fea5089afcb9d799f117c4195f90d705a1399368",
+  "dirty_tree": true,
+  "command": "uv run python scripts/c005_doublets_exploratory.py results",
+  "input": "c005_doublets_cells.csv",
+  "label": "exploratory: top-10% within-library CM doublet score, added after results",
+  "time": "2026-11-07T15:58:28+01:00"
+}

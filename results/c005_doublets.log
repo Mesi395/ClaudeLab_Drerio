@@ -1,0 +1,117 @@
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+H5 ok 68s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+H6 ok 76s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+H7 ok 101s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+H8a ok 111s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+H8v ok 118s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr1 ok 147s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr11 ok 169s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr12 ok 188s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr13 ok 200s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr19 ok 204s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr24 ok 232s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr27 ok 244s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr2a ok 271s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr2b ok 298s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr3 ok 324s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr4 ok 346s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr6a ok 355s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr6v ok 376s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr7a ok 389s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr7v ok 402s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr8 ok 413s
+/Users/normy/ClaudeLab_Drerio/.venv/lib/python3.12/site-packages/scanpy/readwrite.py:249: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  adata = adata.copy()
+Hr9 ok 441s
+{
+ "libraries_ok": 22,
+ "libraries_total": 22,
+ "not_ok": [],
+ "median_abs_rho_doublet": {
+  "border_zone_like": 0.0669150293338564,
+  "dedifferentiated": 0.07851655622759872,
+  "injury_responsive": 0.09100108365171641,
+  "proliferating": 0.050199310548291805
+ },
+ "tracks_doublets_rule_ge_0.1": {
+  "border_zone_like": false,
+  "dedifferentiated": false,
+  "injury_responsive": false,
+  "proliferating": false
+ },
+ "state_doublet_share": {
+  "border_zone_like": {
+   "n": 67,
+   "share": 0.0,
+   "ratio_to_unassigned": null,
+   "enriched_ge_2x": false
+  },
+  "dedifferentiated": {
+   "n": 53,
+   "share": 0.0,
+   "ratio_to_unassigned": null,
+   "enriched_ge_2x": false
+  },
+  "injury_responsive": {
+   "n": 145,
+   "share": 0.0,
+   "ratio_to_unassigned": null,
+   "enriched_ge_2x": false
+  },
+  "proliferating": {
+   "n": 183,
+   "share": 0.0,
+   "ratio_to_unassigned": null,
+   "enriched_ge_2x": false
+  },
+  "not_scored": {
+   "n": 18020,
+   "share": 0.00022197558268590456,
+   "ratio_to_unassigned": null,
+   "enriched_ge_2x": false
+  }
+ },
+ "unassigned_ventricle_doublet_share": 0.0
+}
+exit 0

@@ -1,0 +1,22 @@
+columns: ['cell', 'library', 'heart', 'agent_state', 'agent_states_all', 'agent_chamber', 'score_border_zone_like', 'score_dedifferentiated', 'score_injury_responsive', 'score_proliferating']
+rows: 32044 | unique cells: 32044 | all cells in data: True
+agent_state counts: {'unassigned': 30064, 'injury_responsive': 1188, 'proliferating': 407, 'dedifferentiated': 199, 'border_zone_like': 186}
+
+chamber call vs metadata in the six chamber-only libraries:
+ agent_chamber         atrium  unassigned  ventricle
+orig.ident AV                                      
+H8a        Atrium        825         207          1
+H8v        Ventricle       0          22        152
+Hr6a       Atrium        601         326          0
+Hr6v       Ventricle      34         275        808
+Hr7a       Atrium        861         639          0
+Hr7v       Ventricle       9         190        590
+accuracy among called cells by true chamber: {'Atrium': 1.0, 'Ventricle': 0.973} | balanced: 0.986 | coverage: 0.701
+
+injury_responsive calls by agent_chamber: {'atrium': 885, 'ventricle': 184, 'unassigned': 119}
+injury_responsive calls by time: {'Ctrl': 355, '30dpi': 351, '7dpi': 316, '3dpi': 166}
+all cells by time: {'7dpi': 14094, 'Ctrl': 7048, '3dpi': 6185, '30dpi': 4717}
+injury_responsive: share by time {'30dpi': 0.0744, '3dpi': 0.0268, '7dpi': 0.0224, 'Ctrl': 0.0504}
+proliferating: share by time {'30dpi': 0.01, '3dpi': 0.0058, '7dpi': 0.0172, 'Ctrl': 0.0116}
+dedifferentiated: share by time {'30dpi': 0.0025, '3dpi': 0.0112, '7dpi': 0.0059, 'Ctrl': 0.005}
+border_zone_like: share by time {'30dpi': 0.0032, '3dpi': 0.0102, '7dpi': 0.0061, 'Ctrl': 0.0031}

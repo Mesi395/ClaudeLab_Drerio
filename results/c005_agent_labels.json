@@ -1,0 +1,20 @@
+{
+  "commit": "fea5089afcb9d799f117c4195f90d705a1399368",
+  "dirty_tree": true,
+  "command": "uv run python scripts/c005_labels.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers results",
+  "input": "data/clean/hu2022_cm_allgenes_sanitized.h5ad",
+  "supersedes": "c004_agent_labels.csv (kept unchanged); correction for F10 (chamber)",
+  "n_cells": 32044,
+  "n_scored_ventricle": 14024,
+  "agreement_with_c004_on_ventricle_cells": 0.993938961779806,
+  "label_file_format": {
+    "file": "c005_agent_labels.csv",
+    "cell": "obs_names of the sanitised h5ad; one row per cell (32,044)",
+    "agent_state": "border_zone_like | dedifferentiated | injury_responsive | proliferating | unassigned (ventricle-called cells) | not_scored (atrium-called or chamber-unassigned cells)",
+    "agent_states_all": "semicolon-separated high axes; empty if none or not scored",
+    "agent_chamber": "atrium | ventricle | unassigned; sourced rule B, see C004",
+    "score_<axis>": "thinned score_genes within ventricle-called cells; NaN if not scored",
+    "rule": "research/cm-state-axes/cycles/C005/reading-rules.md section 1"
+  },
+  "time": "2026-11-07T15:49:42+01:00"
+}
