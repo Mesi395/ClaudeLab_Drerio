@@ -1,3 +1,4 @@
+# Data: rebuilt by scripts/get_data.sh, never committed
 data/
 holdout/
 *.h5ad
@@ -6,13 +7,30 @@ holdout/
 *.rds
 *.mtx
 *.mtx.gz
+*.zarr/
+*.pkl
+*.tar
+*.tar.gz
+*.bundle
+
+# Secrets
 .env
+.env.*
+*.pem
+*.key
+
+# Python and tools
 .venv/
 __pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
 .ipynb_checkpoints/
+
+# Operating system
 .DS_Store
 
-# Personal, per-person files: never committed
+# Personal, per-person files
 CLAUDE.local.md
 .claude/settings.local.json
 notes/
