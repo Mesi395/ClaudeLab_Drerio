@@ -1,0 +1,85 @@
+schema: zf.run/v1
+run_id: real-v0
+started: '2026-11-07T16:19:00+01:00'
+command: uv run python scripts/run_real.py
+git:
+  commit: 84e8ed869eb683b0158c326acdc2e80848f74030
+  dirty: true
+versions:
+  zf: 0.1.0
+  scanpy: 1.12.5
+  anndata: 0.13.4
+  numpy: 2.5.4
+inputs:
+- path: config/cells.csv.gz
+  sha256: c02d4dd82b0919081155d049c88ba9e26dfc4892a128d5a258bf9bc420141818
+- path: config/axes.yaml
+  sha256: 5d58770afddc465974e3032d02dceab7328672a17dfc2c94b01c5952c763126d
+- path: config/checks.yaml
+  sha256: 6142e815d04df8bbac6c6a47d5eb7dc27926a1a502cbb0b4a2c71785dd8e34b7
+- path: markers/border_zone.yaml
+  sha256: 3f3fd1981385c47e2be3dfe9ddb65450fcc693669208153213317b6fb2d17e54
+- path: markers/dedifferentiated.yaml
+  sha256: b60137544e6d876776b20495de2bad6511e3dcc2c11372b26db14b92201e0b4d
+- path: markers/injury_responsive.yaml
+  sha256: 613bd3470078dee0965d3eabdb86f599fdb4099ade71800a20aed632e9dec5b9
+- path: markers/proliferating.yaml
+  sha256: ce3c9f24491543e2488b5ff827d266e7ec7905b57852e3ccfed6d23ae9f13a0e
+params:
+  seed: 0
+  n_cells: 32044
+  n_genes_scored: 3016
+  genes_missing_from_data: []
+  doublet: 'not_run: no doublet covariate in this run'
+  expectations_status: proposed, not yet confirmed by the domain expert
+outcomes:
+  injury_responsive:
+    null_matched_sets: flag
+    direction: flag
+    depth: not_run
+    doublet: not_run
+    ambient: not_run
+    dissociation: not_run
+    batch: not_run
+    leave_one_gene_out: not_run
+    method_agreement: not_run
+  border_zone:
+    null_matched_sets: pass
+    direction: flag
+    depth: pass
+    doublet: not_run
+    ambient: pass
+    dissociation: pass
+    batch: flag
+    leave_one_gene_out: flag
+    method_agreement: pass
+  dedifferentiated:
+    null_matched_sets: flag
+    direction: pass
+    depth: not_run
+    doublet: not_run
+    ambient: not_run
+    dissociation: not_run
+    batch: not_run
+    leave_one_gene_out: not_run
+    method_agreement: not_run
+  proliferating:
+    null_matched_sets: flag
+    direction: flag
+    depth: not_run
+    doublet: not_run
+    ambient: not_run
+    dissociation: not_run
+    batch: not_run
+    leave_one_gene_out: not_run
+    method_agreement: not_run
+  library_size_suspect:
+    null_matched_sets: pass
+    direction: not_run
+    depth: pass
+    doublet: not_run
+    ambient: pass
+    dissociation: flag
+    batch: pass
+    leave_one_gene_out: pass
+    method_agreement: pass

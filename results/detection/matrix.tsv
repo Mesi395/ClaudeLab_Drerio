@@ -1,0 +1,11 @@
+defect	null_matched_sets	direction	depth	doublet	ambient	dissociation	batch	leave_one_gene_out	method_agreement
+clean	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+random_gene_set	1.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+shuffled_conditions	0.00	1.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00
+depth_artefact	0.00	0.00	1.00	0.00	0.00	0.00	0.00	0.00	0.00
+doublet_artefact	0.00	0.00	0.00	1.00	0.00	0.00	0.00	0.00	0.00
+ambient_artefact	0.00	0.00	0.00	0.00	1.00	0.00	0.00	0.00	0.00
+dissociation_artefact	0.00	0.00	0.00	0.00	0.00	1.00	0.00	0.00	0.00
+library_batch	0.00	0.00	0.00	0.00	0.00	0.00	1.00	0.00	0.00
+single_gene_driver	0.00	0.00	0.00	0.00	0.05	0.00	0.00	1.00	0.00
+method_artefact	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	1.00

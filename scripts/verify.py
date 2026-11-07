@@ -57,7 +57,7 @@ def check_manifests():
         rel = path.relative_to(ROOT).as_posix()
         stale = []
         for item in m["inputs"]:
-            src = Path(item["path"])
+            src = ROOT / item["path"]
             if not src.exists():
                 record(f"inputs {rel}", "not_run", f"missing input {src}")
                 break
@@ -71,7 +71,7 @@ def check_holdout_isolation():
     readers = [
         p.relative_to(ROOT).as_posix()
         for p in [*ROOT.glob("src/**/*.py"), *ROOT.glob("scripts/**/*.py")]
-        if "holdout/" in p.read_text() and p.name not in NAMES_HOLDOUT_WITHOUT_READING
+        if "holdout" in p.read_text() and p.name not in NAMES_HOLDOUT_WITHOUT_READING
     ]
     record("holdout read only by evaluate.py", "fail" if readers else "pass", ", ".join(readers))
 

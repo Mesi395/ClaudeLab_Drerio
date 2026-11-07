@@ -19,6 +19,13 @@ def _sha256(path: Path) -> str:
     return h.hexdigest()
 
 
+def _relative(path: Path) -> str:
+    """Repository-relative path, so a manifest can be checked on any machine."""
+    root = Path(__file__).resolve().parents[2]
+    resolved = path.resolve()
+    return resolved.relative_to(root).as_posix() if resolved.is_relative_to(root) else str(path)
+
+
 def _git() -> dict:
     def run(*args):
         r = subprocess.run(["git", *args], capture_output=True, text=True, check=False)
@@ -42,7 +49,7 @@ def write_manifest(run_dir, *, command, inputs, params, outcomes) -> Path:
         "command": command,
         "git": _git(),
         "versions": {p: version(p) for p in ("zf", "scanpy", "anndata", "numpy")},
-        "inputs": [{"path": str(p), "sha256": _sha256(Path(p))} for p in inputs],
+        "inputs": [{"path": _relative(Path(p)), "sha256": _sha256(Path(p))} for p in inputs],
         "params": params,
         "outcomes": outcomes,
     }
