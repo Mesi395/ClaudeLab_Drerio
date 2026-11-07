@@ -1,0 +1,25 @@
+schema: zf.run/v1
+run_id: hk-cooccurrence
+started: '2026-11-07T16:42:45+01:00'
+command: uv run python scripts/cooccurrence.py
+git:
+  commit: 4cded0ca070a4756ba8c6aa0912228db2b15dfcb
+  dirty: true
+versions:
+  zf: 0.1.0
+  scanpy: 1.12.5
+  anndata: 0.13.4
+  numpy: 2.5.4
+inputs:
+- path: data/cm_labelfree.h5ad
+  sha256: 49f63f83357167ca6be7af870d4e3e42352d16ac0e0e34743088b7a53c82f1c3
+- path: data/derived/cm_flags.tsv
+  sha256: 8ad52a057fd5a30f332cd8ba171946393c18dee4925d385f598e4d15e2d759b3
+- path: data/derived/labels_v1.tsv.gz
+  sha256: 97b648ebaadf653228a2627de6dcc6bd48f25ae3a1dfdf4fd6a070595d7e1b5d
+params:
+  K: 100
+  p_heart: 0.05
+  T: 600
+  seed: 0
+outcomes: {}
