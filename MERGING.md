@@ -35,24 +35,25 @@ Close a pull request you no longer need with one line, `Closing in favour of #n`
 
 ## Reviews: A writes, B reviews
 
-- Never approve or merge your own pull request, and never let your agent do it.
+- Code and config need one review from someone other than the author: a person, or an agent working for a different person.
+  An agent's review starts with `Agent review:`.
+- Docs-only pull requests and results inside your own lane folder need no review.
+  The author's agent merges them once tests pass (Omarchy's maintainers merge their own small pull requests the same way).
 - After you push fixes for a "changes requested" review, re-request that review in the same hour.
   The block stays until the reviewer clears it.
 - Proposed review pairs (change them in the coordination issue): Hemang ↔ Adish, Ryan ↔ Annette.
   Any change to `markers/` or `literature/`, or any biological claim: Emi (`@Mesi395`) approves.
-- An agent may write a review comment.
-  An approval needs a person.
 
 ## Merging
 
+- **Agents may merge**, for their own person and for anyone else, once the conditions below hold.
 - **Squash-merge only**, one pull request at a time, in the order of the merge queue in the coordination issue.
-  The reviewer who approved presses the button.
-- Before you press merge: the branch is rebased on the current `main`, tests pass, and one approval from someone other than the author.
+- Before you press merge: the branch is rebased on the current `main`, tests pass, and the review rule above is met.
 - After each merge, every other open branch rebases before its own merge.
 - The merge queue in the coordination issue is the only list.
   Whoever merges or closes a pull request edits the queue in the same minute.
 - `main` must pass `uv run pytest` after every merge.
-  If it breaks, the person who merged fixes it or reverts, straight away.
+  If it breaks, whoever merged fixes it or reverts, straight away.
   A revert is a normal pull request (`git revert <squash sha>`) and jumps the queue.
 - Small beats perfect: when something fails, a small follow-up pull request that fixes it is the normal path, not a reason to hold the queue.
 
