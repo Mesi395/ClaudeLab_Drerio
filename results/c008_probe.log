@@ -1,0 +1,288 @@
+border_zone_like ties+null done
+dedifferentiated ties+null done
+/Users/normy/ClaudeLab_Drerio/scripts/c008_probe.py:64: RuntimeWarning: Mean of empty slice
+  return float(np.nanmean(c[np.triu_indices_from(c, 1)]))
+injury_responsive ties+null done
+/Users/normy/ClaudeLab_Drerio/scripts/c008_probe.py:64: RuntimeWarning: Mean of empty slice
+  return float(np.nanmean(c[np.triu_indices_from(c, 1)]))
+proliferating ties+null done
+{
+ "n_ventricle_cells": 14024,
+ "libraries": [
+  "H5",
+  "H6",
+  "H7",
+  "H8v",
+  "Hr1",
+  "Hr11",
+  "Hr12",
+  "Hr13",
+  "Hr19",
+  "Hr24",
+  "Hr27",
+  "Hr2a",
+  "Hr2b",
+  "Hr3",
+  "Hr4",
+  "Hr6v",
+  "Hr7v",
+  "Hr8",
+  "Hr9"
+ ],
+ "n_libraries": 19,
+ "n_hearts": 18,
+ "ties_median": {
+  "border_zone_like": {
+   "sg_unthinned_rho_depth": 0.215,
+   "sg_unthinned_rho_ngenes": 0.264,
+   "sg_unthinned_rho_nppa": 0.521,
+   "sg_unthinned_rho_mito": -0.13,
+   "sg_thinned_rho_depth": -0.006,
+   "sg_thinned_rho_ngenes": 0.011,
+   "sg_thinned_rho_nppa": 0.369,
+   "sg_thinned_rho_mito": 0.087,
+   "ucell_rho_depth": 0.437,
+   "ucell_rho_ngenes": 0.493,
+   "ucell_rho_nppa": 0.508,
+   "ucell_rho_mito": -0.29,
+   "ucell_abs_depth_gt_sg_unthinned_libs": 19
+  },
+  "dedifferentiated": {
+   "sg_unthinned_rho_depth": 0.232,
+   "sg_unthinned_rho_ngenes": 0.304,
+   "sg_unthinned_rho_nppa": 0.524,
+   "sg_unthinned_rho_mito": -0.15,
+   "sg_thinned_rho_depth": -0.008,
+   "sg_thinned_rho_ngenes": 0.003,
+   "sg_thinned_rho_nppa": 0.361,
+   "sg_thinned_rho_mito": 0.048,
+   "ucell_rho_depth": 0.443,
+   "ucell_rho_ngenes": 0.496,
+   "ucell_rho_nppa": 0.507,
+   "ucell_rho_mito": -0.31,
+   "ucell_abs_depth_gt_sg_unthinned_libs": 19
+  },
+  "injury_responsive": {
+   "sg_unthinned_rho_depth": 0.227,
+   "sg_unthinned_rho_ngenes": 0.298,
+   "sg_unthinned_rho_nppa": 0.577,
+   "sg_unthinned_rho_mito": -0.131,
+   "sg_thinned_rho_depth": 0.058,
+   "sg_thinned_rho_ngenes": 0.113,
+   "sg_thinned_rho_nppa": 0.361,
+   "sg_thinned_rho_mito": 0.06,
+   "ucell_rho_depth": 0.388,
+   "ucell_rho_ngenes": 0.466,
+   "ucell_rho_nppa": 0.582,
+   "ucell_rho_mito": -0.275,
+   "ucell_abs_depth_gt_sg_unthinned_libs": 19
+  },
+  "proliferating": {
+   "sg_unthinned_rho_depth": 0.036,
+   "sg_unthinned_rho_ngenes": 0.024,
+   "sg_unthinned_rho_nppa": -0.019,
+   "sg_unthinned_rho_mito": -0.037,
+   "sg_thinned_rho_depth": -0.044,
+   "sg_thinned_rho_ngenes": -0.083,
+   "sg_thinned_rho_nppa": -0.019,
+   "sg_thinned_rho_mito": 0.069,
+   "ucell_rho_depth": 0.291,
+   "ucell_rho_ngenes": 0.287,
+   "ucell_rho_nppa": 0.043,
+   "ucell_rho_mito": -0.2,
+   "ucell_abs_depth_gt_sg_unthinned_libs": 18
+  }
+ },
+ "null": {
+  "border_zone_like": {
+   "libs_p90_above": 0,
+   "libs_coherence_above": 10,
+   "hearts_p90_above": [
+    0,
+    18
+   ],
+   "hearts_coherence_above": [
+    9,
+    18
+   ]
+  },
+  "dedifferentiated": {
+   "libs_p90_above": 0,
+   "libs_coherence_above": 6,
+   "hearts_p90_above": [
+    0,
+    18
+   ],
+   "hearts_coherence_above": [
+    6,
+    18
+   ]
+  },
+  "injury_responsive": {
+   "libs_p90_above": 0,
+   "libs_coherence_above": 13,
+   "hearts_p90_above": [
+    0,
+    18
+   ],
+   "hearts_coherence_above": [
+    12,
+    18
+   ]
+  },
+  "proliferating": {
+   "libs_p90_above": 1,
+   "libs_coherence_above": 2,
+   "hearts_p90_above": [
+    1,
+    18
+   ],
+   "hearts_coherence_above": [
+    2,
+    18
+   ]
+  }
+ },
+ "program": {
+  "a_as_is:border_zone_like|dedifferentiated": {
+   "libs_above": 19,
+   "n_libs": 19,
+   "hearts_above": [
+    18,
+    18
+   ],
+   "median_rho": 0.665,
+   "median_null_p95": 0.154
+  },
+  "a_as_is:border_zone_like|injury_responsive": {
+   "libs_above": 19,
+   "n_libs": 19,
+   "hearts_above": [
+    18,
+    18
+   ],
+   "median_rho": 0.428,
+   "median_null_p95": 0.139
+  },
+  "a_as_is:injury_responsive|dedifferentiated": {
+   "libs_above": 19,
+   "n_libs": 19,
+   "hearts_above": [
+    18,
+    18
+   ],
+   "median_rho": 0.44,
+   "median_null_p95": 0.103
+  },
+  "b_no_nppa_nppb_disjoint:border_zone_like|dedifferentiated": {
+   "libs_above": 0,
+   "n_libs": 19,
+   "hearts_above": [
+    0,
+    18
+   ],
+   "median_rho": 0.071,
+   "median_null_p95": 0.141
+  },
+  "b_no_nppa_nppb_disjoint:border_zone_like|injury_responsive": {
+   "libs_above": 0,
+   "n_libs": 19,
+   "hearts_above": [
+    0,
+    18
+   ],
+   "median_rho": 0.054,
+   "median_null_p95": 0.134
+  },
+  "b_no_nppa_nppb_disjoint:injury_responsive|dedifferentiated": {
+   "libs_above": 2,
+   "n_libs": 19,
+   "hearts_above": [
+    2,
+    18
+   ],
+   "median_rho": 0.076,
+   "median_null_p95": 0.166
+  }
+ },
+ "variant_b_sets": {
+  "border_zone_like": [
+   "myh7",
+   "hk1",
+   "pkma",
+   "pdk2a",
+   "ldha",
+   "mmp14b"
+  ],
+  "injury_responsive": [
+   "tnfrsf11b",
+   "hspb6",
+   "hspb11"
+  ],
+  "dedifferentiated": [
+   "desma",
+   "nkx2.5",
+   "tbx20",
+   "gata4",
+   "hand2",
+   "mef2cb",
+   "cacybp"
+  ]
+ },
+ "variant_b_median_rho_nppa": {
+  "border_zone_like": 0.005939232177837773,
+  "injury_responsive": 0.06098173832570667,
+  "dedifferentiated": 0.03606157745473264
+ },
+ "ambient_ventricle": {
+  "Hr11": {
+   "nppa_ratio_bins01": [
+    7.307,
+    5.417
+   ],
+   "ttn.2_ratio_bins01_hinted": [
+    2.466,
+    2.927
+   ],
+   "myh6_ratio_bins01": [
+    13.882,
+    4.794
+   ],
+   "non_cm_frac_ge2x": 0.8333333333333334
+  },
+  "Hr12": {
+   "nppa_ratio_bins01": [
+    1.122,
+    1.376
+   ],
+   "ttn.2_ratio_bins01_hinted": [
+    1.071,
+    1.412
+   ],
+   "myh6_ratio_bins01": [
+    2.477,
+    0.974
+   ],
+   "non_cm_frac_ge2x": 0.4166666666666667
+  },
+  "Hr24": {
+   "nppa_ratio_bins01": [
+    0.249
+   ],
+   "ttn.2_ratio_bins01_hinted": [
+    0.705
+   ],
+   "myh6_ratio_bins01": [
+    1.355
+   ],
+   "non_cm_frac_ge2x": 0.5833333333333334
+  }
+ },
+ "doublet_median_abs_rho_thinned_sg": {
+  "border_zone_like": 0.06285403737566796,
+  "dedifferentiated": 0.06946831100964052,
+  "injury_responsive": 0.06279929846550641,
+  "proliferating": 0.05903033740030157
+ }
+}
+exit 0

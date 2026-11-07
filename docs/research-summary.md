@@ -47,23 +47,31 @@ wrote tested code and ran the analyses.
    mainly in hearts Hr9 and Hr8 (7 dpi) ([check](../research/cm-state-axes/checks/c007_verify.out)).
    Why is still open.
 5. **Hr11 (3 dpi, the most weakly measured sample) carries contamination and stress signals.**
-   Its *nppa* excess (2.5–3.1× at equal depth) is unexplained.
-6. **Whether the states co-occur cannot be decided with literature markers.** Shared genes make
-   them overlap by construction, and disjoint sets look like random pairs.
+   In its ventricle cells, the *nppa* excess is a near-constant +1.4 to +2.0 molecules per cell at
+   every depth, with the atrial gene *myh6* also raised. That is the fingerprint of stray
+   (ambient) RNA, probably atrial, not of biology ([check](../research/cm-state-axes/checks/c008b_verify.out)).
+   Moderate confidence: there are no empty-droplet data.
+6. **Inside the ventricle, three of the four "states" are one signal.** Border-zone,
+   injury-responsive and dedifferentiated move together only through their shared genes *nppa* and
+   *nppb*. Without them, the sets barely co-vary (median rho 0.08–0.12,
+   [check](../research/cm-state-axes/checks/c008b_verify.out)). So the apparent co-occurrence is
+   built in, and the four states reduce to one *nppa*/*nppb* program plus a cell-cycle set that is
+   barely above random.
 
 ## Answers to the problem's questions
 
 | Question | Answer so far |
 |---|---|
-| What do published markers really mark? | Mainly chamber (atrium) and sequencing depth, not injury states |
-| Do the states co-occur? | Cannot be answered with these markers |
+| What do published markers really mark? | Across the heart: chamber (atrium). Inside the ventricle: one *nppa*/*nppb* program, plus stray atrial RNA in the shallow sample Hr11. Not four separate injury states. |
+| Do the states co-occur? | With literature markers, the overlap is built in by shared genes (*nppa*, *nppb*). Inside the ventricle they reduce to one *nppa* program, so real co-occurrence cannot be tested with these sets. |
 | Which annotation can we trust without ground truth? | Only labels that survive depth, chamber and null controls. Our chamber call does: balanced accuracy 0.986 on six labelled samples ([check](../research/cm-state-axes/checks/c004_verify.out)). Our state calls do not; they are at chance. |
 | Which checks did the agent run alone, and which would an expert add? | See [checks-inventory.md](../research/cm-state-axes/checks-inventory.md). The researcher caught the false comfort of method agreement and the Hr11 anomaly. The supervisor caught the embedded answer key, the chamber confound and an error in the labels. An expert would add ambient-RNA estimates from raw droplets, a second doublet method and spatial validation. |
 
 ## What is not established
 
-- Several earlier checks (null, depth flags, ambient, doublets) were run on both chambers mixed.
-  They are being re-run on ventricle cells only (C008).
+- Earlier mixed-chamber checks were re-run on ventricle cells (C008). The null, rank-depth and
+  doublet conclusions stand; the Hr11 reading changed to ambient RNA. Per-gene depth flags in the
+  ventricle are still open.
 - Whether the four states exist as separable programs in these cells. The tests lack power
   (4 control hearts), and their sensitivity is not validated.
 - Doublets: one method's threshold failed.

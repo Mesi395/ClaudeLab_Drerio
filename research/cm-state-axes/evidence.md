@@ -176,6 +176,17 @@ Append-only. Each author uses its own IDs: SUP-E* for the supervisor, R-E* for t
   - F1 holds within ventricle cells.
 - Limits: unthinned scores; the crude per-cell heart grouping; no null comparison.
 
+## SUP-E13: supervisor check of C008 (2026-11-07 16:42 CET)
+
+- Command: `uv run python -I research/cm-state-axes/checks/c008b_verify.py data/clean/hu2022_cm_allgenes_sanitized.h5ad results/c005_agent_labels.csv`.
+  Output: `research/cm-state-axes/checks/c008b_verify.out`.
+- Results, ventricle cells:
+  - Disjoint sets without *nppa* and *nppb*: pairwise median rho 0.085, 0.083, 0.121 over 19
+    libraries.
+  - Hr11 against control ventricle cells by Hr11 depth quintile: *nppa* excess of +1.42 to +2.02
+    molecules per cell, at ratios of 4.37–7.62×; *myh6* 3.93–21.28×; *hbba1.1* 0.55–1.24×.
+- Limits: the chamber call itself uses *myh6*; no empty droplets; one seed.
+
 ## R-E1: leakage guard and sanitised copy (2026-11-07 15:00 CET, researcher)
 
 - Code: `src/zf/io.py::sanitize_h5ad`, test `tests/test_io_sanitize.py` (written first; failed on
@@ -413,3 +424,15 @@ Append-only. Each author uses its own IDs: SUP-E* for the supervisor, R-E* for t
   `..._probe.json` (log in `results/c007_exploratory_noCMid/`, exit 0). No pass.
 - Reproduced: after a style-only lint fix to `tails()`, a rerun into /tmp gave byte-identical
   `c007_positive_control.csv` and `c007_heart_tails.csv`.
+
+## R-E21: C008 re-run of the checks within ventricle cells (2026-11-07 16:39 CET onward)
+
+- Rules fixed at 16:38, before computing: `cycles/C008/reading-rules.md`. Marker sets read from
+  `proposals/loop/` (moved there by the team's commit 4cc9e9d).
+- Command: `uv run python scripts/c008_probe.py data/clean/hu2022_cm_allgenes_sanitized.h5ad proposals/loop results`
+  (log `results/c008_probe.log`).
+- Outputs: `results/c008_ties_by_library.csv`, `c008_null_by_library.csv`,
+  `c008_program_by_library.csv`, `c008_ambient_ventricle.csv`, and `c008_summary.json`
+  (provenance in its `meta` field).
+- Result: exit 0 at 16:40. 14,024 ventricle cells, 19 libraries, 18 hearts. Reproduced: a rerun
+  (after removing one unused variable) gave byte-identical per-library tables.
