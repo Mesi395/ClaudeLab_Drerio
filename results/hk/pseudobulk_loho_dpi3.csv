@@ -1,0 +1,9 @@
+left_out,degs,top_up_jaccard_vs_full,top_up
+H5,24,0.45161290322580644,CT027638.1;zgc:158463;aplp2;NC-002333.17;per3;tns1b;plecb;her6;pdk2a;spock3;FO704772.1;tnrc6a;BX323861.3;ppp1r10;nrarpa
+H6,21,0.41935483870967744,zgc:158463;CT027638.1;pdk2a;aplp2;NC-002333.17;acsl1b;spock3;her6;plecb;per3;chd5;FO704772.1;myom1b;tnrc6a
+H7,44,0.5405405405405406,rrad;zbtb16a;zgc:158463;aplp2;CT027638.1;her6;spock3;NC-002333.17;c6.1;NC-002333.4;krt8;eef2b;pdk2a;FO704772.1;tnrc6a;myh7bb;ppp1r10;appa;uba52;acsl1b;rpl31;CU929145.2;myom1b;plecb;per3;itm2bb;h1fx
+H8,37,0.59375,zgc:158463;aplp2;pdk2a;CT027638.1;acsl1b;NC-002333.17;per3;her6;vwf;FO704772.1;tnrc6a;zbtb16a;plecb;tns1b;appa;myom1b;nrarpa;spock3;ppp1r10;cdkn1a;nedd4l
+Hr11,27,0.30303030303030304,CT027638.1;zgc:158463;NC-002333.17;FO704772.1;aplp2;acsl1b;pdk2a;rrad;tnrc6a;chd5;NC-002333.4;myh7l;actc1a.1
+Hr12,69,0.5,zgc:158463;NC-002333.17;CT027638.1;aplp2;her6;NC-002333.4;myom1b;FO704772.1;plecb;vwf;spock3;BX548011.2;ppp1r10;rrad;appa;tnrc6a;bag3;pdk2a;per3;perp;ahnak;chd5;zbtb16a;angptl4;f8;acsl1b;myh7bb;CU929145.2;klf11b;si:dkey-4p15.3
+Hr24,63,0.42857142857142855,zgc:158463;CT027638.1;her6;spock3;aplp2;pdk2a;acsl1b;per3;nrarpa;tnrc6a;loxl1;agrn;f8;appa;nid1a;foxo1a;plecb;c6.1;tns1b;NC-002333.17;itm2bb;zbtb16a;dll4;fstl1b;jcada;errfi1a;thbs1b;mapk14b;slc22a31;myom1b
+Hr27,86,0.5,aplp2;myh7bb;pdk2a;mt-co1;nrarpa;zgc:158463;actc1a.1;per3;appa;plecb;c6.1;NC-002333.17;CU929145.2;NC-002333.4;fstl1b;agrn;ppp1r10;perp;her4.2;ahnak;zbtb16a;cpt1ab;CABZ01072309.1;thbs1b;rrad;FO704772.1;mt-atp8;cdh2;acsl1b;cpt1b
