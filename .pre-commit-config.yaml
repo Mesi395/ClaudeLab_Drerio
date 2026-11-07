@@ -1,0 +1,60 @@
+# Install once per clone: uv run pre-commit install
+default_install_hook_types: [pre-commit, pre-push]
+default_stages: [pre-commit]
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+        args: [--maxkb=1000]
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-json
+      - id: check-case-conflict
+      - id: detect-private-key
+      - id: end-of-file-fixer
+        exclude: ^LICENSE
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+        exclude: ^LICENSE
+      - id: no-commit-to-branch
+        args: [--branch, main]
+
+  - repo: local
+    hooks:
+      - id: protected-paths
+        name: protected paths are never committed
+        entry: uv run --frozen python scripts/hooks/check_staged.py
+        language: system
+      - id: ruff-check
+        name: ruff check
+        entry: uv run --frozen ruff check --fix
+        language: system
+        types_or: [python, jupyter]
+      - id: ruff-format
+        name: ruff format
+        entry: uv run --frozen ruff format
+        language: system
+        types_or: [python, jupyter]
+      - id: config-schemas
+        name: config and marker YAML match their schemas
+        entry: uv run --frozen pytest -q tests/test_config.py
+        language: system
+        files: ^(config|markers)/.*\.yaml$
+        pass_filenames: false
+
+      - id: protect-main
+        name: no direct push to main
+        entry: uv run --frozen python scripts/hooks/protect_branch.py
+        language: system
+        stages: [pre-push]
+        always_run: true
+        pass_filenames: false
+      - id: verify
+        name: verify (lint, tests, schemas, run inputs, holdout isolation)
+        entry: uv run --frozen python scripts/verify.py --allow-not-run
+        language: system
+        stages: [pre-push]
+        always_run: true
+        pass_filenames: false

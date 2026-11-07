@@ -1,2 +1,5 @@
 holdout/
 .env
+.env.*
+*.pem
+*.key

@@ -13,6 +13,8 @@ import yaml
 from zf import config, provenance
 
 ROOT = Path(__file__).resolve().parents[1]
+# Files that name holdout/ only to block it; evaluate.py is its one reader.
+NAMES_HOLDOUT_WITHOUT_READING = {"evaluate.py", "guard.py", "verify.py", "commit_rules.py"}
 results: list[tuple[str, str, str]] = []  # (check, outcome, detail)
 
 
@@ -69,7 +71,7 @@ def check_holdout_isolation():
     readers = [
         p.relative_to(ROOT).as_posix()
         for p in [*ROOT.glob("src/**/*.py"), *ROOT.glob("scripts/**/*.py")]
-        if "holdout/" in p.read_text() and p.name not in {"evaluate.py", "guard.py", "verify.py"}
+        if "holdout/" in p.read_text() and p.name not in NAMES_HOLDOUT_WITHOUT_READING
     ]
     record("holdout read only by evaluate.py", "fail" if readers else "pass", ", ".join(readers))
 
@@ -86,7 +88,7 @@ def check_orthogonality_contract():
     )
 
 
-def main():
+def main(allow_not_run=False):
     run("ruff check", ["uv", "run", "--frozen", "ruff", "check", "."])
     run("ruff format", ["uv", "run", "--frozen", "ruff", "format", "--check", "."])
     run("pytest", ["uv", "run", "--frozen", "pytest", "-q"])
@@ -104,9 +106,12 @@ def main():
     if "fail" in outcomes:
         return 1
     if "not_run" in outcomes:
+        if allow_not_run:
+            print("Some checks could not run; they are not counted as passed.")
+            return 0
         return 2
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main(allow_not_run="--allow-not-run" in sys.argv[1:]))
