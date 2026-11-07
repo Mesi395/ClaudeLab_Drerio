@@ -1,10 +1,9 @@
 """Data loading: counts, metadata and per-cell technical covariates.
 
-`build()` runs once: it reads the processed AnnData from the data owner, keeps an allowlist of
-technical metadata, moves every other per-cell column (the authors' published annotation and
-their clustering) to the held-out folder, and writes the label-free copy to data/. Analysis code
-calls `load()`, which only ever opens the label-free copy and joins the per-cell flags written
-by `zf.confounds`.
+`build()` reads the team's stripped file from `scripts/make_agent_input.py` (raw counts plus an
+allowlist of technical columns; the labelled original stays with its owner), adds per-cell
+covariates and the heart mapping, and writes the analysis copy to data/. Analysis code calls
+`load()`, which opens that copy and joins the per-cell flags written by `zf.confounds`.
 """
 
 import os
@@ -19,17 +18,11 @@ from zf import config
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = Path(os.environ.get("ZF_DATA", ROOT / "data"))
-SOURCE = Path(
-    os.environ.get(
-        "ZF_SOURCE_H5AD", DATA / "onedrive" / "Hu2022_CM_Ctrl_CMonly_processed_allgenes.h5ad"
-    )
-)
+SOURCE = Path(os.environ.get("ZF_SOURCE_H5AD", DATA / "processed" / "cardiomyocytes.h5ad"))
 LABEL_FREE = DATA / "cm_labelfree.h5ad"
 FLAGS = DATA / "derived" / "cm_flags.tsv"
-HELD_OUT = ROOT / "holdout"  # io.py writes it once in build(); only evaluate.py reads it
 
-# Metadata kept from the source file. Everything else is held out. An allowlist, so a column
-# added upstream can never leak into the analysis copy by default.
+# Metadata kept from the stripped file (the same allowlist as make_agent_input.KEEP_OBS).
 KEEP = {
     "orig.ident": "orig_ident",
     "nCount_RNA": "ncount_source",
@@ -86,12 +79,10 @@ def va_accuracy(obs: pd.DataFrame) -> pd.DataFrame:
 def build(source: Path = SOURCE) -> ad.AnnData:
     a = ad.read_h5ad(source)
     libs = library_table()
-    HELD_OUT.mkdir(exist_ok=True)
-    a.obs.drop(columns=list(KEEP)).to_csv(HELD_OUT / "cm_published_annotation.tsv", sep="\t")
 
     obs = a.obs[list(KEEP)].rename(columns=KEEP)
     obs["orig_ident"] = obs["orig_ident"].astype(str)
-    counts = sp.csr_matrix(a.layers["counts"])
+    counts = sp.csr_matrix(a.X)  # the stripped file stores raw counts in X
     total = np.asarray(counts.sum(1)).ravel()
     mito = np.asarray(a.var_names.str.startswith("mt-"))
     obs["total_counts"] = total
