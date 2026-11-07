@@ -149,6 +149,15 @@ Append-only. Each author uses its own IDs: SUP-E* for the supervisor, R-E* for t
 - Limits: the MOESM5 = SD2 mapping is inferred from the file order and the sheet contents (R-E19).
   Li 2025 used resection and a newer annotation.
 
+## SUP-E11: supervisor check of C007, cell-cycle signal per heart (2026-11-07 16:10 CET)
+
+- Command: `uv run python -I research/cm-state-axes/checks/c007_verify.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers/li2025_sd2_sets.tsv results/c005_agent_labels.csv results/c001_library_qc.csv`.
+  Output: `research/cm-state-axes/checks/c007_verify.out`.
+- Results: share of ventricle cells with ≥2 genes of the Li SD2 proliferating set detected:
+  Hr9 0.0296, Hr8 0.0104, the other 7 dpi hearts ≤0.0037, controls ≤0.0023. After thinning: Hr9
+  0.0068, Hr8 0.0044.
+- Limits: a detection count, not expression; one seed for thinning.
+
 ## R-E1: leakage guard and sanitised copy (2026-11-07 15:00 CET, researcher)
 
 - Code: `src/zf/io.py::sanitize_h5ad`, test `tests/test_io_sanitize.py` (written first; failed on

@@ -138,3 +138,11 @@ Append-only. One entry per result, decision or exchange with the team, with the 
 - Rules fixed first: [research/cm-state-axes/cycles/C007/reading-rules.md](research/cm-state-axes/cycles/C007/reading-rules.md). Sets: [markers/li2025_sd2_sets.tsv](markers/li2025_sd2_sets.tsv).
 - No axis passes for either the Li or the C004 sets: [results/c007_positive_control.csv](results/c007_positive_control.csv), per heart in [results/c007_heart_tails.csv](results/c007_heart_tails.csv). The C004 passes vanish under a calibrated threshold. Hr9 and Hr8 drive most tails.
 - Report: [research/cm-state-axes/cycles/C007/report.md](research/cm-state-axes/cycles/C007/report.md), status Review requested.
+
+## 2026-11-07 16:20 CET (clock): C007 reviewed; study stops at submission, not complete
+
+- C007 (Probe of direction A, sets from Li SD2): 0 of 6 contrasts pass for either marker family ([results/c007_positive_control.csv](results/c007_positive_control.csv)).
+  The supervisor confirmed that the cell-cycle signal sits in hearts Hr9 and Hr8 ([checks/c007_verify.out](research/cm-state-axes/checks/c007_verify.out)).
+- Methodology and findings for submission: [docs/findings-report.md](docs/findings-report.md).
+- Status: **not complete**. Restart point: direction C or a validated positive control, after FU-1 and FU-7. See [cycles/C007/review.md](research/cm-state-axes/cycles/C007/review.md).
+
