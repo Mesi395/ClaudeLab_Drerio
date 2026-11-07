@@ -1,16 +1,87 @@
 # Candidate markers: injury-responsive (early, activated) cardiomyocytes.
-# Status: draft for Eme's review. Symbols checked against GRCz11 release 92 (GEO Hr11 features).
-state: injury_responsive
+# Written by humans and the markers lane; the loop only appends to flags.
+schema: zf.markers/v1
+axis: injury_responsive
+annotation: GRCz11, Ensembl release 92 (Cell Ranger 3.0.2, Hu et al. 2022)
 genes:
-  - {gene: tnfrsf11b, source: "https://doi.org/10.1038/s41467-025-59070-0", evidence: "Stereo-seq, scRNA, FISH (Li 2025)", caveat: "resection model"}
-  - {gene: hspb6, source: "https://doi.org/10.1038/s41467-025-59070-0", evidence: "Stereo-seq, scRNA (Li 2025)", caveat: "resection model"}
-  - {gene: hspb11, source: "https://doi.org/10.1038/s41467-025-59070-0", evidence: "Stereo-seq, scRNA (Li 2025)", caveat: "resection model"}
-  - {gene: klf1, source: "https://doi.org/10.1126/science.abe2762", evidence: "myocardial loss and gain of function (Ogawa 2021)", caveat: "likely low counts in 10x data"}
-# AP-1 genes are kept apart: dissociation induces them. Score them as a separate axis
-# and compare uninjured libraries before using them as an injury marker.
-dissociation_sensitive:
-  - {gene: jun, source: "https://doi.org/10.1161/CIRCRESAHA.119.316167"}
-  - {gene: junba, source: "https://doi.org/10.1161/CIRCRESAHA.119.316167"}
-  - {gene: junbb, source: "https://doi.org/10.1161/CIRCRESAHA.119.316167"}
-  - {gene: fosab, source: "https://doi.org/10.1038/s41467-025-59169-4"}
-  - {gene: fosl1a, source: "https://doi.org/10.1038/s41467-025-59169-4"}
+- symbol: tnfrsf11b
+  ensembl: ENSDARG00000098377
+  role: core
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: Stereo-seq, scRNA, FISH (Li 2025)
+  caveat: resection model
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: hspb6
+  ensembl: ENSDARG00000077236
+  role: core
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: Stereo-seq, scRNA (Li 2025)
+  caveat: resection model
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: hspb11
+  ensembl: ENSDARG00000002204
+  role: core
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: Stereo-seq, scRNA (Li 2025)
+  caveat: resection model
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: klf1
+  ensembl: ENSDARG00000017400
+  role: core
+  source: https://doi.org/10.1126/science.abe2762
+  evidence: myocardial loss and gain of function (Ogawa 2021)
+  caveat: likely low counts in 10x data
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: jun
+  ensembl: ENSDARG00000043531
+  role: dissociation_sensitive
+  source: https://doi.org/10.1161/CIRCRESAHA.119.316167
+  evidence: ''
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: junba
+  ensembl: ENSDARG00000074378
+  role: dissociation_sensitive
+  source: https://doi.org/10.1161/CIRCRESAHA.119.316167
+  evidence: ''
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: junbb
+  ensembl: ENSDARG00000104773
+  role: dissociation_sensitive
+  source: https://doi.org/10.1161/CIRCRESAHA.119.316167
+  evidence: ''
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: fosab
+  ensembl: ENSDARG00000031683
+  role: dissociation_sensitive
+  source: https://doi.org/10.1038/s41467-025-59169-4
+  evidence: ''
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: fosl1a
+  ensembl: ENSDARG00000015355
+  role: dissociation_sensitive
+  source: https://doi.org/10.1038/s41467-025-59169-4
+  evidence: ''
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []

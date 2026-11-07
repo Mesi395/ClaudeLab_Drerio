@@ -33,6 +33,14 @@ If you see its contents, the agreement check is void: say so in `JOURNAL.md`.
 - Never type a number into prose. Quote it from a file in `results/` and link the file.
 - Report a check that could not run as "not run", never as "passed".
 
+## Configuration
+
+- `config/dataset.yaml`, `config/axes.yaml` and `config/checks.yaml` are written by humans. Never edit them.
+  Propose a change in `JOURNAL.md` instead.
+- `config/loop.yaml` sets the goal, the stop rules and which paths you may write.
+- Every run writes `results/runs/<run_id>/manifest.yaml` through `zf.provenance.write_manifest`.
+- `uv run pytest` validates every YAML file against `src/zf/config.py`.
+
 ## Markers
 
 - Every marker gene in `markers/*.yaml` carries a source: a DOI, or a result file from this repository.

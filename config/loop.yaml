@@ -1,0 +1,24 @@
+# How the research loop runs and when it stops. Written by the loop lane.
+schema: zf.loop/v1
+goal: >
+  Every axis in config/axes.yaml has an outcome for every check in config/checks.yaml,
+  recorded in results/runs/<run_id>/manifest.yaml, and JOURNAL.md says which markers were flagged and why.
+stop_when:
+  - every_check_has_outcome   # pass, flag or not_run, for every axis
+  - wall_clock: "16:15"       # feature freeze
+  - max_iterations: 20
+dev_subsample:
+  cells: 2000
+  seed: 0
+state_files:
+  tasks: TASKS.md
+  prompt: PROMPT.md
+  journal: JOURNAL.md
+loop_may_write:
+  - results/
+  - JOURNAL.md
+  - TASKS.md
+  - PROMPT.md
+  - markers/*.yaml: flags only
+loop_must_not_read:
+  - holdout/

@@ -1,0 +1,42 @@
+# What we score, and what biology says each score should do.
+# Expectations are direction tests between conditions, never values: they survive recalibration.
+# Status "proposed" until Eme confirms; a confirmed expectation is frozen for the run.
+schema: zf.axes/v1
+axes:
+  - name: injury_responsive
+    markers: markers/injury_responsive.yaml
+    score_roles: [core]
+    expect:
+      - {higher: dpi_3, than: uninjured, status: proposed, basis: "Li 2025: activated domain appears within hours of injury"}
+  - name: border_zone
+    markers: markers/border_zone.yaml
+    score_roles: [core]
+    expect:
+      - {higher: dpi_7, than: uninjured, status: proposed, basis: "Honkoop 2019: nppa+ border zone at 7 dpi"}
+      - {higher: dpi_7, than: dpi_30, status: proposed, basis: "border zone resolves as regeneration completes"}
+  - name: dedifferentiated
+    markers: markers/dedifferentiated.yaml
+    score_roles: [core]
+    expect:
+      - {higher: dpi_3, than: uninjured, status: proposed, basis: "Hu 2022: ttn.2 cardiomyocytes increase by 3 dpi"}
+  - name: proliferating
+    markers: markers/proliferating.yaml
+    score_roles: [core, ortholog_mapping_ours]
+    expect:
+      - {higher: dpi_7, than: uninjured, status: proposed, basis: "Honkoop 2019: PCNA+ cardiomyocytes after cryoinjury"}
+
+# Scored like the axes, but used only to test them.
+controls:
+  - name: ambient_fibroblast
+    purpose: "Fibroblast genes inside cardiomyocytes measure ambient RNA or doublets"
+    genes:
+      - {symbol: col1a1a, ensembl: ENSDARG00000012405}
+      - {symbol: col1a2, ensembl: ENSDARG00000020007}
+      - {symbol: postnb, ensembl: ENSDARG00000104267}
+      - {symbol: dcn, ensembl: ENSDARG00000012066}
+  - name: dissociation
+    purpose: "Immediate-early genes induced by tissue dissociation"
+    from_roles: [dissociation_sensitive]
+  - name: library_size_suspect
+    purpose: "Hu 2022 dedifferentiation markers; hypothesised to track depth"
+    from_roles: [library_size_suspect]
