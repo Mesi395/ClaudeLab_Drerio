@@ -11,51 +11,51 @@ versions:
   anndata: 0.13.4
   numpy: 2.5.4
 inputs:
-- path: /srv/hemang/build/zebrafish/repo/data/cm_labelfree.h5ad
+- path: data/cm_labelfree.h5ad
   sha256: 49f63f83357167ca6be7af870d4e3e42352d16ac0e0e34743088b7a53c82f1c3
-- path: /srv/hemang/build/zebrafish/repo/data/raw/H5_filtered_matrix.h5
+- path: data/raw/H5_filtered_matrix.h5
   sha256: 5b9db32f2a39b3ee03ba3be022349ae8c8b4ae7bdf6fa63bb872c9fc005ba0d1
-- path: /srv/hemang/build/zebrafish/repo/data/raw/H6_filtered_matrix.h5
+- path: data/raw/H6_filtered_matrix.h5
   sha256: eeb387a35d12daa179ef46da08bff836b3c487be07f10cd396622f1ffd5b316b
-- path: /srv/hemang/build/zebrafish/repo/data/raw/H7_filtered_matrix.h5
+- path: data/raw/H7_filtered_matrix.h5
   sha256: 6d0e83e5b6f43b54d768aa34e02cbd448e284ff804013b7fc7b36a5ce264a9da
-- path: /srv/hemang/build/zebrafish/repo/data/raw/H8a_filtered_matrix.h5
+- path: data/raw/H8a_filtered_matrix.h5
   sha256: 441befdc12cd3e915d6c8f8c875f76259a3e8682bcdfde62997726ea516239f8
-- path: /srv/hemang/build/zebrafish/repo/data/raw/H8v_filtered_matrix.h5
+- path: data/raw/H8v_filtered_matrix.h5
   sha256: e2dc4734e3188ed73be792ddd17ba4d01484161864f776b91672fe1f88345412
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr1_filtered_matrix.h5
+- path: data/raw/Hr1_filtered_matrix.h5
   sha256: 37d9dd95df39303d1ef8ae932f0dde16bf98e394f1772ef8eb6aa57d09ae9806
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr2b_filtered_matrix.h5
+- path: data/raw/Hr2b_filtered_matrix.h5
   sha256: 85c8165c32b5b335c843f253ac77b85e561f2429cd6d33adae06c1e676d96aaa
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr2a_filtered_matrix.h5
+- path: data/raw/Hr2a_filtered_matrix.h5
   sha256: 8c5d60ae945b26197931d3c854fc8ed583fea055e8ed308ee5acbc2973d2773f
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr6a_filtered_matrix.h5
+- path: data/raw/Hr6a_filtered_matrix.h5
   sha256: 80c61419f9085ed42ed88d56c90d4c0b086cd5095e8ee2a57ffd000403a9d85e
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr6v_filtered_matrix.h5
+- path: data/raw/Hr6v_filtered_matrix.h5
   sha256: f773845772fec4e3c4c7787d3bab0c17d270bcad90348d7e5372e39022d25342
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr7a_filtered_matrix.h5
+- path: data/raw/Hr7a_filtered_matrix.h5
   sha256: f6716d251d835ec09ee6f9a2341e1cb8f5b30e6142cbde3166a5004d81cc47d8
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr7v_filtered_matrix.h5
+- path: data/raw/Hr7v_filtered_matrix.h5
   sha256: fe290e523ab940a59619d9b97ba4e6811aaee6bc340f40797b0d689d9af10af2
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr8_filtered_matrix.h5
+- path: data/raw/Hr8_filtered_matrix.h5
   sha256: d01c3ad5d017077751bbd6b6ba323c8ab52f466e7803f215d6d1830d6a9c94a4
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr9_filtered_matrix.h5
+- path: data/raw/Hr9_filtered_matrix.h5
   sha256: 75326c2b0e390747763817d235f5df01d6deb59c0f5ac36d01225f38cdc230b9
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr13_filtered_matrix.h5
+- path: data/raw/Hr13_filtered_matrix.h5
   sha256: 0bafccd1192419748bbf24bac9575d9bf9b88cae7de79cc8e6ce23d4782141ad
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr3_filtered_matrix.h5
+- path: data/raw/Hr3_filtered_matrix.h5
   sha256: f4df3b4491383977a094628a85efdb429919bacb3a249a3b7748e53191a5d044
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr4_filtered_matrix.h5
+- path: data/raw/Hr4_filtered_matrix.h5
   sha256: 4b7b998487fb6fcd930b06d0315cc93d837f30633a688fdf96f068377f86da7f
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr19_filtered_matrix.h5
+- path: data/raw/Hr19_filtered_matrix.h5
   sha256: 4f018112eef1e31194b695739176d2495cca0fe3036c6105b2f8d179d740fcef
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr11_filtered_matrix.h5
+- path: data/raw/Hr11_filtered_matrix.h5
   sha256: 680ba5177608130984b286217b39c2c8e900e38b55772c50a302c31997188c29
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr12_filtered_matrix.h5
+- path: data/raw/Hr12_filtered_matrix.h5
   sha256: 8c681266365a6346690e7e16f18948ebdc4fefd25dbd2c5e98854e85c2ea374a
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr24_filtered_matrix.h5
+- path: data/raw/Hr24_filtered_matrix.h5
   sha256: 32da6724fa24a3b1bab58fa09f9b445813092ddc16bb2a54aba8a5c10db83305
-- path: /srv/hemang/build/zebrafish/repo/data/raw/Hr27_filtered_matrix.h5
+- path: data/raw/Hr27_filtered_matrix.h5
   sha256: d93affa5538a4d7a920bead01adc3a6a14ea97189c9f47433bcae87e61f07223
 params:
   seed: 0
