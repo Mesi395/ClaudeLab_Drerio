@@ -36,6 +36,10 @@ wrote tested code and ran the analyses.
    - Atrium cells score 5–10× higher than ventricle cells of the same heart (H8 0.679 vs 0.068,
      [check](../research/cm-state-axes/checks/c003_verify.out)).
    - Hearts differ widely in their share of atrium cells, which hides any injury signal.
+   - **Inside the ventricle**, the border, injury and dedifferentiated scores behave largely as one
+     *nppa*-led signal: median within-library rho with the *nppa* share alone 0.52–0.58, against
+     0.22 with depth ([check](../research/cm-state-axes/checks/c008_verify.out)). The ranking
+     method's extra depth tie holds there too (19 of 19 libraries).
 3. **Once depth and chamber are controlled, no marker set shows the predicted rise after injury**
    above random genes: 0 of 6 tests, for both the original and the improved Li 2025 marker sets
    ([results/c007_positive_control.csv](../results/c007_positive_control.csv)).
@@ -58,6 +62,8 @@ wrote tested code and ran the analyses.
 
 ## What is not established
 
+- Several earlier checks (null, depth flags, ambient, doublets) were run on both chambers mixed.
+  They are being re-run on ventricle cells only (C008).
 - Whether the four states exist as separable programs in these cells. The tests lack power
   (4 control hearts), and their sensitivity is not validated.
 - Doublets: one method's threshold failed.

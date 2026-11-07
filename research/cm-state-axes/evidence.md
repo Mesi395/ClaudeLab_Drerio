@@ -156,6 +156,26 @@ Append-only. Each author uses its own IDs: SUP-E* for the supervisor, R-E* for t
   0.0068, Hr8 0.0044.
 - Limits: a detection count, not expression; one seed for thinning.
 
+## SUP-E12: what the axes track within ventricle cells (2026-11-07 16:37 CET)
+
+- Prompted by the user's question: what do the markers mark inside the ventricle?
+- Command: `uv run python -I research/cm-state-axes/checks/c008_verify.py data/clean/hu2022_cm_allgenes_sanitized.h5ad results/c005_agent_labels.csv`.
+  Output: `research/cm-state-axes/checks/c008_verify.out`.
+- Scope: 14,024 ventricle-called cells; 19 libraries with at least 50 of them.
+- Results, median within-library Spearman rho:
+  - border, injury and dedifferentiated score_genes against the *nppa* share alone: 0.521, 0.577,
+    0.524;
+  - the same three against log10 depth: 0.215, 0.227, 0.232;
+  - the same three against the mito share including NC: −0.130, −0.131, −0.150;
+  - proliferating against depth, mito and *nppa*: 0.036, −0.037, −0.019.
+- Results, border UCell against depth: 0.437, larger than score_genes in 19 of 19 libraries.
+- Results, heart explains 0.261 of the cell-level variance of the border score.
+- Reading:
+  - Inside the ventricle, the three axes behave largely as one *nppa*-led axis, still partly tied
+    to depth.
+  - F1 holds within ventricle cells.
+- Limits: unthinned scores; the crude per-cell heart grouping; no null comparison.
+
 ## R-E1: leakage guard and sanitised copy (2026-11-07 15:00 CET, researcher)
 
 - Code: `src/zf/io.py::sanitize_h5ad`, test `tests/test_io_sanitize.py` (written first; failed on

@@ -160,3 +160,11 @@ Append-only. One entry per result, decision or exchange with the team, with the 
 
 - [docs/research-summary.md](docs/research-summary.md): the question, the method in brief, six findings with linked numbers, answers to the problem's questions, and what is not established. The detailed log stays in [docs/research-report.md](docs/research-report.md).
 
+## 2026-11-07 16:39 CET (clock): user question, what do the markers mark inside the ventricle? C008 assigned
+
+- Supervisor check ([checks/c008_verify.out](research/cm-state-axes/checks/c008_verify.out)):
+  - In 14,024 ventricle cells, the border, injury and dedifferentiated scores follow the *nppa* share (median rho 0.52–0.58) more than depth (0.22).
+  - Proliferating tracks neither. UCell's larger depth tie holds (19/19 libraries).
+- Gap found by the user's question (FU-9): the C002, C003 and C005 checks had been run on both chambers mixed.
+  Next: [cycles/C008/assignment.md](research/cm-state-axes/cycles/C008/assignment.md).
+
