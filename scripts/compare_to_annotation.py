@@ -25,6 +25,8 @@ import argparse
 import numpy as np
 import pandas as pd
 
+from zf.io import heart_of
+
 AXES = {"dedifferentiated": "dediff", "proliferating": "prolif"}
 RNG = np.random.default_rng(0)
 
@@ -88,8 +90,9 @@ def main() -> None:
     lab, sh, ann = read_table(args.labels), read_table(args.splithalf), read_annotation(args)
     cells = lab.index.intersection(sh.index).intersection(ann.index)
     lab, sh, ann = lab.loc[cells], sh.loc[cells], ann.loc[cells]
-    heart = pd.Index(cells).str.split("_").str[0].to_numpy()
-    print(f"cells matched: {len(cells)}  hearts: {len(set(heart))}")
+    library = pd.Index(cells).str.split("_").str[0]
+    heart = np.array([heart_of(x) for x in library])  # Hr2a/b, H8a/v, Hr6a/v, Hr7a/v are one heart each
+    print(f"cells matched: {len(cells)}  libraries: {len(set(library))}  hearts: {len(set(heart))}")
     names = ["a_ucell", "b_score", "c_half1", "d_half2", "e_annotation"]
 
     for axis, key in AXES.items():
@@ -106,7 +109,8 @@ def main() -> None:
         boots = []
         for _ in range(args.boot):  # resample hearts, not cells
             idx = np.concatenate([np.flatnonzero(heart == h) for h in RNG.choice(hs, len(hs))])
-            boots.append(np.r_[dawid_skene(X[idx])[1], dawid_skene(X[idx])[2]])
+            _, se_b, sp_b = dawid_skene(X[idx])
+            boots.append(np.r_[se_b, sp_b])
         lo, hi = np.percentile(boots, [5, 95], axis=0)
         k = len(nm)
         print(f"latent prevalence {pi:.4f}")

@@ -1,11 +1,11 @@
-cells matched: 32044  hearts: 22
+cells matched: 32044  libraries: 22  hearts: 18
 
 == dedifferentiated: labellers ['a_ucell', 'b_score', 'c_half1', 'e_annotation']; positives per labeller [448, 579, 0, 8137]
 latent prevalence 0.0245
-  a_ucell       sens 0.994 [0.987,0.997]  spec 0.9984 [0.9976,0.9992]
-  b_score       sens 0.966 [0.933,0.979]  spec 0.9999 [0.9998,0.9999]
+  a_ucell       sens 0.994 [0.987,0.997]  spec 0.9984 [0.9973,0.9991]
+  b_score       sens 0.966 [0.916,0.983]  spec 0.9999 [0.9998,0.9999]
   c_half1       sens 0.002 [0.001,0.002]  spec 1.0000 [1.0000,1.0000]
-  e_annotation  sens 0.427 [0.283,0.505]  spec 0.7504 [0.6819,0.8468]
+  e_annotation  sens 0.427 [0.264,0.474]  spec 0.7504 [0.6913,0.8834]
   depth low : sens a=1.00 b=0.97 c=0.00 e=0.36 | spec a=1.000 b=1.000 c=1.000 e=0.786
   depth mid : sens a=0.99 b=0.92 c=0.01 e=0.18 | spec a=0.997 b=1.000 c=1.000 e=0.839
   depth high: sens a=0.26 b=0.71 c=0.00 e=0.70 | spec a=1.000 b=0.998 c=1.000 e=0.629
@@ -18,15 +18,15 @@ latent prevalence 0.0245
 
 == proliferating: labellers ['a_ucell', 'b_score', 'c_half1', 'd_half2', 'e_annotation']; positives per labeller [643, 647, 5, 3, 279]
 latent prevalence 0.0273
-  a_ucell       sens 0.993 [0.980,0.997]  spec 0.9994 [0.9986,0.9998]
-  b_score       sens 0.781 [0.735,0.896]  spec 0.9976 [0.9958,0.9991]
+  a_ucell       sens 0.993 [0.978,0.997]  spec 0.9994 [0.9978,0.9998]
+  b_score       sens 0.781 [0.729,0.859]  spec 0.9976 [0.9947,0.9991]
   c_half1       sens 0.025 [0.008,0.055]  spec 1.0000 [1.0000,1.0000]
-  d_half2       sens 0.006 [0.003,0.010]  spec 1.0000 [1.0000,1.0000]
-  e_annotation  sens 0.197 [0.027,0.424]  spec 0.9965 [0.9922,0.9994]
+  d_half2       sens 0.006 [0.002,0.008]  spec 1.0000 [1.0000,1.0000]
+  e_annotation  sens 0.197 [0.050,0.350]  spec 0.9965 [0.9916,0.9993]
   depth low : sens a=1.00 b=0.99 c=0.03 d=0.01 e=0.07 | spec a=1.000 b=1.000 c=1.000 d=1.000 e=0.997
   depth mid : sens a=0.98 b=0.81 c=0.04 d=0.01 e=0.24 | spec a=0.999 b=0.996 c=1.000 d=1.000 e=0.996
   depth high: sens a=0.98 b=0.60 c=0.04 d=0.01 e=0.43 | spec a=0.994 b=0.996 c=1.000 d=1.000 e=0.997
-  annotation-positive cells: median depth / own-heart median = 1.14 (annotation-negative: 1.00)
+  annotation-positive cells: median depth / own-heart median = 1.15 (annotation-negative: 1.00)
   kappa[all  ] +0.000  n= 28227  confusion (ours+/ann+, ours+/ann-, ours-/ann+, ours-/ann-) 0.0000 0.0000 0.0031 0.9969
   kappa[30dpi] +nan  n=  4073  confusion (ours+/ann+, ours+/ann-, ours-/ann+, ours-/ann-) 0.0000 0.0000 0.0000 1.0000
   kappa[3dpi ] +nan  n=  5172  confusion (ours+/ann+, ours+/ann-, ours-/ann+, ours-/ann-) 0.0000 0.0000 0.0000 1.0000

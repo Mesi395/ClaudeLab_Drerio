@@ -42,20 +42,20 @@ Two layers.
    Five imperfect labellers per axis: (a) protocol UCell arm, (b) protocol score_genes arm on thinned counts,
    (c, d) two disjoint split-half marker sets, (e) the published annotation mapped to the axis it claims.
    EM estimates each labeller's sensitivity and specificity; 20 bootstrap resamples over hearts (not cells).
-   Run once on the ROG, 30 s, 32,044 cells, 22 hearts. Output: [results/hk/compare_to_annotation.txt](results/hk/compare_to_annotation.txt).
+   Run once on the ROG, 30 s, 32,044 cells, 22 libraries (18 hearts). Output: [results/hk/compare_to_annotation.txt](results/hk/compare_to_annotation.txt).
 
 What it says (observations, one run):
 
 | Axis | Labeller | Sensitivity [90 % heart-bootstrap] | Specificity |
 |---|---|---|---|
 | dedifferentiated | a UCell | 0.99 [0.99, 1.00] | 0.998 |
-| | b score_genes | 0.97 [0.93, 0.98] | 1.000 |
+| | b score_genes | 0.97 [0.92, 0.98] | 1.000 |
 | | c split-half 1 | 0.00 | 1.000 |
-| | e published annotation | 0.43 [0.28, 0.51] | 0.75 [0.68, 0.85] |
+| | e published annotation | 0.43 [0.26, 0.47] | 0.75 [0.69, 0.88] |
 | proliferating | a UCell | 0.99 [0.98, 1.00] | 0.999 |
-| | b score_genes | 0.78 [0.74, 0.90] | 0.998 |
+| | b score_genes | 0.78 [0.73, 0.86] | 0.998 |
 | | c / d split-half | 0.03 / 0.01 | 1.000 |
-| | e published annotation | 0.20 [0.03, 0.42] | 0.997 |
+| | e published annotation | 0.20 [0.05, 0.35] | 0.997 |
 
 How to read it, honestly:
 - **The latent class is mostly "a and b agree".** a and b share their genes, so conditional independence fails,
@@ -64,7 +64,7 @@ How to read it, honestly:
 - **The published dedifferentiated cluster disagrees with every marker-based labeller:** it holds 25 % of cells
   (8,137) against a latent prevalence of 2.5 %. Its cells sit at 1.42× their own heart's median depth
   (other cells 0.91×), and its estimated sensitivity rises from 0.18–0.36 in the low/mid depth tertiles to 0.70 in the top tertile.
-  So the cluster tracks library depth more than the marker programme. The published proliferating cluster is
+  So the cluster is enriched in deep cells; depth and biology are not separable here. The published proliferating cluster is
   small (279 cells), specific (0.997) and insensitive (0.20).
 - **Cohen's κ vs the published annotation is 0 at every timepoint**, because protocol v1 makes no
   high-confidence positive calls on either axis (dedifferentiated: 0 positive, 3,683 uncertain;
@@ -81,9 +81,10 @@ contrast (Card B), and the latent-class comparison with a heart bootstrap and de
 
 An expert should add:
 - **Evidence outside the transcriptome.** Dedifferentiation and proliferation are also marked by physical force
-  on the cell, morphology and sarcomere disassembly, protein markers (PCNA or EdU incorporation, phospho-histone H3)
+  on the cell, morphology and sarcomere disassembly (Beisaw et al. 2020, doi:10.1161/CIRCRESAHA.119.316167;
+  Jopling et al. 2010, doi:10.1038/nature08899), protein markers (PCNA or EdU incorporation, phospho-histone H3)
   and position relative to the wound. None of these is in scRNA-seq.
-- **Dissociation artefact.** The cells were dissociated with enzymes at 37 °C. Heat-shock and dissociation stress
+- **Dissociation artefact.** The cells were dissociated with enzymes at 37 °C, per the data owner. Heat-shock and dissociation stress
   vary between samples and can compound the injury stress response. Our checks separate the dissociation axis
   itself (control axis), its within-heart correlation with each state (partial correlation), and chamber-specific
   signal (ventricle-minus-atrium; only the ventricle is injured). They cannot separate the **injury × dissociation
@@ -110,7 +111,7 @@ Every analysis choice, why it was made, and its source. Generated from [docs/dec
 | Chamber: Card A's myosin call (myh7, myh7l vs myh6; vmhc is myh7 in GRCz11, confirmed by Emi 16:32) for whole-heart cells; uncertain chamber cells are left out of both strata | the multi-gene thinned chamber score was not built in time | `results/hk/va_accuracy.tsv` |
 | Emi's biology calls (16:32, 16:39): vmhc is myh7; nppa stays out of every score because it marks mainly the atrium (`ambiguous.yaml`); nppb is used in the border-zone score | domain expert decision | `results/hk/markers_v1/ambiguous.yaml`, `border_zone.yaml` |
 | Partial conjunction by Simes, REML meta-analysis, dip test and taxonomy odds ratios: not run in v1 | time | JOURNAL.md 2026-11-07 16:00 |
-| Dissociation / heat-shock control axis scored with the same protocol (Card A's cited dissociation set plus hsp70/hspa*, hsp90aa1*, dnajb1*, fos*, jun*, egr1, atf3 present in the data, minus every scored axis gene) | cells were dissociated enzymatically at 37 °C, which induces immediate-early and heat-shock genes that vary between samples and overlap the injury response | Neuschulz et al. 2022 MSB, doi:10.15252/msb.202211147; van den Brink et al. 2017 Nat Methods, doi:10.1038/nmeth.4437; domain input 2026-11-07 15:09 |
+| Dissociation / heat-shock control axis scored with the same protocol (Card A's cited dissociation set plus hsp70/hspa*, hsp90aa1*, dnajb1*, fos*, jun*, egr1, atf3 present in the data, minus every scored axis gene) | cells were dissociated enzymatically at 37 °C (per the data owner), which induces immediate-early and heat-shock genes that vary between samples and overlap the injury response | Neuschulz et al. 2022 MSB, doi:10.15252/msb.202211147; van den Brink et al. 2017 Nat Methods, doi:10.1038/nmeth.4437; domain input 2026-11-07 15:09 |
 | Injury axis judged against dissociation, never regressed on it | IEGs are also part of the real border-zone program (AP-1), so removing the dissociation score would remove biology; instead report the within-heart partial ρ (given log UMI) and the injury verdict with and without the top 10% dissociation cells per heart | `results/hk/injury_vs_dissociation.csv` |
 | Ventricle-minus-atrium contrast per heart for injury, border zone and dissociation | dissociation hits both chambers alike, a local injury response is ventricle-only | owner 15:52 + domain input 15:09; `results/hk/chamber_contrast.csv` |
 | Marker bootstrap with 5 resamples in this run, not 200 | time (16:25 cut); the metric is reported with its resample count in `results/hk/protocol_v1_summary.csv` | JOURNAL.md 2026-11-07 16:12 |
