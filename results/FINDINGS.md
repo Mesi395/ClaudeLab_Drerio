@@ -104,3 +104,24 @@ multi-gene chamber score, 200-resample bootstrap.
     dropping one leaves 7/8 of the data, so this test cannot separate signal from noise; item 14
     (permutation) carries the evidence. 7 of 10 shuffled full fits have no DEG, so DEG-based
     shuffle medians rest on 3 shuffles (sign agreement and DEG-list overlap are not comparable).
+
+17. **Per-heart set scores, exact heart relabelling** (`pseudobulk_set_score*.csv`; script
+    pre-registered in f8ebb07 before its first run). One score per ventricle heart and set; hearts,
+    not genes, are relabelled, so set genes that move together cannot inflate the result. One-sided
+    exact p (70 or 35 relabellings, floors 0.014 / 0.029), BH over the six primary sets. Raw counts:
+    - dedifferentiated: up at 3 dpi (p 0.014, q 0.043, Hedges' g 4.0), back to control level at
+      30 dpi (p 0.46), 3 > 30 dpi p 0.029 (the floor; q 0.17). The only set that formally fades;
+      nominal after BH.
+    - glycolysis (hk1, pkma, pdk2a): up at 3 dpi (p 0.014, q 0.043, g 2.2) and at 7 dpi (p 0.006);
+      30 dpi not above control (p 0.14), but 3 > 30 dpi only p 0.086, so its fade is not shown.
+    - memory border-zone core: up at 3 dpi p 0.029 (q 0.057); as high at 30 dpi (means 0.41 vs
+      0.45, 3 > 30 p 0.49, 30 > control p 0.057); without its four AP-1 genes p 0.071 at 3 dpi.
+      The dissociation control has the same shape (3 dpi 0.40, 30 dpi 0.41, control -0.42). Item 15
+      is now tested, not judged by eye: the border-zone shift separates uninjured from all injured
+      hearts and does not follow injury time.
+    - full border_zone, injury_responsive, proliferating: not shown at 3 dpi (p 0.057, 0.30, 0.086).
+    - The dissociation control, z 9.1 in the competitive test (item 13), gives p 0.14 here: the
+      competitive test overstated sets whose genes move together. Glycolysis and dedifferentiation
+      hold under both tests.
+    - Thinned to 600 UMIs: the same calls for dedifferentiated (fades) and glycolysis (3 dpi only).
+      The 30 dpi arm is 3 hearts, one with 55 cells; the 3 dpi heart Hr27 has 47 cells.
