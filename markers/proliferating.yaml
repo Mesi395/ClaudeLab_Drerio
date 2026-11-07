@@ -1,0 +1,97 @@
+state: proliferating
+status: candidate
+note: Cell-cycle genes are generic across cell types, so this axis is the best supported but also the
+  most exposed to doublets with proliferating non-myocytes and to ambient RNA.
+genes:
+- symbol: pcna
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: proliferating stage
+  resolution: stereo-seq spot
+  read: partial full text (SUP-E4)
+  evidence: R-E3
+  c002_depth:
+    median_rho_logtot: 0.089
+    background_p05_p95:
+    - 0.077
+    - 0.138
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: cdk1
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: proliferating stage
+  resolution: stereo-seq spot
+  read: partial full text (SUP-E4)
+  evidence: R-E3
+  c002_depth:
+    median_rho_logtot: 0.036
+    background_p05_p95:
+    - 0.029
+    - 0.074
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: ccng1
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: proliferating stage
+  resolution: stereo-seq spot
+  read: partial full text (SUP-E4)
+  evidence: R-E3
+  flag: cyclin G1 is a p53 target, also a stress gene; conflicting meaning
+  c002_depth:
+    median_rho_logtot: 0.135
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: ccng2
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: proliferating stage
+  resolution: stereo-seq spot
+  read: partial full text (SUP-E4)
+  evidence: R-E3
+  flag: cyclin G2 is associated with cell-cycle arrest; conflicting meaning
+  c002_depth:
+    median_rho_logtot: 0.229
+    background_p05_p95:
+    - 0.132
+    - 0.222
+    tracks_depth: true
+    direction: up_with_depth
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: foxm1
+  source: 10.1242/dev.201163
+  model: cardiac injury (type not checked)
+  time: not checked
+  resolution: transcriptome of border-zone CMs
+  read: abstract
+  evidence: R-E4
+  c002_depth:
+    median_rho_logtot: 0.039
+    background_p05_p95:
+    - -0.011
+    - 0.049
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: cenpf
+  source: 10.1242/dev.201163
+  model: cardiac injury (type not checked)
+  time: not checked
+  resolution: candidate Foxm1 target
+  read: abstract
+  evidence: R-E4
+  c002_depth:
+    median_rho_logtot: 0.032
+    background_p05_p95:
+    - 0.017
+    - 0.047
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)

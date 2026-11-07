@@ -1,0 +1,101 @@
+axis	gene	sheet	cluster	rank	avg_log2FC	pct.1	pct.2	p_val_adj	n_candidates_before_disjoint
+proliferating	tk1	scRNA-seq regeneration	Proliferating cells	1	6.9535	0.335	0.003	0.0	230
+proliferating	znfl2a	scRNA-seq regeneration	Proliferating cells	2	6.8925	0.648	0.009	0.0	230
+proliferating	zgc:110540	scRNA-seq regeneration	Proliferating cells	3	6.658	0.363	0.004	0.0	230
+proliferating	cenpf	scRNA-seq regeneration	Proliferating cells	4	6.5013	0.543	0.009	0.0	230
+proliferating	aspm	scRNA-seq regeneration	Proliferating cells	5	6.1408	0.415	0.007	0.0	230
+proliferating	si:ch211-69g19.2	scRNA-seq regeneration	Proliferating cells	6	6.1292	0.386	0.007	0.0	230
+proliferating	tpx2	scRNA-seq regeneration	Proliferating cells	7	6.0934	0.594	0.012	0.0	230
+proliferating	knstrn	scRNA-seq regeneration	Proliferating cells	8	6.0311	0.387	0.005	0.0	230
+proliferating	birc5a	scRNA-seq regeneration	Proliferating cells	9	6.0146	0.523	0.009	0.0	230
+proliferating	primpol	scRNA-seq regeneration	Proliferating cells	10	5.9257	0.44	0.007	0.0	230
+proliferating	kifc1	scRNA-seq regeneration	Proliferating cells	11	5.923	0.38	0.005	0.0	230
+proliferating	fbxo5	scRNA-seq regeneration	Proliferating cells	12	5.9218	0.372	0.005	0.0	230
+proliferating	kmt5ab	scRNA-seq regeneration	Proliferating cells	13	5.9172	0.317	0.004	0.0	230
+proliferating	plk1	scRNA-seq regeneration	Proliferating cells	14	5.9097	0.508	0.01	0.0	230
+proliferating	dlgap5	scRNA-seq regeneration	Proliferating cells	15	5.8924	0.519	0.008	0.0	230
+proliferating	cdk1	scRNA-seq regeneration	Proliferating cells	16	5.8092	0.463	0.008	0.0	230
+proliferating	ncapg	scRNA-seq regeneration	Proliferating cells	17	5.7989	0.503	0.009	0.0	230
+proliferating	nusap1	scRNA-seq regeneration	Proliferating cells	18	5.7685	0.409	0.006	0.0	230
+proliferating	ccnb1	scRNA-seq regeneration	Proliferating cells	19	5.7454	0.407	0.007	0.0	230
+proliferating	kif11	scRNA-seq regeneration	Proliferating cells	20	5.7245	0.447	0.007	0.0	230
+proliferating	zgc:86764	scRNA-seq regeneration	Proliferating cells	21	5.6777	0.35	0.006	0.0	230
+proliferating	cdca8	scRNA-seq regeneration	Proliferating cells	22	5.6679	0.445	0.008	0.0	230
+proliferating	ckap2l	scRNA-seq regeneration	Proliferating cells	23	5.6467	0.364	0.006	0.0	230
+proliferating	si:ch211-266i6.3	scRNA-seq regeneration	Proliferating cells	24	5.5947	0.287	0.004	0.0	230
+proliferating	ndc80	scRNA-seq regeneration	Proliferating cells	25	5.5843	0.347	0.005	0.0	230
+dedifferentiated	myh7	scRNA-seq regeneration	Cardiomyocytes (dediff.)	1	5.004	0.642	0.054	0.0	275
+dedifferentiated	csrp3	scRNA-seq regeneration	Cardiomyocytes (dediff.)	2	4.7037	0.792	0.073	0.0	275
+dedifferentiated	desma	scRNA-seq regeneration	Cardiomyocytes (dediff.)	3	4.4262	0.789	0.09	0.0	275
+dedifferentiated	mustn1b	scRNA-seq regeneration	Cardiomyocytes (dediff.)	4	4.4183	0.736	0.062	0.0	275
+dedifferentiated	actn2b	scRNA-seq regeneration	Cardiomyocytes (dediff.)	5	4.391	0.742	0.074	0.0	275
+dedifferentiated	myh7l	scRNA-seq regeneration	Cardiomyocytes (dediff.)	6	4.1918	0.994	0.384	2.39266348316014e-235	275
+dedifferentiated	bcam	scRNA-seq regeneration	Cardiomyocytes (dediff.)	7	4.0698	0.289	0.032	2.01225509441837e-151	275
+dedifferentiated	rnf207b	scRNA-seq regeneration	Cardiomyocytes (dediff.)	8	4.0689	0.318	0.039	1.20620844559787e-140	275
+dedifferentiated	tnni4a	scRNA-seq regeneration	Cardiomyocytes (dediff.)	9	4.0468	0.874	0.094	0.0	275
+dedifferentiated	nppa	scRNA-seq regeneration	Cardiomyocytes (dediff.)	10	3.966	0.78	0.1	0.0	275
+dedifferentiated	myh7bb	scRNA-seq regeneration	Cardiomyocytes (dediff.)	11	3.9505	0.387	0.04	6.04477785762787e-218	275
+dedifferentiated	mylk2	scRNA-seq regeneration	Cardiomyocytes (dediff.)	12	3.9451	0.431	0.049	3.1592587988887e-217	275
+dedifferentiated	nmrk2	scRNA-seq regeneration	Cardiomyocytes (dediff.)	13	3.9408	0.553	0.056	0.0	275
+dedifferentiated	obscnb	scRNA-seq regeneration	Cardiomyocytes (dediff.)	14	3.8913	0.336	0.037	2.69904202465392e-175	275
+dedifferentiated	myl7	scRNA-seq regeneration	Cardiomyocytes (dediff.)	15	3.8885	1.0	0.502	2.87281962913626e-204	275
+dedifferentiated	casq2	scRNA-seq regeneration	Cardiomyocytes (dediff.)	16	3.8515	0.786	0.08	0.0	275
+dedifferentiated	tnni1b	scRNA-seq regeneration	Cardiomyocytes (dediff.)	17	3.8354	0.965	0.178	0.0	275
+dedifferentiated	smpx	scRNA-seq regeneration	Cardiomyocytes (dediff.)	18	3.8143	0.645	0.07	0.0	275
+dedifferentiated	mybpc3	scRNA-seq regeneration	Cardiomyocytes (dediff.)	19	3.8029	0.928	0.135	0.0	275
+dedifferentiated	pgam2	scRNA-seq regeneration	Cardiomyocytes (dediff.)	20	3.8002	0.704	0.074	0.0	275
+dedifferentiated	myom2a	scRNA-seq regeneration	Cardiomyocytes (dediff.)	21	3.7953	0.553	0.066	1.64730521381251e-275	275
+dedifferentiated	trim63a	scRNA-seq regeneration	Cardiomyocytes (dediff.)	22	3.7909	0.371	0.046	4.6819002722713e-168	275
+dedifferentiated	actc1a	scRNA-seq regeneration	Cardiomyocytes (dediff.)	23	3.7355	0.972	0.192	0.0	275
+dedifferentiated	gmpr	scRNA-seq regeneration	Cardiomyocytes (dediff.)	24	3.7033	0.346	0.049	4.86545803071011e-133	275
+dedifferentiated	ldb3a	scRNA-seq regeneration	Cardiomyocytes (dediff.)	25	3.6854	0.689	0.077	0.0	275
+injury_responsive	tnfrsf11b	Stereo-seq regeneration	1:BZm (activ.)	1	3.3243	0.56	0.044	0.0	59
+injury_responsive	nppb	Stereo-seq regeneration	1:BZm (activ.)	2	2.8182	0.933	0.371	0.0	59
+injury_responsive	hspb11	Stereo-seq regeneration	1:BZm (activ.)	3	2.7291	0.965	0.507	0.0	59
+injury_responsive	flnca	Stereo-seq regeneration	1:BZm (activ.)	4	2.6744	0.64	0.158	0.0	59
+injury_responsive	rln3a	Stereo-seq regeneration	1:BZm (activ.)	5	2.2162	0.293	0.02	0.0	59
+injury_responsive	hspb9	Stereo-seq regeneration	1:BZm (activ.)	6	2.2057	0.28	0.019	0.0	59
+injury_responsive	hspb6	Stereo-seq regeneration	1:BZm (activ.)	7	2.0821	0.649	0.197	0.0	59
+injury_responsive	kcnh6a	Stereo-seq regeneration	1:BZm (activ.)	8	1.642	0.522	0.17	1.28693834400387e-199	59
+injury_responsive	slc38a3b	Stereo-seq regeneration	1:BZm (activ.)	9	1.0766	0.25	0.116	1.09332430687164e-37	59
+injury_responsive	nme2b.2	Stereo-seq regeneration	1:BZm (activ.)	10	1.0261	0.786	0.545	4.54709751867053e-92	59
+injury_responsive	vegfab	Stereo-seq regeneration	1:BZm (activ.)	11	0.9526	0.232	0.113	2.8953380206453e-30	59
+injury_responsive	map7d3	Stereo-seq regeneration	1:BZm (activ.)	12	0.921	0.21	0.1	2.09776841053077e-28	59
+injury_responsive	c7b	Stereo-seq regeneration	1:BZm (activ.)	13	0.8885	0.2	0.046	1.10794363531496e-106	59
+injury_responsive	eci2	Stereo-seq regeneration	1:BZm (activ.)	14	0.7966	0.23	0.118	1.7433541051881e-25	59
+injury_responsive	enah	Stereo-seq regeneration	1:BZm (activ.)	15	0.7894	0.229	0.13	1.05946783263746e-17	59
+injury_responsive	atp1a3b	Stereo-seq regeneration	1:BZm (activ.)	16	0.7796	0.417	0.255	4.32841832253403e-33	59
+injury_responsive	pdlim5b	Stereo-seq regeneration	1:BZm (activ.)	17	0.7132	0.611	0.435	8.85799429763101e-39	59
+injury_responsive	gcga	Stereo-seq regeneration	1:BZm (activ.)	18	0.6948	0.21	0.06	3.49784726183656e-76	59
+injury_responsive	synpo2lb	Stereo-seq regeneration	1:BZm (activ.)	19	0.6367	0.512	0.387	1.43490129568423e-19	59
+injury_responsive	pdk2a	Stereo-seq regeneration	1:BZm (activ.)	20	0.6206	0.29	0.175	1.34783636896075e-19	59
+injury_responsive	atp2a2a	Stereo-seq regeneration	1:BZm (activ.)	21	0.577	0.669	0.523	5.31520419531264e-31	59
+injury_responsive	fndc3ba	Stereo-seq regeneration	1:BZm (activ.)	22	0.556	0.215	0.123	4.48365757115878e-15	59
+injury_responsive	stard7	Stereo-seq regeneration	1:BZm (activ.)	23	0.5527	0.22	0.126	1.33206699239041e-15	59
+injury_responsive	gapdh	Stereo-seq regeneration	1:BZm (activ.)	24	0.5517	0.994	0.931	6.32060149328194e-104	59
+injury_responsive	myoz2b	Stereo-seq regeneration	1:BZm (activ.)	25	0.5353	0.294	0.192	1.64512901763618e-13	59
+border_zone_like	ACTC1	Stereo-seq regeneration	1:BZm (activ.);2:BZm (dediff.);3:BZm (dediff.-prolif.);4:BZm (prolif.)	1	1.6312	0.7050000000000001	0.26625	5.61911398197918e-118	54
+border_zone_like	acta1a	Stereo-seq regeneration	1:BZm (activ.);3:BZm (dediff.-prolif.);4:BZm (prolif.);5:BZm (re-diff.)	2	1.3859	0.6055	0.24325	8.8428008574998e-64	54
+border_zone_like	rrad	Stereo-seq regeneration	1:BZm (activ.);2:BZm (dediff.);5:BZm (re-diff.)	3	1.2567	0.45133333333333336	0.18266666666666667	3.97159905932858e-52	54
+border_zone_like	xirp1	Stereo-seq regeneration	1:BZm (activ.);2:BZm (dediff.);4:BZm (prolif.)	4	1.2012	0.4566666666666667	0.132	2.01788627999329e-35	54
+border_zone_like	aldoab	Stereo-seq regeneration	3:BZm (dediff.-prolif.);4:BZm (prolif.);5:BZm (re-diff.)	5	0.86	0.7200000000000001	0.408	1.48098180895941e-25	54
+border_zone_like	ndufa4	Stereo-seq regeneration	2:BZm (dediff.);3:BZm (dediff.-prolif.);4:BZm (prolif.);5:BZm (re-diff.)	6	0.7992	0.4925	0.218	1.35952573312913e-13	54
+border_zone_like	cox6a2	Stereo-seq regeneration	1:BZm (activ.);4:BZm (prolif.);5:BZm (re-diff.)	7	0.7956	0.8936666666666667	0.676	1.5030966798385e-16	54
+border_zone_like	acta1b	Stereo-seq regeneration	1:BZm (activ.);3:BZm (dediff.-prolif.);4:BZm (prolif.);5:BZm (re-diff.)	8	0.7327	0.96875	0.8015000000000001	5.70925695868887e-82	54
+border_zone_like	CT027980.1	Stereo-seq regeneration	1:BZm (activ.);2:BZm (dediff.);4:BZm (prolif.);5:BZm (re-diff.)	9	0.6904	0.3415	0.1365	4.95700997536802e-19	54
+border_zone_like	tnnc1a	Stereo-seq regeneration	1:BZm (activ.);4:BZm (prolif.);5:BZm (re-diff.)	10	0.6705	0.7996666666666666	0.5373333333333333	1.36831062222972e-06	54
+border_zone_like	acadvl	Stereo-seq regeneration	1:BZm (activ.);2:BZm (dediff.);5:BZm (re-diff.)	11	0.618	0.5710000000000001	0.3986666666666667	2.41388466491277e-21	54
+border_zone_like	tnnt2a	Stereo-seq regeneration	3:BZm (dediff.-prolif.);4:BZm (prolif.);5:BZm (re-diff.)	12	0.6153	0.9226666666666666	0.7113333333333333	6.2666379119874e-15	54
+border_zone_like	cmlc1	Stereo-seq regeneration	1:BZm (activ.);4:BZm (prolif.);5:BZm (re-diff.)	13	0.6114	0.9886666666666667	0.896	3.87634251181129e-54	54
+border_zone_like	cyc1	Stereo-seq regeneration	2:BZm (dediff.);4:BZm (prolif.);5:BZm (re-diff.)	14	0.5938	0.49533333333333335	0.21433333333333335	1.40847219227579e-18	54
+border_zone_like	ndufa4l	Stereo-seq regeneration	1:BZm (activ.);3:BZm (dediff.-prolif.);4:BZm (prolif.);5:BZm (re-diff.)	15	0.5719	0.77675	0.5645	1.21877533868659e-08	54
+border_zone_like	atp5fa1	Stereo-seq regeneration	2:BZm (dediff.);4:BZm (prolif.);5:BZm (re-diff.)	16	0.5621	0.7863333333333333	0.5243333333333333	4.91855796558905e-17	54
+border_zone_like	myom1b	Stereo-seq regeneration	3:BZm (dediff.-prolif.);4:BZm (prolif.);5:BZm (re-diff.)	17	0.5594	0.6270000000000001	0.32266666666666666	1.1100597785241e-06	54
+border_zone_like	idh2	Stereo-seq regeneration	1:BZm (activ.);3:BZm (dediff.-prolif.);4:BZm (prolif.);5:BZm (re-diff.)	18	0.5521	0.768	0.55225	1.25923634538209e-08	54
+border_zone_like	atp5f1b	Stereo-seq regeneration	3:BZm (dediff.-prolif.);4:BZm (prolif.);5:BZm (re-diff.)	19	0.5418	0.8610000000000001	0.6333333333333333	1.90925657533084e-12	54
+border_zone_like	pfkmb	Stereo-seq regeneration	2:BZm (dediff.);4:BZm (prolif.);5:BZm (re-diff.)	20	0.5165	0.3773333333333333	0.156	0.000191623514375939	54
+border_zone_like	atp5mc3a	Stereo-seq regeneration	2:BZm (dediff.);4:BZm (prolif.);5:BZm (re-diff.)	21	0.5116	0.592	0.3313333333333333	7.66608792317962e-18	54
+border_zone_like	bves	Stereo-seq regeneration	3:BZm (dediff.-prolif.);4:BZm (prolif.);5:BZm (re-diff.)	22	0.4813	0.5636666666666666	0.30033333333333334	1.2917948958067e-06	54
+border_zone_like	ldb3b	Stereo-seq regeneration	3:BZm (dediff.-prolif.);4:BZm (prolif.);5:BZm (re-diff.)	23	0.4625	0.682	0.40599999999999997	6.2879560362805e-08	54
+border_zone_like	vdac2	Stereo-seq regeneration	1:BZm (activ.);2:BZm (dediff.);3:BZm (dediff.-prolif.);4:BZm (prolif.);5:BZm (re-diff.)	24	0.4568	0.713	0.5136000000000001	1.01231673158406e-06	54
+border_zone_like	ndrg4	Stereo-seq regeneration	2:BZm (dediff.);4:BZm (prolif.);5:BZm (re-diff.)	25	0.4492	0.5946666666666666	0.3363333333333334	1.12625033790272e-06	54

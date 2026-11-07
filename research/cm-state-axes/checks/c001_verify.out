@@ -1,0 +1,43 @@
+top-level keys: ['X', 'layers', 'obs', 'obsm', 'obsp', 'uns', 'var', 'varm', 'varp']
+obs keys: ['AV', '_index', 'morphine', 'nCount_RNA', 'nFeature_RNA', 'orig.ident', 'percent.mito', 'time']
+var keys: ['dispersions', 'dispersions_norm', 'gene', 'highly_variable', 'highly_variable_intersection', 'highly_variable_nbatches', 'means']
+uns keys: []
+obsm keys: []
+obsp keys: []
+varm keys: []
+layers keys: ['counts']
+label-like HDF5 paths: ['obs/orig.ident', 'obs/orig.ident/categories', 'obs/orig.ident/codes']
+integer counts: True | shape (32044, 18794)
+
+C8 median total counts per CM, lowest 6:
+ Hr11    659.0
+Hr7a    689.0
+Hr2b    751.0
+Hr2a    752.0
+H8v     776.0
+H6      795.0
+highest 3:
+ Hr24    1157.5
+Hr12    1165.5
+Hr3     2317.0
+C9 nppa Hr11: detected in 0.7706 of cells; median share of cell UMIs 0.00301
+C9 nppa H7: detected in 0.5612 of cells; median share of cell UMIs 0.00075
+C9 ttn.2 Hr11: detected in 0.6197 of cells; median share of cell UMIs 0.00140
+C9 ttn.2 H7: detected in 0.2882 of cells; median share of cell UMIs 0.00000
+
+myosin heavy chain symbols (gene, detected fraction, share of all UMIs):
+  myh7l        0.4772 0.00136
+  myh6         0.3168 0.00103
+  myh7         0.0340 0.00007
+  myh10        0.0562 0.00005
+  myh14        0.0557 0.00004
+  myh7bb       0.0407 0.00003
+  myh7ba       0.0387 0.00003
+  myh11a       0.0105 0.00001
+  myh9b        0.0019 0.00000
+  myh9a        0.0015 0.00000
+  myhz2        0.0001 0.00000
+  myhb         0.0000 0.00000
+  myhc4        0.0000 0.00000
+
+top 15 genes by total counts: [('NC-002333.4', np.float32(0.0582)), ('myl7', np.float32(0.0398)), ('mt-co2', np.float32(0.0347)), ('cmlc1', np.float32(0.0246)), ('mt-co3', np.float32(0.022)), ('mt-atp6', np.float32(0.019)), ('slc25a5', np.float32(0.0169)), ('CR383676.1', np.float32(0.0167)), ('mt-cyb', np.float32(0.0157)), ('gapdh', np.float32(0.0144)), ('mt-co1', np.float32(0.0106)), ('mb', np.float32(0.0102)), ('RPL41', np.float32(0.0099)), ('tpm4a', np.float32(0.0093)), ('hbba1.1', np.float32(0.0088))]

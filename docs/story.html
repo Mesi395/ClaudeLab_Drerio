@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The story of our project, step by step</title>
+<style>
+.viz-root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface-1: #fcfcfb;
+  --text-primary: #0b0b0b; --text-secondary: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10);
+  --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --normal: #b9b8b1;
+  --wash: rgba(42,120,214,0.10); --lock: #d03b3b;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) .viz-root {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface-1: #1a1a19;
+    --text-primary: #f0efec; --text-secondary: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --normal: #5a5955;
+    --wash: rgba(57,135,229,0.14);
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.viz-root {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--page); color: var(--text-primary);
+  min-height: 100vh; line-height: 1.55;
+}
+header { position: sticky; top: 0; z-index: 5; background: var(--page);
+  border-bottom: 1px solid var(--border); padding: 10px 20px; }
+.top { max-width: 920px; margin: 0 auto; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.top h1 { font-size: 15px; margin: 0; font-weight: 600; flex: 1; min-width: 200px; }
+.dots { display: flex; gap: 5px; flex-wrap: wrap; }
+.dot { width: 26px; height: 26px; border-radius: 13px; border: 1px solid var(--axis);
+  background: var(--surface-1); color: var(--text-secondary); font-size: 11px; cursor: pointer; padding: 0; }
+.dot.done { background: var(--wash); color: var(--text-primary); }
+.dot.on { background: var(--s1); color: #fff; border-color: var(--s1); }
+.bar { height: 3px; background: var(--grid); margin-top: 8px; max-width: 920px; margin-inline: auto; border-radius: 2px; }
+.bar > div { height: 3px; background: var(--s1); border-radius: 2px; transition: width .3s; }
+main { max-width: 920px; margin: 0 auto; padding: 24px 20px 120px; }
+section.step { display: none; }
+section.step.on { display: block; animation: in .35s ease; }
+@keyframes in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.kicker { color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; margin: 0 0 4px; }
+h2 { font-size: 28px; line-height: 1.2; margin: 0 0 14px; }
+h3 { font-size: 17px; margin: 22px 0 8px; }
+p { margin: 0 0 12px; font-size: 17px; }
+.lead { font-size: 19px; color: var(--text-secondary); }
+.card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 18px; margin: 16px 0; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+@media (max-width: 700px) { .grid2, .grid3 { grid-template-columns: 1fr; } h2 { font-size: 23px; } }
+.key { background: var(--wash); border-radius: 10px; padding: 12px 16px; margin: 16px 0; font-size: 16px; }
+.key b { display: block; margin-bottom: 2px; }
+.note { font-size: 13px; color: var(--muted); margin-top: 8px; }
+.toy { display: inline-block; font-size: 12px; color: var(--text-secondary); border: 1px solid var(--axis);
+  border-radius: 10px; padding: 1px 8px; margin-bottom: 8px; }
+.real { display: inline-block; font-size: 12px; color: var(--text-primary); background: var(--wash);
+  border-radius: 10px; padding: 1px 8px; margin-bottom: 8px; }
+button.act { font: inherit; font-size: 15px; padding: 8px 14px; border-radius: 8px; border: 1px solid var(--axis);
+  background: var(--surface-1); color: var(--text-primary); cursor: pointer; margin: 4px 6px 4px 0; }
+button.act:hover { background: var(--wash); }
+button.act.sel { background: var(--s1); color: #fff; border-color: var(--s1); }
+nav.foot { position: fixed; bottom: 0; left: 0; right: 0; background: var(--page); border-top: 1px solid var(--border); padding: 12px 20px; }
+nav.foot .in { max-width: 920px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+nav.foot button { font: inherit; font-size: 16px; padding: 10px 20px; border-radius: 8px; cursor: pointer;
+  border: 1px solid var(--axis); background: var(--surface-1); color: var(--text-primary); }
+nav.foot button.next { background: var(--s1); color: #fff; border-color: var(--s1); }
+nav.foot button:disabled { opacity: .35; cursor: default; }
+.hint { font-size: 13px; color: var(--muted); }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 14px; color: var(--text-secondary); margin: 8px 0; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--grid); vertical-align: top; }
+th { color: var(--text-secondary); font-weight: 600; font-size: 13px; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.gene { font-style: italic; }
+.timeline { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin: 16px 0; }
+@media (max-width: 700px) { .timeline { grid-template-columns: 1fr; } }
+.tl { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 12px; cursor: pointer; }
+.tl:hover, .tl.sel { background: var(--wash); }
+.tl .em { font-size: 26px; }
+.tl .t { font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 6px; }
+.tl .d { font-size: 13px; color: var(--text-secondary); }
+#tlDetail { min-height: 70px; }
+.tip { position: fixed; pointer-events: none; background: var(--surface-1); color: var(--text-primary);
+  border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; font-size: 13px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.12); display: none; z-index: 20; max-width: 260px; }
+svg text { fill: var(--text-secondary); font-family: inherit; }
+.big { font-size: 40px; font-weight: 600; line-height: 1.1; }
+.label { font-size: 13px; color: var(--text-secondary); }
+input[type=range] { width: 100%; accent-color: var(--s1); }
+.plan li { margin-bottom: 10px; font-size: 16px; }
+.status { font-size: 12px; border-radius: 10px; padding: 1px 8px; margin-left: 6px; border: 1px solid var(--axis); color: var(--text-secondary); }
+.status.now { background: var(--s1); color: #fff; border-color: var(--s1); }
+.analogy { display: flex; gap: 12px; align-items: flex-start; }
+.analogy .em { font-size: 30px; line-height: 1; }
+dl.gl dt { font-weight: 600; margin-top: 10px; }
+dl.gl dd { margin: 2px 0 0 0; color: var(--text-secondary); }
+</style>
+</head>
+<body class="viz-root">
+
+<header>
+  <div class="top">
+    <h1>Our project, as a story</h1>
+    <div class="dots" id="dots"></div>
+  </div>
+  <div class="bar"><div id="progress"></div></div>
+</header>
+
+<main>
+
+<!-- 0 -->
+<section class="step" data-title="The question">
+  <p class="kicker">Step 1 · The big question</p>
+  <h2>Can an AI work out what each heart cell is doing, when nobody can give it the answer?</h2>
+  <p class="lead">This page tells the story one step at a time. Use <b>Next</b> (or the → key) to move on.
+    Nothing here assumes you know biology.</p>
+  <div class="card">
+    <div class="grid3">
+      <div class="analogy"><div class="em">🐟</div><div><b>The animal</b><br>A zebrafish can regrow damaged heart muscle. We can't.</div></div>
+      <div class="analogy"><div class="em">🔬</div><div><b>The data</b><br>RNA measured in tens of thousands of single heart muscle cells, before and after an injury.</div></div>
+      <div class="analogy"><div class="em">🕵️</div><div><b>The puzzle</b><br>Which cells are doing which repair job? No cell comes with a label.</div></div>
+    </div>
+  </div>
+  <div class="key"><b>One sentence to keep in mind</b>We use genes as <i>clues</i> to work out what each cell is doing,
+    test which clues can be trusted, and do it all without an answer key.</div>
+</section>
+
+<!-- 1 -->
+<section class="step" data-title="The fish">
+  <p class="kicker">Step 2 · The animal</p>
+  <h2>A fish that heals its own heart</h2>
+  <p>Scientists freeze a small spot of the zebrafish heart with a cold probe. This is called <b>cryoinjury</b>.
+    The muscle cells in that spot die and a wound forms. Over the following weeks the fish rebuilds the muscle.</p>
+  <div class="card">
+    <svg viewBox="0 0 760 210" width="100%" role="img" aria-label="Heart healing over time: uninjured, wound at day 3, repair at day 7, mostly healed at day 30">
+      <g id="hearts"></g>
+    </svg>
+    <p class="note">Drawing, not data. The days match the samples in our dataset: uninjured, and 3, 7 and 30 days after the injury.</p>
+  </div>
+  <div class="key"><b>Why it matters</b>When a human heart is damaged, for example in a heart attack, the muscle becomes scar and never comes back.
+    Understanding how the fish does it could one day help people.</div>
+</section>
+
+<!-- 2 -->
+<section class="step" data-title="Genes and RNA">
+  <p class="kicker">Step 3 · Inside a cell</p>
+  <h2>Same genes in every cell, but different ones switched on</h2>
+  <div class="grid2">
+    <div class="card">
+      <div class="analogy"><div class="em">📚</div><div>
+        <b>DNA is a cookbook.</b> Every cell in the fish has the <i>same</i> cookbook, with roughly 20,000 recipes (genes).</div></div>
+    </div>
+    <div class="card">
+      <div class="analogy"><div class="em">📄</div><div>
+        <b>RNA is a photocopy of a recipe in use.</b> When a cell uses a gene, it makes RNA copies of it. More copies means the gene is switched on more strongly.</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <svg viewBox="0 0 760 170" width="100%" role="img" aria-label="Cookbook to RNA copies diagram">
+      <rect x="20" y="40" width="130" height="90" rx="10" fill="var(--wash)" stroke="var(--axis)"/>
+      <text x="85" y="80" text-anchor="middle" font-size="15" style="fill:var(--text-primary)">DNA</text>
+      <text x="85" y="100" text-anchor="middle" font-size="12">the same in every cell</text>
+      <path d="M160 85 H240" stroke="var(--axis)" stroke-width="2" marker-end="url(#arr)"/>
+      <text x="200" y="74" text-anchor="middle" font-size="12">gene used</text>
+      <g id="copies"></g>
+      <path d="M520 85 H600" stroke="var(--axis)" stroke-width="2" marker-end="url(#arr)"/>
+      <text x="560" y="74" text-anchor="middle" font-size="12">we count</text>
+      <rect x="610" y="40" width="130" height="90" rx="10" fill="var(--surface-1)" stroke="var(--axis)"/>
+      <text x="675" y="78" text-anchor="middle" font-size="15" style="fill:var(--text-primary)">gene A: 7</text>
+      <text x="675" y="100" text-anchor="middle" font-size="15" style="fill:var(--text-primary)">gene B: 2</text>
+      <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="var(--axis)"/></marker></defs>
+    </svg>
+  </div>
+  <div class="key"><b>So</b>Looking at which RNA a cell holds tells us which genes it is using, and so, roughly, what it is busy doing.</div>
+</section>
+
+<!-- 3 -->
+<section class="step" data-title="How we measure">
+  <p class="kicker">Step 4 · The measurement</p>
+  <h2>Reading one cell at a time, as a snapshot</h2>
+  <p>The method is called <b>single-cell RNA sequencing</b>. The heart is taken apart into single cells. Each cell's RNA is read
+    and counted separately, so every cell gets its own row of numbers.</p>
+  <div class="card">
+    <span class="toy">Made-up example rows</span>
+    <table>
+      <thead><tr><th>Cell</th><th>Sample, day</th><th class="num">gene A</th><th class="num">gene B</th><th class="num">gene C</th><th class="num">… 18,794 genes</th></tr></thead>
+      <tbody>
+        <tr><td>cell 1</td><td>uninjured</td><td class="num">12</td><td class="num">0</td><td class="num">3</td><td class="num">…</td></tr>
+        <tr><td>cell 2</td><td>7 days</td><td class="num">4</td><td class="num">2</td><td class="num">0</td><td class="num">…</td></tr>
+        <tr><td>cell 3</td><td>7 days</td><td class="num">9</td><td class="num">0</td><td class="num">1</td><td class="num">…</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="key"><b>The catch: measuring destroys the cell</b>A cell can be read only once. Uninjured, day 3, day 7 and day 30 are <i>different fish and
+    different cells</i>. We get four snapshots, never a film of one cell changing.</div>
+  <div class="card">
+    <div class="analogy"><div class="em">🏃</div><div>Think of four photos of a marathon taken at four moments. Each photo shows a different crowd.
+      You can't follow one runner from photo to photo.</div></div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="step" data-title="Our data">
+  <p class="kicker">Step 5 · Our dataset</p>
+  <h2>32,044 heart muscle cells from 22 samples</h2>
+  <p>Our data comes from Hu et al. (2022), from the Junker lab in Berlin. It holds only the heart <b>muscle</b> cells
+    (cardiomyocytes), taken from fish at four moments.</p>
+  <div class="card">
+    <span class="real">Real numbers</span>
+    <div style="font-weight:600;margin-bottom:2px">Cells per moment</div>
+    <div class="label">Hover a bar for details.</div>
+    <svg id="countChart" viewBox="0 0 760 230" width="100%" role="img" aria-label="Bar chart of cells per timepoint"></svg>
+    <button class="act" id="tblBtn">Show as table</button>
+    <div id="countTable" style="display:none"></div>
+    <p class="note">Source: <code>docs/problem.md</code> (the problem slide). The data file has the same per-sample counts
+      (<code>research/cm-state-axes/evidence.md</code>, SUP-E2).</p>
+  </div>
+  <div class="key"><b>Remember this</b>A "sample" is one heart (or part of one) measured in one run. Samples differ in how well they were measured,
+    and that will matter later.</div>
+</section>
+
+<!-- 5 -->
+<section class="step" data-title="Only a handful">
+  <p class="kicker">Step 6 · The big measurement problem</p>
+  <h2>We catch only a handful of each cell's RNA</h2>
+  <p>The authors report catching only about <b>1,600 RNA molecules per muscle cell</b> (<code>docs/data.md</code>).
+    That is a small, random handful from everything in the cell. Common RNAs almost always end up in the handful.
+    Rare ones are often missed, even when the gene is switched on.</p>
+  <div class="card">
+    <span class="toy">Toy simulation, made-up numbers</span>
+    <p style="font-size:15px">This imaginary cell <b>has its marker gene switched on</b>, but only 1 in every 2,000 of its RNA molecules comes from that gene.
+      Pull a handful and see whether we notice.</p>
+    <label class="label" for="catch">RNA molecules caught per cell: <b id="catchVal">1600</b></label>
+    <input id="catch" type="range" min="200" max="6000" step="100" value="1600">
+    <div style="margin-top:8px">
+      <button class="act" id="grab1">Catch RNA from 1 cell</button>
+      <button class="act" id="grab100">Catch RNA from 100 such cells</button>
+    </div>
+    <div id="jarOut" style="margin-top:10px;font-size:16px;min-height:60px"></div>
+    <svg id="jarDots" viewBox="0 0 760 60" width="100%" aria-hidden="true"></svg>
+  </div>
+  <div class="key"><b>The lesson</b>A zero does not mean "switched off". It can mean "switched on, but missed".
+    With a smaller handful (a badly measured sample), we miss even more. Try sliding to 400.</div>
+</section>
+
+<!-- 6 -->
+<section class="step" data-title="States">
+  <p class="kicker">Step 7 · What "state" means</p>
+  <h2>Type is what a cell <i>is</i>. State is what it is <i>doing</i>.</h2>
+  <div class="card">
+    <div class="analogy"><div class="em">🧑‍🚒</div><div>A firefighter is always a firefighter (the <b>type</b>). But at any moment they can be sleeping,
+      on alert, fighting a fire or training a recruit (the <b>state</b>). All our cells are the same type: heart muscle cells.
+      We want to know their states.</div></div>
+  </div>
+  <h3>The healing story, as the textbook tells it</h3>
+  <p class="label">Click each step.</p>
+  <div class="timeline" id="timeline"></div>
+  <div class="card" id="tlDetail"></div>
+  <div class="key"><b>Not proven</b>This neat order is the common picture. Whether real cells go through it step by step,
+    or do several at once, is one of our open questions.</div>
+</section>
+
+<!-- 7 -->
+<section class="step" data-title="No name tags">
+  <p class="kicker">Step 8 · The core problem</p>
+  <h2>The cells come with no name tags</h2>
+  <p>Here are 160 cells from one heart at day 7. We know they are muscle cells and which day they come from.
+    We do <b>not</b> know which state each one is in. That is what we have to work out.</p>
+  <div class="card">
+    <button class="act" id="revealBtn">Imagine we could see the states</button>
+    <div class="legend" id="revealLegend" style="visibility:hidden"></div>
+    <svg id="crowd" viewBox="0 0 760 200" width="100%" role="img" aria-label="Grid of cells, unlabelled"></svg>
+    <p class="note" id="revealNote">What we really have: grey cells, no labels.</p>
+  </div>
+  <div class="key"><b>Chicken and egg</b>To find the clue genes for "dividing", you need to know which cells divide.
+    To know which cells divide, you need the clue genes. Nobody has a trusted list to break the circle. That is what
+    "no ground truth" means.</div>
+</section>
+
+<!-- 8 -->
+<section class="step" data-title="Marker genes">
+  <p class="kicker">Step 9 · The clues</p>
+  <h2>Marker genes: clues reported by earlier papers</h2>
+  <p>A <b>marker gene</b> is a gene that earlier studies reported as switched on in a certain state. They are
+    <b>suspects, not proven facts</b>: each paper used other fish, another kind of injury or another method.</p>
+  <div class="card">
+    <span class="real">Examples from papers we have opened</span>
+    <table>
+      <thead><tr><th>State</th><th>Example marker genes</th><th>Reported by</th></tr></thead>
+      <tbody id="markerRows"></tbody>
+    </table>
+    <p class="note">Li et al. 2025 cut off part of the heart instead of freezing it, and measured tissue spots holding several cells, not single cells.
+      Our first research step collects the full list, with a source for every gene.</p>
+  </div>
+  <div class="key"><b>Notice</b><span class="gene">nppa</span> and <span class="gene">nppb</span> appear for more than one state. One gene alone often can't tell states apart,
+    so we use a <i>group</i> of marker genes per state.</div>
+</section>
+
+<!-- 9 -->
+<section class="step" data-title="Fake clues">
+  <p class="kicker">Step 10 · Why clues can mislead</p>
+  <h2>Some marker genes are fakes</h2>
+  <p>The problem slide warns that one published "dedifferentiation" marker mostly follows <b>how much RNA was caught</b>,
+    not biology. Our AI should find such fakes on its own. Here is how a fake can arise.</p>
+  <div class="grid2">
+    <div class="card"><b>🌑 Depth</b><br>Some samples catch less RNA per cell, like a photo taken in poor light. Among our muscle cells, the day-3 sample
+      <b>Hr11</b> is the darkest: a median of 659 RNA molecules per cell. Four other samples are close (689–776), and the brightest, Hr3, has 2,317
+      (<code>results/c001_library_qc.csv</code>).</div>
+    <div class="card"><b>👯 Doublets</b><br>Sometimes two cells are captured as one. Their RNAs mix, so the "cell" looks like it does two jobs.</div>
+    <div class="card"><b>🌫️ Ambient RNA</b><br>Stray RNA from broken cells floats in the liquid and sticks to other cells. A muscle cell can show genes it never used.</div>
+    <div class="card"><b>🔀 Shared genes</b><br>A gene used in several states, or in healthy cells too, can't point to one state.</div>
+  </div>
+  <div class="card">
+    <span class="toy">Toy illustration, made-up cells</span>
+    <div style="font-weight:600">How a fake marker can look like an injury response</div>
+    <div class="legend"><span><i class="sw" style="background:var(--s1)"></i>cells from well-measured samples</span>
+      <span><i class="sw" style="background:var(--s2)"></i>cells from a dark day-3 sample</span></div>
+    <svg id="depthChart" viewBox="0 0 760 280" width="100%" role="img" aria-label="Toy scatter: fake marker score falls with RNA caught"></svg>
+    <p style="font-size:15px">This toy score goes <b>down</b> when less RNA is caught. All the cells from the dark day-3 sample sit low, so it looks
+      as if day 3 changed the cells. Really only the measurement changed. The test is to compare cells <i>within</i> one sample.</p>
+  </div>
+</section>
+
+<!-- 10 -->
+<section class="step" data-title="Scoring">
+  <p class="kicker">Step 11 · Solving the puzzle</p>
+  <h2>Every cell gets four scores</h2>
+  <p>For each state, we take its group of marker genes and ask: how strongly does this cell use them, compared with other genes?
+    That gives each cell a score from low to high on each of the four states.</p>
+  <div class="card">
+    <span class="toy">Toy cells, made-up scores</span>
+    <div><button class="act sel" data-cell="0">Cell A</button><button class="act" data-cell="1">Cell B</button><button class="act" data-cell="2">Cell C</button></div>
+    <div class="grid2" style="margin-top:8px">
+      <div><div style="font-weight:600">Method 1: average, compared with a reference</div>
+        <div class="label">scanpy <code>score_genes</code></div><svg id="sc1" viewBox="0 0 360 170" width="100%"></svg></div>
+      <div><div style="font-weight:600">Method 2: ranking</div>
+        <div class="label">AUCell or UCell</div><svg id="sc2" viewBox="0 0 360 170" width="100%"></svg></div>
+    </div>
+    <p id="scText" style="font-size:15px;margin-top:6px"></p>
+  </div>
+  <div class="key"><b>Why two methods</b>They work differently. Method 1 averages the marker genes' amounts and subtracts similar genes.
+    Method 2 ranks all genes inside each cell and asks whether the markers sit near the top. If both agree, we trust the score more.
+    The ranking method is <i>less</i> sensitive to how much RNA was caught, but not completely immune: a dark cell has more zeros,
+    and that still shifts ranks. We will test this on Hr11 instead of assuming it.</div>
+</section>
+
+<!-- 11 -->
+<section class="step" data-title="Overlap?">
+  <p class="kicker">Step 12 · The biology question</p>
+  <h2>Do the states happen in the same cells, or in different ones?</h2>
+  <p>Once every cell has scores, we can plot two of them against each other. Two possible worlds:</p>
+  <div><button class="act sel" data-world="overlap">World 1: overlap</button><button class="act" data-world="separate">World 2: separate</button></div>
+  <div class="card">
+    <span class="toy">Toy cells, made-up</span>
+    <div style="font-weight:600" id="worldTitle"></div>
+    <svg id="worldChart" viewBox="0 0 760 320" width="100%" role="img" aria-label="Toy scatter of border score against dividing score"></svg>
+    <p id="worldText" style="font-size:15px"></p>
+  </div>
+  <div class="key"><b>The care needed</b>Two scores can look linked just because both follow a measurement problem (step 10),
+    or because both are high at day 7. So we compare cells within the same sample and the same day.</div>
+</section>
+
+<!-- 12 -->
+<section class="step" data-title="Answer key">
+  <p class="kicker">Step 13 · Keeping the test fair</p>
+  <h2>The expert's answer key stays locked</h2>
+  <div class="card">
+    <svg viewBox="0 0 760 170" width="100%" role="img" aria-label="Flow: AI works without answer key, human compares at the end">
+      <rect x="20" y="45" width="200" height="80" rx="12" fill="var(--wash)" stroke="var(--axis)"/>
+      <text x="120" y="80" text-anchor="middle" font-size="15" style="fill:var(--text-primary)">AI team</text>
+      <text x="120" y="102" text-anchor="middle" font-size="12">clues → scores → its answer</text>
+      <path d="M230 85 H320" stroke="var(--axis)" stroke-width="2" marker-end="url(#arr)"/>
+      <rect x="330" y="45" width="140" height="80" rx="12" fill="var(--surface-1)" stroke="var(--axis)"/>
+      <text x="400" y="80" text-anchor="middle" font-size="15" style="fill:var(--text-primary)">human</text>
+      <text x="400" y="102" text-anchor="middle" font-size="12">compares, at the end</text>
+      <path d="M570 85 H480" stroke="var(--axis)" stroke-width="2" marker-end="url(#arr)"/>
+      <rect x="580" y="45" width="160" height="80" rx="12" fill="var(--surface-1)" stroke="var(--lock)" stroke-width="2"/>
+      <text x="660" y="80" text-anchor="middle" font-size="15" style="fill:var(--text-primary)">🔒 expert labels</text>
+      <text x="660" y="102" text-anchor="middle" font-size="12">AI never sees them</text>
+    </svg>
+  </div>
+  <p>If the AI peeked at the expert's labels, the final comparison would mean nothing. We found that the data files you gave us
+    <b>contain those labels</b>. So the first thing the Researcher does is make a clean copy without them.
+    Only the column names were seen, never the labels.</p>
+  <div class="key"><b>The two questions for the humans</b>
+    1. With no ground truth, how do we decide which answer to trust?<br>
+    2. Which checks did the AI run on its own, and which would a biologist add?</div>
+</section>
+
+<!-- 13a -->
+<section class="step" data-title="First findings">
+  <p class="kicker">Step 14 · What we learned in the first round</p>
+  <h2>First findings: the clues overlap, and one sample behaves oddly</h2>
+  <p>The Researcher read the main papers and checked every suspect marker gene in our data. The supervisor re-checked the key numbers.</p>
+  <div class="grid2">
+    <div class="card"><b>1. The data is now safe to use.</b><br>A clean copy without the expert's labels exists, made by a tested script. Nobody saw the labels.</div>
+    <div class="card"><b>2. The papers' clues overlap.</b><br>The same genes (<span class="gene">nppa</span>, <span class="gene">nppb</span>, <span class="gene">mustn1b</span>)
+      are named for three different states. From the literature alone, the four states can't be cleanly told apart.</div>
+    <div class="card"><b>3. The clues are uneven.</b><br>
+      Border zone: best supported.<br>
+      Dividing: clear genes, but caught in very few cells.<br>
+      Alarm: genes found 6 hours after injury, but our first sample is day 3.<br>
+      Young again: thin; mostly described by genes going <i>down</i>.</div>
+    <div class="card"><b>4. A puzzle in sample Hr11.</b><br>It caught the <i>least</i> RNA overall, yet <span class="gene">nppa</span> takes about 4× more of each cell's
+      RNA there than in an uninjured sample. Real day-3 biology, or stray RNA? The next round tests this.</div>
+  </div>
+  <div class="card">
+    <b>5. A naming trap.</b> One gene name from a paper (<span class="gene">vmhc</span>) was matched to a gene that is almost silent in our data. The likely right match
+    is a different name (<span class="gene">myh7l</span>). Gene names change over the years, so every clue needs a name check.
+  </div>
+  <p class="note">Sources: <code>research/cm-state-axes/cycles/C001/report.md</code> and <code>review.md</code>; numbers in <code>results/c001_*.csv</code> and
+    <code>research/cm-state-axes/checks/c001_verify.out</code>.</p>
+</section>
+
+<!-- 13 -->
+<section class="step" data-title="Our plan">
+  <p class="kicker">Step 15 · Where we are</p>
+  <h2>Our plan, and where we are now</h2>
+  <div class="card">
+    <ol class="plan">
+      <li><b>Clean the data</b>: remove the answer key. <span class="status">done</span></li>
+      <li><b>Collect the clues</b>: marker genes for each state, each with a source. <span class="status">first version done</span></li>
+      <li><b>Score every cell</b> on the four states with two methods, compare against random gene groups, and check whether scores just follow depth. <span class="status now">in progress</span></li>
+      <li><b>More fake-clue tests</b>: doublets and stray (ambient) RNA. <span class="status">next</span></li>
+      <li><b>Answer the overlap question</b>: same cells or different cells? <span class="status">later</span></li>
+      <li><b>Hand over</b>: the AI's answer and the list of checks it ran, for a human to compare with the expert. <span class="status">end</span></li>
+    </ol>
+    <p class="note">Status as of 2026-11-07 15:30 CET (cycle C002). The live record is <code>research/cm-state-axes/research-map.md</code>.</p>
+  </div>
+  <div class="key"><b>What counts as success</b>Not necessarily a neat answer. "This marker gene is a fake" or "these two states can't be told apart in this data"
+    are real results, if they are honest and checked.</div>
+</section>
+
+<!-- 14 -->
+<section class="step" data-title="Words">
+  <p class="kicker">Step 16 · Word list</p>
+  <h2>The words, in plain language</h2>
+  <div class="card">
+    <dl class="gl">
+      <dt>Cardiomyocyte</dt><dd>A heart muscle cell, the cell that beats.</dd>
+      <dt>Cryoinjury</dt><dd>Damaging a spot of the heart by freezing it.</dd>
+      <dt>dpi</dt><dd>Days post injury: days after the injury.</dd>
+      <dt>Gene / RNA</dt><dd>A gene is a recipe in the DNA cookbook. RNA is a photocopy of a recipe the cell is using.</dd>
+      <dt>Single-cell RNA sequencing</dt><dd>Counting the RNA in each cell separately.</dd>
+      <dt>Sample / library</dt><dd>One heart, or part of one, measured in one run. Our data has 22.</dd>
+      <dt>Cell type vs cell state</dt><dd>What a cell is (muscle cell) vs what it is doing right now (alarmed, dividing…).</dd>
+      <dt>Injury-responsive</dt><dd>Alarm mode: reacting to the damage.</dd>
+      <dt>Border zone</dt><dd>Cells at the edge of the wound, which do the repair.</dd>
+      <dt>Dedifferentiated</dt><dd>A muscle cell that partly takes apart its beating machinery and becomes more like a young cell.</dd>
+      <dt>Proliferating</dt><dd>Dividing to make new cells.</dd>
+      <dt>Marker gene</dt><dd>A gene that earlier papers reported as switched on in a certain state. A clue, not a proof.</dd>
+      <dt>Depth (library size)</dt><dd>How much RNA was caught from a cell. Low depth means more genes are missed.</dd>
+      <dt>Doublet</dt><dd>Two cells accidentally measured as one.</dd>
+      <dt>Ambient RNA</dt><dd>Stray RNA floating in the sample that sticks to other cells.</dd>
+      <dt>Score</dt><dd>A number for how strongly a cell uses a state's marker genes.</dd>
+      <dt>Ground truth</dt><dd>A trusted answer key. We don't have one.</dd>
+    </dl>
+  </div>
+  <p class="note">Sources: Hu et al. 2022, <i>Nat Genet</i>, doi:10.1038/s41588-022-01129-5 · Li et al. 2025, <i>Nat Commun</i>, doi:10.1038/s41467-025-59070-0 ·
+    Wu et al. 2016 (tomo-seq) and Honkoop et al. 2019, as listed in <code>docs/data.md</code>.</p>
+</section>
+
+</main>
+
+<nav class="foot"><div class="in">
+  <button id="prev">← Back</button>
+  <span class="hint" id="where"></span>
+  <button id="next" class="next">Next →</button>
+</div></nav>
+<div class="tip" id="tip"></div>
+
+<script>
+(() => {
+  // ---------- navigation ----------
+  const steps = [...document.querySelectorAll('section.step')];
+  const dots = document.getElementById('dots');
+  let cur = 0;
+  steps.forEach((s, i) => {
+    const b = document.createElement('button');
+    b.className = 'dot'; b.textContent = i + 1; b.title = s.dataset.title;
+    b.onclick = () => go(i); dots.appendChild(b);
+  });
+  function go(i) {
+    cur = Math.max(0, Math.min(steps.length - 1, i));
+    steps.forEach((s, j) => s.classList.toggle('on', j === cur));
+    [...dots.children].forEach((d, j) => { d.classList.toggle('on', j === cur); d.classList.toggle('done', j < cur); });
+    document.getElementById('progress').style.width = ((cur + 1) / steps.length * 100) + '%';
+    document.getElementById('prev').disabled = cur === 0;
+    document.getElementById('next').disabled = cur === steps.length - 1;
+    document.getElementById('where').textContent = `Step ${cur + 1} of ${steps.length}: ${steps[cur].dataset.title}`;
+    history.replaceState(null, '', '#' + (cur + 1));
+    window.scrollTo({ top: 0 });
+  }
+  document.getElementById('prev').onclick = () => go(cur - 1);
+  document.getElementById('next').onclick = () => go(cur + 1);
+  document.addEventListener('keydown', e => {
+    if (e.target.tagName === 'INPUT') return;
+    if (e.key === 'ArrowRight') go(cur + 1);
+    if (e.key === 'ArrowLeft') go(cur - 1);
+  });
+
+  // ---------- helpers ----------
+  const NS = 'http://www.w3.org/2000/svg';
+  const el = (tag, attrs = {}, parent) => {
+    const n = document.createElementNS(NS, tag);
+    for (const k in attrs) n.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(n);
+    return n;
+  };
+  const tip = document.getElementById('tip');
+  const showTip = (e, html) => { tip.innerHTML = html; tip.style.display = 'block';
+    tip.style.left = Math.min(e.clientX + 14, innerWidth - 270) + 'px'; tip.style.top = (e.clientY + 14) + 'px'; };
+  const hideTip = () => { tip.style.display = 'none'; };
+  let seed = 7;
+  const rnd = () => { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; };
+  const gauss = () => { let u = 0, v = 0; while (!u) u = rnd(); while (!v) v = rnd(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); };
+  const fmt = n => n.toLocaleString('en-US');
+
+  const STATES = [
+    { key: 'alarm', name: 'Injury-responsive', short: 'alarm', color: 'var(--s1)', em: '🚨',
+      d: 'Senses the damage and switches on stress and alarm genes.',
+      more: 'Right after the injury, surviving muscle cells react: "something is wrong, get ready". Li et al. 2025 call their earliest border state "activated".' },
+    { key: 'border', name: 'Border-zone-like', short: 'border', color: 'var(--s2)', em: '🧱',
+      d: 'Sits at the wound edge and does the repair.',
+      more: 'Cells right next to the wound behave differently from those far away. Their location makes them special. Papers often name nppa and nppb for them.' },
+    { key: 'dediff', name: 'Dedifferentiated', short: 'young again', color: 'var(--s3)', em: '🔧',
+      d: 'Partly takes apart its beating machinery.',
+      more: 'A mature muscle cell is packed with machinery for beating and can\'t divide like that. So it partly takes the machinery apart and becomes more like a young cell.' },
+    { key: 'prolif', name: 'Proliferating', short: 'dividing', color: 'var(--s4)', em: '➗',
+      d: 'Divides to make new muscle cells.',
+      more: 'The loosened-up cells split into two, then four, filling the wound with new muscle. Cell-division genes such as pcna and cdk1 switch on.' },
+    { key: 'redo', name: 'Mature again', short: 'mature again', color: 'var(--normal)', em: '💓',
+      d: 'New cells rebuild their machinery and beat.',
+      more: 'The end of the story: new cells become normal beating muscle. By about 30 days the heart is largely healed. (Not one of our four scored states.)' },
+  ];
+
+  // ---------- step 2: hearts ----------
+  (() => {
+    const g = document.getElementById('hearts');
+    const labels = ['uninjured', 'day 3', 'day 7', 'day 30'];
+    const wound = [0, 30, 20, 6];
+    const repair = [0, 0, 1, 0.3];
+    labels.forEach((lab, i) => {
+      const x = 95 + i * 190, y = 95;
+      const p = `M${x} ${y + 55} C ${x - 75} ${y + 5}, ${x - 55} ${y - 60}, ${x} ${y - 25} C ${x + 55} ${y - 60}, ${x + 75} ${y + 5}, ${x} ${y + 55} Z`;
+      el('path', { d: p, fill: 'var(--wash)', stroke: 'var(--axis)', 'stroke-width': 2 }, g);
+      if (wound[i]) {
+        el('circle', { cx: x, cy: y + 30, r: wound[i] * 0.8, fill: 'var(--normal)', opacity: 0.9 }, g);
+        if (repair[i]) for (let k = 0; k < 10 * repair[i]; k++) {
+          const a = k / 10 * Math.PI * 2;
+          el('circle', { cx: x + Math.cos(a) * (wound[i] * 0.8 + 6), cy: y + 30 + Math.sin(a) * (wound[i] * 0.8 + 6), r: 4,
+            fill: 'var(--s2)', stroke: 'var(--surface-1)', 'stroke-width': 2 }, g);
+        }
+      }
+      el('text', { x, y: 192, 'text-anchor': 'middle', 'font-size': 14, style: 'fill:var(--text-primary)' }, g).textContent = lab;
+    });
+    const t = el('text', { x: 475, y: 22, 'text-anchor': 'middle', 'font-size': 12 }, g);
+    t.textContent = 'grey spot = wound · orange dots = repairing cells at the wound edge';
+  })();
+
+  // ---------- step 3: copies ----------
+  (() => {
+    const g = document.getElementById('copies');
+    for (let i = 0; i < 7; i++) el('rect', { x: 255 + (i % 4) * 32, y: 48 + Math.floor(i / 4) * 22, width: 24, height: 16, rx: 3, fill: 'var(--s1)' }, g);
+    for (let i = 0; i < 2; i++) el('rect', { x: 255 + i * 32, y: 104, width: 24, height: 16, rx: 3, fill: 'var(--s2)' }, g);
+    el('text', { x: 400, y: 62, 'font-size': 12 }, g).textContent = 'gene A copies';
+    el('text', { x: 330, y: 117, 'font-size': 12 }, g).textContent = 'gene B copies';
+  })();
+
+  // ---------- step 5: cell counts (real) ----------
+  (() => {
+    const data = [
+      { k: 'Uninjured', n: 7048, libs: 'H5, H6, H7, H8a, H8v', nl: 5 },
+      { k: '3 days after', n: 6185, libs: 'Hr11, Hr12, Hr24, Hr27', nl: 4 },
+      { k: '7 days after', n: 14094, libs: 'Hr1, Hr13, Hr2a, Hr2b, Hr6a, Hr6v, Hr7a, Hr7v, Hr8, Hr9', nl: 10 },
+      { k: '30 days after', n: 4717, libs: 'Hr19, Hr3, Hr4', nl: 3 },
+    ];
+    const svg = document.getElementById('countChart');
+    const x0 = 130, x1 = 660, max = 15000, sx = v => x0 + (x1 - x0) * v / max;
+    [0, 5000, 10000, 15000].forEach(v => {
+      el('line', { x1: sx(v), x2: sx(v), y1: 10, y2: 200, stroke: 'var(--grid)', 'stroke-width': 1 }, svg);
+      el('text', { x: sx(v), y: 220, 'text-anchor': 'middle', 'font-size': 12, style: 'font-variant-numeric:tabular-nums' }, svg).textContent = v ? (v / 1000) + 'K' : '0';
+    });
+    el('line', { x1: x0, x2: x0, y1: 10, y2: 200, stroke: 'var(--axis)', 'stroke-width': 1 }, svg);
+    data.forEach((d, i) => {
+      const y = 22 + i * 46, w = sx(d.n) - x0;
+      el('text', { x: x0 - 10, y: y + 16, 'text-anchor': 'end', 'font-size': 14, style: 'fill:var(--text-primary)' }, svg).textContent = d.k;
+      el('path', { d: `M${x0} ${y} H${x0 + w - 4} Q${x0 + w} ${y} ${x0 + w} ${y + 4} V${y + 20} Q${x0 + w} ${y + 24} ${x0 + w - 4} ${y + 24} H${x0} Z`, fill: 'var(--s1)' }, svg);
+      el('text', { x: x0 + w + 8, y: y + 17, 'font-size': 13, style: 'fill:var(--text-primary)' }, svg).textContent = fmt(d.n);
+      const hit = el('rect', { x: x0, y: y - 8, width: x1 - x0 + 60, height: 40, fill: 'transparent', style: 'cursor:default' }, svg);
+      hit.addEventListener('mousemove', e => showTip(e, `<b>${d.k}</b><br>${fmt(d.n)} cells from ${d.nl} samples<br><span style="color:var(--text-secondary)">${d.libs}</span>`));
+      hit.addEventListener('mouseleave', hideTip);
+    });
+    const tbl = document.getElementById('countTable');
+    tbl.innerHTML = '<table><thead><tr><th>Moment</th><th class="num">Cells</th><th class="num">Samples</th><th>Sample names</th></tr></thead><tbody>' +
+      data.map(d => `<tr><td>${d.k}</td><td class="num">${fmt(d.n)}</td><td class="num">${d.nl}</td><td>${d.libs}</td></tr>`).join('') +
+      `<tr><td><b>Total</b></td><td class="num"><b>${fmt(data.reduce((a, d) => a + d.n, 0))}</b></td><td class="num"><b>22</b></td><td></td></tr></tbody></table>`;
+    document.getElementById('tblBtn').onclick = e => {
+      const open = tbl.style.display === 'none';
+      tbl.style.display = open ? 'block' : 'none';
+      e.target.textContent = open ? 'Hide table' : 'Show as table';
+    };
+  })();
+
+  // ---------- step 6: sweets jar ----------
+  (() => {
+    const p = 1 / 2000;
+    const slider = document.getElementById('catch'), val = document.getElementById('catchVal');
+    const out = document.getElementById('jarOut'), dotsSvg = document.getElementById('jarDots');
+    slider.oninput = () => { val.textContent = fmt(+slider.value); };
+    const draw = n => { let k = 0; for (let i = 0; i < n; i++) if (Math.random() < p) k++; return k; };
+    document.getElementById('grab1').onclick = () => {
+      const n = +slider.value, k = draw(n);
+      dotsSvg.innerHTML = '';
+      out.innerHTML = k === 0
+        ? `We caught ${fmt(n)} RNA molecules and <b>none</b> came from the marker gene. The data says <b>0</b>, but the gene was switched on.`
+        : `We caught ${fmt(n)} RNA molecules and <b>${k}</b> came from the marker gene. This time we noticed it.`;
+    };
+    document.getElementById('grab100').onclick = () => {
+      const n = +slider.value; let zeros = 0;
+      dotsSvg.innerHTML = '';
+      for (let c = 0; c < 100; c++) {
+        const k = draw(n); if (!k) zeros++;
+        el('circle', { cx: 10 + c * 7.4, cy: 30, r: 3.2, fill: k ? 'var(--s1)' : 'var(--normal)' }, dotsSvg);
+      }
+      out.innerHTML = `Out of 100 cells that <i>all</i> have the gene switched on, <b>${zeros}</b> show zero (grey dots) and ${100 - zeros} show it (blue dots), with ${fmt(n)} molecules caught per cell.`;
+    };
+  })();
+
+  // ---------- step 7: timeline ----------
+  (() => {
+    const tl = document.getElementById('timeline'), det = document.getElementById('tlDetail');
+    const show = i => {
+      [...tl.children].forEach((c, j) => c.classList.toggle('sel', j === i));
+      const s = STATES[i];
+      det.innerHTML = `<div style="display:flex;gap:10px;align-items:center;margin-bottom:6px"><i class="sw" style="background:${s.color}"></i><b>${s.name}</b></div><p style="font-size:16px;margin:0">${s.more}</p>`;
+    };
+    STATES.forEach((s, i) => {
+      const d = document.createElement('div'); d.className = 'tl';
+      d.innerHTML = `<div class="em">${s.em}</div><div class="t"><i class="sw" style="background:${s.color}"></i>${i + 1}. ${s.name}</div><div class="d">${s.d}</div>`;
+      d.onclick = () => show(i); tl.appendChild(d);
+    });
+    show(0);
+  })();
+
+  // ---------- step 8: crowd ----------
+  (() => {
+    const svg = document.getElementById('crowd');
+    seed = 11;
+    const cells = [];
+    for (let i = 0; i < 160; i++) {
+      const r = rnd();
+      const st = r < 0.55 ? -1 : r < 0.68 ? 0 : r < 0.80 ? 1 : r < 0.90 ? 2 : 3;
+      const both = st === 1 && rnd() < 0.4;
+      cells.push({ st, both });
+    }
+    const circles = cells.map((c, i) => el('circle', { cx: 22 + (i % 32) * 23.2, cy: 22 + Math.floor(i / 32) * 38, r: 9,
+      fill: 'var(--normal)', stroke: 'var(--surface-1)', 'stroke-width': 2 }, svg));
+    const leg = document.getElementById('revealLegend');
+    leg.innerHTML = STATES.slice(0, 4).map(s => `<span><i class="sw" style="background:${s.color}"></i>${s.name}</span>`).join('') +
+      `<span><i class="sw" style="background:var(--normal)"></i>normal</span><span>◐ two states at once</span>`;
+    let shown = false;
+    const btn = document.getElementById('revealBtn'), note = document.getElementById('revealNote');
+    btn.onclick = () => {
+      shown = !shown;
+      circles.forEach((c, i) => {
+        const s = cells[i].st;
+        c.setAttribute('fill', shown && s >= 0 ? STATES[s].color : 'var(--normal)');
+        c.setAttribute('stroke', shown && cells[i].both ? 'var(--s4)' : 'var(--surface-1)');
+        c.setAttribute('stroke-width', shown && cells[i].both ? 4 : 2);
+      });
+      leg.style.visibility = shown ? 'visible' : 'hidden';
+      btn.textContent = shown ? 'Back to what we really have' : 'Imagine we could see the states';
+      note.textContent = shown
+        ? 'Imaginary colours. Nobody can see this. Some cells (yellow ring) might do two things at once; that is one of our questions.'
+        : 'What we really have: grey cells, no labels.';
+    };
+  })();
+
+  // ---------- step 9: markers ----------
+  (() => {
+    const rows = [
+      [0, 'tnfrsf11b, hspb6, hspb11, nppa, nppb', 'Li et al. 2025 ("activated" border state)'],
+      [1, 'nppa, nppb; crip2, nppb, myl6, vwa1, psmd14', 'Honkoop et al. 2019; Wu et al. 2016 (wound border zone, shown on the slide)'],
+      [2, 'nppa, nppb', 'Li et al. 2025 ("dedifferentiated" border state)'],
+      [3, 'pcna, cdk1, ccng1, ccng2', 'Li et al. 2025 ("proliferating" border state)'],
+    ];
+    document.getElementById('markerRows').innerHTML = rows.map(([i, g, src]) =>
+      `<tr><td><span style="display:inline-flex;gap:6px;align-items:center"><i class="sw" style="background:${STATES[i].color}"></i>${STATES[i].name}</span></td><td class="gene">${g}</td><td>${src}</td></tr>`).join('');
+  })();
+
+  // ---------- step 10: depth toy ----------
+  (() => {
+    const svg = document.getElementById('depthChart');
+    seed = 21;
+    const x0 = 60, x1 = 730, y0 = 240, y1 = 20;
+    const sx = v => x0 + (x1 - x0) * (v - 200) / 4800, sy = v => y0 - (y0 - y1) * v;
+    [0, 0.25, 0.5, 0.75, 1].forEach(v => el('line', { x1: x0, x2: x1, y1: sy(v), y2: sy(v), stroke: 'var(--grid)' }, svg));
+    el('line', { x1: x0, x2: x1, y1: y0, y2: y0, stroke: 'var(--axis)' }, svg);
+    [1000, 2000, 3000, 4000, 5000].forEach(v => el('text', { x: sx(v), y: y0 + 18, 'text-anchor': 'middle', 'font-size': 12 }, svg).textContent = fmt(v));
+    el('text', { x: (x0 + x1) / 2, y: 275, 'text-anchor': 'middle', 'font-size': 12 }, svg).textContent = 'RNA molecules caught per cell (toy)';
+    const yl = el('text', { x: 16, y: (y0 + y1) / 2, 'text-anchor': 'middle', 'font-size': 12, transform: `rotate(-90 16 ${(y0 + y1) / 2})` }, svg);
+    yl.textContent = 'fake marker score';
+    const pts = [];
+    for (let i = 0; i < 120; i++) pts.push({ dark: false, x: 1300 + rnd() * 3500 });
+    for (let i = 0; i < 50; i++) pts.push({ dark: true, x: 350 + rnd() * 700 });
+    pts.forEach(p => {
+      p.y = Math.max(0.02, Math.min(0.98, 0.15 + 0.7 * (p.x - 200) / 4800 + gauss() * 0.06));
+      const c = el('circle', { cx: sx(p.x), cy: sy(p.y), r: 4.5, fill: p.dark ? 'var(--s2)' : 'var(--s1)', stroke: 'var(--surface-1)', 'stroke-width': 2 }, svg);
+      c.addEventListener('mousemove', e => showTip(e, `${p.dark ? 'Toy cell from the dark day-3 sample' : 'Toy cell from a well-measured sample'}<br>caught ${fmt(Math.round(p.x))} RNA molecules · score ${p.y.toFixed(2)}`));
+      c.addEventListener('mouseleave', hideTip);
+    });
+    el('text', { x: sx(700), y: sy(0.47), 'text-anchor': 'middle', 'font-size': 13, style: 'fill:var(--text-primary)' }, svg).textContent = 'dark day-3 sample';
+    el('text', { x: sx(4200), y: sy(0.97), 'text-anchor': 'middle', 'font-size': 13, style: 'fill:var(--text-primary)' }, svg).textContent = 'well-measured samples';
+  })();
+
+  // ---------- step 11: scores ----------
+  (() => {
+    const cells = [
+      { m1: [0.2, 0.8, 0.3, 0.7], m2: [0.25, 0.75, 0.35, 0.65], t: 'Cell A: both methods say high <b>border</b> and high <b>dividing</b>. They agree, so we trust this more. It might be doing two things at once.' },
+      { m1: [0.1, 0.15, 0.1, 0.05], m2: [0.15, 0.1, 0.12, 0.1], t: 'Cell B: low on everything with both methods. Probably a normal muscle cell.' },
+      { m1: [0.2, 0.1, 0.85, 0.1], m2: [0.2, 0.15, 0.3, 0.1], t: 'Cell C: the methods <b>disagree</b> on "young again". A warning sign: maybe the clue genes for that state are unreliable, or this cell was badly measured. We would investigate before trusting it.' },
+    ];
+    const drawBars = (svg, vals) => {
+      svg.innerHTML = '';
+      vals.forEach((v, i) => {
+        const y = 12 + i * 38, x0 = 110, w = 200 * v;
+        el('text', { x: x0 - 8, y: y + 16, 'text-anchor': 'end', 'font-size': 12, style: 'fill:var(--text-primary)' }, svg).textContent = STATES[i].short;
+        el('rect', { x: x0, y, width: 200, height: 22, rx: 4, fill: 'var(--grid)' }, svg);
+        el('rect', { x: x0, y, width: Math.max(w, 6), height: 22, rx: 4, fill: STATES[i].color }, svg);
+        el('text', { x: x0 + 208, y: y + 16, 'font-size': 12 }, svg).textContent = v >= 0.6 ? 'high' : v >= 0.3 ? 'medium' : 'low';
+      });
+    };
+    const pick = i => {
+      document.querySelectorAll('[data-cell]').forEach(b => b.classList.toggle('sel', +b.dataset.cell === i));
+      drawBars(document.getElementById('sc1'), cells[i].m1);
+      drawBars(document.getElementById('sc2'), cells[i].m2);
+      document.getElementById('scText').innerHTML = cells[i].t;
+    };
+    document.querySelectorAll('[data-cell]').forEach(b => b.onclick = () => pick(+b.dataset.cell));
+    pick(0);
+  })();
+
+  // ---------- step 12: worlds ----------
+  (() => {
+    const svg = document.getElementById('worldChart');
+    const x0 = 70, x1 = 730, y0 = 280, y1 = 20;
+    const sx = v => x0 + (x1 - x0) * v, sy = v => y0 - (y0 - y1) * v;
+    const make = world => {
+      seed = world === 'overlap' ? 5 : 9;
+      const pts = [];
+      for (let i = 0; i < 260; i++) {
+        let a, b; const r = rnd();
+        if (world === 'overlap') {
+          if (r < 0.6) { a = 0.12 + Math.abs(gauss()) * 0.07; b = 0.1 + Math.abs(gauss()) * 0.07; }
+          else { const t = 0.3 + rnd() * 0.6; a = t + gauss() * 0.06; b = t + gauss() * 0.07; }
+        } else {
+          if (r < 0.55) { a = 0.12 + Math.abs(gauss()) * 0.07; b = 0.1 + Math.abs(gauss()) * 0.07; }
+          else if (r < 0.8) { a = 0.4 + rnd() * 0.5; b = 0.1 + Math.abs(gauss()) * 0.06; }
+          else { a = 0.1 + Math.abs(gauss()) * 0.06; b = 0.4 + rnd() * 0.5; }
+        }
+        pts.push([Math.min(0.98, Math.max(0.02, a)), Math.min(0.98, Math.max(0.02, b))]);
+      }
+      return pts;
+    };
+    const draw = world => {
+      document.querySelectorAll('[data-world]').forEach(b => b.classList.toggle('sel', b.dataset.world === world));
+      svg.innerHTML = '';
+      [0, 0.25, 0.5, 0.75, 1].forEach(v => {
+        el('line', { x1: x0, x2: x1, y1: sy(v), y2: sy(v), stroke: 'var(--grid)' }, svg);
+        el('line', { x1: sx(v), x2: sx(v), y1: y0, y2: y1, stroke: 'var(--grid)' }, svg);
+      });
+      el('line', { x1: x0, x2: x1, y1: y0, y2: y0, stroke: 'var(--axis)' }, svg);
+      el('line', { x1: x0, x2: x0, y1: y0, y2: y1, stroke: 'var(--axis)' }, svg);
+      el('text', { x: (x0 + x1) / 2, y: 312, 'text-anchor': 'middle', 'font-size': 12 }, svg).textContent = 'border score →';
+      el('text', { x: 24, y: (y0 + y1) / 2, 'text-anchor': 'middle', 'font-size': 12, transform: `rotate(-90 24 ${(y0 + y1) / 2})` }, svg).textContent = 'dividing score →';
+      make(world).forEach(([a, b]) => {
+        const c = el('circle', { cx: sx(a), cy: sy(b), r: 4.5, fill: 'var(--s1)', 'fill-opacity': 0.75, stroke: 'var(--surface-1)', 'stroke-width': 2 }, svg);
+        c.addEventListener('mousemove', e => showTip(e, `Toy cell<br>border score ${a.toFixed(2)} · dividing score ${b.toFixed(2)}`));
+        c.addEventListener('mouseleave', hideTip);
+      });
+      if (world === 'overlap') {
+        el('text', { x: sx(0.18), y: sy(0.95), 'font-size': 13, style: 'fill:var(--text-primary)' }, svg).textContent = 'top right ↗ high on both: one cell doing two jobs';
+      } else {
+        el('text', { x: sx(0.62), y: sy(0.25), 'font-size': 13, style: 'fill:var(--text-primary)' }, svg).textContent = 'border only';
+        el('text', { x: sx(0.12), y: sy(0.95), 'font-size': 13, style: 'fill:var(--text-primary)' }, svg).textContent = 'dividing only';
+      }
+      el('text', { x: sx(0.04), y: sy(0.03) - 10, 'font-size': 13, style: 'fill:var(--text-primary)' }, svg).textContent = 'normal cells';
+      document.getElementById('worldTitle').textContent = world === 'overlap'
+        ? 'World 1: cells high on "border" are also high on "dividing"' : 'World 2: cells are high on one or the other, rarely both';
+      document.getElementById('worldText').innerHTML = world === 'overlap'
+        ? 'Here the dots climb along the diagonal: <b>the same cells do both jobs</b>. "Border" and "dividing" would be parts of one repair mode.'
+        : 'Here the dots form an L shape: <b>different cells do different jobs</b>, like a crew where each worker has one task.';
+    };
+    document.querySelectorAll('[data-world]').forEach(b => b.onclick = () => draw(b.dataset.world));
+    draw('overlap');
+  })();
+
+  const start = parseInt(location.hash.slice(1), 10);
+  go(Number.isFinite(start) ? start - 1 : 0);
+})();
+</script>
+</body>
+</html>

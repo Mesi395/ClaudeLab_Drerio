@@ -1,0 +1,85 @@
+border_zone_like done
+dedifferentiated done
+injury_responsive done
+proliferating done
+{
+ "Hr11": {
+  "nppa_ratio_bins01_min": 2.6723878383636475,
+  "nppa_ge2x_bins01": true,
+  "non_cm_frac_ge2x_bins01": 0.8333333333333334,
+  "abundant_cm_frac_ge2x_bins01": 0.2
+ },
+ "Hr12": {
+  "nppa_ratio_bins01_min": 1.7707619667053223,
+  "nppa_ge2x_bins01": false,
+  "non_cm_frac_ge2x_bins01": 0.16666666666666666,
+  "abundant_cm_frac_ge2x_bins01": 0.0
+ },
+ "Hr24": {
+  "nppa_ratio_bins01_min": 0.11495304852724075,
+  "nppa_ge2x_bins01": false,
+  "non_cm_frac_ge2x_bins01": 0.4166666666666667,
+  "abundant_cm_frac_ge2x_bins01": 0.0
+ },
+ "Hr27": {
+  "nppa_ratio_bins01_min": 1.6326261758804321,
+  "nppa_ge2x_bins01": false,
+  "non_cm_frac_ge2x_bins01": 0.5833333333333334,
+  "abundant_cm_frac_ge2x_bins01": 0.1
+ },
+ "Hr11_nppa_ratio_by_bin": [
+  2.672,
+  3.102,
+  2.36,
+  1.044
+ ],
+ "Hr11_nppa_excess_molecules_by_bin": [
+  1.528,
+  2.156,
+  2.433,
+  0.276
+ ],
+ "Hr11_nppa_ratio_falls_with_depth": false,
+ "Hr11_nppa_excess_molecules_within_2x": false,
+ "n_other_3dpi_with_nppa_ge2x": 0,
+ "verdict": "inconclusive",
+ "parts": {
+  "hr11_specific": true,
+  "non_cm_raised": true
+ },
+ "panels": {
+  "target": [
+   "nppa",
+   "ttn.2"
+  ],
+  "atrial": [
+   "myh6"
+  ],
+  "abundant_cm": [
+   "myl7",
+   "cmlc1",
+   "gapdh",
+   "slc25a5",
+   "CR383676.1",
+   "tpm4a",
+   "mb",
+   "tnnt2a",
+   "hsp70l",
+   "eef1a1l1"
+  ],
+  "non_cm": [
+   "hbba1.1",
+   "hbba1",
+   "col1a1a",
+   "col1a2",
+   "postnb",
+   "fn1b",
+   "kdrl",
+   "cdh5",
+   "fli1a",
+   "mpeg1.1",
+   "lyz",
+   "tcf21"
+  ]
+ }
+}

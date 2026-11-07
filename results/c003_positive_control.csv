@@ -1,0 +1,11 @@
+state,contrast,hr11_excluded,n_injured_hearts,n_ctrl_hearts,tail_fraction_diff_of_medians,tail_fraction_auc,tail_fraction_pass,median_thinned_score_diff_of_medians,median_thinned_score_auc,median_thinned_score_pass
+border_zone_like,7dpi_vs_Ctrl,False,7,4,0.0029045532683000625,0.5714285714285714,False,0.0035450757151902212,0.5,False
+border_zone_like,7dpi_vs_Ctrl,True,7,4,0.0029045532683000625,0.5714285714285714,False,0.0035450757151902212,0.5,False
+dedifferentiated,3dpi_vs_Ctrl,False,4,4,0.002517530638791684,0.5625,False,0.053663305044174214,0.5625,False
+dedifferentiated,7dpi_vs_Ctrl,False,7,4,0.00011259332255461434,0.4642857142857143,False,-0.006198465108871426,0.4642857142857143,False
+dedifferentiated,3dpi_vs_Ctrl,True,3,4,0.0020016666069665925,0.5,False,0.01155573964118961,0.5,False
+dedifferentiated,7dpi_vs_Ctrl,True,7,4,0.00011259332255461434,0.4642857142857143,False,-0.006198465108871426,0.4642857142857143,False
+injury_responsive,3dpi_vs_Ctrl,False,4,4,-0.005574942209290744,0.4375,False,0.000758107105890915,0.375,False
+injury_responsive,3dpi_vs_Ctrl,True,3,4,-0.011860161573246635,0.4166666666666667,False,-0.07401639024416606,0.25,False
+proliferating,7dpi_vs_Ctrl,False,7,4,-0.0003611576457228684,0.4642857142857143,False,0.021540028850237522,0.8214285714285714,True
+proliferating,7dpi_vs_Ctrl,True,7,4,-0.0003611576457228684,0.4642857142857143,False,0.021540028850237522,0.8214285714285714,True

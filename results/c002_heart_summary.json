@@ -1,0 +1,11 @@
+{
+  "commit": "fea5089afcb9d799f117c4195f90d705a1399368",
+  "dirty_tree": true,
+  "command": "uv run python scripts/c002_hearts_and_flags.py results markers",
+  "inputs": [
+    "c002_axis_by_library.csv",
+    "c002_gene_depth.csv"
+  ],
+  "time": "2026-11-07T15:30:12+01:00",
+  "rule": "heart passes only if all its libraries pass; 22 libraries = 18 hearts"
+}

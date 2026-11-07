@@ -1,0 +1,107 @@
+chamber {'A': 0.867, 'B': 0.991} {'A': 0.358, 'B': 0.735} chosen B True
+labels {'border_zone_like': 186, 'dedifferentiated': 199, 'injury_responsive': 1188, 'proliferating': 407, 'unassigned': 30064}
+{
+ "chamber_rule_usable": true,
+ "chamber_balanced_accuracy": {
+  "A": 0.8667,
+  "B": 0.9906
+ },
+ "chamber_mean_coverage": {
+  "A": 0.3578,
+  "B": 0.7347
+ },
+ "agent_state_counts": {
+  "border_zone_like": 186,
+  "dedifferentiated": 199,
+  "injury_responsive": 1188,
+  "proliferating": 407,
+  "unassigned": 30064
+ },
+ "agent_chamber_counts": {
+  "ventricle": 14024,
+  "unassigned": 9204,
+  "atrium": 8816
+ }
+}
+            state     contrast  n_injured_hearts  n_ctrl_hearts  tail_fraction_diff_of_medians  tail_fraction_auc  tail_fraction_pass  median_thinned_score_diff_of_medians  median_thinned_score_auc  median_thinned_score_pass
+ border_zone_like 7dpi_vs_Ctrl                 7              4                          0.002              0.786               False                                 0.011                     0.643                      False
+ dedifferentiated 3dpi_vs_Ctrl                 4              4                          0.001              0.750               False                                -0.040                     0.500                      False
+ dedifferentiated 7dpi_vs_Ctrl                 7              4                          0.001              0.857                True                                -0.035                     0.571                      False
+injury_responsive 3dpi_vs_Ctrl                 4              4                          0.009              0.812                True                                -0.158                     0.375                      False
+    proliferating 7dpi_vs_Ctrl                 7              4                          0.006              0.679               False                                 0.428                     0.786                      False
+{
+ "axes_passing_tail": [
+  "dedifferentiated",
+  "injury_responsive"
+ ],
+ "shared_genes_removed": [
+  "ankrd1a",
+  "mustn1b",
+  "nppa",
+  "nppb"
+ ],
+ "disjoint_sets": {
+  "border_zone_like": [
+   "myh7",
+   "hk1",
+   "pkma",
+   "pdk2a",
+   "ldha",
+   "mmp14b"
+  ],
+  "dedifferentiated": [
+   "desma",
+   "nkx2.5",
+   "tbx20",
+   "gata4",
+   "hand2",
+   "mef2cb",
+   "cacybp"
+  ],
+  "injury_responsive": [
+   "tnfrsf11b",
+   "hspb6",
+   "hspb11"
+  ],
+  "proliferating": [
+   "pcna",
+   "cdk1",
+   "ccng1",
+   "ccng2",
+   "foxm1",
+   "cenpf"
+  ]
+ },
+ "pairs": {
+  "border_zone_like|dedifferentiated": {
+   "frac_hearts_above_null95": 0.0,
+   "frac_hearts_below_null05": 0.0,
+   "verdict": "mixed"
+  },
+  "border_zone_like|injury_responsive": {
+   "frac_hearts_above_null95": 0.0,
+   "frac_hearts_below_null05": 0.0,
+   "verdict": "mixed"
+  },
+  "border_zone_like|proliferating": {
+   "frac_hearts_above_null95": 0.05555555555555555,
+   "frac_hearts_below_null05": 0.05555555555555555,
+   "verdict": "mixed"
+  },
+  "dedifferentiated|injury_responsive": {
+   "frac_hearts_above_null95": 0.1111111111111111,
+   "frac_hearts_below_null05": 0.0,
+   "verdict": "mixed"
+  },
+  "dedifferentiated|proliferating": {
+   "frac_hearts_above_null95": 0.0,
+   "frac_hearts_below_null05": 0.05555555555555555,
+   "verdict": "mixed"
+  },
+  "injury_responsive|proliferating": {
+   "frac_hearts_above_null95": 0.0,
+   "frac_hearts_below_null05": 0.16666666666666666,
+   "verdict": "mixed"
+  }
+ }
+}

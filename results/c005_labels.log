@@ -1,0 +1,29 @@
+                   c004_count  c005_count  c005_chance_expectation  c005_ratio_to_chance  c005_at_chance_0.5_2x
+agent_state                                                                                                    
+border_zone_like          186          67                      140                 0.478                  False
+dedifferentiated          199          53                      140                 0.378                  False
+injury_responsive        1188         145                      140                 1.034                   True
+not_scored                  0       18020                        0                   NaN                  False
+proliferating             407         183                      140                 1.305                   True
+unassigned              30064       13576                        0                   NaN                  False
+{"n_scored_ventricle": 14024, "agreement_with_c004_on_ventricle_cells": 0.993938961779806}
+agent_state  border_zone_like  dedifferentiated  injury_responsive  proliferating  unassigned
+heart                                                                                        
+H5                          0                 0                  0              2         235
+H6                          0                 0                  7             20         833
+H7                          0                 0                  1              6        1421
+H8                          0                 0                  2              1         150
+Hr1                         2                 0                 11             11        1534
+Hr11                       20                21                 20              8        1792
+Hr12                        2                 1                  0              3         634
+Hr13                        0                 0                  0              0         154
+Hr19                        0                 0                  3              0          54
+Hr2                         1                 1                  2             16        1654
+Hr24                        0                 0                  3              0         224
+Hr27                        0                 0                  1              0          59
+Hr3                         3                 2                 13             10         988
+Hr4                         0                 0                 11             13         821
+Hr6                         1                 3                 11             11         782
+Hr7                         0                 0                  1             11         578
+Hr8                         3                 5                 17             19         631
+Hr9                        35                20                 42             52        1032

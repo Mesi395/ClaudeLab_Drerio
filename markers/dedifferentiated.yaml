@@ -1,0 +1,175 @@
+state: dedifferentiated
+status: candidate
+note: Dedifferentiation is described in the literature mainly as sarcomere disassembly and re-expression
+  of embryonic genes (Jopling 2010; Sallin 2015 embryonic myosin protein, gene not named; Ben-Yair 2019
+  sarcomere genes silenced). A down-regulated sarcomere axis is a candidate negative set, not yet defined.
+  ttn.2 is listed only as a circularity trap.
+genes:
+- symbol: mustn1b
+  source: 10.1016/j.ydbio.2026.10.004
+  model: not checked (adult injury)
+  time: not checked
+  resolution: reporter imaging
+  read: abstract
+  evidence: R-E4
+  c002_depth:
+    median_rho_logtot: 0.18
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: nppa
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: dedifferentiated stage
+  resolution: stereo-seq spot
+  read: partial full text (SUP-E4)
+  evidence: R-E3
+  c002_depth:
+    median_rho_logtot: 0.163
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: nppb
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: dedifferentiated stage
+  resolution: stereo-seq spot
+  read: partial full text (SUP-E4)
+  evidence: R-E3
+  c002_depth:
+    median_rho_logtot: 0.24
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: desma
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: dediff-proliferating stage
+  resolution: stereo-seq spot
+  read: partial full text (SUP-E4)
+  evidence: R-E3
+  c002_depth:
+    median_rho_logtot: 0.27
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: true
+    direction: up_with_depth
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: nkx2.5
+  source: 10.7554/eLife.50163
+  model: cryoinjury
+  time: 7 dpi
+  resolution: single cell (sorted reporter)
+  read: full text 0-100k chars
+  evidence: R-E2
+  c002_depth:
+    median_rho_logtot: 0.258
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: true
+    direction: up_with_depth
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: tbx20
+  also_source: 10.1038/s41467-025-59070-0
+  source: 10.7554/eLife.50163
+  model: cryoinjury
+  time: 7 dpi
+  resolution: single cell (sorted reporter)
+  read: full text 0-100k chars
+  evidence: R-E2
+  c002_depth:
+    median_rho_logtot: 0.089
+    background_p05_p95:
+    - 0.058
+    - 0.105
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: gata4
+  source: 10.1038/nature08804
+  model: resection
+  time: 7-14 dpa
+  resolution: reporter/lineage imaging
+  read: title only (Zotero)
+  evidence: R-E4
+  c002_depth:
+    median_rho_logtot: 0.018
+    background_p05_p95:
+    - 0.019
+    - 0.059
+    tracks_depth: true
+    direction: down_with_depth
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: ttn.2
+  source: docs/data.md (name of an authors' CM label in this dataset)
+  model: cryoinjury
+  time: all
+  resolution: cluster label
+  read: repo doc
+  evidence: R-E6
+  flag: 'CIRCULAR: derived from the held-out annotation of this same dataset; usable only as a comparison,
+    never as an independent marker'
+  c002_depth:
+    median_rho_logtot: 0.285
+    background_p05_p95:
+    - 0.091
+    - 0.257
+    tracks_depth: true
+    direction: up_with_depth
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: hand2
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: from 12 hpa, border zone
+  resolution: stereo-seq spot
+  read: partial full text (R-E3)
+  evidence: R-E3
+  c002_depth:
+    median_rho_logtot: 0.198
+    background_p05_p95:
+    - 0.132
+    - 0.222
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: mef2cb
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: from 12 hpa, border zone
+  resolution: stereo-seq spot
+  read: partial full text (R-E3)
+  evidence: R-E3
+  c002_depth:
+    median_rho_logtot: 0.12
+    background_p05_p95:
+    - 0.076
+    - 0.12
+    tracks_depth: true
+    direction: up_with_depth
+    evidence: results/c002_gene_depth.csv (R-E11)
+- symbol: cacybp
+  source: 10.1038/s41467-025-59070-0
+  model: resection
+  time: from 12 hpa, border zone
+  resolution: stereo-seq spot
+  read: partial full text (R-E3)
+  evidence: R-E3
+  c002_depth:
+    median_rho_logtot: 0.117
+    background_p05_p95:
+    - 0.096
+    - 0.167
+    tracks_depth: false
+    direction: ''
+    evidence: results/c002_gene_depth.csv (R-E11)

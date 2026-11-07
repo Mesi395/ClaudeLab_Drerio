@@ -1,0 +1,38 @@
+Chamber-only libraries (AV from metadata, constant per library): median score_genes
+                border_zone_like  injury_responsive  atrial_call
+lib  AV                                                         
+H8a  Atrium                0.679              0.876          1.0
+H8v  Ventricle             0.068              0.404          0.0
+Hr6a Atrium                0.359              0.313          1.0
+Hr6v Ventricle             0.058              0.189          0.0
+Hr7a Atrium                0.345              0.371          1.0
+Hr7v Ventricle            -0.004              0.167          0.0
+
+fraction of cells called atrial by myh6>myh7l, by AV: {'Atrium': 0.661, 'Ventricle': 0.021, 'Wholeheart': 0.245}
+
+Across 18 hearts: Spearman of per-heart median thinned score (researcher table) with atrial-call fraction
+  border_zone_like: rho 0.26
+  injury_responsive: rho 0.42
+
+atrial-call fraction per heart: {'Hr19': 0.043, 'Hr2': 0.083, 'Hr8': 0.125, 'H6': 0.127, 'Hr9': 0.143, 'Hr1': 0.155, 'Hr24': 0.186, 'Hr4': 0.197, 'Hr11': 0.287, 'H7': 0.287, 'Hr6': 0.311, 'Hr12': 0.33, 'Hr7': 0.381, 'Hr13': 0.4, 'Hr3': 0.42, 'H5': 0.449, 'H8': 0.684, 'Hr27': 0.827}
+
+border axis, ventricle-called cells only, per-heart median (unthinned score_genes):
+heart  time        s
+ Hr24  3dpi 0.028069
+  Hr2  7dpi 0.038902
+  Hr6  7dpi 0.067350
+   H6  Ctrl 0.072386
+   H5  Ctrl 0.074985
+  Hr3 30dpi 0.088794
+  Hr7  7dpi 0.089356
+  Hr4 30dpi 0.094521
+ Hr13  7dpi 0.111327
+   H7  Ctrl 0.135412
+   H8  Ctrl 0.154461
+ Hr27  3dpi 0.166450
+ Hr19 30dpi 0.180359
+  Hr1  7dpi 0.237503
+ Hr12  3dpi 0.243846
+ Hr11  3dpi 0.397303
+  Hr8  7dpi 0.407600
+  Hr9  7dpi 0.636516

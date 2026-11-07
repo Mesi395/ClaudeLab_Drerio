@@ -1,0 +1,6 @@
+state,contrast,n_injured_hearts,n_ctrl_hearts,tail_fraction_diff_of_medians,tail_fraction_auc,tail_fraction_pass,median_thinned_score_diff_of_medians,median_thinned_score_auc,median_thinned_score_pass
+border_zone_like,7dpi_vs_Ctrl,7,4,0.0019255455712451862,0.7857142857142857,False,0.011396185159683242,0.6428571428571429,False
+dedifferentiated,3dpi_vs_Ctrl,4,4,0.00078125,0.75,False,-0.04006933593990826,0.5,False
+dedifferentiated,7dpi_vs_Ctrl,7,4,0.0006418485237483953,0.8571428571428571,True,-0.03507682789455763,0.5714285714285714,False
+injury_responsive,3dpi_vs_Ctrl,4,4,0.00863616817551521,0.8125,True,-0.1577792874972026,0.375,False
+proliferating,7dpi_vs_Ctrl,7,4,0.006126478247229042,0.6785714285714286,False,0.42810809652010606,0.7857142857142857,False

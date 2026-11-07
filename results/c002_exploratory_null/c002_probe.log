@@ -1,0 +1,43 @@
+ranks done 4s
+border_zone_like: nulls done 10s
+dedifferentiated: nulls done 23s
+injury_responsive: nulls done 34s
+proliferating: nulls done 45s
+/Users/normy/ClaudeLab_Drerio/scripts/c002_probe.py:49: RuntimeWarning: Mean of empty slice
+  return float(np.nanmean(c[iu]))
+axes done 50s
+{
+ "commit": "fea5089afcb9d799f117c4195f90d705a1399368",
+ "dirty_tree": true,
+ "command": "uv run python scripts/c002_probe.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers results/c002_exploratory_null 100 100",
+ "input": "data/clean/hu2022_cm_allgenes_sanitized.h5ad",
+ "markers": {
+  "border_zone_like": "markers/border_zone.yaml",
+  "dedifferentiated": "markers/dedifferentiated.yaml",
+  "injury_responsive": "markers/injury_responsive.yaml",
+  "proliferating": "markers/proliferating.yaml"
+ },
+ "params": {
+  "n_null_ucell": 100,
+  "n_null_score_genes": 100,
+  "max_rank": 1500,
+  "seed": 0,
+  "null_bins": 100,
+  "null_exclude_tech": true,
+  "gene_depth_bins": 25,
+  "excluded_circular": [
+   "ttn.2"
+  ],
+  "normalisation": "normalize_total 1e4 + log1p for score_genes and coherence"
+ },
+ "time": "2026-11-07T15:29:50+01:00",
+ "runtime_s": 57,
+ "outputs": [
+  "c002_axis_by_library.csv",
+  "c002_axis_summary.csv",
+  "c002_scores.csv.gz",
+  "c002_gene_depth.csv",
+  "c002_gene_depth_background.csv",
+  "c002_c9_depth_matched.csv"
+ ]
+}

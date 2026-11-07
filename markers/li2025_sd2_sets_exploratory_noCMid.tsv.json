@@ -1,0 +1,15 @@
+{
+  "commit": "fea5089afcb9d799f117c4195f90d705a1399368",
+  "dirty_tree": true,
+  "command": "uv run python -I scripts/c007_build_sets.py research/cm-state-axes/sources/li2025_supp/MOESM5.xlsx data/clean/hu2022_cm_allgenes_sanitized.h5ad markers/li2025_sd2_sets_exploratory_noCMid.tsv",
+  "source": "Li et al. 2025 Nat Commun, doi:10.1038/s41467-025-59070-0, Supplementary Data 2 (MOESM5.xlsx, Springer static, downloaded 2026-11-07)",
+  "n_genes_per_axis": {
+    "border_zone_like": 1,
+    "dedifferentiated": 3,
+    "injury_responsive": 8,
+    "proliferating": 25
+  },
+  "n_dropped_noncm_or_atrial": 3895,
+  "rule": "research/cm-state-axes/cycles/C007/reading-rules.md section 1",
+  "time": "2026-11-07T16:08:02+01:00"
+}

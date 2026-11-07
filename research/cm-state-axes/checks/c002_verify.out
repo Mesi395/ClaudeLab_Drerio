@@ -1,0 +1,15 @@
+P4 border axis: median within-library |rho| with log10 total counts
+score_genes     0.287
+ucell           0.468
+aucell_style    0.427
+libraries where UCell |rho| > score_genes |rho|: 22 of 22
+libraries where AUCell-style |rho| > score_genes |rho|: 22 of 22
+
+P1 border score_genes P90 above 95th pct of 50 matched random sets: 0 of 22 libraries
+
+P7 nppa share of UMIs, Hr11 vs uninjured, matched on Hr11 depth quintiles (mean, mean, n_ctrl):
+  bin 0 [498,549): Hr11 0.0047  ctrl 0.0018  ratio 2.53  n_ctrl 313
+  bin 1 [549,618): Hr11 0.0042  ctrl 0.0015  ratio 2.81  n_ctrl 712
+  bin 2 [618,705): Hr11 0.0045  ctrl 0.0015  ratio 3.10  n_ctrl 940
+  bin 3 [705,863): Hr11 0.0047  ctrl 0.0015  ratio 3.13  n_ctrl 1230
+  bin 4 [863,4615): Hr11 0.0042  ctrl 0.0027  ratio 1.53  n_ctrl 3408
