@@ -1,0 +1,13 @@
+data/
+holdout/
+*.h5ad
+*.h5
+*.loom
+*.rds
+*.mtx
+*.mtx.gz
+.env
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
