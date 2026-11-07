@@ -60,6 +60,30 @@ Files: `results/hk/protocol_v1_summary.csv`, `results/hk/protocol_v1_gate.csv`,
    dissociation cells per heart, are in `results/hk/injury_vs_dissociation.csv` (verdict
    unchanged: not supported).
 
+### Pseudobulk DE per heart x chamber (2026-11-07, hk/scores)
+
+Files: `results/hk/pseudobulk_de_summary.csv`, `pseudobulk_thinning_robustness.csv`,
+`pseudobulk_samples.csv`, `pseudobulk_dropped.csv`, `pseudobulk_loho_dpi3.csv`,
+`pseudobulk_vs_literature.csv`, per-model tables `pseudobulk_de_{raw,thinned600}_*.csv.gz`. Script:
+`scripts/pseudobulk_de.py` (pydeseq2 0.5.4, hearts as replicates).
+
+8. **Ventricle 3 dpi vs uninjured (4 vs 4 hearts) gives a DEG list; 7 dpi vs uninjured (7 vs 4)
+   gives almost none** (`pseudobulk_de_summary.csv`, after removing dissociation/heat-shock
+   and ambient non-CM genes, padj < 0.05, |log2FC| > 1).
+9. **The local (ventricle-specific) injury effect is near zero**: the interaction model
+   `~heart + chamber + vent_injured` finds 0–1 DEGs at 3 and 7 dpi, raw or thinned. So the
+   ventricle 3 dpi DEGs are mostly heart-level (both chambers) effects: systemic, dissociation,
+   depth or batch, which the interaction cancels.
+10. **Thinning to 600 UMIs keeps the log2FC ranking (Spearman in
+    `pseudobulk_thinning_robustness.csv`) but changes the DEG set** (DEG Jaccard there): about
+    two-thirds of the raw 3 dpi DEGs need depth to reach significance.
+11. **The data-derived 3 dpi up set shares no gene with the literature injury set**
+    (`pseudobulk_vs_literature.csv`), and it includes mitochondrial-genome transcripts
+    (NC-002333.*, mt-co1) and unannotated loci, which is how a depth/quality difference looks.
+    Two independent routes do not agree, so there is no injury claim.
+12. Leave-one-heart-out top-30 up-set Jaccard against the full set is in `pseudobulk_loho_dpi3.csv`;
+    dropping Hr11 gives the lowest overlap.
+
 What 18 hearts cannot decide: a state carried by one or two hearts (7 dpi proliferation in
 Hr8/Hr9) cannot pass a majority-of-hearts gate; whether ttn.2-high is "dedifferentiation" is
 untestable because the gain genes are barely detected.

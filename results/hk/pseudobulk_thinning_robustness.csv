@@ -1,0 +1,5 @@
+model,contrast,lfc_spearman_raw_vs_thinned,deg_jaccard,top_up_jaccard,degs_raw,degs_thinned
+ventricle,dpi_3,0.8993576631244116,0.2916666666666667,0.4117647058823529,67,26
+interaction,dpi_3,0.6152431520386965,0.0,0.0,1,0
+ventricle,dpi_7,0.7597731210778493,0.058823529411764705,0.0,17,1
+interaction,dpi_7,0.6021841301279648,,,0,0

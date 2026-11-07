@@ -1,0 +1,9 @@
+run,model,contrast,hearts_ctrl,hearts_case,degs,up,top_up
+raw,ventricle ~condition,dpi_3_vs_uninjured,4,4,67,48,CT027638.1;zgc:158463;aplp2;NC-002333.17;pdk2a;acsl1b;her6;per3;myom1b;vwf;tnrc6a;plecb;FO704772.1;spock3;tns1b;zbtb16a;NC-002333.4;ppp1r10;nrarpa;rrad;myh7bb;c6.1;nedd4l;gfra3;CU929145.2;atp6v0ca;agrn;fstl1b;cpt1b;her4.2
+raw,~heart+chamber+chamber:condition [vent_injured],dpi_3_vs_uninjured,4,4,1,1,zfand2a
+raw,ventricle ~condition,dpi_7_vs_uninjured,4,7,17,3,mtus1a;rrad;klf11b
+raw,~heart+chamber+chamber:condition [vent_injured],dpi_7_vs_uninjured,4,7,0,0,
+thinned600,ventricle ~condition,dpi_3_vs_uninjured,4,4,26,18,CT027638.1;zgc:158463;NC-002333.17;pdk2a;her4.1;NC-002333.4;ahnak;her6;myh7;fstl1b;spock3;acsl1b;aplp2;plecb;myom1b;CABZ01072309.1;rrad;zbtb16a
+thinned600,~heart+chamber+chamber:condition [vent_injured],dpi_3_vs_uninjured,4,4,0,0,
+thinned600,ventricle ~condition,dpi_7_vs_uninjured,4,7,1,0,
+thinned600,~heart+chamber+chamber:condition [vent_injured],dpi_7_vs_uninjured,4,7,0,0,
