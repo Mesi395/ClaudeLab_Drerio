@@ -1,13 +1,5 @@
-# Paths coding agents must not read.
-# Claude Code does not read this file; .claude/settings.json enforces the same list.
-
 holdout/
-data/
 .env
-.venv/
-*.h5ad
-*.h5
-*.loom
-*.rds
-*.mtx
-*.mtx.gz
+.env.*
+*.pem
+*.key

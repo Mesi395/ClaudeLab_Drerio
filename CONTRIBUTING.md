@@ -14,6 +14,19 @@ so that the loop can be demoed from it at 17:15.
 | 17:00 | Submission issue filed in `xemantic/claude-impact-lab-2026` |
 | 17:15 | Demo, 3 minutes, starts with the team name |
 
+## Setup, once per clone
+
+```shell
+uv sync
+uv run pre-commit install    # installs the pre-commit and pre-push hooks
+scripts/get_data.sh
+```
+
+- **pre-commit** refuses data, secrets and personal files (even with `git add -f`) and commits to `main`.
+  It also runs ruff and checks the config and marker YAML against their schemas.
+- **pre-push** refuses pushes to `main` and runs `scripts/verify.py`.
+  A failed check blocks the push; a check that could not run is printed but does not block.
+
 ## Branches
 
 - `main` is protected by convention: never push to it directly, except the lane owner of `TASKS.md` updating task status.
