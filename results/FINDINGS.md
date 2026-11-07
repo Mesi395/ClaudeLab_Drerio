@@ -166,18 +166,89 @@ multi-gene chamber score, 200-resample bootstrap.
       set's hint (no myh7) remains, and it is exploratory.
 
 19. **Every cell, or a subgroup? (plan section 2F, pre-registered in af1018a; NaN handling fixed in
-    5ab8dba, same numbers)** (`cell_tail*.csv`). Per ventricle heart, cells thinned to exactly 600
+    5ab8dba, same numbers; re-run after the decoy fix 9f349b3, same calls; "every cell shifts"
+    restated as "cannot tell" by item 20)** (`cell_tail*.csv`). Per ventricle heart, cells thinned to exactly 600
     UMIs; tail excess (share above the heart's decoy 95th percentile, minus the decoys' share) and
     dispersion excess (variance-to-mean beyond detection-matched decoys). Both ignore a uniform shift
     (synthetic check in the script). Results:
-    - **Glycolysis: every cell shifts** at 7 and 3 dpi: tail excess -0.014 and -0.016, dispersion
+    - **Restated 2026-11-07 (item 20): "every cell shifts" is withdrawn for every set.** The
+      planted-signal check found that this test does not detect a planted subgroup in glycolysis
+      (at most 1 of 35 splits) or in any set except dedifferentiated, so an unchanged dispersion is
+      not evidence that every cell shifts. Glycolysis and dedifferentiated: **cannot tell at 600
+      UMIs**. The numbers below stand; only that reading changes.
+    - Glycolysis (was "every cell shifts") at 7 and 3 dpi: tail excess -0.014 and -0.016, dispersion
       excess -0.07 and -0.13 (p 0.84, 0.86), while the heart-level level rose (item 18). A small
       subgroup cannot be excluded: with 3 genes at 600 UMIs this test sees a subgroup only if it is
       large or strong (the synthetic 10%-of-cells x5 case gives tail +0.07).
-    - **Dedifferentiated at 3 dpi: every cell shifts** (dispersion excess +0.01, p 0.49).
+    - Dedifferentiated at 3 dpi (was "every cell shifts"): dispersion excess +0.01, p 0.50.
     - **Memory border-zone core and injury-responsive: hints of a subgroup, not shown.** Dispersion
       excess at 3 dpi +0.64 (p 0.029) and 7 dpi +0.49 (p 0.048) for the core; injury-responsive 7 dpi
-      +0.17 (p 0.030); core tail excess at 3 dpi p 0.043. None reaches BH q 0.05 (min 0.12). A border
+      +0.18 (p 0.036); core tail excess at 3 dpi p 0.014 (q 0.086). None reaches BH q 0.05. (Before
+      the decoy fix: injury-responsive p 0.030, core tail p 0.043.) A border
       zone is by definition a subgroup near the wound, so this is the expected direction; the core
       also shares genes with the handling set.
     - **Proliferating: not computable** (its genes are undetected in some hearts at 600 UMIs).
+
+20. **Which statistical strategy? Tested on this data (plan section G, pre-registered with
+    `scripts/strategy_benchmark.py` in 9fe5edd before the run)** (`strategy_benchmark*.csv`).
+    Candidates came from a literature survey of methods papers and of what similar injury
+    single-cell studies did (plan G). Null: the seven 7 dpi ventricle hearts split 3 vs 4 in all 35
+    ways; signal planted by binomial thinning. Share of tests with p ≤ 0.05:
+
+    | strategy | no difference (false positives, 95% CI) | shift x1.25 / x1.5 / x2 | subgroup 10% / 20% x3 |
+    |---|---|---|---|
+    | M1 per-cell Wilcoxon (9 of 10 zebrafish heart studies) | **0.43** (0.41-0.45) | 0.61 / 0.67 / 0.79 | 0.50 / 0.61 |
+    | M2 per-cell mixed model, heart random effect | **0.093** (0.080-0.107); 126 fits did not converge | 0.15 / 0.23 / 0.36 | 0.11 / 0.18 |
+    | M5 competitive, set genes vs decoy genes (v1 item 13) | **0.088** (0.076-0.102) | 0.41 / 0.59 / 0.71 | 0.31 / 0.51 |
+    | M3 per-heart z-score, Welch t-distribution | 0.043 (0.035-0.053) | 0.18 / 0.38 / 0.44 | 0.16 / 0.33 |
+    | M4 per-heart z-score, exact relabelling (plan 2A) | 0.029 (0.022-0.037) | 0.18 / 0.32 / 0.41 | 0.11 / 0.29 |
+    | **M6 rotation test on pseudobulk (ROAST-style)** | 0.049 (0.040-0.059) | 0.26 / 0.39 / 0.47 | 0.17 / 0.34 |
+    | M7 per-heart PLAGE, exact relabelling | 0.029 (0.022-0.037) | 0.09 / 0.21 / 0.39 | 0.06 / 0.18 |
+    | M8 per-heart singscore, exact relabelling | 0.029 (0.022-0.037) | 0.19 / 0.25 / 0.31 | 0.10 / 0.20 |
+
+    - **The tests that count cells (M1, M2) or genes (M5) as replicates are not calibrated**: with no
+      difference between groups of hearts, M1 calls one in 2.3 tests significant. This is the test
+      behind most published zebrafish heart state calls.
+    - **Chosen by the fixed rule: M6** (calibrated, mean shift power 0.37 vs 0.30 for M4, beyond the
+      two-point margin). Part of its gain is that its p is continuous: at 3 vs 4 hearts exact
+      relabelling can only reach 1/35, a cost that shrinks at the primary 7 vs 4 (floor 1/330).
+      The null splits share one arm, so they cannot test unequal group variances; a simulation
+      (7 vs 4, 300 runs) gives M6 0.027 and exact Welch 0.040 when the injured arm is the more
+      variable (our case), 0.093 and 0.080 when reversed. Section A re-run with M6: item 22.
+    - **Every cell or a subgroup (G2): no set qualifies.** The 2F test called a planted subgroup in
+      dedifferentiated (22 genes) in 60% and 89% of splits (rule: ≥ 80% under both), in at most
+      1 of 35 splits for the other sets, and never under the null or a planted shift (≤ 3%). So
+      item 19's "every cell shifts" becomes "cannot tell at 600 UMIs" for every set.
+    - Limits: power is measured at 3 vs 4 hearts, the false-positive intervals are too narrow
+      (splits share hearts), and limma fry with group variance weights (the one stronger option the
+      survey found) needs R, which neither host has.
+
+21. **High-confidence presence without every heart matching (plan section H, pre-registered with
+    `scripts/high_confidence.py` in 9fe5edd)** (`high_confidence*.csv`). Per heart, the share of cells
+    whose set score exceeds the 95th percentile of 1,000 detection-matched decoy sets, against the
+    decoys' own share; then Simes partial conjunction across the hearts of an arm, with r̂ = the 95%
+    lower bound on how many hearts carry the state.
+    - **No primary set is present in a majority of hearts in any arm or chamber** (all q 1.0). r̂ ≥ 1
+      in 3 of 48 primary cells (memory core, atrium 3 dpi and ventricle 30 dpi; border zone,
+      ventricle 30 dpi), the rate the random sets give (9 of 160). **No injury-specific presence.**
+    - **The positive control failed in the ventricle**: the dissociation set reached no heart there
+      (atrium: 4 of 7 hearts at 7 dpi with p ≤ 0.05, r̂ 0). Detection-matched decoys absorb a
+      programme that every cell expresses, so this test sees only cells standing out within their
+      heart. It answers "is there a distinct high subgroup in at least r hearts", and the answer is
+      no for every set at this depth. Not shown is not absent: in the synthetic check (plan H) a 10%
+      subgroup reached p ≤ 0.05 in 61% of hearts, a 20% subgroup in 80%.
+
+22. **Section A re-run with the chosen strategy (item 20)** (`scripts/pseudobulk_set_roast.py`,
+    `pseudobulk_set_roast*.csv`). Same pseudobulks, sets, contrasts, BH families and qualifiers as
+    item 18; only the p-value changes. **The calls are identical:**
+    - Glycolysis at 7 dpi: q 0.030 (exact relabelling 0.036): cardiomyocyte programme.
+    - Glycolysis and dedifferentiated at 3 dpi: q 0.012 each (0.043): cardiomyocyte programme,
+      confounded by chemistry and series.
+    - Every other primary set: not shown (dedifferentiated at 7 dpi p 0.046, q 0.14).
+    - Random 10-gene sets with p ≤ 0.05: 7 dpi 0.095 (exact 0.05), 3 dpi 0.095. The self-contained
+      rotation test picks up more of the injury-wide shift; the simulation in item 20 shows it is
+      conservative under our variance pattern.
+    - Decoy fix 9f349b3 (an undetected set gene was matched by detected decoy genes): the v1
+      per-cell protocol re-run gives the same verdicts and supported times for every set
+      (`protocol_v1_*.csv`, now 20 bootstraps instead of 5); decoy false-positive rates fell
+      (dedifferentiated 0.0038 to 0.00006).

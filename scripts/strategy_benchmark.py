@@ -122,6 +122,8 @@ def roast(x, case, genes, rng):
     w[0] *= np.sign(q[:, 1] @ (c - c.mean()))
     ss, d = (w**2).sum(0), len(c) - 2
     w, ss = w[:, ss > 0], ss[ss > 0]
+    if not ss.size:  # no set gene varies across these hearts: no test (the floor p would be false)
+        return np.nan
 
     def stat(b):
         return (b / np.sqrt((ss - b**2) / d)).mean(-1)
