@@ -29,4 +29,4 @@ splitting, per-heart covariates) is the next candidate.
 The study stops here at the hackathon submission, by the user's call, with status **not
 complete**. Restart point: the decision between direction C and a validated positive-control
 dataset (GSE139218), after FU-1 and FU-7. Summary for submission:
-[docs/findings-report.md](../../../../docs/findings-report.md).
+[docs/research-methodology.md](../../../../docs/research-methodology.md) and [docs/research-report.md](../../../../docs/research-report.md).

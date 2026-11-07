@@ -146,3 +146,7 @@ Append-only. One entry per result, decision or exchange with the team, with the 
 - Methodology and findings for submission: [docs/findings-report.md](docs/findings-report.md).
 - Status: **not complete**. Restart point: direction C or a validated positive control, after FU-1 and FU-7. See [cycles/C007/review.md](research/cm-state-axes/cycles/C007/review.md).
 
+## 2026-11-07 16:24 CET (clock): methodology and report split into two documents
+
+- `docs/findings-report.md` (named in the 16:20 entry) is replaced by [docs/research-methodology.md](docs/research-methodology.md), covering the two members, their responsibilities and how a cycle runs, and [docs/research-report.md](docs/research-report.md), the progress so far against that methodology.
+
