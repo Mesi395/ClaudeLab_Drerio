@@ -14,6 +14,8 @@ import numpy as np
 import scipy.sparse as sp
 from scipy.stats import rankdata
 
+from zf.panel import Panel
+
 
 def rank_matrix(X) -> sp.csr_matrix:
     """Per-cell descending ranks of the non-zero entries (ties averaged), same sparsity as X."""
@@ -54,3 +56,36 @@ def matched_random_sets(means, gene_idx, n_sets=100, n_bins=25, seed=0, exclude=
             out[k, j] = rng.choice(pool)
             used.add(int(out[k, j]))
     return out
+
+
+# Panel-based scores used by zf.checks: a mean score with matched controls, and a rank score.
+
+N_BINS = 25
+
+
+def expression_bins(panel: Panel) -> np.ndarray:
+    if panel.bins is None:
+        means = panel.logn.mean(axis=0)
+        edges = np.quantile(means, np.linspace(0, 1, N_BINS + 1)[1:-1])
+        panel.bins = np.digitize(means, edges)
+    return panel.bins
+
+
+def score_mean(panel: Panel, genes) -> np.ndarray:
+    """Set mean minus the mean of the other genes in the same expression bins (Tirosh 2016)."""
+    idx = panel.idx(genes)
+    bins = expression_bins(panel)
+    ctrl = np.setdiff1d(np.flatnonzero(np.isin(bins, bins[idx])), idx)
+    return panel.logn[:, idx].mean(axis=1) - panel.logn[:, ctrl].mean(axis=1)
+
+
+def score_rank(panel: Panel, genes) -> np.ndarray:
+    """Mann-Whitney U of the set's within-cell expression ranks, scaled to [0, 1] (UCell-like)."""
+    idx = panel.idx(genes)
+    order = panel.logn.argsort(axis=1, kind="stable")
+    ranks = np.empty_like(order)
+    rows = np.arange(order.shape[0])[:, None]
+    ranks[rows, order] = np.arange(order.shape[1])[None, :]  # 0 = lowest
+    n, m = len(idx), panel.logn.shape[1] - len(idx)
+    u = ranks[:, idx].sum(axis=1) - n * (n - 1) / 2
+    return u / (n * m)

@@ -1,0 +1,36 @@
+schema: zf.run/v1
+run_id: detection-matrix
+started: '2026-11-07T16:13:52+01:00'
+command: uv run python scripts/detection_matrix.py 20
+git:
+  commit: 1ec6c1588b03443fc7815af31ce06e567ad29ca8
+  dirty: true
+versions:
+  zf: 0.1.0
+  scanpy: 1.12.5
+  anndata: 0.13.4
+  numpy: 2.5.4
+inputs:
+- path: config/checks.yaml
+  sha256: 6142e815d04df8bbac6c6a47d5eb7dc27926a1a502cbb0b4a2c71785dd8e34b7
+- path: results/detection/matrix.tsv
+  sha256: 8e10f0e73e22a54856ee72c8c2a9ee1b7686c7e97606661b6e8ae0ae632a40b3
+params:
+  n_seeds: 20
+  detection:
+    random_gene_set: 1.0
+    shuffled_conditions: 1.0
+    depth_artefact: 1.0
+    doublet_artefact: 1.0
+    ambient_artefact: 1.0
+    dissociation_artefact: 1.0
+    library_batch: 1.0
+    single_gene_driver: 1.0
+    method_artefact: 1.0
+  max_off_diagonal: 0.05
+  false_alarm_clean_max: 0.0
+outcomes:
+  summary:
+    min_detection: pass
+    false_alarms_clean: pass
+    max_off_diagonal: pass
