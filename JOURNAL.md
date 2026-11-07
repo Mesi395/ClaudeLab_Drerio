@@ -156,3 +156,7 @@ Append-only. One entry per result, decision or exchange with the team, with the 
 - Replaced the old-doc *ttn.2* reference with: *ttn.2* is named in the source paper (Hu et al. 2022), so any *ttn.2* result is not found unaided (R-E6, FU-6).
 - Moved this study's marker files from `markers/` to `proposals/loop/` for Emi's review, per the loop spec. Result sidecars from before the move still record the old `markers/` paths. The contents are unchanged.
 
+## 2026-11-07 16:31 CET (clock): one-page research summary added
+
+- [docs/research-summary.md](docs/research-summary.md): the question, the method in brief, six findings with linked numbers, answers to the problem's questions, and what is not established. The detailed log stays in [docs/research-report.md](docs/research-report.md).
+

@@ -1,7 +1,8 @@
 # Research report: cardiomyocyte state axes after cryoinjury (progress so far)
 
 Study `cm-state-axes`, 2026-11-07. It was run with the method in
-[research-methodology.md](research-methodology.md). Status: **not complete**. Seven cycles were
+[research-methodology.md](research-methodology.md). For a one-page overview, see
+[research-summary.md](research-summary.md). Status: **not complete**. Seven cycles were
 run and reviewed, and no Deepen phase was reached. Every number is quoted from a file in
 `results/` or `research/cm-state-axes/checks/`, linked beside it. The full record is in the
 [research map](../research/cm-state-axes/research-map.md).

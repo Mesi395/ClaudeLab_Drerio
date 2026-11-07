@@ -1,7 +1,8 @@
 # Research methodology: the supervisor–researcher loop
 
 Status: **in use**. This describes how study `cm-state-axes` was actually run on 2026-11-07
-(cycles C001–C007). The progress so far is in [research-report.md](research-report.md). The
+(cycles C001–C007). The progress so far is in [research-report.md](research-report.md), and a one-page overview in
+[research-summary.md](research-summary.md). The
 team's planned architecture is in [loop-architecture.md](loop-architecture.md); the section
 "Relation to the loop architecture" at the end maps one onto the other.
 
