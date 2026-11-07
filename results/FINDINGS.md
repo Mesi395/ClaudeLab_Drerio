@@ -125,3 +125,32 @@ multi-gene chamber score, 200-resample bootstrap.
       hold under both tests.
     - Thinned to 600 UMIs: the same calls for dedifferentiated (fades) and glycolysis (3 dpi only).
       The 30 dpi arm is 3 hearts, one with 55 cells; the 3 dpi heart Hr27 has 47 cells.
+
+18. **Statistical plan v2, pre-registered** (`docs/statistical-plan.md` and
+    `scripts/pseudobulk_set_plan.py` committed in cadd8d6 before the run; `pseudobulk_set_plan*.csv`).
+    Heart = unit; 7 dpi vs control is the primary family because Hr24 and Hr27 (3 dpi) are 10x v3
+    per GEO and Hr11 comes from a second series. Welch t, exact relabelling, BH over six sets.
+    Supersedes items 12, 13, 15 and 16 as evidence (plan section 4). Raw counts:
+    - **Glycolysis (hk1, pkma, pdk2a) is the one injury programme shown.** 7 dpi +0.92 z [0.19, 1.66],
+      p 0.006, q 0.036 (primary); 3 dpi +1.58, p 0.014, q 0.043 (chemistry/series confounded). It
+      does not follow handling or ambient fibroblast RNA across hearts (within-condition r 0.03 and
+      0.06), no single heart carries it, and it holds at 600 UMIs and without the two smallest
+      hearts. It is ventricle-local at 7 dpi (ventricle minus atrium +0.67, p 0.006). Return by
+      30 dpi not shown (3 vs 30 dpi p 0.086). Consistent with Honkoop et al. 2019, who confirmed
+      these three genes by in situ hybridisation in border-zone cardiomyocytes at 7 dpi.
+    - **Dedifferentiation: 3 dpi only, and not beyond glycolysis in a convincing way.** 3 dpi +0.58
+      [0.36, 0.80], p 0.014, q 0.043 (confounded); 7 dpi p 0.082; 3 > 30 dpi p 0.029 (the floor).
+      Without its nine glycolytic genes it still rises at 3 dpi (p 0.014), which passes the
+      pre-registered rule, but without the four library-size genes as well (ttn.1, ttn.2, bves,
+      synpo2lb) p 0.14: the non-glycolytic signal rests on genes that track library size.
+    - **Border zone, memory core, injury-responsive, proliferating: not shown at heart level.** The
+      memory core (r 0.91) and injury-responsive (0.77) follow handling across hearts and cannot be
+      separated from it with 18 hearts. Exploratory, not a call: the ventricle-minus-atrium line,
+      which cancels heart-level handling, rises at 7 dpi for the memory core (+0.58, p 0.009) and the
+      border-zone set (+0.52, p 0.030; this set has no AP-1 genes).
+    - **Ambient fibroblast RNA in the cardiomyocyte pseudobulk follows injury time** (col1a1a,
+      col1a2, postnb, dcn: 7 dpi +1.17, p 0.006; 3 dpi +1.84, p 0.014; 3 > 30 dpi p 0.029). Any
+      per-cell cardiomyocyte state call has to account for it.
+    - Genome-wide shift diagnostic (200 random 10-gene sets, share with p ≤ 0.05): 7 dpi 0.05,
+      3 dpi 0.095, 30 dpi 0.025. Hearts at 7 dpi do not differ overall; at 3 dpi they differ a
+      little, as the chemistry mix predicts.
