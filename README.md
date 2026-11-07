@@ -36,10 +36,11 @@ A held-out expert annotation is used only for a final agreement check.
 
 The heart is the unit of evidence: 18 hearts, not 32,044 cells. The plan, its decision rules and its
 code were committed before the run ([docs/statistical-plan.md](docs/statistical-plan.md); results in
-[results/FINDINGS.md](results/FINDINGS.md), items 18 and 19).
+[results/FINDINGS.md](results/FINDINGS.md), items 18-22).
 
 - **Shown:** glycolysis genes (hk1, pkma, pdk2a) rise in injured ventricles at 7 dpi (the primary
-  test, q 0.036) and at 3 dpi. The rise is in every cell, not a subgroup. It is not explained by
+  test, q 0.030 with the test chosen below; 0.036 with the first plan's test) and at 3 dpi. Whether
+  every cell rises or a subgroup switches on cannot be told at this depth (item 20). It is not explained by
   dissociation stress, fibroblast RNA, a single heart or sequencing depth. This is consistent with
   Honkoop et al. 2019. It is not a blind confirmation: the 7 dpi rise was seen before the plan was
   written, so confirming it needs new hearts.
@@ -47,8 +48,8 @@ code were committed before the run ([docs/statistical-plan.md](docs/statistical-
   dedifferentiation beyond glycolysis (its non-glycolytic part rests on genes that track library
   size). Border-zone scores follow dissociation stress from heart to heart; hints of a border-zone
   subgroup do not survive multiple-testing correction.
-- **Per cell:** no state can be called at about 600 UMIs per cell. That is a detection limit, not
-  absence.
+- **Per cell:** no state can be called at about 600 UMIs per cell, and no state shows as a distinct
+  high subgroup in a majority of hearts of any arm (item 21). That is a detection limit, not absence.
 - **The design limits what can be decided:** two of the four 3 dpi hearts were sequenced with 10x v3
   and one comes from a second series (GEO records), so every 3 dpi number is confounded and 7 dpi
   carries the claims. 30 dpi has 3 hearts, so "fades" or "persists" can be estimated, not shown.
@@ -61,33 +62,81 @@ enriched in deep cells) does not.
 
 **Checks added after the event:** a design table (chemistry, series) before any test; one
 pre-registered heart-level test per gene set with exact relabelling of hearts and stated floors;
-gene splits for overlapping sets; handling and ambient-RNA criteria; a mean-shift vs subgroup test.
+gene splits for overlapping sets; handling and ambient-RNA criteria; a mean-shift vs subgroup test;
+a benchmark of eight test strategies on null splits of our own hearts with planted signal; and
+partial conjunction for "present in at least r of n hearts".
 An expert should still add new hearts or an independent dataset for a blind confirmation, in situ
 staining to see whether glycolysis is wound-local, and a limma `fry` cross-check once R is available.
 
 ### How the statistics were chosen
 
-Each choice below came from the design table first (which hearts, which chemistry, which series),
-then from what the data can carry. The options are the ones we ran during the event (FINDINGS items
-1-17) and the standard alternatives in the references of [docs/statistical-plan.md](docs/statistical-plan.md).
-A senior design review (Fable) changed the first draft before anything ran.
+Three steps, in this order:
+
+1. **What the literature recommends, and what similar studies did.** A survey of methods papers
+   (pseudobulk vs mixed models, gene-set scores, permutation at small n, replicability across
+   samples, nested confounders) and of 23 injury single-cell studies (10 zebrafish heart; 13 mouse
+   and human infarct, spinal cord, lung and kidney). Every methods benchmark recommends the animal, here the heart, as the
+   unit. The similar studies mostly did not do this:
+
+   | what similar studies did | how many |
+   |---|---|
+   | tested cells, not animals, for state or gene differences | 9 of 10 zebrafish heart studies (Hu et al. 2022 included); most mouse infarct studies |
+   | pooled several hearts into one library, so hearts cannot be tested at all | 5 of 10 zebrafish heart studies |
+   | tested with the animal or patient as the unit | 1 single-cell cardiac study (Kuppe et al. 2022); spinal-cord and lung groups |
+   | decided "present" by a cluster plus staining in about three animals, agreement judged by eye | nearly all |
+   | used a formal "in at least u of n animals" rule, tested every-cell shift vs subgroup, or corrected chemistry | none |
+
+2. **A shortlist of strategies that fit 4-7 hearts per group**, eight for the main test (table below)
+   and two structures the plan did not have: partial conjunction for "present in at least r of n
+   hearts" (Benjamini & Heller 2008; Wang & Owen 2019), which answers the task owner's request for
+   high-confidence cutoffs that do not need every library to match, and a power check before
+   claiming "every cell shifts". Not shortlisted, with the reason: mixed models beyond one
+   (inflated at 5 animals per group, Zimmerman et al. 2021), Milo and CNA (abundance, not
+   programmes), batch correction (chemistry sits only inside 3 dpi, so no method can remove it),
+   limma `fry` with group variance weights (needs R, absent on both hosts).
+3. **The shortlist tested on our own hearts, with the decision rule written down first**
+   ([plan section G](docs/statistical-plan.md), committed in 9fe5edd before the run). Null: the seven
+   7 dpi hearts split 3 vs 4 in all 35 ways, so the groups differ only by real heart-to-heart
+   variation. Then a known signal planted in the counts (binomial thinning). Rule: keep the
+   strategies whose false-positive rate is not above 5%, choose the most powerful.
+
+| strategy | false positives (should be ≤ 0.05) | power, planted shift x1.25 / x1.5 / x2 |
+|---|---|---|
+| per-cell Wilcoxon (the field's default) | **0.43** | 0.61 / 0.67 / 0.79 |
+| per-cell mixed model, heart as random effect | **0.093** | 0.15 / 0.23 / 0.36 |
+| set genes vs random genes (our v1 test) | **0.088** | 0.41 / 0.59 / 0.71 |
+| per-heart score, t-test | 0.043 | 0.18 / 0.38 / 0.44 |
+| per-heart score, exact relabelling of hearts (first plan) | 0.029 | 0.18 / 0.32 / 0.41 |
+| **rotation gene-set test on per-heart counts (chosen)** | 0.049 | 0.26 / 0.39 / 0.47 |
+| per-heart PLAGE / singscore, exact relabelling | 0.029 / 0.029 | 0.09-0.39 / 0.19-0.31 |
+
+The three tests that treat cells or genes as replicates are out: with no difference between groups,
+the per-cell Wilcoxon calls 43% of tests significant. The rotation test won partly because its
+p-value is continuous: with 3 vs 4 hearts exact relabelling cannot go below 1/35. Re-running the main
+analysis with it changed no call (item 22). The same benchmark showed that the shape test behind
+"every cell shifts" almost never detects a planted subgroup, so that claim is withdrawn (item 20).
+The high-confidence structure found no state present as a distinct subgroup in a majority of hearts
+(item 21).
+
+The decisions, with the options considered:
 
 | choice | options | chosen | why |
 |---|---|---|---|
-| unit of evidence | each cell (32,044) · each heart (18) | heart (pseudobulk) | Cells from one heart share its dissection, dissociation and sequencing run. Counting them as independent turns any heart-to-heart difference into a tiny p-value (Squair et al. 2021, Crowell et al. 2020). |
-| what is tested | single genes · gene sets | gene sets for states; genes only as support (plan B) | The question is about states, i.e. programmes of many genes. With 4-7 hearts per group a single gene has little power, while a set pools many weak genes. |
-| kind of set test | competitive: set genes vs other genes (item 13) · self-contained: injured hearts vs control hearts | self-contained | The competitive test treats genes as independent. Genes in a set move together, so the handling set reached z 9.1 there but only p 0.14 when hearts were relabelled (Goeman & Bühlmann 2007; Wu & Smyth 2012). |
-| p-value | normal-theory t-test · every possible relabelling of hearts | Welch t, p from exact relabelling, one-sided | At 4-7 hearts a normal table is not trustworthy. Relabelling assumes no distribution, and its smallest possible p is known in advance (0.003 at 7 dpi, 0.014 at 3 dpi, 0.029 at 30 dpi). Welch, because control hearts vary less than injured ones. One-sided, because "injury raises the programme" was stated before the run. |
-| primary contrast | 3 dpi · 7 dpi | 7 dpi vs control | Two of the four 3 dpi hearts are 10x v3 and one comes from a second series (GEO). Chemistry sits only inside 3 dpi, so it cannot be adjusted for. 7 dpi has 7 hearts and one chemistry. |
-| nuisances (dissociation stress, fibroblast RNA) | regress them out · report them as criteria and split the gene sets | criteria (r ≥ 0.6 within condition) and gene splits | The handling genes overlap the tested sets, and handling also rises with injury itself, so regressing it out would remove real signal. The review removed the handling covariate and the chemistry term. |
-| multiplicity | one correction over everything · an omnibus gate · a fixed sequence | Benjamini-Hochberg in a fixed sequence: 7 dpi family, then 3 dpi | This controls the share of false calls, and the confounded 3 dpi family cannot dilute the primary one. The review removed the omnibus gate. |
-| every cell or a subgroup | cluster cells and count them · call each cell · shape test against decoy sets within each heart | shape test (plan 2F) | At about 600 UMIs, per-cell calls cannot see the states, and clustering puts every cell in some state anyway. Tail and dispersion excess ask directly whether some cells switch on, and they ignore a uniform shift. |
-| order of work | test, then interpret (v1) · write the plan and code first | plan and script committed before the run, run once | Choosing among many tests after seeing results inflates false positives. The exception is stated: the 7 dpi glycolysis rise was seen before the plan. |
+| unit of evidence | each cell (32,044) · each heart (18) | heart (pseudobulk) | Cells from one heart share its dissection, dissociation and sequencing run. Counting them as independent turns heart-to-heart differences into tiny p-values: 43% false positives on our own hearts (benchmark above; Squair et al. 2021). |
+| what is tested | single genes · gene sets | gene sets for states; genes only as support (plan B) | States are programmes of many genes. With 4-7 hearts per group a single gene has little power; a set pools many weak genes. |
+| kind of set test | competitive: set genes vs other genes · self-contained: injured vs control hearts | self-contained | The competitive test treats genes as independent; genes in a set move together. 8.8% false positives here (Goeman & Bühlmann 2007; Wu & Smyth 2012). |
+| p-value | t-table · exact relabelling of hearts · rotation | rotation test (chosen by the benchmark); exact relabelling reported beside it | Both keep false positives at or below 5% on our hearts; rotation has more power at 3-4 hearts. Calls agree. |
+| primary contrast | 3 dpi · 7 dpi | 7 dpi vs control | Two of the four 3 dpi hearts are 10x v3 and one comes from a second series (GEO). Chemistry sits only inside 3 dpi, so nothing can adjust for it. 7 dpi has 7 hearts and one chemistry. |
+| nuisances (dissociation stress, fibroblast RNA) | regress out · criteria and gene splits | criteria (r ≥ 0.6 within condition) and gene splits | Handling genes overlap the tested sets and rise with injury itself, so regressing them out would remove real signal. |
+| multiplicity | one correction over everything · omnibus gate · separate BH per time point | separate Benjamini-Hochberg families: 7 dpi, then 3 dpi | Controls the share of false calls on average over families (Benjamini & Bogomolov 2014); the confounded 3 dpi family cannot dilute the primary one. At 3 dpi a single set can never pass (q ≥ 6/70); two must. |
+| every cell or a subgroup | cluster and count · call each cell · shape test within each heart | shape test (plan 2F), but only with shown power | The benchmark found it has no power for these sets at 600 UMIs, so the answer is "cannot tell". |
+| high confidence across hearts | every heart must pass (v1) · "seen in k of n" by eye · partial conjunction | partial conjunction, Simes, with a lower bound on the number of hearts | Gives an error rate for "present in at least r of n hearts" without asking every heart to match. A vote has no error rate. |
+| order of work | test, then interpret (v1) · plan and code first | plan and script committed before each run | Choosing among tests after seeing results inflates false positives. Exception, stated: the 7 dpi glycolysis rise was seen before the plan. |
 
 Retired from v1: leave-one-heart-out gene overlap (at 8 hearts it cannot separate signal from
-noise) and latent-class agreement as a measure of trust (its labellers share marker genes, so it
-breaks the independence it assumes). Planned, not run: DESeq2 per gene (B), detection power and
-Milo neighbourhoods (C), and co-occurrence (D).
+noise) and latent-class agreement as a measure of trust (its labellers share marker genes). Planned,
+not run: DESeq2 per gene (B), detection power and Milo neighbourhoods at 7 dpi (C), co-occurrence
+(D), per-library ambient RNA removal, limma `fry` once R is installed.
 
 ### How we decide which annotation to trust, with no ground truth
 
