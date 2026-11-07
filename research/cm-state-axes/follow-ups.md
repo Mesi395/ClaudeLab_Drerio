@@ -61,6 +61,18 @@ that the state calls are free of doublets.
 Several supervisor timestamps were estimated rather than read from the system clock, and were
 corrected in `JOURNAL.md`. Package lesson: read the clock (`date`) before stamping any record.
 
+## FU-9: earlier results were not re-checked after a confound was found (user question, 2026-11-07 16:37)
+
+The chamber confound (F8, C003) led to ventricle-only analysis from C004 on. But the C002
+results (null, depth ties, rank against score_genes, per-gene depth flags), the C003 ambient
+panel and the C005 doublet correlations were computed on all cardiomyocytes and never re-run
+within ventricle cells. The user's question exposed this.
+
+General failure: when a new confound is found, every earlier result that rests on the
+confounded population must be re-checked, not only the next step. Action: C008 re-runs them
+within ventricle cells. Package lesson for the caller: add "re-check earlier results under each
+new confound" to the review step.
+
 ## FU-4: package lesson, a subagent tool was unavailable (2026-11-07)
 
 `AGENTS.md` asks for one subagent per atomic step, but the researcher's runtime had no subagent
