@@ -1,17 +1,96 @@
 # Candidate markers: border-zone-like cardiomyocytes.
-# Status: draft for Eme's review. Symbols checked against GRCz11 release 92 (GEO Hr11 features).
-state: border_zone
+# Written by humans and the markers lane; the loop only appends to flags.
+schema: zf.markers/v1
+axis: border_zone
+annotation: GRCz11, Ensembl release 92 (Cell Ranger 3.0.2, Hu et al. 2022)
 genes:
-  - {gene: nppa, source: "https://doi.org/10.7554/eLife.50163", evidence: "nppa:mCitrine reporter, FACS, SORT-seq (Honkoop 2019)", caveat: "partly overlaps dedifferentiated CMs at 7 dpi (Hu 2022)"}
-  - {gene: nppb, source: "https://doi.org/10.1016/j.devcel.2015.12.010", evidence: "tomo-seq border-zone peak (Wu 2016); ISH (Honkoop 2019)", caveat: "top gene of a dedifferentiated domain in Li 2025"}
-  - {gene: mustn1b, source: "https://doi.org/10.7554/eLife.50163", evidence: "ISH; scRNA cluster (Honkoop 2019)", caveat: ""}
-  - {gene: crip2, source: "https://doi.org/10.1016/j.devcel.2015.12.010", evidence: "tomo-seq border-zone peak (Wu 2016)", caveat: ""}
-  - {gene: vwa1, source: "https://doi.org/10.1016/j.devcel.2015.12.010", evidence: "tomo-seq border-zone peak (Wu 2016)", caveat: ""}
-  - {gene: psmd14, source: "https://doi.org/10.1016/j.devcel.2015.12.010", evidence: "tomo-seq border-zone peak (Wu 2016)", caveat: ""}
-# Also high in fibroblasts or smooth muscle: doublet and ambient-RNA risk. Use only after the confound checks.
-non_specific:
-  - {gene: myl6, source: "https://doi.org/10.1016/j.devcel.2015.12.010"}
-  - {gene: tagln, source: "https://doi.org/10.1038/s41467-025-59169-4"}
-  - {gene: ctgfa, source: "https://doi.org/10.1038/s41467-025-59169-4", note: "named ccn2a in newer annotations"}
-  - {gene: cyr61, source: "https://doi.org/10.1038/s41467-025-59169-4", note: "named ccn1 in newer annotations"}
-# vmhc (Honkoop 2019) is absent from this annotation; ask Eme whether myh7 or myh7l stands for it.
+- symbol: nppa
+  ensembl: ENSDARG00000052960
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: nppa:mCitrine reporter, FACS, SORT-seq (Honkoop 2019)
+  caveat: partly overlaps dedifferentiated CMs at 7 dpi (Hu 2022)
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: nppb
+  ensembl: ENSDARG00000052958
+  role: core
+  source: https://doi.org/10.1016/j.devcel.2015.12.010
+  evidence: tomo-seq border-zone peak (Wu 2016); ISH (Honkoop 2019)
+  caveat: top gene of a dedifferentiated domain in Li 2025
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: mustn1b
+  ensembl: ENSDARG00000089086
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: ISH; scRNA cluster (Honkoop 2019)
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: crip2
+  ensembl: ENSDARG00000070670
+  role: core
+  source: https://doi.org/10.1016/j.devcel.2015.12.010
+  evidence: tomo-seq border-zone peak (Wu 2016)
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: vwa1
+  ensembl: ENSDARG00000075468
+  role: core
+  source: https://doi.org/10.1016/j.devcel.2015.12.010
+  evidence: tomo-seq border-zone peak (Wu 2016)
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: psmd14
+  ensembl: ENSDARG00000063100
+  role: core
+  source: https://doi.org/10.1016/j.devcel.2015.12.010
+  evidence: tomo-seq border-zone peak (Wu 2016)
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: myl6
+  ensembl: ENSDARG00000008494
+  role: non_specific
+  source: https://doi.org/10.1016/j.devcel.2015.12.010
+  evidence: ''
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: tagln
+  ensembl: ENSDARG00000045408
+  role: non_specific
+  source: https://doi.org/10.1038/s41467-025-59169-4
+  evidence: ''
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ctgfa
+  ensembl: ENSDARG00000042934
+  role: non_specific
+  source: https://doi.org/10.1038/s41467-025-59169-4
+  evidence: ''
+  caveat: named ccn2a in newer annotations
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cyr61
+  ensembl: ENSDARG00000023062
+  role: non_specific
+  source: https://doi.org/10.1038/s41467-025-59169-4
+  evidence: ''
+  caveat: named ccn1 in newer annotations
+  status: candidate
+  proposed_by: literature_review
+  flags: []

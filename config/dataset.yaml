@@ -1,0 +1,34 @@
+# What the data is. Written by the data lane; read by everything else.
+# Library facts come from GEO sample records (docs/data.md).
+schema: zf.dataset/v1
+name: hu2022_cardiomyocytes
+citation: https://doi.org/10.1038/s41588-022-01129-5
+annotation: GRCz11, Ensembl release 92 (Cell Ranger 3.0.2)
+expected:
+  cells: 32044
+  genes: 18794
+  libraries: 22
+covariates: [total_counts, n_genes, pct_mito, library, condition, chamber, chemistry, study]
+libraries:
+  - {library: H5, gsm: GSM4817928, geo_label: H5, condition: uninjured, chamber: whole, chemistry: 10x_v2, study: GSE159032, expected_cells: 806}
+  - {library: H6, gsm: GSM4817929, geo_label: H6, condition: uninjured, chamber: whole, chemistry: 10x_v2, study: GSE159032, expected_cells: 1211}
+  - {library: H7, gsm: GSM4817930, geo_label: H7, condition: uninjured, chamber: whole, chemistry: 10x_v2, study: GSE159032, expected_cells: 3824}
+  - {library: H8a, gsm: GSM4817931, geo_label: H8a, condition: uninjured, chamber: atrium, chemistry: 10x_v2, study: GSE159032, expected_cells: 1033}
+  - {library: H8v, gsm: GSM4817932, geo_label: H8v, condition: uninjured, chamber: ventricle, chemistry: 10x_v2, study: GSE159032, expected_cells: 174}
+  - {library: Hr11, gsm: GSM4815756, geo_label: Hr11, condition: dpi_3, chamber: whole, chemistry: 10x_v2, study: GSE158919, expected_cells: 4063}
+  - {library: Hr12, gsm: GSM4817944, geo_label: Hr12, condition: dpi_3, chamber: whole, chemistry: 10x_v2, study: GSE159032, expected_cells: 1262}
+  - {library: Hr24, gsm: GSM4817951, geo_label: Hr24, condition: dpi_3, chamber: whole, chemistry: 10x_v3, study: GSE159032, expected_cells: 370}
+  - {library: Hr27, gsm: GSM4817954, geo_label: Hr27, condition: dpi_3, chamber: whole, chemistry: 10x_v3, study: GSE159032, expected_cells: 490}
+  - {library: Hr1, gsm: GSM4817933, geo_label: Hr1, condition: dpi_7, chamber: whole, chemistry: 10x_v2, study: GSE159032, expected_cells: 2612}
+  - {library: Hr13, gsm: GSM4817945, geo_label: Hr13, condition: dpi_7, chamber: whole, chemistry: 10x_v2, study: GSE159032, expected_cells: 350}
+  - {library: Hr2a, gsm: GSM4817934, geo_label: Hr2, condition: dpi_7, chamber: whole, chemistry: 10x_v2, study: GSE159032, expected_cells: 1354}
+  - {library: Hr2b, gsm: GSM4817935, geo_label: Hr2_morecells, condition: dpi_7, chamber: whole, chemistry: 10x_v2, study: GSE159032, expected_cells: 1635}
+  - {library: Hr6a, gsm: GSM4817938, geo_label: Hr6a, condition: dpi_7, chamber: atrium, chemistry: 10x_v2, study: GSE159032, expected_cells: 927}
+  - {library: Hr6v, gsm: GSM4817939, geo_label: Hr6v, condition: dpi_7, chamber: ventricle, chemistry: 10x_v2, study: GSE159032, expected_cells: 1117}
+  - {library: Hr7a, gsm: GSM4817940, geo_label: Hr7a, condition: dpi_7, chamber: atrium, chemistry: 10x_v2, study: GSE159032, expected_cells: 1500}
+  - {library: Hr7v, gsm: GSM4817941, geo_label: Hr7v, condition: dpi_7, chamber: ventricle, chemistry: 10x_v2, study: GSE159032, expected_cells: 789}
+  - {library: Hr8, gsm: GSM4815755, geo_label: Hr8, condition: dpi_7, chamber: whole, chemistry: 10x_v2, study: GSE158919, expected_cells: 1133}
+  - {library: Hr9, gsm: GSM4817942, geo_label: Hr9, condition: dpi_7, chamber: whole, chemistry: 10x_v2, study: GSE159032, expected_cells: 2677}
+  - {library: Hr19, gsm: GSM4817947, geo_label: Hr19, condition: dpi_30, chamber: whole, chemistry: 10x_v2, study: GSE159032, expected_cells: 115}
+  - {library: Hr3, gsm: GSM4817936, geo_label: Hr3, condition: dpi_30, chamber: whole, chemistry: 10x_v2, study: GSE159032, expected_cells: 2708}
+  - {library: Hr4, gsm: GSM4817937, geo_label: Hr4, condition: dpi_30, chamber: whole, chemistry: 10x_v2, study: GSE159032, expected_cells: 1894}
