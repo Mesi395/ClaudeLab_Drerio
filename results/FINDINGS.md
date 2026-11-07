@@ -154,3 +154,13 @@ multi-gene chamber score, 200-resample bootstrap.
     - Genome-wide shift diagnostic (200 random 10-gene sets, share with p ≤ 0.05): 7 dpi 0.05,
       3 dpi 0.095, 30 dpi 0.025. Hearts at 7 dpi do not differ overall; at 3 dpi they differ a
       little, as the chemistry mix predicts.
+    - **Limits of item 18** (from the independent statistics review, research s3, 2026-11-07):
+      the glycolysis rise at 7 dpi had already been seen before the plan was written (item 17,
+      p 0.006, and an exploratory 33-test scan, q 0.26). The plan fixes the analysis, but this
+      result is not a blind confirmation; that needs new hearts or an independent dataset. At gene
+      level the 7 dpi rise is not significant (DESeq2 padj pkma 0.46, pdk2a 0.68); it shows only as
+      a set. A different per-heart score (mean z of logCPM, simpler veto) gave the 3 dpi glycolysis
+      rise p 0.071 instead of 0.014, so the 3 dpi p depends on the scoring. The ventricle-minus-atrium
+      hint for the memory core is partly circular: whole-heart cells are assigned to a chamber by
+      myh7/myh7l vs myh6 (`src/zf/io.py`), and myh7 is a memory-core gene. Only the border-zone
+      set's hint (no myh7) remains, and it is exploratory.
