@@ -98,7 +98,9 @@ def decoy_sets(detect: np.ndarray, idx: np.ndarray, rng, b: int = B, bins: int =
     gene_bin[expressed] = np.searchsorted(edges, detect[expressed], side="right")
     out = np.empty((b, len(idx)), dtype=np.int64)
     for j, g in enumerate(idx):
-        pool = np.flatnonzero(gene_bin == gene_bin[g]) if gene_bin[g] >= 0 else expressed
+        # An undetected set gene is matched by undetected genes. Drawing detected genes for it made the
+        # decoys outscore the set wherever set genes are absent (found 2026-11-07, plan section H check).
+        pool = np.flatnonzero(gene_bin == gene_bin[g]) if gene_bin[g] >= 0 else np.flatnonzero(detect == 0)
         pool = pool[pool != g]
         out[:, j] = rng.choice(pool, size=b)
     return out

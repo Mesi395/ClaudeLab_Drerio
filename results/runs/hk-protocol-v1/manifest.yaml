@@ -1,9 +1,9 @@
 schema: zf.run/v1
 run_id: hk-protocol-v1
-started: '2026-11-07T16:14:59+01:00'
-command: uv run python scripts/run_protocol.py --boot 5
+started: '2026-11-07T22:28:45+01:00'
+command: uv run python scripts/run_protocol.py
 git:
-  commit: 4cded0ca070a4756ba8c6aa0912228db2b15dfcb
+  commit: 9fe5edd16ba400365c43f4187a03e860b4db0547
   dirty: true
 versions:
   zf: 0.1.0
@@ -22,7 +22,7 @@ params:
   q_pos: 0.05
   p_neg: 0.1
   rho_max: 0.1
-  boot: 5
+  boot: 20
   mito_max: 30.0
   seed: 0
 outcomes:
