@@ -160,3 +160,26 @@ Append-only. One entry per result, decision or exchange with the team, with the 
 
 - [docs/research-summary.md](docs/research-summary.md): the question, the method in brief, six findings with linked numbers, answers to the problem's questions, and what is not established. The detailed log stays in [docs/research-report.md](docs/research-report.md).
 
+## 2026-11-07 16:39 CET (clock): user question, what do the markers mark inside the ventricle? C008 assigned
+
+- Supervisor check ([checks/c008_verify.out](research/cm-state-axes/checks/c008_verify.out)):
+  - In 14,024 ventricle cells, the border, injury and dedifferentiated scores follow the *nppa* share (median rho 0.52–0.58) more than depth (0.22).
+  - Proliferating tracks neither. UCell's larger depth tie holds (19/19 libraries).
+- Gap found by the user's question (FU-9): the C002, C003 and C005 checks had been run on both chambers mixed.
+  Next: [cycles/C008/assignment.md](research/cm-state-axes/cycles/C008/assignment.md).
+
+
+## 2026-11-07 16:45 CET: C008 (researcher): checks re-run inside the ventricle (user correction FU-9)
+
+- Rules: [research/cm-state-axes/cycles/C008/reading-rules.md](research/cm-state-axes/cycles/C008/reading-rules.md). Summary: [results/c008_summary.json](results/c008_summary.json).
+- Inside the ventricle, the border, injury and dedifferentiated axes are one *nppa*/*nppb* signal. Without those genes they do not co-vary ([results/c008_program_by_library.csv](results/c008_program_by_library.csv)).
+- The Hr11 *nppa* excess in ventricle cells fits the ambient rule; this changes the C003 conclusion ([results/c008_ambient_ventricle.csv](results/c008_ambient_ventricle.csv)).
+- Report: [research/cm-state-axes/cycles/C008/report.md](research/cm-state-axes/cycles/C008/report.md), status Checkpoint.
+
+## 2026-11-07 16:45 CET (clock): C008 reviewed; summary updated; study paused at submission, not complete
+
+- C008 (ventricle re-checks): [report](research/cm-state-axes/cycles/C008/report.md), [review](research/cm-state-axes/cycles/C008/review.md), supervisor check [checks/c008b_verify.out](research/cm-state-axes/checks/c008b_verify.out).
+- Inside the ventricle, the three *nppa*-led states are one program; without *nppa* and *nppb* they barely co-vary (confirmed).
+- Hr11's *nppa* excess fits ambient RNA, probably atrial (partly confirmed; C003's reading is corrected).
+- [docs/research-summary.md](docs/research-summary.md) updated.
+

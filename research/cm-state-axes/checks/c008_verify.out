@@ -1,0 +1,21 @@
+ventricle-called cells: 14024
+libraries with >=50 ventricle cells: 19
+
+Median over libraries of within-library Spearman rho (ventricle cells only):
+border_zone_like~depth     0.215
+border_zone_like~mito     -0.130
+border_zone_like~nppa      0.521
+injury_responsive~depth    0.227
+injury_responsive~mito    -0.131
+injury_responsive~nppa     0.577
+dedifferentiated~depth     0.232
+dedifferentiated~mito     -0.150
+dedifferentiated~nppa      0.524
+proliferating~depth        0.036
+proliferating~mito        -0.037
+proliferating~nppa        -0.019
+border_ucell~depth         0.437
+
+F1 within ventricle: libraries where |rho(UCell, depth)| > |rho(score_genes, depth)| for border: 19 of 19
+
+border score: share of cell-level variance explained by heart (eta^2): 0.261

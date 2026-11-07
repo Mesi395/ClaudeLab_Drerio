@@ -1,0 +1,7 @@
+C8-4 disjoint sets without nppa/nppb, ventricle cells: median within-library rho per pair
+{'border-injury': 0.085, 'border-dediff': 0.083, 'injury-dediff': 0.121} over 19 libraries
+
+C8-5 Hr11 vs control ventricle cells, Hr11 depth quintiles: ratio of mean share; excess molecules per cell
+  nppa: q0: 7.62x, +1.46 mol (n_ctrl 122) | q1: 5.36x, +1.42 mol (n_ctrl 246) | q2: 4.71x, +1.67 mol (n_ctrl 356) | q3: 6.54x, +2.02 mol (n_ctrl 488) | q4: 4.37x, +1.91 mol (n_ctrl 1351)
+  myh6: q0: 21.28x, +0.16 mol (n_ctrl 122) | q1: 5.18x, +0.13 mol (n_ctrl 246) | q2: 3.93x, +0.13 mol (n_ctrl 356) | q3: 6.17x, +0.21 mol (n_ctrl 488) | q4: 5.44x, +0.27 mol (n_ctrl 1351)
+  hbba1.1: q0: 1.24x, +1.42 mol (n_ctrl 122) | q1: 0.60x, +-4.72 mol (n_ctrl 246) | q2: 0.55x, +-6.66 mol (n_ctrl 356) | q3: 0.64x, +-5.27 mol (n_ctrl 488) | q4: 0.86x, +-1.73 mol (n_ctrl 1351)

@@ -144,7 +144,15 @@ After C001 and C002 (researcher; evidence R-E1–R-E13; reports [C001](cycles/C0
   calibration. Li's dedifferentiated and border-zone markers are CM-versus-all markers, mostly
   sarcomere and OXPHOS genes, with almost no CM-internal genes. The signal sits in a few hearts:
   Hr9 and Hr8 are high on unrelated axes. It does not sit in timepoints.
-- **G4 Co-occurrence: cannot be resolved with these sets (C004).** Overlapping sets co-occur by
+- **C008, inside the ventricle (after the user's correction, FU-9).**
+  - The border, injury and dedifferentiated scores follow the *nppa* share, not depth, once cells
+    are thinned. They are one signal: with *nppa* and *nppb* removed, they no longer co-vary
+    beyond random genes.
+  - In ventricle cells, the Hr11 *nppa* excess meets every part of the pre-declared ambient rule.
+    The atrial gene *myh6* is raised too. This **reverses** C003's "probably not ambient".
+  - Rank-versus-depth, the null results and the doublet results stand.
+- **G4 Co-occurrence: within these sets, the apparent co-occurrence is the shared genes *nppa* and
+  *nppb* (C008).** Earlier text, kept as history: cannot be resolved with these sets (C004). Overlapping sets co-occur by
   construction. Disjoint sets in ventricular CMs are indistinguishable from random gene pairs:
   every pair is "mixed". Scoring the axes as they stand would mostly measure shared
   genes and depth.
@@ -210,6 +218,7 @@ and now points at ambient RNA as the next test. *ttn.2* behaves the same way; *t
 | C004 Probe | Chamber call validated on the six chamber-only libraries; ventricle-only positive control; G4 with disjoint sets; agent label file | Rule B balanced accuracy 0.991 at coverage 0.735; rule A fails (0.867, 0.358). Ventricle-only tail AUC: injury-responsive 0.812 and dedifferentiated 7 dpi 0.857 pass; border-zone 0.786 and proliferating 0.679 fail. G4: all 6 pairs mixed. Labels: 30,064 unassigned; state counts near chance (R-E16, `results/c004_*`) | Chamber call strong. Axes still weak: the passes rest on control hearts sitting below the null. G4 unresolvable with these sets | `myh7l` unsourced; rule selected on its validation set; the null is uncalibrated per heart; no doublets |
 | C005 fix + Probe | Ventricle-only label file; scrublet doublets on the GEO matrices | Labels: border-zone 67, dedifferentiated 53, injury-responsive 145, proliferating 183 against a chance level of about 140 (R-E17). Doublets: scrublet ran in 22/22 libraries (mapping 1.0), but its automatic threshold called 0 doublets everywhere. Median \|rho\| doublet score vs axis is 0.05–0.09 (under 0.1); atrial libraries are positive and Hr11/Hr27 negative. No state is enriched among the top 10% of doublet scores (exploratory) (R-E18) | The label file honestly says "no separable states". Doublets do not explain the scores | Auto-threshold failure; one method; no recalibrated doublet call |
 | C007 Probe (direction A) | Li 2025 SD2 sets (25 genes, disjoint, CM-internal filter) against the C004 sets on the same ventricle-only pipeline, with a control-calibrated tail, a null-AUC test and leave-Hr9-out | 0 of 6 contrasts pass for either family. Li lower on 5 of 6. Null AUC p95 0.63–0.82. Hr9 and Hr8 high across axes. Exploratory no-CM-identity sets: no pass (R-E20, `results/c007_*`) | Clear negative for A as built. Points to a heart-level factor and to C or a different dataset | One run; 4 control hearts; one border-zone set rule |
+| C008 Probe (ventricle re-checks) | C002, C003 and C005 checks re-run in 14,024 ventricle cells (19 libraries, 18 hearts); leave-*nppa*/*nppb*-out co-variation | Thinned scores: depth rho ≈ 0, *nppa* rho 0.36–0.37. The three axes co-vary in 19/19 libraries as built, 0–2/19 without *nppa*/*nppb*. Hr11 *nppa* in ventricle cells: ratio 7.31 → 3.10 over depth, excess 1.46–2.07 molecules, *myh6* 3.6–13.9×, so ambient favoured. UCell 19/19 more depth-tied; doublets do not track (R-E21, `results/c008_*`) | Strong: the four states reduce to an *nppa* program plus cell cycle; the Hr11 trap is ambient-like | Chamber call uses *myh6*; no empty droplets |
 
 **Supervisor check of C001** (SUP-E5, [cycles/C001/review.md](cycles/C001/review.md)):
 
