@@ -5,9 +5,29 @@ unverified. Numbers live in the linked files; this page only points at them.
 
 ## Claims
 
-None yet.
+None yet. No result has been re-run from a clean checkout and passed thinning, decoys,
+leave-one-heart-out and the confound check together; everything below is an observation.
 
 ## Observations
+
+### Latent-class comparison vs the published annotation (2026-11-07, hk/results)
+
+Commit 87df55f. Command (ROG, 30 s): `python scripts/compare_to_annotation.py data/derived/labels_v1.tsv.gz
+data/derived/splithalf_v1.tsv.gz <owner's original h5ad, outside the repo> --column <published column>
+--dediff <substr> --prolif <substr>`. Inputs: Card B's per-cell calls (labels_v1, commit 0f67e67) and
+`scripts/split_half_calls.py` output; both stay on the ROG. Output: `results/hk/compare_to_annotation.txt`.
+22 hearts, 32,044 cells, 20 heart-bootstrap resamples, seen once.
+
+1. **The published dedifferentiated cluster is 25 % of cells; the latent class puts the state at 2.5 %.**
+   Its estimated sensitivity is 0.43 [0.28, 0.51] and specificity 0.75 [0.68, 0.85].
+2. **That cluster sits on deeper libraries**: median depth 1.42× its own heart's median (other cells 0.91×);
+   its sensitivity rises from 0.18–0.36 (low/mid depth tertile) to 0.70 (top tertile).
+3. **The published proliferating cluster is specific but small**: 279 cells, specificity 0.997, sensitivity 0.20 [0.03, 0.42].
+4. **κ vs the published annotation is 0 at every timepoint**, because protocol v1 makes no high-confidence
+   positive call on either axis. Agreement is untestable on high-confidence calls; the protocol abstains.
+5. **The latent class is not identifiable from independent labellers yet**: the UCell and score_genes arms
+   share genes (both ≈ 0.97–0.99 sensitive), and split-half sets fire on ≤ 5 cells. Treat 1–3 as relative to
+   "the two protocol arms agree", not to truth.
 
 ### Labeling protocol v1, run 3 (2026-11-07, hk/scores)
 
