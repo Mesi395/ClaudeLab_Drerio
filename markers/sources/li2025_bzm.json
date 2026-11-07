@@ -1,0 +1,30 @@
+{
+  "source": "https://doi.org/10.1038/s41467-025-59070-0",
+  "input": {
+    "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-59070-0/MediaObjects/41467_2025_59070_MOESM5_ESM.xlsx",
+    "sha256": "628b32ceb43f6cf202dbb41a5fb9acbaa2df283f05989745d05f36bc7bb9ed17"
+  },
+  "gene_ids_from": {
+    "path": "data/raw/Hr11_filtered_matrix.h5",
+    "sha256": "680ba5177608130984b286217b39c2c8e900e38b55772c50a302c31997188c29"
+  },
+  "commit": "fea5089afcb9d799f117c4195f90d705a1399368",
+  "command": "uv run --with openpyxl python scripts/derive_li2025_markers.py",
+  "thresholds": {
+    "max_p_adj": 0.05,
+    "min_log2fc": 0.5,
+    "min_pct_in": 0.25,
+    "min_pct_diff": 0.1,
+    "non_cm_log2fc": 1.0
+  },
+  "rows": 583,
+  "kept_per_domain": {
+    "1:BZm (activ.)": 36,
+    "2:BZm (dediff.)": 16,
+    "3:BZm (dediff.-prolif.)": 15,
+    "4:BZm (prolif.)": 54,
+    "5:BZm (re-diff.)": 102
+  },
+  "dropped_non_cm": 348,
+  "dropped_not_in_hu2022": 12
+}

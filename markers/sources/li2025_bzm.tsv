@@ -1,0 +1,584 @@
+gene	ensembl_hu2022	cluster	axis_hint	avg_log2FC	pct.1	pct.2	p_val_adj	n_bzm_domains	also_remote_marker	cm_scrna_marker_of	non_cm_marker_of	keep
+tnfrsf11b	ENSDARG00000098377	1:BZm (activ.)	injury_responsive	3.324	0.56	0.044	0	1	False			True
+nppb	ENSDARG00000052958	1:BZm (activ.)	injury_responsive	2.818	0.933	0.371	0	4	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Endocardium (activ.)	False
+hspb11	ENSDARG00000002204	1:BZm (activ.)	injury_responsive	2.729	0.965	0.507	0	3	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+flnca	ENSDARG00000018566	1:BZm (activ.)	injury_responsive	2.674	0.64	0.158	0	4	False	Cardiomyocytes (V)		True
+ACTC1	ENSDARG00000057911	1:BZm (activ.)	injury_responsive	2.307	0.684	0.266	1.038e-272	4	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+rln3a	ENSDARG00000070780	1:BZm (activ.)	injury_responsive	2.216	0.293	0.02	0	1	False			True
+hspb9	ENSDARG00000078674	1:BZm (activ.)	injury_responsive	2.206	0.28	0.019	0	2	False			True
+hspb6	ENSDARG00000077236	1:BZm (activ.)	injury_responsive	2.082	0.649	0.197	0	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+slc16a3	ENSDARG00000045051	1:BZm (activ.)	injury_responsive	2.013	0.509	0.139	5.253e-271	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Neutrophils	False
+desma	ENSDARG00000058656	1:BZm (activ.)	injury_responsive	1.886	0.899	0.499	0	5	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+xirp1	ENSDARG00000030722	1:BZm (activ.)	injury_responsive	1.873	0.431	0.132	7.045e-182	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+itga5	ENSDARG00000006353	1:BZm (activ.)	injury_responsive	1.858	0.515	0.178	2.708e-188	3	False	Cardiomyocytes (V)	Endocardium (frzb);Endothelial cells;Epicardium;Lymphatic ECs	False
+rrad	ENSDARG00000052011	1:BZm (activ.)	injury_responsive	1.838	0.556	0.182	4.855e-231	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+kcnh6a	ENSDARG00000001803	1:BZm (activ.)	injury_responsive	1.642	0.522	0.17	1.287e-199	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+csrp3	ENSDARG00000101706	1:BZm (activ.)	injury_responsive	1.626	0.612	0.278	8.584e-160	5	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+akap12b	ENSDARG00000055678	1:BZm (activ.)	injury_responsive	1.605	0.397	0.134	1.466e-138	1	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (prolif.);Endothelial cells;Lymphatic ECs	False
+mustn1b	ENSDARG00000089086	1:BZm (activ.)	injury_responsive	1.568	0.556	0.252	2.149e-137	5	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+acta1a	ENSDARG00000036371	1:BZm (activ.)	injury_responsive	1.474	0.521	0.243	2.804e-110	4	True	Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ifrd1	ENSDARG00000068708	1:BZm (activ.)	injury_responsive	1.44	0.315	0.118	2.804e-86	1	False			True
+npm1a	ENSDARG00000014329	1:BZm (activ.)	injury_responsive	1.429	0.368	0.139	4.154e-101	2	False		Endocardium (activ.);Endothelial cells;Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.);Smooth muscle cells	False
+cxcl8a	ENSDARG00000104795	1:BZm (activ.)	injury_responsive	1.403	0.396	0.08	5.532e-276	1	False		Macrophages;Macrophages (prolif.)	False
+pmp22b	ENSDARG00000060457	1:BZm (activ.)	injury_responsive	1.381	0.383	0.191	1.631e-62	1	False		Coronary ECs;Coronary ECs (prolif.);Endocardium (V)	False
+aldocb	ENSDARG00000019702	1:BZm (activ.)	injury_responsive	1.346	0.514	0.272	2.622e-85	2	False		Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+socs3a	ENSDARG00000025428	1:BZm (activ.)	injury_responsive	1.332	0.717	0.369	2.735e-159	3	False		Endocardium (V);Endocardium (activ.)	False
+timp2b	ENSDARG00000075261	1:BZm (activ.)	injury_responsive	1.307	0.524	0.141	2.966e-254	1	False		Fibroblasts (reg.);Macrophages;Macrophages (prolif.);Neutrophils	False
+marcksl1a	ENSDARG00000039034	1:BZm (activ.)	injury_responsive	1.276	0.465	0.21	2.153e-96	2	False		Endocardium (V);Endocardium (activ.);Lymphatic ECs;Macrophages	False
+ppdpfa	ENSDARG00000007682	1:BZm (activ.)	injury_responsive	1.262	0.744	0.416	4.319e-150	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Epicardium	False
+tuba1b		1:BZm (activ.)	injury_responsive	1.26	0.52	0.272	1.302e-88	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Endocardium (activ.);Fibroblasts (SMC);Macrophages (prolif.);Valves	False
+rcan1a	ENSDARG00000003109	1:BZm (activ.)	injury_responsive	1.257	0.307	0.132	6.178e-62	3	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (prolif.)	False
+atp1b1a	ENSDARG00000013144	1:BZm (activ.)	injury_responsive	1.232	0.725	0.457	1.871e-115	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs	False
+eif4a1a	ENSDARG00000092115	1:BZm (activ.)	injury_responsive	1.218	0.272	0.106	1.438e-63	1	False			True
+prmt1	ENSDARG00000010246	1:BZm (activ.)	injury_responsive	1.206	0.325	0.136	2.077e-70	1	False		Endocardium (activ.);Lymphatic ECs	False
+tuft1a	ENSDARG00000061242	1:BZm (activ.)	injury_responsive	1.19	0.353	0.159	9.591e-67	1	False		Endocardium (frzb);Endothelial cells;Fibroblasts;Fibroblasts (reg.);Lymphatic ECs;Smooth muscle cells;Valves	False
+sdc4	ENSDARG00000059906	1:BZm (activ.)	injury_responsive	1.184	0.365	0.15	3.411e-84	1	False			True
+serpine1	ENSDARG00000056795	1:BZm (activ.)	injury_responsive	1.178	0.448	0.23	2.478e-69	4	False		Coronary ECs;Endocardium (activ.);Endocardium (frzb);Epicardium;Fibroblasts (reg.)	False
+cxcl18b	ENSDARG00000075045	1:BZm (activ.)	injury_responsive	1.175	0.53	0.214	2.98e-141	1	False		Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.);Smooth muscle cells	False
+cbx7a	ENSDARG00000038025	1:BZm (activ.)	injury_responsive	1.174	0.309	0.122	1.221e-71	1	False		Coronary ECs;Endocardium (A);Endocardium (activ.);Fibroblasts (SMC)	False
+tubb4b	ENSDARG00000002344	1:BZm (activ.)	injury_responsive	1.084	0.565	0.337	1.286e-72	2	False		Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils	False
+slc38a3b	ENSDARG00000091061	1:BZm (activ.)	injury_responsive	1.077	0.25	0.116	1.093e-37	1	False	Cardiomyocytes (A);Cardiomyocytes (V)		True
+cirbpa	ENSDARG00000103672	1:BZm (activ.)	injury_responsive	1.071	0.572	0.323	8.246e-81	2	False		Coronary ECs (prolif.);Endothelial cells;Macrophages (prolif.);Neutrophils	False
+sat1a.2	ENSDARG00000095908	1:BZm (activ.)	injury_responsive	1.069	0.471	0.229	1.158e-80	1	False		Coronary ECs;T cells	False
+alas1	ENSDARG00000021059	1:BZm (activ.)	injury_responsive	1.041	0.604	0.371	3.091e-75	4	False		Endothelial cells;Macrophages;Neutrophils	False
+nme2b.2	ENSDARG00000099420	1:BZm (activ.)	injury_responsive	1.026	0.786	0.545	4.547e-92	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+msna	ENSDARG00000058128	1:BZm (activ.)	injury_responsive	1.018	0.505	0.298	1.052e-56	2	False		Coronary ECs;Coronary ECs (prolif.);Smooth muscle cells	False
+ramp2	ENSDARG00000037895	1:BZm (activ.)	injury_responsive	1.011	0.389	0.224	4.209e-40	1	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Lymphatic ECs	False
+higd1a	ENSDARG00000022303	1:BZm (activ.)	injury_responsive	1.008	0.399	0.197	1.048e-60	1	False		Coronary ECs;Macrophages	False
+aldh1a2	ENSDARG00000053493	1:BZm (activ.)	injury_responsive	1.004	0.39	0.202	3.547e-51	3	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (frzb);Epicardium;Fibroblasts (reg.);Lymphatic ECs	False
+krt18a.1		1:BZm (activ.)	injury_responsive	0.9965	0.65	0.351	2.159e-100	3	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (frzb);Endothelial cells;Fibroblasts (reg.)	False
+mvp	ENSDARG00000021242	1:BZm (activ.)	injury_responsive	0.9894	0.342	0.163	3.039e-53	2	False		Endocardium (activ.);Fibroblasts (SMC)	False
+hspb1	ENSDARG00000041065	1:BZm (activ.)	injury_responsive	0.989	0.893	0.667	7.533e-136	5	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Fibroblasts;Fibroblasts (SMC);Smooth muscle cells	False
+il6st	ENSDARG00000104693	1:BZm (activ.)	injury_responsive	0.9779	0.322	0.176	3.117e-35	2	False		Endocardium (activ.)	False
+slc20a1b	ENSDARG00000010641	1:BZm (activ.)	injury_responsive	0.9735	0.276	0.108	1.425e-62	1	False		Valves	False
+tspan36	ENSDARG00000024540	1:BZm (activ.)	injury_responsive	0.9648	0.281	0.151	1.004e-30	1	False		Macrophages;Macrophages (prolif.)	False
+ubb	ENSDARG00000093313	1:BZm (activ.)	injury_responsive	0.9605	0.356	0.182	2.748e-48	1	False			True
+gapdhs	ENSDARG00000039914	1:BZm (activ.)	injury_responsive	0.9452	0.666	0.412	5.222e-80	2	False		Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils	False
+elovl1b	ENSDARG00000103735	1:BZm (activ.)	injury_responsive	0.9355	0.275	0.145	8.449e-30	2	False		Epicardium;Macrophages;Neutrophils	False
+ldha	ENSDARG00000101251	1:BZm (activ.)	injury_responsive	0.935	0.633	0.412	2.328e-61	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils	False
+cd63	ENSDARG00000025147	1:BZm (activ.)	injury_responsive	0.9243	0.611	0.377	7.508e-66	2	False		Coronary ECs;Endocardium (activ.);Macrophages;Neutrophils	False
+fam107b	ENSDARG00000026865	1:BZm (activ.)	injury_responsive	0.9104	0.271	0.133	1.493e-36	1	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Lymphatic ECs	False
+pkma	ENSDARG00000099730	1:BZm (activ.)	injury_responsive	0.8942	0.689	0.477	7.654e-70	2	False		Coronary ECs;Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+pgk1	ENSDARG00000054191	1:BZm (activ.)	injury_responsive	0.8927	0.414	0.269	8.042e-29	2	False	Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Macrophages;Neutrophils	False
+hif1ab	ENSDARG00000034293	1:BZm (activ.)	injury_responsive	0.8906	0.322	0.177	1.169e-32	1	False		Endocardium (activ.);Neutrophils	False
+ptp4a2b	ENSDARG00000035676	1:BZm (activ.)	injury_responsive	0.8768	0.269	0.135	5.827e-34	1	False		T cells	False
+ctsla	ENSDARG00000007836	1:BZm (activ.)	injury_responsive	0.8734	0.398	0.237	3.082e-35	2	False		Endocardium (A);Endocardium (frzb);Lymphatic ECs	False
+slc25a55a	ENSDARG00000020893	1:BZm (activ.)	injury_responsive	0.8714	0.416	0.26	3.517e-34	2	False		Coronary ECs;Coronary ECs (prolif.);Neutrophils;T cells	False
+cirbpb	ENSDARG00000013351	1:BZm (activ.)	injury_responsive	0.8656	0.775	0.545	2.34e-84	1	False		T cells	False
+mycb	ENSDARG00000007241	1:BZm (activ.)	injury_responsive	0.8642	0.283	0.156	5.049e-28	2	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (prolif.)	False
+clic2	ENSDARG00000010625	1:BZm (activ.)	injury_responsive	0.851	0.493	0.311	7.735e-43	1	False		Endocardium (V);Endocardium (activ.);Endocardium (frzb)	False
+nppa	ENSDARG00000052960	1:BZm (activ.)	injury_responsive	0.8498	0.948	0.809	4.98e-105	4	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+hspa9	ENSDARG00000003035	1:BZm (activ.)	injury_responsive	0.8466	0.265	0.139	2.846e-29	1	False	Cardiomyocytes (A);Cardiomyocytes (dediff.)	T cells	False
+arvcfb	ENSDARG00000061688	1:BZm (activ.)	injury_responsive	0.846	0.278	0.174	1.042e-16	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+eno1a	ENSDARG00000022456	1:BZm (activ.)	injury_responsive	0.8451	0.586	0.411	5.637e-41	4	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+junba	ENSDARG00000074378	1:BZm (activ.)	injury_responsive	0.8322	0.341	0.188	1.603e-35	3	False		Endocardium (A);Endocardium (V);Endocardium (frzb)	False
+hnrnpa0b	ENSDARG00000036162	1:BZm (activ.)	injury_responsive	0.8298	0.327	0.204	9.749e-24	2	False		Coronary ECs;Coronary ECs (prolif.);Endocardium (activ.);Endothelial cells	False
+CT027980.1	ENSDARG00000104999	1:BZm (activ.)	injury_responsive	0.8289	0.252	0.137	1.34e-24	3	False	Cardiomyocytes (V)		True
+aldoaa	ENSDARG00000011665	1:BZm (activ.)	injury_responsive	0.8127	0.815	0.643	5.239e-74	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atf4b	ENSDARG00000038141	1:BZm (activ.)	injury_responsive	0.8076	0.331	0.201	2.035e-25	1	False		Coronary ECs;Coronary ECs (prolif.)	False
+ncl	ENSDARG00000002710	1:BZm (activ.)	injury_responsive	0.8059	0.267	0.156	1.988e-20	1	False		T cells	False
+atp1a1a.1	ENSDARG00000002791	1:BZm (activ.)	injury_responsive	0.7983	0.621	0.426	3.423e-47	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+hk1	ENSDARG00000039452	1:BZm (activ.)	injury_responsive	0.797	0.313	0.194	1.172e-21	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Endothelial cells;Neutrophils	False
+si:ch73-86n18.1	ENSDARG00000056379	1:BZm (activ.)	injury_responsive	0.7953	0.34	0.183	1.102e-36	1	False		Endocardium (V);Endocardium (activ.);Endocardium (prolif.)	False
+ddx5	ENSDARG00000038068	1:BZm (activ.)	injury_responsive	0.7911	0.389	0.241	5.308e-30	2	False		Coronary ECs	False
+atp1a3b	ENSDARG00000104139	1:BZm (activ.)	injury_responsive	0.7796	0.417	0.255	4.328e-33	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+hnrnpa0l	ENSDARG00000036161	1:BZm (activ.)	injury_responsive	0.7664	0.37	0.232	4.308e-27	1	False		Coronary ECs;Neutrophils;T cells	False
+hspa8	ENSDARG00000068992	1:BZm (activ.)	injury_responsive	0.7507	0.702	0.503	1.829e-51	2	False		Macrophages;Neutrophils	False
+pgam1a	ENSDARG00000005423	1:BZm (activ.)	injury_responsive	0.7505	0.271	0.17	1.677e-16	2	False		Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+pdk2b	ENSDARG00000059054	1:BZm (activ.)	injury_responsive	0.7494	0.349	0.212	9.068e-26	2	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Epicardium;Fibroblasts;Fibroblasts (reg.);Lymphatic ECs	False
+perp	ENSDARG00000063572	1:BZm (activ.)	injury_responsive	0.7346	0.265	0.139	1.072e-27	1	False		Endocardium (V);Endocardium (activ.);Endothelial cells;Lymphatic ECs	False
+socs3b	ENSDARG00000026611	1:BZm (activ.)	injury_responsive	0.722	0.26	0.118	1.4e-40	2	False		Endocardium (V);Endocardium (activ.);Endocardium (frzb);Endothelial cells	False
+pdlim5b	ENSDARG00000027600	1:BZm (activ.)	injury_responsive	0.7132	0.611	0.435	8.858e-39	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+tcap	ENSDARG00000007344	1:BZm (activ.)	injury_responsive	0.6942	0.325	0.218	1.2e-15	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cebpb	ENSDARG00000042725	1:BZm (activ.)	injury_responsive	0.6867	0.332	0.193	4e-27	1	False		Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+cycsb	ENSDARG00000044562	1:BZm (activ.)	injury_responsive	0.682	0.599	0.426	8.212e-36	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages	False
+fhl1a	ENSDARG00000071498	1:BZm (activ.)	injury_responsive	0.6585	0.502	0.374	1.583e-22	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Smooth muscle cells	False
+bsg	ENSDARG00000019881	1:BZm (activ.)	injury_responsive	0.6489	0.622	0.468	1.437e-31	2	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Endothelial cells	False
+synpo2lb	ENSDARG00000078696	1:BZm (activ.)	injury_responsive	0.6367	0.512	0.387	1.435e-19	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+UBB		1:BZm (activ.)	injury_responsive	0.6322	0.39	0.241	2.073e-28	1	False		Coronary ECs	False
+ubc	ENSDARG00000102632	1:BZm (activ.)	injury_responsive	0.6308	0.537	0.39	1.271e-26	1	False		Coronary ECs (prolif.);Neutrophils	False
+pdk2a	ENSDARG00000020876	1:BZm (activ.)	injury_responsive	0.6206	0.29	0.175	1.348e-19	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+acta1b	ENSDARG00000055618	1:BZm (activ.)	injury_responsive	0.6175	0.942	0.802	5.709e-82	4	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+tuba8l4	ENSDARG00000006260	1:BZm (activ.)	injury_responsive	0.6068	0.559	0.414	7.492e-26	2	False		Coronary ECs (prolif.);Endocardium (V);Endocardium (prolif.)	False
+acadvl	ENSDARG00000016687	1:BZm (activ.)	injury_responsive	0.6067	0.525	0.399	2.414e-21	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+tuba8l	ENSDARG00000042708	1:BZm (activ.)	injury_responsive	0.5937	0.384	0.259	1.109e-19	2	False		Coronary ECs;Coronary ECs (prolif.);Endocardium (activ.);Fibroblasts (SMC);Macrophages (prolif.);Neutrophils	False
+ldb3a	ENSDARG00000056322	1:BZm (activ.)	injury_responsive	0.5829	0.519	0.358	3.733e-29	3	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp2a2a	ENSDARG00000005122	1:BZm (activ.)	injury_responsive	0.577	0.669	0.523	5.315e-31	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+eif4ebp3l	ENSDARG00000041607	1:BZm (activ.)	injury_responsive	0.563	0.272	0.165	4.891e-17	1	False		Epicardium;Fibroblasts;Fibroblasts (SMC);Smooth muscle cells;Valves	False
+mrps15	ENSDARG00000109289	1:BZm (activ.)	injury_responsive	0.5474	0.454	0.282	1.921e-31	2	False		Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+myoz2b	ENSDARG00000037266	1:BZm (activ.)	injury_responsive	0.5353	0.294	0.192	1.645e-13	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+mdh2	ENSDARG00000043371	1:BZm (activ.)	injury_responsive	0.5149	0.739	0.594	3.308e-30	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+nppb	ENSDARG00000052958	2:BZm (dediff.)	dedifferentiated	2.33	0.903	0.371	0	4	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Endocardium (activ.)	False
+hspb11	ENSDARG00000002204	2:BZm (dediff.)	dedifferentiated	1.767	0.883	0.508	4.184e-265	3	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+BX649485.4	ENSDARG00000095820	2:BZm (dediff.)	dedifferentiated	1.635	0.261	0.049	5.735e-194	1	False		Macrophages (prolif.)	False
+BX649485.2	ENSDARG00000095801	2:BZm (dediff.)	dedifferentiated	1.535	0.27	0.064	4.112e-146	1	False		Macrophages (prolif.)	False
+serpine1	ENSDARG00000056795	2:BZm (dediff.)	dedifferentiated	1.461	0.473	0.23	6.438e-87	4	False		Coronary ECs;Endocardium (activ.);Endocardium (frzb);Epicardium;Fibroblasts (reg.)	False
+desma	ENSDARG00000058656	2:BZm (dediff.)	dedifferentiated	1.447	0.836	0.499	3.764e-204	5	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ctsba	ENSDARG00000055120	2:BZm (dediff.)	dedifferentiated	1.419	0.553	0.266	6.545e-112	1	False		Macrophages;Macrophages (prolif.)	False
+nppal		2:BZm (dediff.)	dedifferentiated	1.417	0.267	0.046	1.38e-224	1	False			False
+ACTC1	ENSDARG00000057911	2:BZm (dediff.)	dedifferentiated	1.344	0.564	0.267	5.619e-118	4	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+adam8a	ENSDARG00000001452	2:BZm (dediff.)	dedifferentiated	1.308	0.256	0.057	5.001e-148	1	False		Fibroblasts (reg.);Lymphatic ECs;Macrophages;Macrophages (prolif.);Neutrophils	False
+ctsd	ENSDARG00000057698	2:BZm (dediff.)	dedifferentiated	1.236	0.465	0.179	1.127e-125	1	False		Macrophages;Macrophages (prolif.)	False
+lgmn	ENSDARG00000039150	2:BZm (dediff.)	dedifferentiated	1.185	0.637	0.277	1.595e-151	1	False		Lymphatic ECs;Macrophages;Macrophages (prolif.)	False
+csrp3	ENSDARG00000101706	2:BZm (dediff.)	dedifferentiated	1.179	0.563	0.278	1.81e-105	5	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+hspa5	ENSDARG00000103846	2:BZm (dediff.)	dedifferentiated	1.167	0.446	0.172	5.78e-115	1	False		Macrophages;Macrophages (prolif.)	False
+mustn1b	ENSDARG00000089086	2:BZm (dediff.)	dedifferentiated	1.152	0.526	0.252	8.598e-102	5	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+krt18a.1		2:BZm (dediff.)	dedifferentiated	1.149	0.741	0.35	6.984e-167	3	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (frzb);Endothelial cells;Fibroblasts (reg.)	False
+rrad	ENSDARG00000052011	2:BZm (dediff.)	dedifferentiated	1.148	0.427	0.183	3.306e-90	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+grn1	ENSDARG00000089362	2:BZm (dediff.)	dedifferentiated	1.054	0.938	0.522	1.174e-209	1	False		Macrophages;Macrophages (prolif.)	False
+ctsla	ENSDARG00000007836	2:BZm (dediff.)	dedifferentiated	1.047	0.484	0.237	3.482e-79	2	False		Endocardium (A);Endocardium (frzb);Lymphatic ECs	False
+tuba1b		2:BZm (dediff.)	dedifferentiated	1.022	0.54	0.272	3.633e-88	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Endocardium (activ.);Fibroblasts (SMC);Macrophages (prolif.);Valves	False
+txn	ENSDARG00000044125	2:BZm (dediff.)	dedifferentiated	1.009	0.342	0.159	5.49e-54	2	False		Epicardium;Fibroblasts (reg.);Lymphatic ECs;Macrophages;Macrophages (prolif.)	False
+ctsz	ENSDARG00000043081	2:BZm (dediff.)	dedifferentiated	1.009	0.265	0.079	2.926e-97	1	False		Macrophages;Macrophages (prolif.)	False
+aldh1a2	ENSDARG00000053493	2:BZm (dediff.)	dedifferentiated	1.004	0.457	0.201	2.719e-88	3	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (frzb);Epicardium;Fibroblasts (reg.);Lymphatic ECs	False
+tuba8l	ENSDARG00000042708	2:BZm (dediff.)	dedifferentiated	1.003	0.53	0.259	1.609e-87	2	False		Coronary ECs;Coronary ECs (prolif.);Endocardium (activ.);Fibroblasts (SMC);Macrophages (prolif.);Neutrophils	False
+psap	ENSDARG00000013968	2:BZm (dediff.)	dedifferentiated	1.003	0.528	0.32	1.073e-54	1	False		Macrophages;Macrophages (prolif.)	False
+nppa	ENSDARG00000052960	2:BZm (dediff.)	dedifferentiated	0.9989	0.945	0.809	3.721e-156	4	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+slc25a55a	ENSDARG00000020893	2:BZm (dediff.)	dedifferentiated	0.9795	0.449	0.26	7.826e-46	2	False		Coronary ECs;Coronary ECs (prolif.);Neutrophils;T cells	False
+cd63	ENSDARG00000025147	2:BZm (dediff.)	dedifferentiated	0.9764	0.674	0.377	6.327e-96	2	False		Coronary ECs;Endocardium (activ.);Macrophages;Neutrophils	False
+actb1	ENSDARG00000037746	2:BZm (dediff.)	dedifferentiated	0.9655	0.934	0.628	1.585e-156	1	False		Coronary ECs;Coronary ECs (prolif.);Endothelial cells;Macrophages (prolif.)	False
+eno1a	ENSDARG00000022456	2:BZm (dediff.)	dedifferentiated	0.9597	0.671	0.41	2.58e-82	4	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+gapdhs	ENSDARG00000039914	2:BZm (dediff.)	dedifferentiated	0.9553	0.738	0.412	6.294e-111	2	False		Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils	False
+BX908782.2	ENSDARG00000101479	2:BZm (dediff.)	dedifferentiated	0.8877	0.56	0.218	1.179e-135	1	False		Macrophages;Macrophages (prolif.);Neutrophils	False
+krt5	ENSDARG00000058371	2:BZm (dediff.)	dedifferentiated	0.8854	0.297	0.069	2.552e-160	1	False			True
+pkma	ENSDARG00000099730	2:BZm (dediff.)	dedifferentiated	0.8809	0.736	0.477	3.633e-79	2	False		Coronary ECs;Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+atp6v0ca	ENSDARG00000057853	2:BZm (dediff.)	dedifferentiated	0.8738	0.56	0.296	3.128e-76	1	False		Macrophages;Macrophages (prolif.)	False
+efhd2	ENSDARG00000055759	2:BZm (dediff.)	dedifferentiated	0.8727	0.298	0.134	3.727e-50	1	False		Macrophages;Macrophages (prolif.);Neutrophils	False
+ldha	ENSDARG00000101251	2:BZm (dediff.)	dedifferentiated	0.851	0.643	0.411	2.785e-60	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils	False
+xirp1	ENSDARG00000030722	2:BZm (dediff.)	dedifferentiated	0.8379	0.274	0.133	2.018e-35	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+mvp	ENSDARG00000021242	2:BZm (dediff.)	dedifferentiated	0.8261	0.349	0.163	1.534e-52	2	False		Endocardium (activ.);Fibroblasts (SMC)	False
+rtn4a	ENSDARG00000044601	2:BZm (dediff.)	dedifferentiated	0.8254	0.309	0.143	4.792e-48	1	False			True
+CT027980.1	ENSDARG00000104999	2:BZm (dediff.)	dedifferentiated	0.7963	0.274	0.137	5.455e-34	3	False	Cardiomyocytes (V)		True
+pgk1	ENSDARG00000054191	2:BZm (dediff.)	dedifferentiated	0.7927	0.473	0.269	2.565e-49	2	False	Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Macrophages;Neutrophils	False
+hsp90b1	ENSDARG00000003570	2:BZm (dediff.)	dedifferentiated	0.7793	0.319	0.144	1.89e-50	1	False		Endocardium (activ.);Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.);Valves	False
+npm1a	ENSDARG00000014329	2:BZm (dediff.)	dedifferentiated	0.7677	0.295	0.14	1.39e-40	2	False		Endocardium (activ.);Endothelial cells;Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.);Smooth muscle cells	False
+junba	ENSDARG00000074378	2:BZm (dediff.)	dedifferentiated	0.7497	0.339	0.188	4.269e-32	3	False		Endocardium (A);Endocardium (V);Endocardium (frzb)	False
+flnca	ENSDARG00000018566	2:BZm (dediff.)	dedifferentiated	0.7481	0.317	0.16	2.69e-39	4	False	Cardiomyocytes (V)		True
+itga5	ENSDARG00000006353	2:BZm (dediff.)	dedifferentiated	0.7389	0.341	0.179	1.023e-36	3	False	Cardiomyocytes (V)	Endocardium (frzb);Endothelial cells;Epicardium;Lymphatic ECs	False
+cirbpa	ENSDARG00000103672	2:BZm (dediff.)	dedifferentiated	0.7308	0.538	0.324	9.185e-49	2	False		Coronary ECs (prolif.);Endothelial cells;Macrophages (prolif.);Neutrophils	False
+atp6v1g1	ENSDARG00000022315	2:BZm (dediff.)	dedifferentiated	0.7298	0.273	0.134	8.889e-34	1	False		Macrophages;Macrophages (prolif.);Neutrophils	False
+ddx5	ENSDARG00000038068	2:BZm (dediff.)	dedifferentiated	0.7197	0.381	0.241	5.418e-24	2	False		Coronary ECs	False
+bsg	ENSDARG00000019881	2:BZm (dediff.)	dedifferentiated	0.7133	0.698	0.467	3.709e-60	2	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Endothelial cells	False
+alas1	ENSDARG00000021059	2:BZm (dediff.)	dedifferentiated	0.7126	0.573	0.371	3.39e-45	4	False		Endothelial cells;Macrophages;Neutrophils	False
+slc16a3	ENSDARG00000045051	2:BZm (dediff.)	dedifferentiated	0.7041	0.289	0.141	8.129e-37	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Neutrophils	False
+atp1b1a	ENSDARG00000013144	2:BZm (dediff.)	dedifferentiated	0.6993	0.677	0.457	4.805e-58	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs	False
+cfl1	ENSDARG00000021124	2:BZm (dediff.)	dedifferentiated	0.6912	0.645	0.406	3.369e-57	1	False		Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils;Smooth muscle cells	False
+sdcbp2	ENSDARG00000012513	2:BZm (dediff.)	dedifferentiated	0.6876	0.481	0.282	1.949e-44	1	False		Macrophages;Macrophages (prolif.);Neutrophils	False
+fabp11a	ENSDARG00000017299	2:BZm (dediff.)	dedifferentiated	0.6776	0.631	0.43	2.086e-46	2	True		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (prolif.);Endothelial cells	False
+socs3b	ENSDARG00000026611	2:BZm (dediff.)	dedifferentiated	0.6768	0.261	0.118	1.898e-39	2	False		Endocardium (V);Endocardium (activ.);Endocardium (frzb);Endothelial cells	False
+tuba8l4	ENSDARG00000006260	2:BZm (dediff.)	dedifferentiated	0.6659	0.657	0.413	5.145e-53	2	False		Coronary ECs (prolif.);Endocardium (V);Endocardium (prolif.)	False
+pfn1	ENSDARG00000088091	2:BZm (dediff.)	dedifferentiated	0.6631	0.649	0.401	1.811e-57	1	False		Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+aldocb	ENSDARG00000019702	2:BZm (dediff.)	dedifferentiated	0.6598	0.459	0.273	2.811e-38	2	False		Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+fcer1gl	ENSDARG00000104077	2:BZm (dediff.)	dedifferentiated	0.6569	0.448	0.264	5.566e-37	1	False		Macrophages;Macrophages (prolif.);Neutrophils	False
+ywhabl	ENSDARG00000040287	2:BZm (dediff.)	dedifferentiated	0.6536	0.302	0.167	4.897e-26	1	False		Endothelial cells	False
+tubb4b	ENSDARG00000002344	2:BZm (dediff.)	dedifferentiated	0.6476	0.548	0.337	1.972e-47	2	False		Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils	False
+hspb1	ENSDARG00000041065	2:BZm (dediff.)	dedifferentiated	0.6401	0.825	0.668	7.698e-57	5	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Fibroblasts;Fibroblasts (SMC);Smooth muscle cells	False
+grna	ENSDARG00000004954	2:BZm (dediff.)	dedifferentiated	0.6345	0.318	0.177	1.174e-27	1	False		Macrophages;Macrophages (prolif.)	False
+il6st	ENSDARG00000104693	2:BZm (dediff.)	dedifferentiated	0.6312	0.31	0.176	5.824e-26	2	False		Endocardium (activ.)	False
+atp6ap2	ENSDARG00000008735	2:BZm (dediff.)	dedifferentiated	0.6276	0.264	0.148	1.166e-21	1	False		Macrophages;Macrophages (prolif.);Neutrophils	False
+pgam1a	ENSDARG00000005423	2:BZm (dediff.)	dedifferentiated	0.6252	0.302	0.17	1.995e-25	2	False		Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+elovl1b	ENSDARG00000103735	2:BZm (dediff.)	dedifferentiated	0.6244	0.287	0.145	8.443e-33	2	False		Epicardium;Macrophages;Neutrophils	False
+marcksl1a	ENSDARG00000039034	2:BZm (dediff.)	dedifferentiated	0.6215	0.358	0.211	3.314e-27	2	False		Endocardium (V);Endocardium (activ.);Lymphatic ECs;Macrophages	False
+socs3a	ENSDARG00000025428	2:BZm (dediff.)	dedifferentiated	0.618	0.583	0.37	8.531e-41	3	False		Endocardium (V);Endocardium (activ.)	False
+si:dkey-102g19.3	ENSDARG00000086337	2:BZm (dediff.)	dedifferentiated	0.6178	0.256	0.111	8.877e-41	1	False		Macrophages;Macrophages (prolif.);Neutrophils	False
+cotl1	ENSDARG00000026829	2:BZm (dediff.)	dedifferentiated	0.6103	0.322	0.178	6.893e-29	1	False		Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+hspb6	ENSDARG00000077236	2:BZm (dediff.)	dedifferentiated	0.6067	0.367	0.199	2.675e-35	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+CABZ01076275.1		2:BZm (dediff.)	dedifferentiated	0.5937	0.39	0.247	1.54e-24	1	True		Endocardium (V);Endocardium (prolif.);Endothelial cells	False
+mrps15	ENSDARG00000109289	2:BZm (dediff.)	dedifferentiated	0.5876	0.528	0.281	1.046e-55	2	False		Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+tfpia	ENSDARG00000034718	2:BZm (dediff.)	dedifferentiated	0.5809	0.261	0.147	1.455e-20	1	False		Coronary ECs;Coronary ECs (prolif.);Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (prolif.);Fibroblasts (reg.)	False
+atp1a3b	ENSDARG00000104139	2:BZm (dediff.)	dedifferentiated	0.5795	0.406	0.255	1.602e-26	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ctsc	ENSDARG00000101334	2:BZm (dediff.)	dedifferentiated	0.5746	0.293	0.159	1.773e-26	1	False		Macrophages;Macrophages (prolif.);Neutrophils	False
+hk1	ENSDARG00000039452	2:BZm (dediff.)	dedifferentiated	0.5727	0.316	0.194	4.27e-19	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Endothelial cells;Neutrophils	False
+grn2	ENSDARG00000088641	2:BZm (dediff.)	dedifferentiated	0.569	0.725	0.33	5.945e-123	1	False		Macrophages;Macrophages (prolif.)	False
+kcnh6a	ENSDARG00000001803	2:BZm (dediff.)	dedifferentiated	0.5657	0.279	0.172	6.066e-15	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+p4hb	ENSDARG00000105116	2:BZm (dediff.)	dedifferentiated	0.5648	0.276	0.144	6.966e-28	1	False		Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.);Valves	False
+si:ch211-9d9.1	ENSDARG00000099839	2:BZm (dediff.)	dedifferentiated	0.5596	0.398	0.21	1.977e-38	1	False		Macrophages;Macrophages (prolif.);Neutrophils	False
+si:ch211-212k18.7	ENSDARG00000055504	2:BZm (dediff.)	dedifferentiated	0.556	0.35	0.208	8.706e-25	1	False		Macrophages;Macrophages (prolif.);Neutrophils	False
+tmem199	ENSDARG00000069314	2:BZm (dediff.)	dedifferentiated	0.5469	0.274	0.151	1.448e-22	1	False		Macrophages (prolif.)	False
+eif5a2	ENSDARG00000056186	2:BZm (dediff.)	dedifferentiated	0.5394	0.335	0.182	1.045e-31	1	False		Fibroblasts (SMC);Fibroblasts (reg.);Macrophages (prolif.)	False
+anxa13	ENSDARG00000013976	2:BZm (dediff.)	dedifferentiated	0.5365	0.257	0.157	7.645e-14	1	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (frzb);Endothelial cells;Lymphatic ECs	False
+selenof	ENSDARG00000099664	2:BZm (dediff.)	dedifferentiated	0.5337	0.328	0.198	1.535e-21	1	False		Fibroblasts (reg.)	False
+arhgdia	ENSDARG00000043795	2:BZm (dediff.)	dedifferentiated	0.5315	0.404	0.252	2.813e-25	2	False		Coronary ECs (prolif.);Macrophages (prolif.)	False
+jak1	ENSDARG00000020625	2:BZm (dediff.)	dedifferentiated	0.5308	0.317	0.181	3.699e-24	1	False		Coronary ECs;Macrophages;Neutrophils	False
+msna	ENSDARG00000058128	2:BZm (dediff.)	dedifferentiated	0.5237	0.466	0.298	2.804e-28	2	False		Coronary ECs;Coronary ECs (prolif.);Smooth muscle cells	False
+cyp1c1		2:BZm (dediff.)	dedifferentiated	0.5217	0.273	0.16	4.389e-18	1	False		Endocardium (V);Endocardium (prolif.);Fibroblasts;Fibroblasts (reg.);Smooth muscle cells	False
+h3f3d	ENSDARG00000045248	2:BZm (dediff.)	dedifferentiated	0.5204	0.32	0.207	2.329e-15	1	False		Coronary ECs;Neutrophils;T cells	False
+myl12.1	ENSDARG00000099766	2:BZm (dediff.)	dedifferentiated	0.5172	0.361	0.22	5.061e-24	1	False		Coronary ECs;Coronary ECs (prolif.);Endothelial cells;Neutrophils	False
+cyc1	ENSDARG00000038075	2:BZm (dediff.)	dedifferentiated	0.5111	0.339	0.215	1.408e-18	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+hnrnpa0b	ENSDARG00000036162	2:BZm (dediff.)	dedifferentiated	0.5105	0.327	0.204	1.837e-19	2	False		Coronary ECs;Coronary ECs (prolif.);Endocardium (activ.);Endothelial cells	False
+myh7	ENSDARG00000079564	3:BZm (dediff.-prolif.)	dedifferentiated	2.653	0.755	0.248	0	3	True	Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+col1a1a	ENSDARG00000012405	3:BZm (dediff.-prolif.)	dedifferentiated	2.123	0.786	0.241	0	2	False		Endocardium (prolif.);Epicardium;Fibroblasts;Fibroblasts (reg.)	False
+col1a2	ENSDARG00000020007	3:BZm (dediff.-prolif.)	dedifferentiated	2.082	0.793	0.286	1.221e-286	2	False		Epicardium;Fibroblasts;Fibroblasts (reg.);Valves	False
+mdka	ENSDARG00000036036	3:BZm (dediff.-prolif.)	dedifferentiated	1.914	0.654	0.192	5.715e-264	2	False		Epicardium;Fibroblasts;Fibroblasts (reg.)	False
+col1a1b	ENSDARG00000035809	3:BZm (dediff.-prolif.)	dedifferentiated	1.882	0.793	0.307	2.018e-250	2	False		Endocardium (frzb);Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.)	False
+postnb	ENSDARG00000104267	3:BZm (dediff.-prolif.)	dedifferentiated	1.718	0.464	0.11	7.199e-221	2	False		Epicardium;Fibroblasts (reg.)	False
+col12a1a	ENSDARG00000078322	3:BZm (dediff.-prolif.)	dedifferentiated	1.712	0.413	0.093	4.159e-208	2	False		Epicardium;Fibroblasts (reg.)	False
+col5a1	ENSDARG00000012593	3:BZm (dediff.-prolif.)	dedifferentiated	1.701	0.48	0.134	4.724e-186	2	False		Epicardium;Fibroblasts;Fibroblasts (reg.);Valves	False
+ACTC1	ENSDARG00000057911	3:BZm (dediff.-prolif.)	dedifferentiated	1.667	0.638	0.267	1.8e-149	4	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+acta1a	ENSDARG00000036371	3:BZm (dediff.-prolif.)	dedifferentiated	1.656	0.561	0.244	4.994e-116	4	True	Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+sparc	ENSDARG00000019353	3:BZm (dediff.-prolif.)	dedifferentiated	1.557	0.576	0.215	1.471e-148	1	False		Epicardium;Fibroblasts;Fibroblasts (reg.);Smooth muscle cells;Valves	False
+fn1a	ENSDARG00000019815	3:BZm (dediff.-prolif.)	dedifferentiated	1.465	0.519	0.192	2.215e-128	1	False		Epicardium;Fibroblasts;Fibroblasts (reg.);Smooth muscle cells	False
+ifi45		3:BZm (dediff.-prolif.)	dedifferentiated	1.295	0.63	0.285	3.741e-121	1	False	Cardiomyocytes (A);Cardiomyocytes (V)	Epicardium;Fibroblasts (SMC);Fibroblasts (reg.);Lymphatic ECs	False
+tagln	ENSDARG00000045408	3:BZm (dediff.-prolif.)	dedifferentiated	1.25	0.551	0.262	2.177e-85	2	False		Fibroblasts (SMC);Fibroblasts (reg.);Smooth muscle cells	False
+fstl1b	ENSDARG00000039576	3:BZm (dediff.-prolif.)	dedifferentiated	1.239	0.513	0.27	7.113e-62	2	False		Endocardium (V);Endocardium (prolif.);Epicardium;Fibroblasts;Fibroblasts (reg.)	False
+tgm2b	ENSDARG00000074094	3:BZm (dediff.-prolif.)	dedifferentiated	1.214	0.417	0.166	5.689e-81	1	False		Coronary ECs (prolif.);Endocardium (frzb);Endothelial cells;Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.);Lymphatic ECs	False
+txn	ENSDARG00000044125	3:BZm (dediff.-prolif.)	dedifferentiated	1.18	0.326	0.159	2.217e-39	2	False		Epicardium;Fibroblasts (reg.);Lymphatic ECs;Macrophages;Macrophages (prolif.)	False
+zgc:152791	ENSDARG00000039243	3:BZm (dediff.-prolif.)	dedifferentiated	1.177	0.702	0.359	2.895e-107	1	False		Endocardium (A);Endocardium (V)	False
+flnca	ENSDARG00000018566	3:BZm (dediff.-prolif.)	dedifferentiated	1.064	0.329	0.16	4.322e-37	4	False	Cardiomyocytes (V)		True
+anxa2a	ENSDARG00000003216	3:BZm (dediff.-prolif.)	dedifferentiated	1.055	0.769	0.47	5.39e-85	1	False		Endocardium (V);Endocardium (activ.);Endocardium (frzb);Epicardium;Fibroblasts (reg.);Lymphatic ECs	False
+mcamb	ENSDARG00000005368	3:BZm (dediff.-prolif.)	dedifferentiated	1.053	0.348	0.208	2.973e-22	2	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Endocardium (V);Endocardium (prolif.);Endothelial cells;Fibroblasts (reg.)	False
+col6a2	ENSDARG00000061436	3:BZm (dediff.-prolif.)	dedifferentiated	1.051	0.33	0.142	1.313e-49	2	False		Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.)	False
+hsp90aa1.1	ENSDARG00000010478	3:BZm (dediff.-prolif.)	dedifferentiated	1.019	0.329	0.157	8.914e-39	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+desma	ENSDARG00000058656	3:BZm (dediff.-prolif.)	dedifferentiated	1.009	0.751	0.5	2.196e-73	5	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+nppb	ENSDARG00000052958	3:BZm (dediff.-prolif.)	dedifferentiated	1.009	0.606	0.373	2.479e-52	4	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Endocardium (activ.)	False
+fkbp1aa	ENSDARG00000022684	3:BZm (dediff.-prolif.)	dedifferentiated	0.9924	0.307	0.187	5.734e-18	1	False		Endocardium (V);Endothelial cells;Fibroblasts (reg.);Lymphatic ECs	False
+col5a2a	ENSDARG00000031678	3:BZm (dediff.-prolif.)	dedifferentiated	0.9852	0.265	0.109	8.345e-42	1	False		Endocardium (frzb);Epicardium;Fibroblasts;Fibroblasts (reg.);Valves	False
+crip2	ENSDARG00000070670	3:BZm (dediff.-prolif.)	dedifferentiated	0.9819	0.316	0.18	6.869e-24	2	False		Endocardium (V);Endocardium (activ.);Endocardium (frzb);Endocardium (prolif.);Valves	False
+rcan1a	ENSDARG00000003109	3:BZm (dediff.-prolif.)	dedifferentiated	0.9619	0.258	0.132	2.608e-23	3	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (prolif.)	False
+mmp2	ENSDARG00000017676	3:BZm (dediff.-prolif.)	dedifferentiated	0.9615	0.377	0.161	1.486e-58	1	False		Epicardium;Fibroblasts;Fibroblasts (reg.);Smooth muscle cells;Valves	False
+mustn1b	ENSDARG00000089086	3:BZm (dediff.-prolif.)	dedifferentiated	0.9514	0.44	0.253	7.91e-37	5	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+gstm.3	ENSDARG00000088116	3:BZm (dediff.-prolif.)	dedifferentiated	0.9377	0.409	0.169	1.225e-67	1	False		Epicardium;Fibroblasts;Fibroblasts (reg.)	False
+col6a1	ENSDARG00000074908	3:BZm (dediff.-prolif.)	dedifferentiated	0.909	0.321	0.128	1.09e-55	2	False		Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.)	False
+acta1b	ENSDARG00000055618	3:BZm (dediff.-prolif.)	dedifferentiated	0.903	0.971	0.802	5.095e-118	4	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+serpine1	ENSDARG00000056795	3:BZm (dediff.-prolif.)	dedifferentiated	0.8965	0.37	0.231	1.177e-21	4	False		Coronary ECs;Endocardium (activ.);Endocardium (frzb);Epicardium;Fibroblasts (reg.)	False
+si:ch211-156j16.1	ENSDARG00000092035	3:BZm (dediff.-prolif.)	dedifferentiated	0.8907	0.348	0.17	2.308e-39	1	False		Endocardium (activ.);Endothelial cells;Smooth muscle cells;Valves	False
+hspb1	ENSDARG00000041065	3:BZm (dediff.-prolif.)	dedifferentiated	0.864	0.862	0.668	2.796e-59	5	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Fibroblasts;Fibroblasts (SMC);Smooth muscle cells	False
+ppib	ENSDARG00000092798	3:BZm (dediff.-prolif.)	dedifferentiated	0.844	0.418	0.232	5.033e-37	1	False		Epicardium;Fibroblasts;Fibroblasts (reg.)	False
+selenow1	ENSDARG00000035136	3:BZm (dediff.-prolif.)	dedifferentiated	0.841	0.459	0.29	4.323e-27	2	False		Coronary ECs;Epicardium;Fibroblasts;Fibroblasts (reg.);Neutrophils;T cells	False
+ppiaa	ENSDARG00000009212	3:BZm (dediff.-prolif.)	dedifferentiated	0.8311	0.734	0.521	1.167e-46	1	False		T cells	False
+krt8	ENSDARG00000058358	3:BZm (dediff.-prolif.)	dedifferentiated	0.8296	0.941	0.725	3.882e-85	1	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (frzb);Epicardium	False
+krt18a.1		3:BZm (dediff.-prolif.)	dedifferentiated	0.8236	0.543	0.351	3.707e-33	3	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (frzb);Endothelial cells;Fibroblasts (reg.)	False
+ctnnb1	ENSDARG00000014571	3:BZm (dediff.-prolif.)	dedifferentiated	0.8181	0.412	0.274	2.473e-19	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Epicardium;Fibroblasts (reg.);Valves	False
+lgals2a	ENSDARG00000054942	3:BZm (dediff.-prolif.)	dedifferentiated	0.8139	0.388	0.243	1.136e-20	1	False		Epicardium;Fibroblasts (reg.);Macrophages;Macrophages (prolif.);Smooth muscle cells	False
+fn1b	ENSDARG00000006526	3:BZm (dediff.-prolif.)	dedifferentiated	0.8056	0.66	0.378	1.958e-65	1	False		Coronary ECs;Coronary ECs (prolif.);Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.);Valves	False
+si:ch211-222l21.1	ENSDARG00000076532	3:BZm (dediff.-prolif.)	dedifferentiated	0.7961	0.357	0.234	4.911e-16	1	False		Coronary ECs;Coronary ECs (prolif.);Endocardium (V);Valves	False
+arhgdia	ENSDARG00000043795	3:BZm (dediff.-prolif.)	dedifferentiated	0.7906	0.377	0.253	1.794e-15	2	False		Coronary ECs (prolif.);Macrophages (prolif.)	False
+cd81a	ENSDARG00000036080	3:BZm (dediff.-prolif.)	dedifferentiated	0.7745	0.604	0.43	2.285e-31	1	False		Endocardium (frzb);Epicardium;Fibroblasts;Fibroblasts (reg.);Lymphatic ECs;Valves	False
+si:ch211-198c19.3	ENSDARG00000095533	3:BZm (dediff.-prolif.)	dedifferentiated	0.7714	0.298	0.151	2.809e-28	1	False	Cardiomyocytes (dediff.)	Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.);Macrophages;Smooth muscle cells	False
+aldh1a2	ENSDARG00000053493	3:BZm (dediff.-prolif.)	dedifferentiated	0.7666	0.305	0.202	2.767e-10	3	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (frzb);Epicardium;Fibroblasts (reg.);Lymphatic ECs	False
+csrp3	ENSDARG00000101706	3:BZm (dediff.-prolif.)	dedifferentiated	0.766	0.422	0.279	2.783e-20	5	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+anxa6	ENSDARG00000013335	3:BZm (dediff.-prolif.)	dedifferentiated	0.7551	0.278	0.171	1.412e-13	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Epicardium;Fibroblasts (SMC);Fibroblasts (reg.);Smooth muscle cells	False
+actn2b	ENSDARG00000071090	3:BZm (dediff.-prolif.)	dedifferentiated	0.7336	0.499	0.311	9.888e-31	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cdh2	ENSDARG00000018693	3:BZm (dediff.-prolif.)	dedifferentiated	0.7273	0.37	0.254	9.925e-14	2	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.)	False
+hspb11	ENSDARG00000002204	3:BZm (dediff.-prolif.)	dedifferentiated	0.7201	0.707	0.509	2.45e-39	3	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+itga5	ENSDARG00000006353	3:BZm (dediff.-prolif.)	dedifferentiated	0.7146	0.316	0.18	2.085e-20	3	False	Cardiomyocytes (V)	Endocardium (frzb);Endothelial cells;Epicardium;Lymphatic ECs	False
+hmgn2	ENSDARG00000099572	3:BZm (dediff.-prolif.)	dedifferentiated	0.7042	0.344	0.211	1.077e-17	2	False		Coronary ECs (prolif.);Endocardium (prolif.);Fibroblasts (reg.);Macrophages;Macrophages (prolif.);T cells	False
+tnni1b	ENSDARG00000052708	3:BZm (dediff.-prolif.)	dedifferentiated	0.7016	0.797	0.62	3.514e-44	3	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs (prolif.)	False
+aldoab	ENSDARG00000034470	3:BZm (dediff.-prolif.)	dedifferentiated	0.6992	0.576	0.409	1.481e-25	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+hspa8	ENSDARG00000068992	3:BZm (dediff.-prolif.)	dedifferentiated	0.6763	0.644	0.503	3.525e-21	2	False		Macrophages;Neutrophils	False
+myl9b	ENSDARG00000008030	3:BZm (dediff.-prolif.)	dedifferentiated	0.671	0.561	0.415	1.655e-22	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Endocardium (prolif.);Smooth muscle cells	False
+palld	ENSDARG00000040009	3:BZm (dediff.-prolif.)	dedifferentiated	0.6708	0.356	0.223	3.738e-17	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Fibroblasts (SMC);Fibroblasts (reg.);Smooth muscle cells	False
+ndufa4	ENSDARG00000056108	3:BZm (dediff.-prolif.)	dedifferentiated	0.6619	0.337	0.219	1.36e-13	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+tnni4a	ENSDARG00000099870	3:BZm (dediff.-prolif.)	dedifferentiated	0.6278	0.576	0.422	4.25e-20	3	True	Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ccn2a		3:BZm (dediff.-prolif.)	dedifferentiated	0.6212	0.277	0.175	5.596e-11	2	False		Coronary ECs;Coronary ECs (prolif.);Endocardium (frzb);Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.);Smooth muscle cells;Valves	False
+ldb3a	ENSDARG00000056322	3:BZm (dediff.-prolif.)	dedifferentiated	0.6125	0.52	0.359	1.188e-20	3	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+thbs1a		3:BZm (dediff.-prolif.)	dedifferentiated	0.578	0.269	0.165	4.021e-12	1	False		Endocardium (frzb);Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.);Valves	False
+rpl22l1	ENSDARG00000010244	3:BZm (dediff.-prolif.)	dedifferentiated	0.5746	0.624	0.46	2.895e-23	1	False		Fibroblasts (SMC);Fibroblasts (reg.);Smooth muscle cells;Valves	False
+rnf10	ENSDARG00000079687	3:BZm (dediff.-prolif.)	dedifferentiated	0.5711	0.285	0.18	1.322e-11	1	False			True
+fxyd1	ENSDARG00000099014	3:BZm (dediff.-prolif.)	dedifferentiated	0.5329	0.492	0.379	5.396e-11	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Smooth muscle cells	False
+fabp11a	ENSDARG00000017299	3:BZm (dediff.-prolif.)	dedifferentiated	0.5102	0.551	0.431	1.982e-11	2	True		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (prolif.);Endothelial cells	False
+tuba1b		3:BZm (dediff.-prolif.)	dedifferentiated	0.5092	0.38	0.273	3.399e-09	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Endocardium (activ.);Fibroblasts (SMC);Macrophages (prolif.);Valves	False
+myh7	ENSDARG00000079564	4:BZm (prolif.)	proliferating	2.904	0.989	0.247	0	3	True	Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+btg2	ENSDARG00000020298	4:BZm (prolif.)	proliferating	1.689	0.91	0.195	0	1	False		Endocardium (A);Endocardium (V);Endocardium (prolif.);Valves	False
+nr4a1	ENSDARG00000000796	4:BZm (prolif.)	proliferating	1.438	0.748	0.077	0	1	False		Coronary ECs;Endocardium (V);Endocardium (frzb)	False
+f3b	ENSDARG00000005673	4:BZm (prolif.)	proliferating	1.403	0.799	0.122	0	1	False		Macrophages;Macrophages (prolif.);Neutrophils;Valves	False
+atf3	ENSDARG00000007823	4:BZm (prolif.)	proliferating	1.317	0.8	0.11	0	1	False		Macrophages;Macrophages (prolif.);Neutrophils	False
+ccn1		4:BZm (prolif.)	proliferating	1.283	0.949	0.24	0	1	False		Endocardium (frzb);Endocardium (prolif.);Fibroblasts (SMC);Smooth muscle cells;Valves	False
+acta1a	ENSDARG00000036371	4:BZm (prolif.)	proliferating	1.221	0.888	0.242	0	4	True	Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ACTC1	ENSDARG00000057911	4:BZm (prolif.)	proliferating	1.207	0.934	0.265	0	4	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+spry4	ENSDARG00000068732	4:BZm (prolif.)	proliferating	1.169	0.648	0.063	0	1	False		Endocardium (V);Endocardium (activ.);Endocardium (prolif.)	False
+phlda2	ENSDARG00000042874	4:BZm (prolif.)	proliferating	1.158	0.695	0.093	0	1	False	Cardiomyocytes (A);Cardiomyocytes (dediff.)	Coronary ECs (prolif.);Endocardium (activ.);Endothelial cells;Fibroblasts;Fibroblasts (SMC);Lymphatic ECs;Valves	False
+ndufa4	ENSDARG00000056108	4:BZm (prolif.)	proliferating	1.151	0.869	0.216	0	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+fosab	ENSDARG00000031683	4:BZm (prolif.)	proliferating	1.139	0.595	0.063	0	1	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (prolif.)	False
+mustn1b	ENSDARG00000089086	4:BZm (prolif.)	proliferating	1.095	0.889	0.251	0	5	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+f13a1a.1	ENSDARG00000045453	4:BZm (prolif.)	proliferating	1.079	0.567	0.057	0	1	False			True
+cox6b1	ENSDARG00000045230	4:BZm (prolif.)	proliferating	1.035	0.915	0.355	1.983e-256	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs (prolif.);Macrophages (prolif.);Smooth muscle cells	False
+jund	ENSDARG00000067850	4:BZm (prolif.)	proliferating	1.034	0.874	0.184	0	1	False		Endocardium (frzb)	False
+rrm2	ENSDARG00000078069	4:BZm (prolif.)	proliferating	1.003	0.46	0.039	0	1	False		Coronary ECs (prolif.);Macrophages (prolif.)	False
+tcima	ENSDARG00000079497	4:BZm (prolif.)	proliferating	1.002	0.723	0.146	0	1	False	Cardiomyocytes (V)	Endothelial cells;Lymphatic ECs	False
+nppb	ENSDARG00000052958	4:BZm (prolif.)	proliferating	0.9857	0.933	0.372	1.245e-215	4	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Endocardium (activ.)	False
+tgif1	ENSDARG00000059337	4:BZm (prolif.)	proliferating	0.9854	0.8	0.137	0	1	False	Cardiomyocytes (A)	Fibroblasts (SMC);Smooth muscle cells	False
+cox4i1l	ENSDARG00000012388	4:BZm (prolif.)	proliferating	0.9846	0.954	0.487	8.895e-211	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+ccn2a		4:BZm (prolif.)	proliferating	0.9783	0.79	0.172	0	2	False		Coronary ECs;Coronary ECs (prolif.);Endocardium (frzb);Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.);Smooth muscle cells;Valves	False
+nr4a3	ENSDARG00000055854	4:BZm (prolif.)	proliferating	0.9779	0.502	0.05	0	1	False	Cardiomyocytes (A);Cardiomyocytes (V)	Valves	False
+zgc:122979	ENSDARG00000004187	4:BZm (prolif.)	proliferating	0.9735	0.638	0.072	0	1	False	Cardiomyocytes (A);Cardiomyocytes (V)		True
+tnni1b	ENSDARG00000052708	4:BZm (prolif.)	proliferating	0.9414	0.978	0.619	9.505e-194	3	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs (prolif.)	False
+tagln	ENSDARG00000045408	4:BZm (prolif.)	proliferating	0.9251	0.893	0.26	0	2	False		Fibroblasts (SMC);Fibroblasts (reg.);Smooth muscle cells	False
+col1a1a	ENSDARG00000012405	4:BZm (prolif.)	proliferating	0.9101	0.878	0.24	0	2	False		Endocardium (prolif.);Epicardium;Fibroblasts;Fibroblasts (reg.)	False
+cdh2	ENSDARG00000018693	4:BZm (prolif.)	proliferating	0.9001	0.858	0.252	2.13e-295	2	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.)	False
+clu	ENSDARG00000010434	4:BZm (prolif.)	proliferating	0.896	0.677	0.093	0	1	False		Endocardium (frzb);Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.)	False
+h1-0		4:BZm (prolif.)	proliferating	0.8957	0.602	0.077	0	1	False		Coronary ECs (prolif.);Fibroblasts (reg.)	False
+mdka	ENSDARG00000036036	4:BZm (prolif.)	proliferating	0.8952	0.777	0.191	0	2	False		Epicardium;Fibroblasts;Fibroblasts (reg.)	False
+dusp6	ENSDARG00000070914	4:BZm (prolif.)	proliferating	0.8944	0.803	0.193	0	1	False		Coronary ECs;Coronary ECs (prolif.);Endocardium (V);Endothelial cells;Lymphatic ECs	False
+myl9a	ENSDARG00000038123	4:BZm (prolif.)	proliferating	0.8934	0.848	0.233	0	1	False		Fibroblasts (SMC);Smooth muscle cells	False
+xirp1	ENSDARG00000030722	4:BZm (prolif.)	proliferating	0.8925	0.665	0.131	0	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+mycb	ENSDARG00000007241	4:BZm (prolif.)	proliferating	0.8918	0.761	0.153	0	2	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (prolif.)	False
+ier2a	ENSDARG00000099195	4:BZm (prolif.)	proliferating	0.8889	0.638	0.091	0	1	False		Endocardium (A);Lymphatic ECs	False
+aldoab	ENSDARG00000034470	4:BZm (prolif.)	proliferating	0.8835	0.929	0.407	2.582e-217	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ankrd9	ENSDARG00000028804	4:BZm (prolif.)	proliferating	0.8625	0.534	0.054	0	1	False	Cardiomyocytes (V)		True
+rps27l		4:BZm (prolif.)	proliferating	0.8603	0.647	0.125	0	1	False		Epicardium;Fibroblasts (reg.)	False
+csrp3	ENSDARG00000101706	4:BZm (prolif.)	proliferating	0.831	0.864	0.277	1.719e-256	5	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+egr1	ENSDARG00000037421	4:BZm (prolif.)	proliferating	0.8288	0.537	0.075	0	1	False		Endocardium (A);Endocardium (V);Endocardium (prolif.);Lymphatic ECs;Valves	False
+hspb9	ENSDARG00000078674	4:BZm (prolif.)	proliferating	0.8263	0.341	0.019	0	2	False			True
+col6a2	ENSDARG00000061436	4:BZm (prolif.)	proliferating	0.8201	0.718	0.14	0	2	False		Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.)	False
+nid1b	ENSDARG00000103129	4:BZm (prolif.)	proliferating	0.8056	0.532	0.079	0	1	False		Endocardium (V);Epicardium;Fibroblasts;Fibroblasts (reg.)	False
+tnni4a	ENSDARG00000099870	4:BZm (prolif.)	proliferating	0.8035	0.938	0.421	2.507e-190	3	True	Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+sik1	ENSDARG00000058606	4:BZm (prolif.)	proliferating	0.7967	0.677	0.122	0	1	False		Endocardium (frzb);Endothelial cells;Lymphatic ECs;T cells	False
+postnb	ENSDARG00000104267	4:BZm (prolif.)	proliferating	0.7945	0.639	0.109	0	2	False		Epicardium;Fibroblasts (reg.)	False
+myh7l	ENSDARG00000079782	4:BZm (prolif.)	proliferating	0.793	1	0.878	4.482e-150	2	True	Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+serpine1	ENSDARG00000056795	4:BZm (prolif.)	proliferating	0.7905	0.823	0.228	6.533e-285	4	False		Coronary ECs;Endocardium (activ.);Endocardium (frzb);Epicardium;Fibroblasts (reg.)	False
+ino80	ENSDARG00000070432	4:BZm (prolif.)	proliferating	0.7827	0.897	0.28	8.304e-273	1	False		Coronary ECs;Coronary ECs (prolif.)	False
+col1a2	ENSDARG00000020007	4:BZm (prolif.)	proliferating	0.7802	0.915	0.285	2.079e-275	2	False		Epicardium;Fibroblasts;Fibroblasts (reg.);Valves	False
+selenow1	ENSDARG00000035136	4:BZm (prolif.)	proliferating	0.7701	0.851	0.288	1.312e-229	2	False		Coronary ECs;Epicardium;Fibroblasts;Fibroblasts (reg.);Neutrophils;T cells	False
+col5a1	ENSDARG00000012593	4:BZm (prolif.)	proliferating	0.7463	0.613	0.133	6.107e-299	2	False		Epicardium;Fibroblasts;Fibroblasts (reg.);Valves	False
+tpm4a	ENSDARG00000023963	4:BZm (prolif.)	proliferating	0.746	0.999	0.887	2.976e-166	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Smooth muscle cells	False
+hspb1	ENSDARG00000041065	4:BZm (prolif.)	proliferating	0.7443	0.985	0.667	1.191e-151	5	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Fibroblasts;Fibroblasts (SMC);Smooth muscle cells	False
+jun	ENSDARG00000043531	4:BZm (prolif.)	proliferating	0.7347	0.757	0.167	0	1	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (frzb);Endocardium (prolif.)	False
+prelid3b	ENSDARG00000009505	4:BZm (prolif.)	proliferating	0.7226	0.731	0.159	0	1	False		Coronary ECs;Neutrophils	False
+crip2l		4:BZm (prolif.)	proliferating	0.7217	0.808	0.24	1.315e-252	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		False
+usp28	ENSDARG00000008880	4:BZm (prolif.)	proliferating	0.7129	0.739	0.18	0	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+sfrp5	ENSDARG00000039041	4:BZm (prolif.)	proliferating	0.7074	0.413	0.046	0	1	False		Endocardium (A);Endocardium (prolif.)	False
+postna	ENSDARG00000043806	4:BZm (prolif.)	proliferating	0.7052	0.393	0.04	0	1	False		Endocardium (A);Endocardium (frzb);Endocardium (prolif.);Valves	False
+desma	ENSDARG00000058656	4:BZm (prolif.)	proliferating	0.7051	0.95	0.499	8.36e-149	5	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ctnnb1	ENSDARG00000014571	4:BZm (prolif.)	proliferating	0.6917	0.833	0.272	1.783e-222	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Epicardium;Fibroblasts (reg.);Valves	False
+tnnc1a	ENSDARG00000011400	4:BZm (prolif.)	proliferating	0.6876	0.959	0.537	2.801e-148	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+fkbp5	ENSDARG00000028396	4:BZm (prolif.)	proliferating	0.6865	0.838	0.246	1.55e-258	1	True			True
+idh2	ENSDARG00000003795	4:BZm (prolif.)	proliferating	0.6851	0.973	0.551	7.577e-151	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+tob1a	ENSDARG00000032619	4:BZm (prolif.)	proliferating	0.6839	0.706	0.148	0	1	False		Smooth muscle cells	False
+coro1cb	ENSDARG00000021193	4:BZm (prolif.)	proliferating	0.6813	0.653	0.122	0	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+plekha7a	ENSDARG00000060813	4:BZm (prolif.)	proliferating	0.6812	0.657	0.141	0	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+nocta	ENSDARG00000077726	4:BZm (prolif.)	proliferating	0.6789	0.402	0.037	0	1	False		Coronary ECs;Endocardium (activ.)	False
+myl9b	ENSDARG00000008030	4:BZm (prolif.)	proliferating	0.6781	0.908	0.414	4.512e-161	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Endocardium (prolif.);Smooth muscle cells	False
+col1a1b	ENSDARG00000035809	4:BZm (prolif.)	proliferating	0.672	0.904	0.306	6.658e-229	2	False		Endocardium (frzb);Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.)	False
+si:dkey-164f24.2	ENSDARG00000089418	4:BZm (prolif.)	proliferating	0.6716	0.797	0.215	9.567e-286	1	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Smooth muscle cells	False
+pim1	ENSDARG00000100020	4:BZm (prolif.)	proliferating	0.667	0.867	0.272	2.438e-237	1	False		Endocardium (V);Endocardium (frzb)	False
+mdh1aa	ENSDARG00000017772	4:BZm (prolif.)	proliferating	0.6602	0.872	0.321	2.587e-203	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+myom1b	ENSDARG00000104836	4:BZm (prolif.)	proliferating	0.6589	0.909	0.321	1.133e-218	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+col12a1a	ENSDARG00000078322	4:BZm (prolif.)	proliferating	0.6578	0.496	0.092	1.252e-298	2	False		Epicardium;Fibroblasts (reg.)	False
+cilp	ENSDARG00000053362	4:BZm (prolif.)	proliferating	0.6547	0.363	0.033	0	1	False			True
+alas1	ENSDARG00000021059	4:BZm (prolif.)	proliferating	0.6528	0.894	0.369	1.865e-162	4	False		Endothelial cells;Macrophages;Neutrophils	False
+pcna	ENSDARG00000054155	4:BZm (prolif.)	proliferating	0.6526	0.489	0.083	0	1	False		Coronary ECs (prolif.);Endocardium (prolif.);Fibroblasts (reg.);Macrophages (prolif.);T cells	False
+crip2	ENSDARG00000070670	4:BZm (prolif.)	proliferating	0.6466	0.738	0.178	2.614e-302	2	False		Endocardium (V);Endocardium (activ.);Endocardium (frzb);Endocardium (prolif.);Valves	False
+BX323861.3	ENSDARG00000110173	4:BZm (prolif.)	proliferating	0.6444	0.386	0.07	1.915e-236	1	False	Cardiomyocytes (A);Cardiomyocytes (V)		True
+kcne4	ENSDARG00000068257	4:BZm (prolif.)	proliferating	0.6444	0.389	0.04	0	1	False		Endocardium (activ.);Endothelial cells;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.);Smooth muscle cells	False
+midn	ENSDARG00000018524	4:BZm (prolif.)	proliferating	0.6426	0.489	0.076	0	1	False		Coronary ECs (prolif.);Endothelial cells	False
+anxa6	ENSDARG00000013335	4:BZm (prolif.)	proliferating	0.6425	0.701	0.169	1.514e-290	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Epicardium;Fibroblasts (SMC);Fibroblasts (reg.);Smooth muscle cells	False
+zfand5b	ENSDARG00000002271	4:BZm (prolif.)	proliferating	0.6415	0.619	0.117	0	1	False		Macrophages;Neutrophils	False
+cep85l	ENSDARG00000020777	4:BZm (prolif.)	proliferating	0.6337	0.958	0.536	3.098e-134	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Neutrophils	False
+srl	ENSDARG00000104587	4:BZm (prolif.)	proliferating	0.6322	0.618	0.121	0	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+col6a1	ENSDARG00000074908	4:BZm (prolif.)	proliferating	0.6301	0.648	0.127	0	2	False		Epicardium;Fibroblasts;Fibroblasts (SMC);Fibroblasts (reg.)	False
+atp5fa1	ENSDARG00000010149	4:BZm (prolif.)	proliferating	0.6295	0.944	0.524	1.145e-126	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+pdk2a	ENSDARG00000020876	4:BZm (prolif.)	proliferating	0.629	0.736	0.173	0	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+hmgn2	ENSDARG00000099572	4:BZm (prolif.)	proliferating	0.6254	0.729	0.209	1.185e-227	2	False		Coronary ECs (prolif.);Endocardium (prolif.);Fibroblasts (reg.);Macrophages;Macrophages (prolif.);T cells	False
+znf106a	ENSDARG00000016651	4:BZm (prolif.)	proliferating	0.6192	0.555	0.092	0	1	False	Cardiomyocytes (A);Cardiomyocytes (V)		True
+flnca	ENSDARG00000018566	4:BZm (prolif.)	proliferating	0.6189	0.721	0.158	0	4	False	Cardiomyocytes (V)		True
+acta1b	ENSDARG00000055618	4:BZm (prolif.)	proliferating	0.6177	0.993	0.801	3.06e-133	4	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+tnnt2a	ENSDARG00000020610	4:BZm (prolif.)	proliferating	0.6167	0.991	0.711	9.9e-121	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+rcan1a	ENSDARG00000003109	4:BZm (prolif.)	proliferating	0.6159	0.632	0.13	0	3	False		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (prolif.)	False
+ldhba	ENSDARG00000019644	4:BZm (prolif.)	proliferating	0.6158	0.966	0.54	1.866e-133	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+fosl2	ENSDARG00000040623	4:BZm (prolif.)	proliferating	0.6144	0.49	0.087	0	1	False		Coronary ECs;Endocardium (frzb);Endothelial cells	False
+fhl1a	ENSDARG00000071498	4:BZm (prolif.)	proliferating	0.6138	0.922	0.372	2.261e-188	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Smooth muscle cells	False
+pdk2b	ENSDARG00000059054	4:BZm (prolif.)	proliferating	0.6133	0.816	0.21	3.411e-297	2	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Epicardium;Fibroblasts;Fibroblasts (reg.);Lymphatic ECs	False
+hadhb		4:BZm (prolif.)	proliferating	0.6115	0.797	0.23	1.076e-248	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		False
+cox7b	ENSDARG00000115557	4:BZm (prolif.)	proliferating	0.6113	0.943	0.489	2.104e-144	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+atp5mc1	ENSDARG00000056008	4:BZm (prolif.)	proliferating	0.6095	0.918	0.424	9.627e-156	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs (prolif.);Macrophages (prolif.)	False
+ier2b	ENSDARG00000086881	4:BZm (prolif.)	proliferating	0.6024	0.489	0.07	0	1	False		Endocardium (V);Lymphatic ECs	False
+adprhl1	ENSDARG00000041589	4:BZm (prolif.)	proliferating	0.5996	0.573	0.106	0	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndrg4	ENSDARG00000103937	4:BZm (prolif.)	proliferating	0.5984	0.876	0.335	4.767e-176	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+usp2a	ENSDARG00000020107	4:BZm (prolif.)	proliferating	0.5979	0.7	0.156	0	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Endocardium (A);Endocardium (frzb);Smooth muscle cells;Valves	False
+cox6a2	ENSDARG00000054588	4:BZm (prolif.)	proliferating	0.5966	0.976	0.676	4.615e-125	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+tuba8l2	ENSDARG00000031164	4:BZm (prolif.)	proliferating	0.5943	0.626	0.14	2.441e-286	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Valves	False
+cox8a	ENSDARG00000095273	4:BZm (prolif.)	proliferating	0.5913	0.812	0.263	3.712e-215	1	False	Cardiomyocytes (dediff.)	Fibroblasts (SMC);Macrophages;Macrophages (prolif.);Neutrophils	False
+cox7c	ENSDARG00000104537	4:BZm (prolif.)	proliferating	0.5909	0.975	0.631	1.338e-116	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+socs3a	ENSDARG00000025428	4:BZm (prolif.)	proliferating	0.5907	0.917	0.369	1.985e-170	3	False		Endocardium (V);Endocardium (activ.)	False
+mcamb	ENSDARG00000005368	4:BZm (prolif.)	proliferating	0.5874	0.759	0.206	4.804e-259	2	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Endocardium (V);Endocardium (prolif.);Endothelial cells;Fibroblasts (reg.)	False
+pdgfrl	ENSDARG00000006456	4:BZm (prolif.)	proliferating	0.5863	0.376	0.043	0	1	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Epicardium;Fibroblasts (reg.);Valves	False
+lfng	ENSDARG00000037879	4:BZm (prolif.)	proliferating	0.5852	0.612	0.128	0	1	False		Endocardium (A);Endocardium (frzb);Endocardium (prolif.);Endothelial cells;Lymphatic ECs	False
+svila	ENSDARG00000055075	4:BZm (prolif.)	proliferating	0.58	0.568	0.107	0	1	False		Coronary ECs;Coronary ECs (prolif.);Fibroblasts	False
+cox6a1	ENSDARG00000022438	4:BZm (prolif.)	proliferating	0.5789	0.578	0.123	2.82e-285	1	False		Coronary ECs (prolif.);Fibroblasts (reg.);Macrophages;Macrophages (prolif.)	False
+cyc1	ENSDARG00000038075	4:BZm (prolif.)	proliferating	0.5736	0.746	0.213	2.048e-226	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cycsb	ENSDARG00000044562	4:BZm (prolif.)	proliferating	0.5675	0.913	0.424	4.777e-144	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages	False
+aco2	ENSDARG00000007294	4:BZm (prolif.)	proliferating	0.5649	0.764	0.218	2.809e-237	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+eno1a	ENSDARG00000022456	4:BZm (prolif.)	proliferating	0.5627	0.915	0.409	1.483e-145	4	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+zgc:162730	ENSDARG00000103720	4:BZm (prolif.)	proliferating	0.5622	0.801	0.223	4.546e-254	1	False		Valves	False
+smpx	ENSDARG00000045302	4:BZm (prolif.)	proliferating	0.5596	0.762	0.215	1.543e-242	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+tsc22d3	ENSDARG00000075666	4:BZm (prolif.)	proliferating	0.5549	0.642	0.124	0	1	False		Coronary ECs;Fibroblasts	False
+fstl1b	ENSDARG00000039576	4:BZm (prolif.)	proliferating	0.5543	0.845	0.269	2.129e-222	2	False		Endocardium (V);Endocardium (prolif.);Epicardium;Fibroblasts;Fibroblasts (reg.)	False
+ier5	ENSDARG00000009881	4:BZm (prolif.)	proliferating	0.5526	0.71	0.155	0	1	False			True
+fbxl22	ENSDARG00000096995	4:BZm (prolif.)	proliferating	0.5484	0.336	0.033	0	1	False			True
+ucp3	ENSDARG00000091209	4:BZm (prolif.)	proliferating	0.5464	0.346	0.035	0	1	False	Cardiomyocytes (V)		True
+mcl1b	ENSDARG00000008363	4:BZm (prolif.)	proliferating	0.5439	0.735	0.18	7.542e-286	1	False		Fibroblasts;Neutrophils;Smooth muscle cells	False
+myom2a	ENSDARG00000075433	4:BZm (prolif.)	proliferating	0.5421	0.755	0.205	1.66e-247	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+CR392002.1	ENSDARG00000092084	4:BZm (prolif.)	proliferating	0.539	0.333	0.03	0	1	False		Macrophages;Macrophages (prolif.)	False
+atp5f1b	ENSDARG00000070083	4:BZm (prolif.)	proliferating	0.5388	0.964	0.633	2.727e-104	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+camk2n1a	ENSDARG00000025855	4:BZm (prolif.)	proliferating	0.5353	0.367	0.037	0	1	False	Cardiomyocytes (V)		True
+cox5b2	ENSDARG00000068738	4:BZm (prolif.)	proliferating	0.5318	0.929	0.486	1.039e-131	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+COX5B	ENSDARG00000015978	4:BZm (prolif.)	proliferating	0.528	0.708	0.198	5.759e-227	1	False	Cardiomyocytes (A)	Coronary ECs (prolif.);Macrophages;Macrophages (prolif.)	False
+atp5mc3b	ENSDARG00000009447	4:BZm (prolif.)	proliferating	0.5279	0.968	0.618	4.555e-108	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+nppa	ENSDARG00000052960	4:BZm (prolif.)	proliferating	0.5278	0.995	0.809	4.174e-88	4	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cox8b	ENSDARG00000097209	4:BZm (prolif.)	proliferating	0.5267	0.968	0.531	2.243e-131	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Fibroblasts (SMC)	False
+CABZ01072245.1		4:BZm (prolif.)	proliferating	0.5214	0.407	0.076	9.688e-240	1	False			False
+stk19	ENSDARG00000086628	4:BZm (prolif.)	proliferating	0.5214	0.563	0.126	1.391e-250	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Fibroblasts (reg.)	False
+apobec2a	ENSDARG00000018881	4:BZm (prolif.)	proliferating	0.5205	0.45	0.067	0	1	False	Cardiomyocytes (V)		True
+CT027980.1	ENSDARG00000104999	4:BZm (prolif.)	proliferating	0.5191	0.602	0.135	7.981e-268	3	False	Cardiomyocytes (V)		True
+atp1b1a	ENSDARG00000013144	4:BZm (prolif.)	proliferating	0.5182	0.942	0.456	2.303e-129	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs	False
+dusp1	ENSDARG00000100515	4:BZm (prolif.)	proliferating	0.5178	0.679	0.142	0	1	False		Endocardium (A)	False
+klf6a	ENSDARG00000029072	4:BZm (prolif.)	proliferating	0.5161	0.561	0.105	0	1	False		Endocardium (activ.);Endocardium (frzb);Lymphatic ECs	False
+igfbp1a	ENSDARG00000099351	4:BZm (prolif.)	proliferating	0.5151	0.649	0.115	0	1	False			True
+hmgb3a	ENSDARG00000056725	4:BZm (prolif.)	proliferating	0.5148	0.354	0.042	0	1	False	Cardiomyocytes (A);Cardiomyocytes (V)	Valves	False
+col18a1b	ENSDARG00000095901	4:BZm (prolif.)	proliferating	0.5128	0.279	0.029	0	1	False		Fibroblasts;Fibroblasts (reg.)	False
+ldb3a	ENSDARG00000056322	4:BZm (prolif.)	proliferating	0.5125	0.854	0.357	4.381e-139	3	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ccng2	ENSDARG00000017602	4:BZm (prolif.)	proliferating	0.5124	0.517	0.083	0	1	False		Macrophages;Macrophages (prolif.);Neutrophils	False
+junba	ENSDARG00000074378	4:BZm (prolif.)	proliferating	0.5115	0.692	0.186	1.233e-226	3	False		Endocardium (A);Endocardium (V);Endocardium (frzb)	False
+fundc2	ENSDARG00000103740	4:BZm (prolif.)	proliferating	0.5105	0.611	0.125	0	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cox4i1	ENSDARG00000032970	4:BZm (prolif.)	proliferating	0.5101	0.935	0.479	7.296e-122	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+vdac2	ENSDARG00000013623	4:BZm (prolif.)	proliferating	0.5083	0.937	0.513	9.137e-115	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+nexn	ENSDARG00000057317	4:BZm (prolif.)	proliferating	0.5042	0.723	0.18	5.021e-275	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cox5ab	ENSDARG00000099663	4:BZm (prolif.)	proliferating	0.5037	0.759	0.212	1.261e-242	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+ccng1	ENSDARG00000076667	4:BZm (prolif.)	proliferating	0.5016	0.913	0.439	2.443e-129	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Smooth muscle cells	False
+tpi1b	ENSDARG00000040988	4:BZm (prolif.)	proliferating	0.5014	0.867	0.331	1.099e-163	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+myh7	ENSDARG00000079564	5:BZm (re-diff.)	redifferentiated	1.792	0.605	0.248	5.225e-194	3	True	Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cox6a2	ENSDARG00000054588	5:BZm (re-diff.)	redifferentiated	1.528	0.939	0.675	1.067e-230	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cox5b2	ENSDARG00000068738	5:BZm (re-diff.)	redifferentiated	1.396	0.816	0.486	2.29e-168	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cox4i1l	ENSDARG00000012388	5:BZm (re-diff.)	redifferentiated	1.311	0.794	0.487	8.63e-148	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+cep85l	ENSDARG00000020777	5:BZm (re-diff.)	redifferentiated	1.197	0.838	0.536	1.622e-142	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Neutrophils	False
+tpm4a	ENSDARG00000023963	5:BZm (re-diff.)	redifferentiated	1.192	0.992	0.887	4.186e-277	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Smooth muscle cells	False
+acta1a	ENSDARG00000036371	5:BZm (re-diff.)	redifferentiated	1.192	0.452	0.244	8.843e-64	4	True	Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufa4l	ENSDARG00000099499	5:BZm (re-diff.)	redifferentiated	1.159	0.806	0.564	1.894e-106	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+uqcr10	ENSDARG00000104517	5:BZm (re-diff.)	redifferentiated	1.154	0.605	0.358	4.585e-80	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cox7b	ENSDARG00000115557	5:BZm (re-diff.)	redifferentiated	1.147	0.739	0.489	2.008e-95	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+cox5aa	ENSDARG00000088383	5:BZm (re-diff.)	redifferentiated	1.144	0.649	0.405	9.974e-77	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages;Macrophages (prolif.)	False
+trim63a	ENSDARG00000028027	5:BZm (re-diff.)	redifferentiated	1.127	0.362	0.186	2.262e-50	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5mf	ENSDARG00000037867	5:BZm (re-diff.)	redifferentiated	1.111	0.653	0.411	5.61e-80	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+myh7l	ENSDARG00000079782	5:BZm (re-diff.)	redifferentiated	1.108	0.999	0.878	5.586e-269	2	True	Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5mc1	ENSDARG00000056008	5:BZm (re-diff.)	redifferentiated	1.107	0.676	0.425	4.915e-79	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs (prolif.);Macrophages (prolif.)	False
+cox8b	ENSDARG00000097209	5:BZm (re-diff.)	redifferentiated	1.105	0.767	0.531	5.055e-95	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Fibroblasts (SMC)	False
+cox7c	ENSDARG00000104537	5:BZm (re-diff.)	redifferentiated	1.079	0.886	0.631	6.138e-128	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+lrch4	ENSDARG00000068258	5:BZm (re-diff.)	redifferentiated	1.074	0.681	0.389	6.9e-101	1	False			True
+nme2b.2	ENSDARG00000099420	5:BZm (re-diff.)	redifferentiated	1.06	0.762	0.545	4.986e-60	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ckma	ENSDARG00000035327	5:BZm (re-diff.)	redifferentiated	1.053	0.867	0.591	9.116e-137	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufa5	ENSDARG00000039346	5:BZm (re-diff.)	redifferentiated	1.05	0.427	0.222	1.359e-61	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cox6c	ENSDARG00000038577	5:BZm (re-diff.)	redifferentiated	1.04	0.773	0.524	8.007e-92	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5f1e	ENSDARG00000095897	5:BZm (re-diff.)	redifferentiated	1.035	0.74	0.513	1.465e-75	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+tnnc1a	ENSDARG00000011400	5:BZm (re-diff.)	redifferentiated	1.015	0.822	0.537	4.153e-115	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+mustn1b	ENSDARG00000089086	5:BZm (re-diff.)	redifferentiated	1.014	0.437	0.253	4.055e-47	5	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cycsb	ENSDARG00000044562	5:BZm (re-diff.)	redifferentiated	1.011	0.68	0.425	7.214e-81	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages	False
+pln		5:BZm (re-diff.)	redifferentiated	1.001	0.706	0.422	2.472e-99	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		False
+aldoab	ENSDARG00000034470	5:BZm (re-diff.)	redifferentiated	0.9973	0.655	0.408	1.484e-74	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufa12	ENSDARG00000042469	5:BZm (re-diff.)	redifferentiated	0.9906	0.283	0.154	2.386e-30	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Fibroblasts (SMC)	False
+atp5pd	ENSDARG00000098355	5:BZm (re-diff.)	redifferentiated	0.9898	0.707	0.456	2.88e-77	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cox7a1	ENSDARG00000069464	5:BZm (re-diff.)	redifferentiated	0.9874	0.757	0.495	3.597e-102	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+pabpc4	ENSDARG00000059259	5:BZm (re-diff.)	redifferentiated	0.9854	0.612	0.328	2.996e-94	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+mdh1aa	ENSDARG00000017772	5:BZm (re-diff.)	redifferentiated	0.9827	0.509	0.323	1.919e-40	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufb8	ENSDARG00000010113	5:BZm (re-diff.)	redifferentiated	0.9726	0.438	0.232	5.487e-59	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+pgam2	ENSDARG00000057571	5:BZm (re-diff.)	redifferentiated	0.9717	0.374	0.159	9.126e-80	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+tnni1b	ENSDARG00000052708	5:BZm (re-diff.)	redifferentiated	0.9716	0.883	0.619	1.542e-119	3	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs (prolif.)	False
+actn2b	ENSDARG00000071090	5:BZm (re-diff.)	redifferentiated	0.963	0.559	0.31	9.603e-71	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5meb	ENSDARG00000068940	5:BZm (re-diff.)	redifferentiated	0.9604	0.584	0.395	8.251e-47	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufa4	ENSDARG00000056108	5:BZm (re-diff.)	redifferentiated	0.9583	0.421	0.218	2.249e-58	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+tnni4a	ENSDARG00000099870	5:BZm (re-diff.)	redifferentiated	0.9506	0.688	0.421	2.51e-85	3	True	Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+csrp3	ENSDARG00000101706	5:BZm (re-diff.)	redifferentiated	0.9464	0.487	0.279	2.204e-54	5	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+mpc1	ENSDARG00000093448	5:BZm (re-diff.)	redifferentiated	0.9299	0.508	0.313	4.322e-48	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufs5	ENSDARG00000006290	5:BZm (re-diff.)	redifferentiated	0.9298	0.377	0.223	4.72e-34	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+tnnt2a	ENSDARG00000020610	5:BZm (re-diff.)	redifferentiated	0.9298	0.933	0.711	6.594e-137	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5pf	ENSDARG00000014313	5:BZm (re-diff.)	redifferentiated	0.92	0.678	0.438	2.631e-71	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5mc3b	ENSDARG00000009447	5:BZm (re-diff.)	redifferentiated	0.9116	0.855	0.619	7.39e-98	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+uqcrfs1	ENSDARG00000007745	5:BZm (re-diff.)	redifferentiated	0.9055	0.496	0.328	2.169e-34	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+aldoaa	ENSDARG00000011665	5:BZm (re-diff.)	redifferentiated	0.9027	0.884	0.642	3.689e-109	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+zgc:193541	ENSDARG00000092873	5:BZm (re-diff.)	redifferentiated	0.9026	0.662	0.447	2.039e-56	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+mdh1ab	ENSDARG00000103849	5:BZm (re-diff.)	redifferentiated	0.8978	0.273	0.121	6.214e-49	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5f1c	ENSDARG00000045514	5:BZm (re-diff.)	redifferentiated	0.8954	0.625	0.379	3.906e-69	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+uqcrb	ENSDARG00000011146	5:BZm (re-diff.)	redifferentiated	0.8947	0.686	0.468	4.68e-56	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+eno3	ENSDARG00000039007	5:BZm (re-diff.)	redifferentiated	0.893	0.622	0.408	2.563e-51	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Neutrophils	False
+cox4i1	ENSDARG00000032970	5:BZm (re-diff.)	redifferentiated	0.8806	0.738	0.48	6.991e-83	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+acox3	ENSDARG00000038865	5:BZm (re-diff.)	redifferentiated	0.8805	0.803	0.526	3.123e-95	1	False			True
+ndufs1	ENSDARG00000028546	5:BZm (re-diff.)	redifferentiated	0.8553	0.272	0.144	3.1e-31	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufb7	ENSDARG00000033789	5:BZm (re-diff.)	redifferentiated	0.8544	0.478	0.292	2.852e-41	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+chchd10	ENSDARG00000010717	5:BZm (re-diff.)	redifferentiated	0.843	0.338	0.187	5.178e-35	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5md		5:BZm (re-diff.)	redifferentiated	0.8374	0.665	0.422	1.486e-70	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		False
+ndufs6	ENSDARG00000056583	5:BZm (re-diff.)	redifferentiated	0.8366	0.263	0.146	9.293e-25	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cox6b1	ENSDARG00000045230	5:BZm (re-diff.)	redifferentiated	0.8361	0.606	0.356	5.548e-68	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs (prolif.);Macrophages (prolif.);Smooth muscle cells	False
+mybpc3	ENSDARG00000011615	5:BZm (re-diff.)	redifferentiated	0.8334	0.87	0.636	1.279e-97	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5pb	ENSDARG00000011553	5:BZm (re-diff.)	redifferentiated	0.8308	0.628	0.42	6.911e-56	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5po	ENSDARG00000001788	5:BZm (re-diff.)	redifferentiated	0.8284	0.761	0.536	1.433e-66	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+hgd	ENSDARG00000058005	5:BZm (re-diff.)	redifferentiated	0.828	0.346	0.197	6.029e-33	1	False			True
+cox6b2	ENSDARG00000037860	5:BZm (re-diff.)	redifferentiated	0.8252	0.61	0.428	6.687e-42	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufa6	ENSDARG00000038028	5:BZm (re-diff.)	redifferentiated	0.8252	0.353	0.233	3.468e-20	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+fabp3	ENSDARG00000023290	5:BZm (re-diff.)	redifferentiated	0.8233	0.512	0.308	3.009e-50	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+idh2	ENSDARG00000003795	5:BZm (re-diff.)	redifferentiated	0.8155	0.781	0.552	4.645e-69	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufb2	ENSDARG00000045490	5:BZm (re-diff.)	redifferentiated	0.8095	0.379	0.225	3.651e-31	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufa3	ENSDARG00000041400	5:BZm (re-diff.)	redifferentiated	0.8087	0.45	0.285	8.411e-36	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufa8	ENSDARG00000058041	5:BZm (re-diff.)	redifferentiated	0.806	0.361	0.226	8.765e-25	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+actc1a	ENSDARG00000076126	5:BZm (re-diff.)	redifferentiated	0.8056	0.912	0.578	1.581e-135	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+got2a	ENSDARG00000041068	5:BZm (re-diff.)	redifferentiated	0.7986	0.521	0.308	1.549e-53	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+acta1b	ENSDARG00000055618	5:BZm (re-diff.)	redifferentiated	0.7927	0.969	0.801	6.728e-128	4	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufb9	ENSDARG00000041314	5:BZm (re-diff.)	redifferentiated	0.791	0.303	0.188	3.192e-20	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs (prolif.)	False
+ndufab1b	ENSDARG00000014915	5:BZm (re-diff.)	redifferentiated	0.7888	0.336	0.23	1.294e-14	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+pfkmb	ENSDARG00000060797	5:BZm (re-diff.)	redifferentiated	0.7884	0.282	0.156	1.269e-26	1	False	Cardiomyocytes (A);Cardiomyocytes (V)		True
+acadvl	ENSDARG00000016687	5:BZm (re-diff.)	redifferentiated	0.7872	0.637	0.398	2.42e-62	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5mea	ENSDARG00000078113	5:BZm (re-diff.)	redifferentiated	0.7846	0.443	0.263	1.223e-41	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+rrad	ENSDARG00000052011	5:BZm (re-diff.)	redifferentiated	0.784	0.371	0.183	3.972e-52	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ldhba	ENSDARG00000019644	5:BZm (re-diff.)	redifferentiated	0.7839	0.752	0.541	1.934e-57	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufa11	ENSDARG00000042777	5:BZm (re-diff.)	redifferentiated	0.7834	0.304	0.175	5.797e-26	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5l	ENSDARG00000011841	5:BZm (re-diff.)	redifferentiated	0.7819	0.761	0.564	4.678e-49	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5if1b	ENSDARG00000044092	5:BZm (re-diff.)	redifferentiated	0.781	0.539	0.352	3.645e-41	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cox17	ENSDARG00000069920	5:BZm (re-diff.)	redifferentiated	0.7772	0.344	0.217	1.184e-22	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cox5ab	ENSDARG00000099663	5:BZm (re-diff.)	redifferentiated	0.7737	0.357	0.214	8.26e-30	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+atp5f1d	ENSDARG00000019404	5:BZm (re-diff.)	redifferentiated	0.7658	0.552	0.34	1.45e-51	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufb10	ENSDARG00000028889	5:BZm (re-diff.)	redifferentiated	0.7631	0.321	0.188	6.614e-27	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ckmt2b	ENSDARG00000039929	5:BZm (re-diff.)	redifferentiated	0.754	0.282	0.144	4.848e-34	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+uqcrq	ENSDARG00000029064	5:BZm (re-diff.)	redifferentiated	0.7537	0.583	0.372	1.794e-50	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+NC-002333.18		5:BZm (re-diff.)	redifferentiated	0.7531	0.821	0.515	1.063e-105	1	True	Cardiomyocytes (V)		False
+atp5fa1	ENSDARG00000010149	5:BZm (re-diff.)	redifferentiated	0.7522	0.756	0.524	1.611e-67	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+ndufs3	ENSDARG00000015385	5:BZm (re-diff.)	redifferentiated	0.7504	0.272	0.15	2.045e-26	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+vdac2	ENSDARG00000013623	5:BZm (re-diff.)	redifferentiated	0.7459	0.757	0.513	7.368e-67	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5f1b	ENSDARG00000070083	5:BZm (re-diff.)	redifferentiated	0.7428	0.872	0.633	1.266e-86	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+smpx	ENSDARG00000045302	5:BZm (re-diff.)	redifferentiated	0.7417	0.377	0.216	4.292e-36	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+sod2	ENSDARG00000042644	5:BZm (re-diff.)	redifferentiated	0.7299	0.345	0.215	4.29e-23	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+sdhb	ENSDARG00000075768	5:BZm (re-diff.)	redifferentiated	0.7292	0.383	0.248	2.387e-23	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+hspb1	ENSDARG00000041065	5:BZm (re-diff.)	redifferentiated	0.7282	0.884	0.667	3.44e-71	5	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Fibroblasts;Fibroblasts (SMC);Smooth muscle cells	False
+dtwd1	ENSDARG00000111509	5:BZm (re-diff.)	redifferentiated	0.7229	0.308	0.158	2.008e-37	1	False			True
+si:ch1073-325m22.2		5:BZm (re-diff.)	redifferentiated	0.7222	0.486	0.344	4.728e-22	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+NC-002333.1		5:BZm (re-diff.)	redifferentiated	0.7157	0.865	0.572	6.992e-107	1	True			False
+hadhb		5:BZm (re-diff.)	redifferentiated	0.7138	0.365	0.232	1.075e-23	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		False
+mdh2	ENSDARG00000043371	5:BZm (re-diff.)	redifferentiated	0.7135	0.804	0.594	7.707e-62	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+si:ch211-235e9.6		5:BZm (re-diff.)	redifferentiated	0.7117	0.343	0.18	5.74e-41	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs (prolif.);Macrophages (prolif.)	False
+NDUFB1	ENSDARG00000087456	5:BZm (re-diff.)	redifferentiated	0.7092	0.339	0.185	3.929e-37	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+myom1b	ENSDARG00000104836	5:BZm (re-diff.)	redifferentiated	0.7087	0.547	0.323	4.032e-53	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp5mc3a	ENSDARG00000017775	5:BZm (re-diff.)	redifferentiated	0.7065	0.478	0.332	1.492e-23	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+casq2	ENSDARG00000008982	5:BZm (re-diff.)	redifferentiated	0.7018	0.371	0.242	3.485e-22	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+cyc1	ENSDARG00000038075	5:BZm (re-diff.)	redifferentiated	0.6969	0.401	0.215	5.335e-47	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufb5	ENSDARG00000070824	5:BZm (re-diff.)	redifferentiated	0.69	0.33	0.208	6.83e-21	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufa2	ENSDARG00000021984	5:BZm (re-diff.)	redifferentiated	0.6871	0.333	0.203	6.53e-24	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+atp2a2a	ENSDARG00000005122	5:BZm (re-diff.)	redifferentiated	0.6819	0.756	0.522	1.149e-59	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+nppa	ENSDARG00000052960	5:BZm (re-diff.)	redifferentiated	0.6782	0.954	0.809	2.387e-69	4	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+gpia	ENSDARG00000012987	5:BZm (re-diff.)	redifferentiated	0.6742	0.409	0.259	6.55e-28	1	False	Cardiomyocytes (A);Cardiomyocytes (dediff.)	Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils	False
+slc25a3b	ENSDARG00000025566	5:BZm (re-diff.)	redifferentiated	0.671	0.645	0.478	3.428e-28	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+uqcrh	ENSDARG00000059128	5:BZm (re-diff.)	redifferentiated	0.6703	0.444	0.301	2.9e-22	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+eno1a	ENSDARG00000022456	5:BZm (re-diff.)	redifferentiated	0.6643	0.548	0.411	6.033e-19	4	False	Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+tpi1b	ENSDARG00000040988	5:BZm (re-diff.)	redifferentiated	0.6561	0.468	0.333	5.042e-21	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages;Macrophages (prolif.);Neutrophils;T cells	False
+ndufv2	ENSDARG00000013044	5:BZm (re-diff.)	redifferentiated	0.6525	0.293	0.144	6.202e-39	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+CABZ01070258.1	ENSDARG00000105687	5:BZm (re-diff.)	redifferentiated	0.6461	0.606	0.292	1.828e-101	1	False		Coronary ECs (prolif.)	False
+ldha	ENSDARG00000101251	5:BZm (re-diff.)	redifferentiated	0.6432	0.539	0.412	3.613e-16	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs;Coronary ECs (prolif.);Macrophages;Macrophages (prolif.);Neutrophils	False
+NC-002333.13		5:BZm (re-diff.)	redifferentiated	0.6346	0.677	0.374	1.187e-85	1	True	Cardiomyocytes (V)		False
+ndufv1	ENSDARG00000036438	5:BZm (re-diff.)	redifferentiated	0.6293	0.27	0.162	9.607e-19	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+pygmb	ENSDARG00000013317	5:BZm (re-diff.)	redifferentiated	0.6276	0.288	0.156	1.313e-29	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Coronary ECs (prolif.)	False
+ndufs7	ENSDARG00000074552	5:BZm (re-diff.)	redifferentiated	0.6171	0.323	0.186	8.678e-27	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+bves	ENSDARG00000058548	5:BZm (re-diff.)	redifferentiated	0.6121	0.443	0.301	6.17e-22	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+f8	ENSDARG00000101385	5:BZm (re-diff.)	redifferentiated	0.6043	0.336	0.174	1.271e-37	1	True		Endocardium (A);Endocardium (V);Endocardium (activ.);Endocardium (frzb);Endocardium (prolif.)	False
+alas1	ENSDARG00000021059	5:BZm (re-diff.)	redifferentiated	0.6003	0.496	0.371	2.484e-19	4	False		Endothelial cells;Macrophages;Neutrophils	False
+aco2	ENSDARG00000007294	5:BZm (re-diff.)	redifferentiated	0.5929	0.354	0.22	5.169e-24	2	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Macrophages (prolif.)	False
+ERBB4		5:BZm (re-diff.)	redifferentiated	0.591	0.724	0.535	2.532e-35	1	False	Cardiomyocytes (A)		False
+desma	ENSDARG00000058656	5:BZm (re-diff.)	redifferentiated	0.5895	0.702	0.5	2.255e-42	5	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+pdlim5b	ENSDARG00000027600	5:BZm (re-diff.)	redifferentiated	0.5857	0.596	0.435	1.588e-26	2	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ldb3b	ENSDARG00000099974	5:BZm (re-diff.)	redifferentiated	0.5803	0.593	0.406	1.794e-33	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+nmrk2	ENSDARG00000067848	5:BZm (re-diff.)	redifferentiated	0.5683	0.439	0.308	1.35e-19	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+uqcrc1	ENSDARG00000052304	5:BZm (re-diff.)	redifferentiated	0.5619	0.345	0.234	1.195e-15	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ttn.1	ENSDARG00000000563	5:BZm (re-diff.)	redifferentiated	0.5599	0.751	0.565	2.212e-38	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Smooth muscle cells	False
+prnprs3	ENSDARG00000003705	5:BZm (re-diff.)	redifferentiated	0.5583	0.34	0.233	4.473e-14	1	False	Cardiomyocytes (A);Cardiomyocytes (V)	Endocardium (V);Valves	False
+ak1	ENSDARG00000001950	5:BZm (re-diff.)	redifferentiated	0.5571	0.751	0.558	1.913e-39	1	True	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+ndufb3	ENSDARG00000075709	5:BZm (re-diff.)	redifferentiated	0.5554	0.31	0.209	1.181e-12	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+sdha	ENSDARG00000016721	5:BZm (re-diff.)	redifferentiated	0.5511	0.347	0.242	2.002e-13	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
+NC-002333.5		5:BZm (re-diff.)	redifferentiated	0.5361	0.578	0.299	2.428e-75	1	False			False
+fhl1a	ENSDARG00000071498	5:BZm (re-diff.)	redifferentiated	0.5319	0.523	0.374	5.448e-23	3	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)	Smooth muscle cells	False
+mt-nd1	ENSDARG00000063895	5:BZm (re-diff.)	redifferentiated	0.5308	0.941	0.82	3.011e-52	1	False	Cardiomyocytes (A);Cardiomyocytes (V);Cardiomyocytes (dediff.)		True
