@@ -43,6 +43,7 @@ def main(source: str):
     out = strip(ad.read_h5ad(source))
     OUT_H5AD.parent.mkdir(parents=True, exist_ok=True)
     out.write_h5ad(OUT_H5AD, compression="gzip")
+    OUT_CELLS.parent.mkdir(parents=True, exist_ok=True)
     cell_list(out).to_csv(OUT_CELLS, index=False, compression={"method": "gzip", "mtime": 0})
     summary = {
         "cells": out.n_obs,
