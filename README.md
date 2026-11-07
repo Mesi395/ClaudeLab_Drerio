@@ -44,6 +44,7 @@ uv run pytest
 |------|----------|
 | `src/zf/` | Python package: loading, scoring, confound tests, evaluation |
 | `scripts/` | Command-line entry points and the data download |
+| `config/` | Dataset manifest, state axes with expected directions, pre-registered checks, loop settings |
 | `markers/` | Marker gene sets, one YAML per state, each gene with a source |
 | `literature/` | Reading list and notes on each paper |
 | `docs/` | Problem statement and the original problem slide |

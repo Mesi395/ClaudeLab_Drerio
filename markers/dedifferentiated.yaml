@@ -1,16 +1,69 @@
 # Candidate markers: dedifferentiated cardiomyocytes.
-# Status: draft for Eme's review. Symbols checked against GRCz11 release 92 (GEO Hr11 features).
-state: dedifferentiated
+# Written by humans and the markers lane; the loop only appends to flags.
+schema: zf.markers/v1
+axis: dedifferentiated
+annotation: GRCz11, Ensembl release 92 (Cell Ranger 3.0.2, Hu et al. 2022)
 genes:
-  - {gene: myom1b, source: "https://doi.org/10.7554/eLife.50163", evidence: "ISH at 7 dpi, absent at 3 dpi (Honkoop 2019)", caveat: ""}
-  - {gene: tnnc2, source: "https://doi.org/10.1016/j.ydbio.2021.03.014", evidence: "reporter line, up on injury (Tsedeke 2021)", caveat: ""}
-  - {gene: gata4, source: "https://doi.org/10.1038/nature08804", evidence: "reporter and Cre lineage tracing (Kikuchi 2010)", caveat: "resection model; low mRNA"}
-# Hu 2022 markers of its ttn.2 cluster. Highly expressed CM genes are the likeliest to track
-# library size. Keep them as a separate axis and test against log total UMIs per library.
-library_size_suspects:
-  - {gene: ttn.1, source: "https://doi.org/10.1038/s41588-022-01129-5"}
-  - {gene: ttn.2, source: "https://doi.org/10.1038/s41588-022-01129-5"}
-  - {gene: bves, source: "https://doi.org/10.1038/s41588-022-01129-5"}
-  - {gene: synpo2lb, source: "https://doi.org/10.1038/s41588-022-01129-5"}
-# Glycolysis genes (hk1, pkma, pdk2a, ldha; Honkoop 2019, Fukuda 2020) are left out:
-# Lekkos 2025 reports oxidative phosphorylation highest in border-zone CMs, so the direction is contested.
+- symbol: myom1b
+  ensembl: ENSDARG00000104836
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: ISH at 7 dpi, absent at 3 dpi (Honkoop 2019)
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: tnnc2
+  ensembl: ENSDARG00000070835
+  role: core
+  source: https://doi.org/10.1016/j.ydbio.2021.03.014
+  evidence: reporter line, up on injury (Tsedeke 2021)
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: gata4
+  ensembl: ENSDARG00000098952
+  role: core
+  source: https://doi.org/10.1038/nature08804
+  evidence: reporter and Cre lineage tracing (Kikuchi 2010)
+  caveat: resection model; low mRNA
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ttn.1
+  ensembl: ENSDARG00000000563
+  role: library_size_suspect
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: ''
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ttn.2
+  ensembl: ENSDARG00000028213
+  role: library_size_suspect
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: ''
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: bves
+  ensembl: ENSDARG00000058548
+  role: library_size_suspect
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: ''
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: synpo2lb
+  ensembl: ENSDARG00000078696
+  role: library_size_suspect
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: ''
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []

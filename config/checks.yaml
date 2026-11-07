@@ -1,0 +1,58 @@
+# Pre-registered checks. Every axis and every marker gene goes through every check.
+# Thresholds are fixed before the first full run. The loop may propose a change in JOURNAL.md,
+# and a human applies it here with a commit that says why. The loop never edits this file.
+# Outcome per check is one of: pass, flag, not_run. A check that could not run is never "pass".
+schema: zf.checks/v1
+status: proposed        # becomes "frozen" with a timestamp when Eme approves
+frozen_at: null
+seed: 0
+checks:
+  - id: null_matched_sets
+    question: "Is the axis more structured than random gene sets of the same size and expression?"
+    applies_to: axis
+    method: "score 1,000 random sets matched on mean expression bins; z of axis variance against the null"
+    flag_if: "z < 3"
+    reference: https://doi.org/10.1038/s41588-022-01167-z   # scDRS, Zhang et al. 2022
+  - id: library_size
+    question: "Does the score track sequencing depth?"
+    applies_to: [axis, gene]
+    method: "Spearman rho of score with log total counts, within each library"
+    flag_if: "|rho| > 0.3 in at least half of the libraries"
+    reference: https://doi.org/10.1186/s13059-019-1874-1
+  - id: library_composition
+    question: "Is the high-scoring tail made of one library?"
+    applies_to: axis
+    method: "share of each library among the top 5% of cells, divided by its share of all cells"
+    flag_if: "ratio > 3 for any library"
+  - id: doublets
+    question: "Does the score track the doublet score?"
+    applies_to: axis
+    method: "Spearman rho with scanpy pp.scrublet score, within each library"
+    flag_if: "|rho| > 0.2 in at least half of the libraries"
+    reference: https://doi.org/10.1016/j.cels.2018.11.005
+  - id: ambient
+    question: "Does the score track fibroblast RNA inside cardiomyocytes?"
+    applies_to: axis
+    method: "Spearman rho with the ambient_fibroblast control score, within each library"
+    flag_if: "|rho| > 0.2 in at least half of the libraries"
+    reference: https://doi.org/10.1186/s13059-023-02978-x
+  - id: leave_one_gene_out
+    question: "Does one gene drive the axis?"
+    applies_to: axis
+    method: "Spearman rho between the full score and the score without each gene"
+    flag_if: "rho < 0.8 for any gene"
+  - id: method_agreement
+    question: "Do two scoring methods agree?"
+    applies_to: axis
+    method: "Spearman rho between scanpy score_genes and AUCell"
+    flag_if: "rho < 0.6"
+  - id: direction
+    question: "Does the axis move the way biology predicts?"
+    applies_to: axis
+    method: "one-sided Mann-Whitney test of each confirmed expectation in config/axes.yaml, libraries as replicates"
+    flag_if: "p > 0.05 or wrong sign"
+  - id: cooccurrence
+    question: "Do two axes mark the same cells?"
+    applies_to: axis_pair
+    method: "Spearman rho between axes and overlap of their top 10% cells, per condition"
+    flag_if: "never; this check reports, it does not gate"
