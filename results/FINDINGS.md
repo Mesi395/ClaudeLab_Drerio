@@ -93,3 +93,14 @@ untestable because the gain genes are barely detected.
 
 Not run in v1: partial conjunction (Simes), REML meta-analysis, dip test, taxonomy odds ratios,
 multi-gene chamber score, 200-resample bootstrap.
+
+16. **Leave-one-heart-out, size-free** (`pseudobulk_loho_rank.csv`; 8 ventricle hearts, each left out
+    in turn; null = 10 label shuffles, each against its own full fit). The Jaccard in item 12 was
+    mostly a list-size artefact: median over left-out hearts, 93% of the full top-30 up genes stay
+    in the left-out top 100, top-30 overlap coefficient 0.75, every full up DEG keeps its sign,
+    Wald-stat Spearman 0.97 (0.89 over the DEGs). Shuffles give Spearman 0.94 (0.83 over DEGs),
+    top-30 rank overlap 0.63 and top-100 containment 0.95. So the up genes are stable, but only a
+    little above noise (Spearman, overlap) and not above it for top-100 containment: with 8 hearts,
+    dropping one leaves 7/8 of the data, so this test cannot separate signal from noise; item 14
+    (permutation) carries the evidence. 7 of 10 shuffled full fits have no DEG, so DEG-based
+    shuffle medians rest on 3 shuffles (sign agreement and DEG-list overlap are not comparable).
