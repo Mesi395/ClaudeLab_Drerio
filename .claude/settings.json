@@ -15,5 +15,18 @@
       "Bash(git push:*)"
     ]
   },
-  "hooks": {}
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run --frozen --quiet --project \"$CLAUDE_PROJECT_DIR\" python \"$CLAUDE_PROJECT_DIR/scripts/hooks/guard_write.py\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
 }

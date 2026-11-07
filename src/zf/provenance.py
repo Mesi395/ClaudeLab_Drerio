@@ -8,7 +8,7 @@ from pathlib import Path
 
 import yaml
 
-OUTCOMES = {"pass", "flag", "not_run"}
+OUTCOMES = {"pass", "flag", "within_noise", "unstable", "not_run"}
 
 
 def _sha256(path: Path) -> str:
@@ -28,7 +28,7 @@ def _git() -> dict:
 
 
 def write_manifest(run_dir, *, command, inputs, params, outcomes) -> Path:
-    """Write results/runs/<id>/manifest.yaml. Outcomes map axis -> check id -> pass|flag|not_run."""
+    """Write results/runs/<id>/manifest.yaml. Outcomes map axis -> check id -> one of OUTCOMES."""
     for axis, checks in outcomes.items():
         bad = {o for o in checks.values()} - OUTCOMES
         if bad:

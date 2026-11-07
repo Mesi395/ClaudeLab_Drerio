@@ -38,8 +38,17 @@ If you see its contents, the agreement check is void: say so in `JOURNAL.md`.
 - `config/dataset.yaml`, `config/axes.yaml` and `config/checks.yaml` are written by humans. Never edit them.
   Propose a change in `JOURNAL.md` instead.
 - `config/loop.yaml` sets the goal, the stop rules and which paths you may write.
+- `config/hillclimb.yaml` sets how you may improve marker sets: one change per round, train and test libraries, revert rules.
 - Every run writes `results/runs/<run_id>/manifest.yaml` through `zf.provenance.write_manifest`.
-- `uv run pytest` validates every YAML file against `src/zf/config.py`.
+
+## Deterministic gates
+
+- A PreToolUse hook (`scripts/hooks/guard_write.py`) checks every Write and Edit before it lands.
+  It blocks writes to `holdout/`, to human-owned config, to run manifests, and any marker change outside `flags`.
+  When it blocks, it says why: fix the write, do not work around the hook.
+- `uv run python scripts/verify.py` checks lint, tests, every YAML schema, stale run inputs and holdout isolation.
+  Exit 0: all passed. Exit 1: a check failed. Exit 2: a check could not run. Only exit 0 means done.
+- The checks must stay orthogonal: `tests/test_check_orthogonality.py` is their contract.
 
 ## Markers
 
