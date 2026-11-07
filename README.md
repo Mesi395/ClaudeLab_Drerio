@@ -32,9 +32,42 @@ A held-out expert annotation is used only for a final agreement check.
 
 ## Answers to the two questions
 
+### Short answer (statistical plan v2, 2026-11-07)
+
+The heart is the unit of evidence: 18 hearts, not 32,044 cells. The plan, its decision rules and its
+code were committed before the run ([docs/statistical-plan.md](docs/statistical-plan.md); results in
+[results/FINDINGS.md](results/FINDINGS.md), items 18 and 19).
+
+- **Shown:** glycolysis genes (hk1, pkma, pdk2a) rise in injured ventricles at 7 dpi (the primary
+  test, q 0.036) and at 3 dpi. The rise is in every cell, not a subgroup. It is not explained by
+  dissociation stress, fibroblast RNA, a single heart or sequencing depth. This is consistent with
+  Honkoop et al. 2019. It is not a blind confirmation: the 7 dpi rise was seen before the plan was
+  written, so confirming it needs new hearts.
+- **Not shown:** border zone, injury-responsive and proliferating at heart level, and
+  dedifferentiation beyond glycolysis (its non-glycolytic part rests on genes that track library
+  size). Border-zone scores follow dissociation stress from heart to heart; hints of a border-zone
+  subgroup do not survive multiple-testing correction.
+- **Per cell:** no state can be called at about 600 UMIs per cell. That is a detection limit, not
+  absence.
+- **The design limits what can be decided:** two of the four 3 dpi hearts were sequenced with 10x v3
+  and one comes from a second series (GEO records), so every 3 dpi number is confounded and 7 dpi
+  carries the claims. 30 dpi has 3 hearts, so "fades" or "persists" can be estimated, not shown.
+
+**Which annotation to trust:** one that (1) passes calibration controls, (2) replicates across
+hearts, (3) follows injury time and can be separated from handling, ambient RNA and chemistry, and
+(4) agrees with evidence that shares no genes with it. By these criteria the glycolytic shift is the
+only label that earns trust in this dataset. The published dedifferentiated cluster (25 % of cells,
+enriched in deep cells) does not.
+
+**Checks added after the event:** a design table (chemistry, series) before any test; one
+pre-registered heart-level test per gene set with exact relabelling of hearts and stated floors;
+gene splits for overlapping sets; handling and ambient-RNA criteria; a mean-shift vs subgroup test.
+An expert should still add new hearts or an independent dataset for a blind confirmation, in situ
+staining to see whether glycolysis is wound-local, and a limma `fry` cross-check once R is available.
+
 ### How we decide which annotation to trust, with no ground truth
 
-Two layers.
+Two layers (Card C, during the event).
 
 1. **Protocol stability** (Card B, [docs/labeling-protocol.md](docs/labeling-protocol.md)).
    A call counts only if it survives count thinning, detection-matched decoy gene sets and a per-heart gate.
