@@ -101,8 +101,11 @@ passes 2 and 3 but fails 4 and 5.
 
 ## Which annotation to trust: latent-class agreement
 
-A Dawid–Skene latent-class model over the five labellers (our protocol calls and the published
+A Dawid–Skene latent-class model over up to five labellers (two protocol arms, two split-half marker sets and the published
 annotation) estimates each labeller's sensitivity and specificity without an answer key; the
 bootstrap resamples hearts. Our labellers share genes, so the model partly measures their
 agreement with each other. The published labels are read only by this comparison step, after all
 calls are frozen. Code: `scripts/compare_to_annotation.py` (PR #18).
+Limit: our per-cell calls are almost all negative at this depth, so agreement with the published
+annotation is κ = 0 by construction; the comparison rests on prevalence (published dedifferentiated
+cluster 25% of cells, latent estimate 2.5%), not on cell-by-cell agreement.
