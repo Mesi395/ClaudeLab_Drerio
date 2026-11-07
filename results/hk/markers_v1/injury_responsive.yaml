@@ -1,0 +1,108 @@
+# hk markers v1: injury_responsive. Generated from cited claims (markers/sources/hk_corpus_claims.tsv); see README.md.
+schema: zf.markers/v1
+axis: injury_responsive
+annotation: GRCz11, Ensembl release 92 (Cell Ranger 3.0.2, Hu et al. 2022)
+genes:
+- symbol: tnfrsf11b
+  ensembl: ENSDARG00000098377
+  role: core
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Most enriched gene of Li 2025 activated BZ myocardium at 6 hpa; absent in uninjured hearts by FISH. Sources:
+    doi:10.1038/s41467-025-59070-0 Results + Fig. 2b FISH; Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm
+    activ. 3.32) [spatial]'
+  caveat: Resection model, 6 hpa peak; dataset starts at 3 dpi; also in Li BZm dediff. (1.44).
+  status: candidate
+  proposed_by: spatial_data
+  flags: []
+- symbol: rln3a
+  ensembl: ENSDARG00000070780
+  role: core
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Li BZm activ. marker, near-absent elsewhere (pct.2 0.02). Sources: doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary
+    Data 2, sheet Stereo-seq regeneration (BZm activ. 2.22) [spatial]'
+  caveat: low detection (pct.1 0.29)
+  status: candidate
+  proposed_by: spatial_data
+  flags: []
+- symbol: hspb9
+  ensembl: ENSDARG00000078674
+  role: core
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Li BZm activ. marker (pct.2 0.02). Sources: doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary Data 2, sheet
+    Stereo-seq regeneration (BZm activ. 2.21) [spatial]'
+  caveat: small heat-shock family; not in any dissociation list checked
+  status: candidate
+  proposed_by: spatial_data
+  flags: []
+- symbol: kcnh6a
+  ensembl: ENSDARG00000001803
+  role: core
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Li BZm activ. marker. Sources: doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary Data 2, sheet Stereo-seq
+    regeneration (BZm activ. 1.64) [spatial]'
+  caveat: ''
+  status: candidate
+  proposed_by: spatial_data
+  flags: []
+- symbol: sdc4
+  ensembl: ENSDARG00000059906
+  role: core
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Li BZm activ. marker. Sources: doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary Data 2, sheet Stereo-seq
+    regeneration (BZm activ. 1.18) [spatial]'
+  caveat: ''
+  status: candidate
+  proposed_by: spatial_data
+  flags: []
+- symbol: slc38a3b
+  ensembl: ENSDARG00000091061
+  role: core
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Li BZm activ. marker, CM-restricted in Li scRNA. Sources: doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary
+    Data 2, sheet Stereo-seq regeneration (BZm activ. 1.08) [spatial]'
+  caveat: ''
+  status: candidate
+  proposed_by: spatial_data
+  flags: []
+- symbol: klf1
+  ensembl: ENSDARG00000017400
+  role: core
+  source: https://doi.org/10.1126/science.abe2762
+  evidence: 'Myocardial klf1 is an injury-induced cardiomyogenic trigger (Ogawa 2021; team draft). Sources: doi:10.1126/science.abe2762
+    myocardial loss/gain of function (via team draft) [literature, unverified]'
+  caveat: unverified (full text not read); likely low counts in 10x data
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ifrd1
+  ensembl: ENSDARG00000068708
+  role: non_specific
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Li BZm activ. marker. Sources: doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary Data 2, sheet Stereo-seq
+    regeneration (BZm activ. 1.44) [spatial]'
+  caveat: Immediate-early-like gene (TIS7); kept out of the IEG-free core.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: eif4a1a
+  ensembl: ENSDARG00000092115
+  role: non_specific
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Li BZm activ. marker. Sources: doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary Data 2, sheet Stereo-seq
+    regeneration (BZm activ. 1.22) [spatial]'
+  caveat: Translation initiation factor; tracks ribosome/depth.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: socs3a
+  ensembl: ENSDARG00000025428
+  role: dissociation_sensitive
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Li BZm activ. marker in situ. Sources: doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary Data 2, sheet Stereo-seq
+    regeneration (BZm activ. 1.33) [spatial]; doi:10.1038/nmeth.4437 Suppl. Table 1/7 (dissociation-induced) [literature,
+    unverified]'
+  caveat: 'In dissociation core set (van den Brink 2017; Neuschulz 2022): read only after conditioning on the dissociation
+    axis.'
+  status: candidate
+  proposed_by: literature_review
+  flags: []

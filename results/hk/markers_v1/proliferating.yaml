@@ -1,0 +1,146 @@
+# hk markers v1: proliferating. Generated from cited claims (markers/sources/hk_corpus_claims.tsv); see README.md.
+schema: zf.markers/v1
+axis: proliferating
+annotation: GRCz11, Ensembl release 92 (Cell Ranger 3.0.2, Hu et al. 2022)
+genes:
+- symbol: pcna
+  ensembl: ENSDARG00000054155
+  role: core
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Increased in Li BZm prolif. domain; PCNA protein is the routine CM-proliferation stain. Sources: doi:10.1038/s41467-025-59070-0
+    Results, Fig. 2a; Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration (BZm prolif. 0.65) [spatial]'
+  caveat: 'S-phase/DNA repair: polyploid or repairing CMs score without dividing.'
+  status: candidate
+  proposed_by: spatial_data
+  flags: []
+- symbol: cdk1
+  ensembl: ENSDARG00000087554
+  role: core
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Strongly induced in Li BZm prolif. domain. Sources: doi:10.1038/s41467-025-59070-0 Results, Fig. 2a; Li 2025
+    Supplementary Data 2, sheet Stereo-seq regeneration (BZm prolif. 0.33, pct.2 0.014) [spatial]'
+  caveat: ''
+  status: candidate
+  proposed_by: spatial_data
+  flags: []
+- symbol: plk1
+  ensembl: ENSDARG00000058471
+  role: core
+  source: https://doi.org/10.1038/nature08899
+  evidence: 'Essential for CM proliferation in zebrafish heart regeneration. Sources: doi:10.1038/nature08899 Abstract/Results
+    [literature]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: mcm5
+  ensembl: ENSDARG00000019507
+  role: core
+  source: https://doi.org/10.1038/s44161-025-00718-x
+  evidence: 'Used as the proliferation marker of BZ CMs (anti-correlated with OXPHOS/re-differentiation). Sources: doi:10.1038/s44161-025-00718-x
+    Results, Fig. 5b [literature]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: aurkb
+  ensembl: ENSDARG00000037640
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Cytokinesis marker (Aurkb+ CMs); G2/M division marker. Sources: doi:10.7554/eLife.50163 figure legend panel d
+    (Aurkb immunofluorescence, P7 mouse cardiac cultures) [literature]; doi:10.3390/cells15161455 Results, Figure 4M,N (qRT-PCR)
+    [literature]'
+  caveat: Shown in mouse CM cultures, not fish.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ccnb1
+  ensembl: ENSDARG00000051923
+  role: core
+  source: https://doi.org/10.3390/cells15161455
+  evidence: 'G2/M division (not endoreplication) marker. Sources: doi:10.3390/cells15161455 Results, Figure 4M,N (qRT-PCR)
+    [literature]'
+  caveat: mouse CMs
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: mki67
+  ensembl: ENSDARG00000091150
+  role: core
+  source: https://doi.org/10.1126/science.aad0501
+  evidence: 'Canonical proliferation marker (Tirosh G2/M list). Sources: doi:10.1126/science.aad0501 G2/M gene list (as redistributed
+    in Seurat cc.genes) [literature, unverified]'
+  caveat: Ortholog mapping ours; the Li 2025 mki67 passage is about macrophages, not CMs.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: top2a
+  ensembl: ENSDARG00000024488
+  role: ortholog_mapping_ours
+  source: https://doi.org/10.1126/science.aad0501
+  evidence: 'Tirosh 2016 cell-cycle gene (human->zebrafish mapping ours, via r2_controls). Sources: doi:10.1126/science.aad0501
+    S/G2M gene list (as redistributed in Seurat cc.genes) [literature, unverified]'
+  caveat: Long genes undetected in shallow cells; doublets with proliferating non-CMs.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: birc5a
+  ensembl: ENSDARG00000075621
+  role: ortholog_mapping_ours
+  source: https://doi.org/10.1126/science.aad0501
+  evidence: 'Tirosh 2016 cell-cycle gene (human->zebrafish mapping ours, via r2_controls). Sources: doi:10.1126/science.aad0501
+    S/G2M gene list (as redistributed in Seurat cc.genes) [literature, unverified]'
+  caveat: Long genes undetected in shallow cells; doublets with proliferating non-CMs.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cenpf
+  ensembl: ENSDARG00000055133
+  role: ortholog_mapping_ours
+  source: https://doi.org/10.1126/science.aad0501
+  evidence: 'Tirosh 2016 cell-cycle gene (human->zebrafish mapping ours, via r2_controls). Sources: doi:10.1126/science.aad0501
+    S/G2M gene list (as redistributed in Seurat cc.genes) [literature, unverified]'
+  caveat: Long genes undetected in shallow cells; doublets with proliferating non-CMs.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ube2c
+  ensembl: ENSDARG00000101618
+  role: ortholog_mapping_ours
+  source: https://doi.org/10.1126/science.aad0501
+  evidence: 'Tirosh 2016 cell-cycle gene (human->zebrafish mapping ours, via r2_controls). Sources: doi:10.1126/science.aad0501
+    S/G2M gene list (as redistributed in Seurat cc.genes) [literature, unverified]'
+  caveat: Long genes undetected in shallow cells; doublets with proliferating non-CMs.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: nusap1
+  ensembl: ENSDARG00000002403
+  role: ortholog_mapping_ours
+  source: https://doi.org/10.1126/science.aad0501
+  evidence: 'Tirosh 2016 cell-cycle gene (human->zebrafish mapping ours, via r2_controls). Sources: doi:10.1126/science.aad0501
+    S/G2M gene list (as redistributed in Seurat cc.genes) [literature, unverified]'
+  caveat: Long genes undetected in shallow cells; doublets with proliferating non-CMs.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cdc20
+  ensembl: ENSDARG00000100741
+  role: ortholog_mapping_ours
+  source: https://doi.org/10.1126/science.aad0501
+  evidence: 'Tirosh 2016 cell-cycle gene (human->zebrafish mapping ours, via r2_controls). Sources: doi:10.1126/science.aad0501
+    S/G2M gene list (as redistributed in Seurat cc.genes) [literature, unverified]'
+  caveat: Long genes undetected in shallow cells; doublets with proliferating non-CMs.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: mcm2
+  ensembl: ENSDARG00000102798
+  role: ortholog_mapping_ours
+  source: https://doi.org/10.1126/science.aad0501
+  evidence: 'Tirosh 2016 cell-cycle gene (human->zebrafish mapping ours, via r2_controls). Sources: doi:10.1126/science.aad0501
+    S/G2M gene list (as redistributed in Seurat cc.genes) [literature, unverified]'
+  caveat: Long genes undetected in shallow cells; doublets with proliferating non-CMs.
+  status: candidate
+  proposed_by: literature_review
+  flags: []

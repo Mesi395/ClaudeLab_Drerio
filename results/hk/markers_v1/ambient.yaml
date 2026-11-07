@@ -1,0 +1,1555 @@
+# hk markers v1: ambient. Generated from cited claims (markers/sources/hk_corpus_claims.tsv); see README.md.
+schema: zf.markers/v1
+axis: ambient
+annotation: GRCz11, Ensembl release 92 (Cell Ranger 3.0.2, Hu et al. 2022)
+genes:
+- symbol: ighv1-4
+  ensembl: ENSDARG00000096301
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_bcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank B-cells#1;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: igic1s1
+  ensembl: ENSDARG00000093272
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_bcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank B-cells#3;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:dkey-234i14.9
+  ensembl: ENSDARG00000079843
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_bcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank B-cells#4;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: zgc:153659
+  ensembl: ENSDARG00000071446
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_bcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank B-cells#6;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: igl3v5
+  ensembl: ENSDARG00000079987
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_bcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank B-cells#7;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: zgc:194275
+  ensembl: ENSDARG00000074014
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_bcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank B-cells#8;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: mgst3b
+  ensembl: ENSDARG00000033364
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_bcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank B-cells#10;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ccr9a
+  ensembl: ENSDARG00000055186
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_tcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank T-cells#6;
+    also in 1 other non-CM cluster list(s): B-cells#11; absent from 3 CM)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cxcr4b
+  ensembl: ENSDARG00000041959
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_tcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank T-cells#8;
+    also in 2 other non-CM cluster list(s): B-cells#13; Monocytes#17; ab)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ccl35.1
+  ensembl: ENSDARG00000103466
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Monocytes#1; also in 2 other non-CM cluster list(s): Macrophages#3; B-cells#14;)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:busm1-266f07.2
+  ensembl: ENSDARG00000031745
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Monocytes#4; also in 2 other non-CM cluster list(s): B-cells#17; Macrophages#19)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: rgs13
+  ensembl: ENSDARG00000017653
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_tcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank T-cells#11;
+    also in 1 other non-CM cluster list(s): B-cells#19; absent from 3 C)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cd74b
+  ensembl: ENSDARG00000036628
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Monocytes#10; also in 2 other non-CM cluster list(s): Macrophages#17; B-cells#2)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cd74a
+  ensembl: ENSDARG00000009087
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Macrophages#4; also in 2 other non-CM cluster list(s): Monocytes#8; B-cells#24;)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: hspbp1
+  ensembl: ENSDARG00000102937
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_tcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank T-cells#9;
+    also in 2 other non-CM cluster list(s): Monocytes#21; B-cells#36; ab)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: coro1a
+  ensembl: ENSDARG00000054610
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_pan_nonCM: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (in top-50 of 5/20 non-CM clusters,
+    absent from 3 CM top-50 lists; best T-cells#19; Monocytes#46; Neu)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: hbegfb
+  ensembl: ENSDARG00000031246
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (apnln)#1; specific to this cluster; absent from 3 CM top-50 )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: admb
+  ensembl: ENSDARG00000069027
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (apnln)#2; specific to this cluster; absent from 3 CM top-50 )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: apln
+  ensembl: ENSDARG00000053279
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (apnln)#3; specific to this cluster; absent from 3 CM top-50 )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch211-195b11.3
+  ensembl: ENSDARG00000100582
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (apnln)#4; specific to this cluster; absent from 3 CM top-50 )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: sele
+  ensembl: ENSDARG00000009123
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (apnln)#5; specific to this cluster; absent from 3 CM top-50 )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: itga2b
+  ensembl: ENSDARG00000018687
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (apnln)#6; specific to this cluster; absent from 3 CM top-50 )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: thbs1b
+  ensembl: ENSDARG00000010785
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (apnln)#7; also in 1 other non-CM cluster list(s): Valve Fibr)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: fgl2a
+  ensembl: ENSDARG00000019861
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (apnln)#8; specific to this cluster; absent from 3 CM top-50 )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: pim2
+  ensembl: ENSDARG00000059001
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (apnln)#10; specific to this cluster; absent from 3 CM top-50)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: gp1bb
+  ensembl: ENSDARG00000074441
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (apnln)#11; specific to this cluster; absent from 3 CM top-50)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cldn5b
+  ensembl: ENSDARG00000014059
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (plvapb)#5; also in 1 other non-CM cluster list(s): Endotheli)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch211-214p16.2
+  ensembl: ENSDARG00000094975
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Monocytes#5; also in 1 other non-CM cluster list(s): Endothelial cells (apnln)#)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch211-153b23.5
+  ensembl: ENSDARG00000058206
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (frzb)#2; also in 2 other non-CM cluster list(s): Endothelial cells)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch211-214p16.1
+  ensembl: ENSDARG00000044129
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_tcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank T-cells#1;
+    also in 2 other non-CM cluster list(s): Monocytes#3; Endothelial cel)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: pfn1
+  ensembl: ENSDARG00000088091
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_pan_nonCM: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (in top-50 of 5/20 non-CM clusters,
+    absent from 3 CM top-50 lists; best T-cells#12; Neutrophils#15; M)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: arpc1b
+  ensembl: ENSDARG00000027063
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Monocytes#9; also in 3 other non-CM cluster list(s): T-cells#35; Neutrophils#38)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: myh11a
+  ensembl: ENSDARG00000009782
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Smooth muscle cells#6; also in 2 other non-CM cluster list(s): Perivascular cel)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cxcl12a
+  ensembl: ENSDARG00000037116
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (lyve1)#1; also in 1 other non-CM cluster list(s): Fibroblast)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: thy1
+  ensembl: ENSDARG00000035018
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (lyve1)#3; specific to this cluster; absent from 3 CM top-50 )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: lyve1a
+  ensembl: ENSDARG00000075833
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (lyve1)#4; specific to this cluster; absent from 3 CM top-50 )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: selenop
+  ensembl: ENSDARG00000093549
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (lyve1)#5; specific to this cluster; absent from 3 CM top-50 )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cdh6
+  ensembl: ENSDARG00000014522
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (lyve1)#6; specific to this cluster; absent from 3 CM top-50 )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:dkey-203a12.9
+  ensembl: ENSDARG00000104721
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (lyve1)#7; specific to this cluster; absent from 3 CM top-50 )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: lyve1b
+  ensembl: ENSDARG00000062483
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (lyve1)#8; specific to this cluster; absent from 3 CM top-50 )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch211-105c13.3
+  ensembl: ENSDARG00000089441
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_epicardial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Epicardium
+    (Atrium)#6; also in 3 other non-CM cluster list(s): Endothelial cell)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: arl4aa
+  ensembl: ENSDARG00000099918
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (lyve1)#11; specific to this cluster; absent from 3 CM top-50)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch211-152c2.3
+  ensembl: ENSDARG00000045898
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (lyve1)#12; specific to this cluster; absent from 3 CM top-50)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ramp2
+  ensembl: ENSDARG00000037895
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Ventricle)#7; also in 2 other non-CM cluster list(s): Endothelial )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: rgcc
+  ensembl: ENSDARG00000035810
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (plvapb)#6; also in 1 other non-CM cluster list(s): Endotheli)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: tcima
+  ensembl: ENSDARG00000079497
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (plvapb)#11; also in 1 other non-CM cluster list(s): Endothel)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: fabp11a
+  ensembl: ENSDARG00000017299
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Ventricle)#5; also in 2 other non-CM cluster list(s): Endothelial )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: plvapb
+  ensembl: ENSDARG00000045003
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (plvapb)#4; also in 1 other non-CM cluster list(s): Endotheli)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: wu:fj16a03
+  ensembl: ENSDARG00000100952
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (plvapb)#1; specific to this cluster; absent from 3 CM top-50)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cxcl12b
+  ensembl: ENSDARG00000055100
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (plvapb)#2; also in 1 other non-CM cluster list(s): Perivascu)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: rbp2a
+  ensembl: ENSDARG00000070038
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (plvapb)#3; specific to this cluster; absent from 3 CM top-50)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: tmsb1
+  ensembl: ENSDARG00000104181
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_pan_nonCM: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (in top-50 of 5/20 non-CM clusters,
+    absent from 3 CM top-50 lists; best Endothelial cells (plvapb)#9;)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ldb2a
+  ensembl: ENSDARG00000019579
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (plvapb)#10; specific to this cluster; absent from 3 CM top-5)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cavin1b
+  ensembl: ENSDARG00000059362
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endothelial cells (plvapb)#12; specific to this cluster; absent from 3 CM top-5)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cdh5
+  ensembl: ENSDARG00000075549
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Ventricle)#11; also in 2 other non-CM cluster list(s): Endocardium)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ecscr
+  ensembl: ENSDARG00000087457
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (frzb)#7; also in 2 other non-CM cluster list(s): Endothelial cells)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: krt18
+  ensembl: ENSDARG00000018404
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Atrium)#11; also in 1 other non-CM cluster list(s): Endothelial ce)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: epas1b
+  ensembl: ENSDARG00000057671
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Ventricle)#6; also in 1 other non-CM cluster list(s): Endothelial )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: TCIM (1 of many)
+  ensembl: ENSDARG00000076858
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Perivascular cells#1; also in 1 other non-CM cluster list(s): Endothelial cells)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: zgc:158343
+  ensembl: ENSDARG00000099411
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Atrium)#1; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: spock3
+  ensembl: ENSDARG00000070266
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Atrium)#2; also in 2 other non-CM cluster list(s): Endocardium (Ve)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: im:7152348
+  ensembl: ENSDARG00000097082
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Atrium)#3; also in 1 other non-CM cluster list(s): Endocardium (Ve)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ptgs2a
+  ensembl: ENSDARG00000004539
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Atrium)#4; also in 1 other non-CM cluster list(s): Endocardium (fr)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ptgs2b
+  ensembl: ENSDARG00000010276
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Atrium)#5; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: id2b
+  ensembl: ENSDARG00000029544
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Atrium)#6; also in 2 other non-CM cluster list(s): Endocardium (Ve)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: vcam1b
+  ensembl: ENSDARG00000062479
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Atrium)#7; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: aqp8a.1
+  ensembl: ENSDARG00000045141
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Ventricle)#2; also in 1 other non-CM cluster list(s): Endocardium )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: grb10a
+  ensembl: ENSDARG00000002013
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Atrium)#12; also in 1 other non-CM cluster list(s): Endocardium (V)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: glulb
+  ensembl: ENSDARG00000100003
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (frzb)#8; also in 1 other non-CM cluster list(s): Endocardium (Atri)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch211-145b13.6
+  ensembl: ENSDARG00000069998
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Ventricle)#8; also in 1 other non-CM cluster list(s): Endocardium )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: vwf
+  ensembl: ENSDARG00000077231
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (frzb)#1; also in 1 other non-CM cluster list(s): Endocardium (Atri)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: c2cd4a
+  ensembl: ENSDARG00000061416
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (frzb)#3; also in 1 other non-CM cluster list(s): Smooth muscle cel)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: edn2
+  ensembl: ENSDARG00000070578
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (frzb)#4; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cfd
+  ensembl: ENSDARG00000039579
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (frzb)#5; also in 1 other non-CM cluster list(s): Smooth muscle cel)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: frzb
+  ensembl: ENSDARG00000018383
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (frzb)#6; also in 2 other non-CM cluster list(s): Epicardium (Atriu)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: efemp2b
+  ensembl: ENSDARG00000020811
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (frzb)#9; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: calm1a
+  ensembl: ENSDARG00000021811
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (frzb)#10; also in 1 other non-CM cluster list(s): Myelin cells#48;)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: nr4a2b
+  ensembl: ENSDARG00000044532
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (frzb)#12; also in 1 other non-CM cluster list(s): Myelin cells#45;)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch73-86n18.1
+  ensembl: ENSDARG00000056379
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Ventricle)#1; specific to this cluster; absent from 3 CM top-50 li)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: f8
+  ensembl: ENSDARG00000101385
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_endocardial_endothelial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster
+    rank Endocardium (Ventricle)#9; specific to this cluster; absent from 3 CM top-50 li)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: gstm.3
+  ensembl: ENSDARG00000088116
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_epicardial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Epicardium
+    (Atrium)#1; also in 2 other non-CM cluster list(s): Epicardium (Vent)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: s100a10a
+  ensembl: ENSDARG00000037425
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_epicardial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Epicardium
+    (Atrium)#2; also in 1 other non-CM cluster list(s): Epicardium (Vent)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: fn1b
+  ensembl: ENSDARG00000006526
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_epicardial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Epicardium
+    (Atrium)#3; also in 2 other non-CM cluster list(s): Epicardium (Vent)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: mmp2
+  ensembl: ENSDARG00000017676
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_epicardial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Epicardium
+    (Atrium)#5; also in 3 other non-CM cluster list(s): Epicardium (Vent)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: krt4
+  ensembl: ENSDARG00000017624
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Valve
+    Fibroblasts#3; also in 2 other non-CM cluster list(s): Epicardium (Atrium)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: mmel1
+  ensembl: ENSDARG00000105389
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_epicardial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Epicardium
+    (Atrium)#9; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: anxa2a
+  ensembl: ENSDARG00000003216
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_epicardial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Epicardium
+    (Atrium)#10; also in 2 other non-CM cluster list(s): Epicardium (Ven)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: krt94
+  ensembl: ENSDARG00000044975
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_epicardial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Epicardium
+    (Ventricle)#11; also in 1 other non-CM cluster list(s): Epicardium ()'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: postnb
+  ensembl: ENSDARG00000104267
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_epicardial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Epicardium
+    (Ventricle)#4; also in 2 other non-CM cluster list(s): Fibroblasts#1)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: endouc
+  ensembl: ENSDARG00000112234
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_epicardial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Epicardium
+    (Ventricle)#7; also in 1 other non-CM cluster list(s): Epicardium (A)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: mfap5
+  ensembl: ENSDARG00000090560
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Fibroblasts#12;
+    also in 1 other non-CM cluster list(s): Epicardium (Atrium)#44;)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch211-106h4.12
+  ensembl: ENSDARG00000092920
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_epicardial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Epicardium
+    (Ventricle)#1; also in 1 other non-CM cluster list(s): Fibroblasts#4)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: tfa
+  ensembl: ENSDARG00000016771
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_epicardial: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Epicardium
+    (Ventricle)#9; also in 1 other non-CM cluster list(s): Fibroblasts#2)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch211-198c19.3
+  ensembl: ENSDARG00000095533
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Perivascular cells#11; also in 2 other non-CM cluster list(s): Epicardium (Vent)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: mdka
+  ensembl: ENSDARG00000036036
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Fibroblasts#2;
+    also in 1 other non-CM cluster list(s): Epicardium (Ventricle)#1)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: col1a2
+  ensembl: ENSDARG00000020007
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Fibroblasts#1;
+    also in 1 other non-CM cluster list(s): Epicardium (Ventricle)#2)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: col1a1a
+  ensembl: ENSDARG00000012405
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Fibroblasts#3;
+    also in 1 other non-CM cluster list(s): Epicardium (Ventricle)#2)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: igfbp5b
+  ensembl: ENSDARG00000025348
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Valve
+    Fibroblasts#5; also in 1 other non-CM cluster list(s): Epicardium (Ventri)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: col1a1b
+  ensembl: ENSDARG00000035809
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Fibroblasts#4;
+    also in 1 other non-CM cluster list(s): Epicardium (Ventricle)#2)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: sparc
+  ensembl: ENSDARG00000019353
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Fibroblasts#9;
+    also in 2 other non-CM cluster list(s): Epicardium (Ventricle)#3)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: mgp
+  ensembl: ENSDARG00000086189
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Valve
+    Fibroblasts#8; also in 2 other non-CM cluster list(s): Epicardium (Ventri)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: col5a1
+  ensembl: ENSDARG00000012593
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Fibroblasts#5;
+    also in 1 other non-CM cluster list(s): Epicardium (Ventricle)#4)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: zgc:153704
+  ensembl: ENSDARG00000045979
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Valve
+    Fibroblasts#1; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: abi3bpb
+  ensembl: ENSDARG00000071095
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Valve
+    Fibroblasts#2; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: cyp26b1
+  ensembl: ENSDARG00000077121
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Valve
+    Fibroblasts#6; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: tnfaip6
+  ensembl: ENSDARG00000093440
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Valve
+    Fibroblasts#7; also in 1 other non-CM cluster list(s): Fibroblasts#26; ab)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: rspo1
+  ensembl: ENSDARG00000104340
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Valve
+    Fibroblasts#9; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: fibinb
+  ensembl: ENSDARG00000087196
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Valve
+    Fibroblasts#10; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: aif1l
+  ensembl: ENSDARG00000009336
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Valve
+    Fibroblasts#11; also in 1 other non-CM cluster list(s): Monocytes#26; abs)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: krt91
+  ensembl: ENSDARG00000036830
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Smooth muscle cells#7; also in 1 other non-CM cluster list(s): Valve Fibroblast)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: dcn
+  ensembl: ENSDARG00000012066
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Fibroblasts#11;
+    also in 1 other non-CM cluster list(s): Valve Fibroblasts#42; a)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: dpt
+  ensembl: ENSDARG00000056178
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Fibroblasts#6;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ccl25b
+  ensembl: ENSDARG00000070873
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Fibroblasts#8;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: clu
+  ensembl: ENSDARG00000010434
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_fibroblast: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Fibroblasts#10;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ifitm1
+  ensembl: ENSDARG00000093303
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Perivascular cells#12; also in 1 other non-CM cluster list(s): Fibroblasts#33; )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: grn1
+  ensembl: ENSDARG00000089362
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Macrophages#1; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: grn2
+  ensembl: ENSDARG00000088641
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Macrophages#2; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: c1qb
+  ensembl: ENSDARG00000044612
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Macrophages#5; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ctsd
+  ensembl: ENSDARG00000057698
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Macrophages#6; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: c1qc
+  ensembl: ENSDARG00000095627
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Macrophages#7; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: lygl1
+  ensembl: ENSDARG00000056874
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Macrophages#8; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: lgals3bpb
+  ensembl: ENSDARG00000040528
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Macrophages#9; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch211-147m6.2
+  ensembl: ENSDARG00000103769
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Macrophages#10; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: marco
+  ensembl: ENSDARG00000059294
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Macrophages#11; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: fcer1gl
+  ensembl: ENSDARG00000104077
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Macrophages#12; also in 1 other non-CM cluster list(s): Neutrophils#14; absent )'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: epdl1
+  ensembl: ENSDARG00000076386
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Monocytes#2; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ccl35.2
+  ensembl: ENSDARG00000070378
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Monocytes#6; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: anxa3b
+  ensembl: ENSDARG00000044254
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_macrophage_monocyte: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Monocytes#12; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: zgc:64051
+  ensembl: ENSDARG00000068233
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_tcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank T-cells#10;
+    also in 1 other non-CM cluster list(s): Monocytes#43; absent from 3)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: lyz
+  ensembl: ENSDARG00000057789
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_neutrophil: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Neutrophils#1;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: lect2l
+  ensembl: ENSDARG00000033227
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_neutrophil: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Neutrophils#2;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: npsn
+  ensembl: ENSDARG00000010423
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_neutrophil: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Neutrophils#4;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch211-117m20.5
+  ensembl: ENSDARG00000091996
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_neutrophil: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Neutrophils#5;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch211-9d9.1
+  ensembl: ENSDARG00000099839
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_neutrophil: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Neutrophils#7;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: scpp8
+  ensembl: ENSDARG00000093124
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_neutrophil: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Neutrophils#8;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: si:ch1073-67j19.1
+  ensembl: ENSDARG00000105096
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_neutrophil: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Neutrophils#9;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: mmp9
+  ensembl: ENSDARG00000042816
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_neutrophil: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Neutrophils#10;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: pnp5a
+  ensembl: ENSDARG00000078619
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_neutrophil: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Neutrophils#11;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: mpx
+  ensembl: ENSDARG00000019521
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_neutrophil: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank Neutrophils#12;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: pdgfrb
+  ensembl: ENSDARG00000100897
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Perivascular cells#3; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: rasl12
+  ensembl: ENSDARG00000002701
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Perivascular cells#4; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: kcne4
+  ensembl: ENSDARG00000068257
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Perivascular cells#6; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: rgs4
+  ensembl: ENSDARG00000070047
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Perivascular cells#8; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: agtr2
+  ensembl: ENSDARG00000035552
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Perivascular cells#9; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: TPM1 (1 of many)
+  ensembl: ENSDARG00000087402
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Smooth muscle cells#3; also in 1 other non-CM cluster list(s): Perivascular cel)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: tagln
+  ensembl: ENSDARG00000045408
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Smooth muscle cells#5; also in 1 other non-CM cluster list(s): Perivascular cel)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: rgs5a
+  ensembl: ENSDARG00000002644
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Smooth muscle cells#1; also in 1 other non-CM cluster list(s): Perivascular cel)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: acta2
+  ensembl: ENSDARG00000045180
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Smooth muscle cells#2; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: C11orf96
+  ensembl: ENSDARG00000097208
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Smooth muscle cells#4; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: itih1
+  ensembl: ENSDARG00000055053
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Smooth muscle cells#8; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: myl9a
+  ensembl: ENSDARG00000038123
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Smooth muscle cells#10; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: vim
+  ensembl: ENSDARG00000010008
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_perivascular_smc: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank
+    Smooth muscle cells#12; specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ccl34b.4
+  ensembl: ENSDARG00000094002
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_tcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank T-cells#2;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ccl36.1
+  ensembl: ENSDARG00000105263
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_tcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank T-cells#3;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ccl38.6
+  ensembl: ENSDARG00000041923
+  role: non_specific
+  source: https://doi.org/10.1038/s41588-022-01129-5
+  evidence: 'ambient_tcell: top-50 non-CM cluster marker in Hu 2022 Supplementary Data 2 (best Hu cluster rank T-cells#4;
+    specific to this cluster; absent from 3 CM top-50 lists)'
+  caveat: Ambient/doublet indicator in CMs; flag, never a state marker.
+  status: candidate
+  proposed_by: literature_review
+  flags: []

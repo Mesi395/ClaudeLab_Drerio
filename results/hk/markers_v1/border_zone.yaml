@@ -1,0 +1,144 @@
+# hk markers v1: border_zone. Generated from cited claims (markers/sources/hk_corpus_claims.tsv); see README.md.
+schema: zf.markers/v1
+axis: border_zone
+annotation: GRCz11, Ensembl release 92 (Cell Ranger 3.0.2, Hu et al. 2022)
+genes:
+- symbol: nppb
+  ensembl: ENSDARG00000052958
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Most consistent BZ gene across tomo-seq, sorted-cell scRNA, ISH/FISH and Stereo-seq. Sources: doi:10.7554/eLife.50163
+    Figure 1-figure supplement 4a (ISH 7 dpi) [ISH]; doi:10.1038/s41467-025-59070-0 Fig. 2b FISH; Li 2025 Supplementary Data
+    2, sheet Stereo-seq regeneration (BZm activ. log2FC 2.82) [spatial]; doi:10.1016/j.devcel.2015.12.010 tomo-seq border-zone
+    peak (via team draft) [spatial, unverified]'
+  caveat: Also expressed by activated endocardium in Li 2025 (ambient/doublet risk); present in all 4 BZm domains so not state-specific
+    within the BZ.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: mustn1b
+  ensembl: ENSDARG00000089086
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'BZ CM marker in Honkoop scRNA cluster 7 and ISH; named BZ marker in Constanty 2025; up in all 5 Li BZm domains.
+    Sources: doi:10.7554/eLife.50163 Results, Figure 1e (cluster 7) [sorted-cells]; doi:10.1038/s41467-025-59169-4 Results
+    (scRNA BZ CM markers) [literature]; doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary Data 2, sheet Stereo-seq regeneration
+    (BZm activ. 1.57, dediff. 1.15, prolif. 1.10, re-diff. 1.01) [spatial]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: csrp3
+  ensembl: ENSDARG00000101706
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Up in Honkoop nppa+ cluster 7 and in all Li BZm domains. Sources: doi:10.7554/eLife.50163 Honkoop 2019 Figure
+    1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 3.64 [sorted-cells]; doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary
+    Data 2, sheet Stereo-seq regeneration (BZm activ. 1.63) [spatial]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: flnca
+  ensembl: ENSDARG00000018566
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Up in Honkoop cluster 7 and four Li BZm domains. Sources: doi:10.7554/eLife.50163 Honkoop 2019 Figure 1-source
+    data 3 (Diff. Gene Cl7vsCl2) log2FC 4.23 [sorted-cells]; doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary Data 2,
+    sheet Stereo-seq regeneration (BZm activ. 2.67) [spatial]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: xirp1
+  ensembl: ENSDARG00000030722
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Up in Honkoop cluster 7 and Li BZm activ./dediff./prolif. Sources: doi:10.7554/eLife.50163 Honkoop 2019 Figure
+    1-source data 3 (Diff. Gene Cl7vsCl2) log2FC 4.09 [sorted-cells]; doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary
+    Data 2, sheet Stereo-seq regeneration (BZm activ. 1.87) [spatial]'
+  caveat: ''
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: xirp2a
+  ensembl: ENSDARG00000071113
+  role: core
+  source: https://doi.org/10.7554/eLife.50163
+  evidence: 'Up in Honkoop nppa+ cluster 7. Sources: doi:10.7554/eLife.50163 Honkoop 2019 Figure 1-source data 3 (Diff. Gene
+    Cl7vsCl2) log2FC 3.62 [sorted-cells]'
+  caveat: single source in v1
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: ankrd1a
+  ensembl: ENSDARG00000075263
+  role: core
+  source: https://doi.org/10.1016/j.cdev.2026.204082
+  evidence: 'Title-level claim: consistently up in CMs bordering the injury (2026). Sources: doi:10.1016/j.cdev.2026.204082
+    title [literature, unverified]'
+  caveat: 'unverified: title only, full text not read'
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: crip2
+  ensembl: ENSDARG00000070670
+  role: core
+  source: https://doi.org/10.1016/j.devcel.2015.12.010
+  evidence: 'Wu 2016 tomo-seq BZ gene (team draft). Sources: doi:10.1016/j.devcel.2015.12.010 tomo-seq border-zone gene list
+    (via team draft) [spatial, unverified]'
+  caveat: 'unverified: Wu 2016 supplement not re-read'
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: vwa1
+  ensembl: ENSDARG00000075468
+  role: core
+  source: https://doi.org/10.1016/j.devcel.2015.12.010
+  evidence: 'Wu 2016 tomo-seq BZ gene (team draft). Sources: doi:10.1016/j.devcel.2015.12.010 tomo-seq border-zone gene list
+    (via team draft) [spatial, unverified]'
+  caveat: 'unverified: Wu 2016 supplement not re-read'
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: psmd14
+  ensembl: ENSDARG00000063100
+  role: core
+  source: https://doi.org/10.1016/j.devcel.2015.12.010
+  evidence: 'Wu 2016 tomo-seq BZ gene (team draft). Sources: doi:10.1016/j.devcel.2015.12.010 tomo-seq border-zone gene list
+    (via team draft) [spatial, unverified]'
+  caveat: unverified; proteasome subunit, broadly expressed
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: tagln
+  ensembl: ENSDARG00000045408
+  role: non_specific
+  source: https://doi.org/10.1038/s41467-025-59169-4
+  evidence: 'Named BZ CM marker (Constanty 2025); up in Honkoop cluster 7. Sources: doi:10.1038/s41467-025-59169-4 Results
+    (scRNA BZ CM markers) [literature]; doi:10.7554/eLife.50163 Honkoop 2019 Figure 1-source data 3 (Diff. Gene Cl7vsCl2)
+    log2FC 3.24 [sorted-cells]'
+  caveat: 'Smooth-muscle/fibroblast gene; Li 2025 uses it for SMC domains at 14-28 dpa: ambient risk, kept out of core.'
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: myl6
+  ensembl: ENSDARG00000008494
+  role: non_specific
+  source: https://doi.org/10.1038/s41467-025-59169-4
+  evidence: 'Named BZ CM marker (Constanty 2025; Wu 2016 via team draft). Sources: doi:10.1038/s41467-025-59169-4 Results
+    (scRNA BZ CM markers) [literature]'
+  caveat: Non-muscle myosin light chain, broadly expressed.
+  status: candidate
+  proposed_by: literature_review
+  flags: []
+- symbol: desma
+  ensembl: ENSDARG00000058656
+  role: non_specific
+  source: https://doi.org/10.1038/s41467-025-59070-0
+  evidence: 'Up in all 5 Li BZm domains. Sources: doi:10.1038/s41467-025-59070-0 Li 2025 Supplementary Data 2, sheet Stereo-seq
+    regeneration (BZm activ. 1.89) [spatial]'
+  caveat: Also a remote-myocardium marker in Li 2025; general CM gene.
+  status: candidate
+  proposed_by: literature_review
+  flags: []

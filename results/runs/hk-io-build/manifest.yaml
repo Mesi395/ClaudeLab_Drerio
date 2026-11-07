@@ -1,0 +1,24 @@
+schema: zf.run/v1
+run_id: hk-io-build
+started: '2026-11-07T15:45:41+01:00'
+command: uv run python -m zf.io
+git:
+  commit: 4cded0ca070a4756ba8c6aa0912228db2b15dfcb
+  dirty: true
+versions:
+  zf: 0.1.0
+  scanpy: 1.12.5
+  anndata: 0.13.4
+  numpy: 2.5.4
+inputs:
+- path: /srv/hemang/build/zebrafish/repo/data/onedrive/Hu2022_CM_Ctrl_CMonly_processed_allgenes.h5ad
+  sha256: b3bce78bc8d6ab6fa28c1cf80c5b3ea0ff278719f55e57407dd10a03ee3f41ef
+params:
+  keep:
+  - orig.ident
+  - nCount_RNA
+  - nFeature_RNA
+  - percent.mito
+  - time
+  - AV
+outcomes: {}
