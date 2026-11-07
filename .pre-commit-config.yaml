@@ -3,22 +3,32 @@ default_install_hook_types: [pre-commit, pre-push]
 default_stages: [pre-commit]
 
 repos:
+  # Fixers run at commit only, never at push, and never on results: a hook must not change evidence.
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
       - id: check-added-large-files
+        stages: [pre-commit]
         args: [--maxkb=1000]
       - id: check-merge-conflict
+        stages: [pre-commit]
       - id: check-yaml
+        stages: [pre-commit]
       - id: check-json
+        stages: [pre-commit]
       - id: check-case-conflict
+        stages: [pre-commit]
       - id: detect-private-key
+        stages: [pre-commit]
       - id: end-of-file-fixer
-        exclude: ^LICENSE
+        stages: [pre-commit]
+        exclude: ^(LICENSE|results/|research/.*/checks/.*\.out$)
       - id: trailing-whitespace
+        stages: [pre-commit]
         args: [--markdown-linebreak-ext=md]
-        exclude: ^LICENSE
+        exclude: ^(LICENSE|results/|research/.*/checks/.*\.out$)
       - id: no-commit-to-branch
+        stages: [pre-commit]
         args: [--branch, main]
 
   - repo: local
