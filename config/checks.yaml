@@ -1,58 +1,105 @@
-# Pre-registered checks. Every axis and every marker gene goes through every check.
-# Thresholds are fixed before the first full run. The loop may propose a change in JOURNAL.md,
-# and a human applies it here with a commit that says why. The loop never edits this file.
-# Outcome per check is one of: pass, flag, not_run. A check that could not run is never "pass".
-schema: zf.checks/v1
+# Pre-registered checks: the graders of the loop. Written by humans; the loop never edits this file.
+#
+# Orthogonality. Each check detects exactly one defect, named in `detects`. The confound checks use
+# partial correlations: each controls for the covariates of the other confound checks, so one cause
+# raises one flag. tests/test_check_orthogonality.py injects each defect into synthetic data and
+# requires a diagonal detection matrix: every check flags its own defect and no other.
+# A check that has never failed on purpose is not trusted.
+#
+# Noise. Each statistic is recomputed on `bootstrap` resamples of cells. If its interval straddles
+# the threshold, the outcome is within_noise, never pass or flag. Each check runs twice with
+# different seeds; differing verdicts give unstable.
+#
+# Outcomes: pass | flag | within_noise | unstable | not_run. Only pass counts as passed.
+schema: zf.checks/v2
 status: proposed        # becomes "frozen" with a timestamp when Eme approves
 frozen_at: null
-seed: 0
+seeds: [0, 1]
+bootstrap: 200
+covariates:
+  depth: log total counts per cell
+  doublet: scanpy pp.scrublet score
+  ambient: score of the ambient_fibroblast control axis
+  dissociation: score of the dissociation control axis
 checks:
+  # Signal: is there biology in the axis?
   - id: null_matched_sets
+    family: signal
+    detects: random_gene_set
     question: "Is the axis more structured than random gene sets of the same size and expression?"
     applies_to: axis
-    method: "score 1,000 random sets matched on mean expression bins; z of axis variance against the null"
+    method: "score 1,000 random sets matched on mean-expression bins; z of axis variance against the null"
     flag_if: "z < 3"
-    reference: https://doi.org/10.1038/s41588-022-01167-z   # scDRS, Zhang et al. 2022
-  - id: library_size
+    reference: https://doi.org/10.1038/s41588-022-01167-z
+  - id: direction
+    family: signal
+    detects: shuffled_conditions
+    question: "Does the axis move the way biology predicts?"
+    applies_to: axis
+    method: "one-sided Mann-Whitney test of each confirmed expectation in config/axes.yaml, library means as replicates"
+    flag_if: "p > 0.05 or wrong sign"
+
+  # Confounds: is the axis an artefact? Each controls for the other three covariates.
+  - id: depth
+    family: confound
+    detects: depth_artefact
     question: "Does the score track sequencing depth?"
     applies_to: [axis, gene]
-    method: "Spearman rho of score with log total counts, within each library"
+    method: "partial Spearman rho with depth, controlling doublet, ambient, dissociation; within each library"
     flag_if: "|rho| > 0.3 in at least half of the libraries"
     reference: https://doi.org/10.1186/s13059-019-1874-1
-  - id: library_composition
-    question: "Is the high-scoring tail made of one library?"
-    applies_to: axis
-    method: "share of each library among the top 5% of cells, divided by its share of all cells"
-    flag_if: "ratio > 3 for any library"
-  - id: doublets
+  - id: doublet
+    family: confound
+    detects: doublet_artefact
     question: "Does the score track the doublet score?"
     applies_to: axis
-    method: "Spearman rho with scanpy pp.scrublet score, within each library"
+    method: "partial Spearman rho with doublet, controlling depth, ambient, dissociation; within each library"
     flag_if: "|rho| > 0.2 in at least half of the libraries"
     reference: https://doi.org/10.1016/j.cels.2018.11.005
   - id: ambient
+    family: confound
+    detects: ambient_artefact
     question: "Does the score track fibroblast RNA inside cardiomyocytes?"
     applies_to: axis
-    method: "Spearman rho with the ambient_fibroblast control score, within each library"
+    method: "partial Spearman rho with ambient, controlling depth, doublet, dissociation; within each library"
     flag_if: "|rho| > 0.2 in at least half of the libraries"
     reference: https://doi.org/10.1186/s13059-023-02978-x
+  - id: dissociation
+    family: confound
+    detects: dissociation_artefact
+    question: "Does the score track the dissociation stress response?"
+    applies_to: axis
+    method: "partial Spearman rho with dissociation, controlling depth, doublet, ambient; within each library"
+    flag_if: "|rho| > 0.2 in at least half of the libraries"
+  - id: batch
+    family: confound
+    detects: library_batch
+    question: "Does the score differ between libraries of the same condition?"
+    applies_to: axis
+    method: "share of score variance explained by library within each condition, after regressing out all four covariates"
+    flag_if: "eta squared > 0.1 in any condition with 2 or more libraries"
+
+  # Robustness: is the score stable to how it was built?
   - id: leave_one_gene_out
+    family: robustness
+    detects: single_gene_driver
     question: "Does one gene drive the axis?"
     applies_to: axis
     method: "Spearman rho between the full score and the score without each gene"
     flag_if: "rho < 0.8 for any gene"
   - id: method_agreement
+    family: robustness
+    detects: method_artefact
     question: "Do two scoring methods agree?"
     applies_to: axis
     method: "Spearman rho between scanpy score_genes and AUCell"
     flag_if: "rho < 0.6"
-  - id: direction
-    question: "Does the axis move the way biology predicts?"
-    applies_to: axis
-    method: "one-sided Mann-Whitney test of each confirmed expectation in config/axes.yaml, libraries as replicates"
-    flag_if: "p > 0.05 or wrong sign"
+
+  # Report only: answers the scientific question, gates nothing.
   - id: cooccurrence
+    family: report
+    detects: null
     question: "Do two axes mark the same cells?"
     applies_to: axis_pair
     method: "Spearman rho between axes and overlap of their top 10% cells, per condition"
-    flag_if: "never; this check reports, it does not gate"
+    flag_if: never

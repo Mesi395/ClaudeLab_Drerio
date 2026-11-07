@@ -49,6 +49,22 @@ def test_checks_have_unique_ids():
     assert len(ids) == len(set(ids))
 
 
+def test_two_checks_detecting_one_defect_are_rejected():
+    data = yaml.safe_load((ROOT / "config/checks.yaml").read_text())
+    data["checks"][1]["detects"] = data["checks"][0]["detects"]
+    with pytest.raises(ValidationError, match="exactly one defect"):
+        config.Checks.model_validate(data)
+
+
+def test_hillclimb_test_split_covers_every_condition():
+    hc = config.load_hillclimb(ROOT / "config/hillclimb.yaml")
+    libs = {lib.library: lib for lib in config.load_dataset(ROOT / "config/dataset.yaml").libraries}
+    assert set(hc.split.test) <= set(libs)
+    assert {libs[name].condition for name in hc.split.test} == {
+        lib.condition for lib in libs.values()
+    }
+
+
 def test_marker_without_source_is_rejected(tmp_path):
     bad = {
         "schema": "zf.markers/v1",

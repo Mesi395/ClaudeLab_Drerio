@@ -1,0 +1,37 @@
+# How the loop improves its own marker sets without fooling itself.
+# Adapted from "Automating eval design and hillclimbing with Claude" (Martin, 2026):
+# https://claude.dev/blog/automating-eval-design-and-hillclimbing/
+schema: zf.hillclimb/v1
+
+# The one surface the loop may change. Text, cheap to change and revert, and the score is attributable to it.
+surface: markers/*.yaml, genes with role core (add, remove, or move to another role)
+
+# What improves. Signal checks must pass; confound and robustness checks are constraints.
+objective: >
+  Number of axes whose checks are all pass, on the test libraries.
+  Ties break on fewer genes moved from the literature sets.
+constraints:
+  min_core_genes_per_axis: 3
+  keep_core_sets_disjoint: true
+  every_change_cites: a DOI or a results/runs/<id>/manifest.yaml   # never "it scored better"
+
+# Train libraries: the loop reads their results. Test libraries: scored, never read by the loop.
+# One library per condition, plus one chamber library, chosen before any result was seen.
+split:
+  test: [H6, Hr12, Hr2b, Hr6v, Hr4]
+  train: rest
+
+rounds:
+  max: 12
+  changes_per_round: 1
+  keep_if: train and test both improve
+  revert_if: [train improves and test is flat, either regresses]
+  before_round_1: noise on the objective (two seeds, bootstrap) must be smaller than one axis
+
+# When the objective stalls for 2 rounds, make no change. Sort every remaining flag by check id
+# (orthogonal checks name the cause) and write the table to JOURNAL.md:
+# a fixable marker, an ambiguous expectation for Eme, or a check that may be wrong.
+on_stall: classify_flags_by_check
+
+# Never read, never paste: holdout/ (expert annotation and traps) is the final, separate test.
+final_test: src/zf/evaluate.py, run by a human after the last round
