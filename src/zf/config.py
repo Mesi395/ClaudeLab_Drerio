@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Literal
 
 import yaml
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 Condition = Literal["uninjured", "dpi_3", "dpi_7", "dpi_30"]
 Role = Literal[
@@ -100,6 +100,8 @@ class Axes(Strict):
 
 class Check(Strict):
     id: str
+    family: Literal["signal", "confound", "robustness", "report"]
+    detects: str | None
     question: str
     applies_to: str | list[str]
     method: str
@@ -108,11 +110,41 @@ class Check(Strict):
 
 
 class Checks(Strict):
-    schema_: Literal["zf.checks/v1"] = Field(alias="schema")
+    schema_: Literal["zf.checks/v2"] = Field(alias="schema")
     status: Literal["proposed", "frozen"]
     frozen_at: str | None
-    seed: int
+    seeds: list[int] = Field(min_length=2)
+    bootstrap: int
+    covariates: dict[str, str]
     checks: list[Check]
+
+    @model_validator(mode="after")
+    def one_check_per_defect(self):
+        detected = [c.detects for c in self.checks if c.family != "report"]
+        if None in detected or len(detected) != len(set(detected)):
+            raise ValueError(
+                "every gating check must detect exactly one defect, and no two the same"
+            )
+        confounds = {c.id for c in self.checks if c.family == "confound" and c.id != "batch"}
+        if confounds != set(self.covariates):
+            raise ValueError("each confound check needs exactly one covariate, named by its id")
+        return self
+
+
+class Split(Strict):
+    test: list[str]
+    train: Literal["rest"]
+
+
+class Hillclimb(Strict):
+    schema_: Literal["zf.hillclimb/v1"] = Field(alias="schema")
+    surface: str
+    objective: str
+    constraints: dict
+    split: Split
+    rounds: dict
+    on_stall: str
+    final_test: str
 
 
 def _load(model, path):
@@ -133,3 +165,7 @@ def load_axes(path) -> Axes:
 
 def load_checks(path) -> Checks:
     return _load(Checks, path)
+
+
+def load_hillclimb(path) -> Hillclimb:
+    return _load(Hillclimb, path)
