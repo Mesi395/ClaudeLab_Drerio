@@ -81,3 +81,13 @@ def test_gate_rule_is_majority_plus_one():
     assert not protocol.gate(pd.Series([True, True, False, False]))
     assert protocol.gate(pd.Series([True, True, False]))
     assert protocol.gate(pd.Series([True] * 4 + [False] * 3))
+
+
+def test_undetected_set_gene_is_matched_by_undetected_decoys():
+    # A set gene absent from a heart adds 0 to every cell score; a detected decoy in its slot would
+    # outscore the set and make every presence test conservative (found 2026-11-07).
+    detect = np.r_[np.zeros(50), np.linspace(0.01, 0.5, 200)]
+    idx = np.array([0, 60, 120])
+    dec = protocol.decoy_sets(detect, idx, np.random.default_rng(0), b=100)
+    assert (detect[dec[:, 0]] == 0).all()
+    assert (detect[dec[:, 1:]] > 0).all()
