@@ -11,7 +11,7 @@ versions:
   anndata: 0.13.4
   numpy: 2.5.4
 inputs:
-- path: /srv/hemang/build/zebrafish/repo/data/onedrive/Hu2022_CM_Ctrl_CMonly_processed_allgenes.h5ad
+- path: labelled source file held by its owner (not in the repo)
   sha256: b3bce78bc8d6ab6fa28c1cf80c5b3ea0ff278719f55e57407dd10a03ee3f41ef
 params:
   keep:

@@ -11,9 +11,9 @@ versions:
   anndata: 0.13.4
   numpy: 2.5.4
 inputs:
-- path: /srv/hemang/build/zebrafish/repo/data/cm_labelfree.h5ad
+- path: data/cm_labelfree.h5ad
   sha256: 49f63f83357167ca6be7af870d4e3e42352d16ac0e0e34743088b7a53c82f1c3
-- path: /srv/hemang/build/zebrafish/repo/data/derived/cm_flags.tsv
+- path: data/derived/cm_flags.tsv
   sha256: 8ad52a057fd5a30f332cd8ba171946393c18dee4925d385f598e4d15e2d759b3
 params:
   T: 600
