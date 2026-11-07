@@ -65,6 +65,30 @@ gene splits for overlapping sets; handling and ambient-RNA criteria; a mean-shif
 An expert should still add new hearts or an independent dataset for a blind confirmation, in situ
 staining to see whether glycolysis is wound-local, and a limma `fry` cross-check once R is available.
 
+### How the statistics were chosen
+
+Each choice below came from the design table first (which hearts, which chemistry, which series),
+then from what the data can carry. The options are the ones we ran during the event (FINDINGS items
+1-17) and the standard alternatives in the references of [docs/statistical-plan.md](docs/statistical-plan.md).
+A senior design review (Fable) changed the first draft before anything ran.
+
+| choice | options | chosen | why |
+|---|---|---|---|
+| unit of evidence | each cell (32,044) · each heart (18) | heart (pseudobulk) | Cells from one heart share its dissection, dissociation and sequencing run. Counting them as independent turns any heart-to-heart difference into a tiny p-value (Squair et al. 2021, Crowell et al. 2020). |
+| what is tested | single genes · gene sets | gene sets for states; genes only as support (plan B) | The question is about states, i.e. programmes of many genes. With 4-7 hearts per group a single gene has little power, while a set pools many weak genes. |
+| kind of set test | competitive: set genes vs other genes (item 13) · self-contained: injured hearts vs control hearts | self-contained | The competitive test treats genes as independent. Genes in a set move together, so the handling set reached z 9.1 there but only p 0.14 when hearts were relabelled (Goeman & Bühlmann 2007; Wu & Smyth 2012). |
+| p-value | normal-theory t-test · every possible relabelling of hearts | Welch t, p from exact relabelling, one-sided | At 4-7 hearts a normal table is not trustworthy. Relabelling assumes no distribution, and its smallest possible p is known in advance (0.003 at 7 dpi, 0.014 at 3 dpi, 0.029 at 30 dpi). Welch, because control hearts vary less than injured ones. One-sided, because "injury raises the programme" was stated before the run. |
+| primary contrast | 3 dpi · 7 dpi | 7 dpi vs control | Two of the four 3 dpi hearts are 10x v3 and one comes from a second series (GEO). Chemistry sits only inside 3 dpi, so it cannot be adjusted for. 7 dpi has 7 hearts and one chemistry. |
+| nuisances (dissociation stress, fibroblast RNA) | regress them out · report them as criteria and split the gene sets | criteria (r ≥ 0.6 within condition) and gene splits | The handling genes overlap the tested sets, and handling also rises with injury itself, so regressing it out would remove real signal. The review removed the handling covariate and the chemistry term. |
+| multiplicity | one correction over everything · an omnibus gate · a fixed sequence | Benjamini-Hochberg in a fixed sequence: 7 dpi family, then 3 dpi | This controls the share of false calls, and the confounded 3 dpi family cannot dilute the primary one. The review removed the omnibus gate. |
+| every cell or a subgroup | cluster cells and count them · call each cell · shape test against decoy sets within each heart | shape test (plan 2F) | At about 600 UMIs, per-cell calls cannot see the states, and clustering puts every cell in some state anyway. Tail and dispersion excess ask directly whether some cells switch on, and they ignore a uniform shift. |
+| order of work | test, then interpret (v1) · write the plan and code first | plan and script committed before the run, run once | Choosing among many tests after seeing results inflates false positives. The exception is stated: the 7 dpi glycolysis rise was seen before the plan. |
+
+Retired from v1: leave-one-heart-out gene overlap (at 8 hearts it cannot separate signal from
+noise) and latent-class agreement as a measure of trust (its labellers share marker genes, so it
+breaks the independence it assumes). Planned, not run: DESeq2 per gene (B), detection power and
+Milo neighbourhoods (C), and co-occurrence (D).
+
 ### How we decide which annotation to trust, with no ground truth
 
 Two layers (Card C, during the event).
