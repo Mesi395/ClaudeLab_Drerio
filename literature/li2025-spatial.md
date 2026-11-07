@@ -6,7 +6,12 @@ Li, L., Lu, M., Guo, L., et al. (2025). An organ-wide spatiotemporal transcripto
 ## What the paper provides
 
 - Stereo-seq of amputated ventricles at eight stages, from uninjured to 28 days post amputation (dpa), with scRNA-seq at the same stages.
-- Five border-zone myocardium (BZm) domains in time order: activated (6 hours), dedifferentiated (12 hours to 1 dpa), dedifferentiated-proliferating (3 dpa), proliferating (7 dpa) and redifferentiated (14 dpa).
+- Five border-zone myocardium (BZm) domains, in time order:
+  - activated, at 6 hours
+  - dedifferentiated, from 12 hours to 1 dpa
+  - dedifferentiated-proliferating, at 3 dpa
+  - proliferating, at 7 dpa
+  - redifferentiated, at 14 dpa
 - Supplementary Data 2: marker genes of every spatial domain and every scRNA-seq cell type.
 - Processed data: [Zenodo 14991776](https://zenodo.org/records/14991776) and the [STOmics database](https://db.cngb.org/stomics/zebrafish_VRH). Raw data: CNGBdb CNP0005245 and NCBI PRJNA1233465.
 
