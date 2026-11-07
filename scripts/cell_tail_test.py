@@ -87,6 +87,10 @@ def main():
         meta = g.drop_duplicates("heart").set_index("heart")[["condition"]].assign(heart=lambda d: d.index)
         for measure in ["tail_excess", "disp_excess"]:
             score = g.set_index("heart")[measure]
+            if score.isna().any():  # set genes undetected in a heart: the measure is not computable
+                res.append({"set": name, "primary": name in PRIMARY, "measure": measure, "contrast": "not computable",
+                            "n_case": int(score.isna().sum())})
+                continue
             for cname, (case, ctrl, only) in CONTRASTS.items():
                 res.append({"set": name, "primary": name in PRIMARY, "measure": measure, "contrast": cname,
                             **{k: v for k, v in test(score, meta, case, ctrl, only).items() if k != "loo_flag"}})
@@ -102,6 +106,9 @@ def main():
         out = {"set": name}
         for cname in STEP:
             t = res[(res["set"] == name) & (res["contrast"] == cname)].set_index("measure")
+            if len(t) < 2:
+                out[cname] = "cannot tell at 600 UMIs (not computable)"
+                continue
             sub = t.loc["tail_excess", "q_bh"] <= ALPHA and t.loc["disp_excess", "p"] <= ALPHA
             shifted = item18.loc[(name, cname), "q_bh"] <= ALPHA
             out[cname] = "a subgroup switches on" if sub else ("every cell shifts" if shifted and t.loc["disp_excess", "p"] > ALPHA else "cannot tell at 600 UMIs")
