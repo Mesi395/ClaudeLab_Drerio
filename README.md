@@ -12,6 +12,7 @@ injury-responsive, border-zone-like, dedifferentiated and proliferating.
 Each paper marks these states with different genes, and no agreed annotation protocol exists.
 So nobody knows which cells are in which state, or whether the states co-occur.
 Nobody knows either whether published markers measure biology or technical artefacts such as sequencing depth.
+
 The data is public: Hu et al. (2022), 32,044 cardiomyocytes from 22 libraries and 18 hearts.
 Full statement: [docs/problem.md](docs/problem.md).
 
