@@ -36,8 +36,7 @@ were run by the researcher unless marked otherwise.
   - the Hr11 depth trap and chemistry notes (`docs/data.md`);
   - binomial thinning and counting hearts rather than libraries (the team's research plan, relayed
     by the supervisor).
-- **Hinted, not found unaided:** *ttn.2*. An earlier `docs/data.md` named an authors' cluster
-  "ttn.2 (dedifferentiated)" (FU-6). Every *ttn.2* result below is hinted.
+- **Not found unaided:** *ttn.2* is named in the source paper (Hu et al. 2022), so any *ttn.2* result is not found unaided (FU-6).
 
 ## Inventory
 

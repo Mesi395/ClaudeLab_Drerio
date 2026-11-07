@@ -13,7 +13,7 @@ Append-only. One entry per result, decision or exchange with the team, with the 
 ## 2026-11-07 14:51 CET: study started; label columns found in the supplied data
 
 - The Research Supervisor opened the study [research/cm-state-axes/](research/cm-state-axes/research-map.md).
-- The supplied `.h5ad` files contain the authors' annotation columns (`CM.ident`, `final.zoom`, `pub_CMsubtypes` and others).
+- The supplied `.h5ad` files contain the authors' annotation columns. Their names are not listed in this public repository.
   The supervisor saw only column names and the number of unique values per column, never the label values.
   The agreement check is not void. Evidence: [evidence.md](research/cm-state-axes/evidence.md) SUP-E1 to SUP-E3.
 - Decision: no one uses the data until a sanitised copy with an allowlist of columns exists (first step of cycle C001).
@@ -32,8 +32,8 @@ Append-only. One entry per result, decision or exchange with the team, with the 
 
 - `origin/main` was rewritten (371e96d → fea5089). Local main was moved with `git reset --keep origin/main`. Uncommitted work is unchanged.
   The new main removes the annotation's column and label names from `docs/data.md` and the annotation download from `scripts/get_data.sh`.
-- Trap-test caveat: before this change, `docs/data.md` named an authors' CM group "ttn.2 (dedifferentiated)", and the study used it (evidence R-E6).
-  Any finding about *ttn.2* is therefore **hinted, not found unaided**. Label values were never seen, so the agreement check is not void.
+- Trap-test caveat: *ttn.2* is named in the source paper (Hu et al. 2022), so any *ttn.2* result is not found unaided (evidence R-E6).
+  Label values were never seen, so the agreement check is not void.
   Recorded as FU-6 in [follow-ups.md](research/cm-state-axes/follow-ups.md).
 - Eleven unmerged teammate branches overlap this study (Li 2025 supplementary markers, heart as the unit, the depth-thinning check, a second sanitiser, colliding `markers/*.yaml`). See FU-5.
 
@@ -44,7 +44,7 @@ Append-only. One entry per result, decision or exchange with the team, with the 
 - Results: [results/c002_axis_summary.csv](results/c002_axis_summary.csv), [results/c002_heart_summary.csv](results/c002_heart_summary.csv), [results/c002_thinning_summary.csv](results/c002_thinning_summary.csv), [results/c002_gene_depth.csv](results/c002_gene_depth.csv), [results/c002_c9_depth_matched.csv](results/c002_c9_depth_matched.csv); exploratory null in `results/c002_exploratory_null/`.
 - Depth flags written into `markers/*.yaml` (`c002_depth`); no gene dropped. `myh7` kept after the ZFIN check (F1).
 - F2: `percent.mito` excludes the 19 `NC-002333.*` mitochondrial features.
-- ttn.2 results are hinted by the old docs/data.md (FU-6), not found unaided. `holdout/` not opened.
+- *ttn.2* is named in the source paper (Hu et al. 2022), so any *ttn.2* result is not found unaided (FU-6). `holdout/` not opened.
 - Report: [research/cm-state-axes/cycles/C002/report.md](research/cm-state-axes/cycles/C002/report.md), status Review requested.
 
 ## 2026-11-07 15:37 CET: C002 reviewed by the supervisor; C003 assigned
@@ -149,4 +149,10 @@ Append-only. One entry per result, decision or exchange with the team, with the 
 ## 2026-11-07 16:24 CET (clock): methodology and report split into two documents
 
 - `docs/findings-report.md` (named in the 16:20 entry) is replaced by [docs/research-methodology.md](docs/research-methodology.md), covering the two members, their responsibilities and how a cycle runs, and [docs/research-report.md](docs/research-report.md), the progress so far against that methodology.
+
+## 2026-11-07 16:33 CET (clock): review changes for PR #17 (Adish)
+
+- Removed every naming of the source file's label columns from the repository (journal, evidence SUP-E1/SUP-E2, C001 assignment, sanitiser test stand-ins). The repository goes public.
+- Replaced the old-doc *ttn.2* reference with: *ttn.2* is named in the source paper (Hu et al. 2022), so any *ttn.2* result is not found unaided (R-E6, FU-6).
+- Moved this study's marker files from `markers/` to `proposals/loop/` for Emi's review, per the loop spec. Result sidecars from before the move still record the old `markers/` paths. The contents are unchanged.
 

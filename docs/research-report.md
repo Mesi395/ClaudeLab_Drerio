@@ -105,7 +105,7 @@ random genes.**
 
 | Part | Status | What is left |
 |---|---|---|
-| G1 Markers | Sourced candidate sets with depth flags (`markers/*.yaml`); Li SD2 sets (`markers/li2025_sd2_sets.tsv`) | Better-founded axes; reading gaps (FU-1) |
+| G1 Markers | Sourced candidate sets with depth flags (`proposals/loop/*.yaml`); Li SD2 sets (`proposals/loop/li2025_sd2_sets.tsv`). Moved from `markers/` for Emi's review | Better-founded axes; reading gaps (FU-1) |
 | G2 Scores | Done for all cells with two methods and a matched null | – |
 | G3 Confounds | Depth: done. Chamber: done (found). Ambient: partly; Hr11 inconclusive. Doublets: continuous scores show no tracking; threshold failed. | An empty-droplet ambient profile; a calibrated or second doublet method (FU-7) |
 | G4 Co-occurrence | An honest "cannot resolve with these sets" | Axes that pass a positive control first |
@@ -122,7 +122,7 @@ From [checks-inventory.md](../research/cm-state-axes/checks-inventory.md):
 - **An expert would add:** ambient RNA from empty droplets, a second doublet method, the
   origin of the morphine-study libraries, a dissociation-stress axis, a validated positive
   control, spatial validation.
-- *ttn.2* results are hinted, not found unaided (FU-6).
+- *ttn.2* is named in the source paper (Hu et al. 2022), so any *ttn.2* result is not found unaided (FU-6).
 
 ## 6. Where it got stuck, and what comes next
 
@@ -150,8 +150,8 @@ uv sync
 scripts/get_data.sh                       # public GEO matrices (doublet step only)
 uv run python -m zf.io <labelled.h5ad> data/clean/hu2022_cm_allgenes_sanitized.h5ad
 uv run pytest
-uv run python scripts/data_facts.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers results
-uv run python scripts/c002_probe.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers results 100 100
+uv run python scripts/data_facts.py data/clean/hu2022_cm_allgenes_sanitized.h5ad proposals/loop results
+uv run python scripts/c002_probe.py data/clean/hu2022_cm_allgenes_sanitized.h5ad proposals/loop results 100 100
 # further steps: scripts/c00*_*.py; the exact commands are in each results/*.json sidecar
 ```
 

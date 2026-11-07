@@ -75,7 +75,7 @@ choose again, not into repairs.
 
 | Rule | How it is enforced in this study |
 |------|----------------------------------|
-| **No exposure to the answer key** | The supplied `.h5ad` carried the authors' labels. A tested allowlist copy was made first (`src/zf/io.py::sanitize_h5ad`), reading only the allowlisted columns. `holdout/` is denied in `.claude/settings.json`. A known hint (*ttn.2*) is recorded as such (FU-6). |
+| **No exposure to the answer key** | The supplied `.h5ad` carried the authors' labels. A tested allowlist copy was made first (`src/zf/io.py::sanitize_h5ad`), reading only the allowlisted columns. `holdout/` is denied in `.claude/settings.json`. *ttn.2* is named in the source paper (Hu et al. 2022), so any *ttn.2* result is not found unaided (FU-6). |
 | **Rules before results** | `reading-rules.md` in every cycle, time-stamped before the primary run |
 | **Right unit** | Statistics within library or within heart, with hearts (18) counted, never pooled cells |
 | **Controls** | Matched random gene sets as the null; binomial thinning to equal depth; a positive control (the predicted rise after injury); chamber-only libraries as a metadata-labelled chamber set |

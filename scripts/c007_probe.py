@@ -3,7 +3,7 @@ C004 sourced sets and the Li 2025 SD2 sets, side by side; leave-Hr9-out.
 
 Rules: research/cm-state-axes/cycles/C007/reading-rules.md (fixed 16:06 CET).
 uv run python scripts/c007_probe.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers \
-    markers/li2025_sd2_sets.tsv results [tag]
+    proposals/loop/li2025_sd2_sets.tsv results [tag]
 """
 
 import json

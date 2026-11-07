@@ -35,8 +35,8 @@ The `.h5ad` files in `data/hu2022/` embed the authors' labels (evidence SUP-E1).
   written first, that copies the data keeping **only** an allowlist:
   - obs: `orig.ident`, `nCount_RNA`, `nFeature_RNA`, `percent.mito`, `time`, `morphine`, `AV`
   - `layers['counts']`, `var_names` and the var stats
-- Drop every other obs column, including `leiden`, every `*.ident*` column, `final.zoom`,
-  `trashid` and `pub_CMsubtypes`, and drop `uns['leiden']`.
+- Drop every other obs column (all annotation and clustering columns; their names are not listed
+  in this public repository) and every `uns` entry.
 - Never print, plot, tabulate or load the values of a dropped column. Work only from the
   sanitised copy afterwards.
 - If any label value is seen, record it in `JOURNAL.md` and in your report, and stop.

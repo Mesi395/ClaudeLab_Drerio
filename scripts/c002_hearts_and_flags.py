@@ -1,4 +1,5 @@
-"""C002: heart-level summary of per-library tests, and per-gene depth flags into markers/*.yaml.
+"""C002: heart-level summary of per-library tests, and per-gene depth flags
+into proposals/loop/*.yaml (moved there from markers/ after the runs).
 
 Hr2a/Hr2b, H8a/H8v, Hr6a/Hr6v and Hr7a/Hr7v are one heart each (supervisor note, C002), so the
 22 libraries are 18 hearts. A heart passes a test only if all of its libraries pass (conservative).

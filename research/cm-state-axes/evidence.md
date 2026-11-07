@@ -11,24 +11,22 @@ Append-only. Each author uses its own IDs: SUP-E* for the supervisor, R-E* for t
   layer hold integers. No label values were printed.
 - Result:
   - Both files are 32,044 cells; HVG has 2,000 genes and allgenes has 18,794.
-  - obs columns: `orig.ident` (22), `nCount_RNA`, `nFeature_RNA`, `percent.mito`, `time` (4),
-    `morphine` (1), `AV` (3), `big.ident` (1), `plot.ident` (3), `CM.ident` (2),
-    `work.ident3` (5), `final.zoom` (5), `lineage.ident` (5), `lineage.ident2` (5),
-    `plot.ident2` (5), `trashid` (5), `leiden` (16), `pub_CMsubtypes` (5).
+  - obs columns: 7 technical or design columns (`orig.ident`, `nCount_RNA`, `nFeature_RNA`,
+    `percent.mito`, `time`, `morphine`, `AV`) and 11 author annotation or clustering columns.
+    The names of the 11 are withheld in this public repository.
   - `layers['counts']` is integer. X is normalised: scaled in HVG, log1p in allgenes.
   - obsm holds `X_pca`, `X_pca_harmony` and `X_umap`.
-- Reading: `docs/data.md` names `CM.ident` and `final.zoom` as close to the held-out annotation.
-  By name, `pub_CMsubtypes`, `work.ident3`, `lineage.ident*`, `plot.ident*` and `trashid` are
-  also annotation-like. `leiden` is the authors' clustering.
+- Reading: the 11 annotation columns are close to the held-out annotation and must never reach an
+  agent.
 - Limits: the label meanings were inferred from column names only.
 
 ## SUP-E2: design columns are constant within each library (2026-11-07 14:11 CET)
 
-- Method: for `time`, `AV`, `morphine`, `big.ident` and `leiden`, the maximum number of distinct
-  values within one `orig.ident`.
+- Method: for `time`, `AV`, `morphine`, one constant annotation column and the authors'
+  clustering column, the maximum number of distinct values within one `orig.ident`.
 - Result:
-  - `time`, `AV`, `morphine` and `big.ident` are constant per library, so they are design facts.
-  - `leiden` varies per cell.
+  - `time`, `AV` and `morphine` are constant per library, so they are design facts.
+  - The clustering column varies per cell.
   - Per-library cell counts match the slide table in `docs/problem.md` exactly; the timepoint
     totals are Ctrl 7,048, 3dpi 6,185, 7dpi 14,094 and 30dpi 4,717.
 - Consequence: the 564-cell filter question in `docs/data.md` is moot, because these files
@@ -215,11 +213,10 @@ Append-only. Each author uses its own IDs: SUP-E* for the supervisor, R-E* for t
   *nppb*, *mustn1* up in BZmyo; *crip2*, *ywhabl* in BZinj; BMP targets peak at 3 dpi; cryoinjury,
   tomo-seq tissue sections. Full text and GSE74652 not opened. Not decision-grade.
 
-## R-E6: ttn.2 named as an authors' CM label (docs/data.md)
+## R-E6: ttn.2 is named in the source paper
 
-- `docs/data.md` says the authors' table labels a CM group "ttn.2 (dedifferentiated)". This is
-  the held-out annotation's own naming from this dataset; listed in the YAML only as a circular
-  comparison, never an independent marker.
+- *ttn.2* is named in the source paper (Hu et al. 2022), so any *ttn.2* result is not found unaided. It is listed in the YAML only as a circular comparison, never as an independent
+  marker.
 
 ## R-E7: ZFIN: vmhc is a previous name of myh7 (accessed 2026-11-07 15:01 CET)
 

@@ -1,7 +1,8 @@
 """C005 fix F10: agent state labels for ventricle-called cells only; other cells not_scored.
 
 Rules: research/cm-state-axes/cycles/C005/reading-rules.md section 1 (fixed before computing).
-uv run python scripts/c005_labels.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers results
+uv run python scripts/c005_labels.py data/clean/hu2022_cm_allgenes_sanitized.h5ad \
+    proposals/loop results
 """
 
 import json

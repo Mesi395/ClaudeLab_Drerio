@@ -86,7 +86,7 @@ requested.
 
 | Part | Requirements | Success means | Evidence needed |
 |---|---|---|---|
-| **G1 Markers** | R1.1 a marker set per state (4), each gene with a DOI or a result file. R1.2 every gene present in the data under its zebrafish symbol. R1.3 each source's injury model, timepoint and resolution (cell or spot) recorded, so a mismatch with cryoinjury single cells is visible. | Four YAMLs in `markers/`, sourced and checked against `var_names`. | Sources opened in full or the access failure stated; a presence check script. |
+| **G1 Markers** | R1.1 a marker set per state (4), each gene with a DOI or a result file. R1.2 every gene present in the data under its zebrafish symbol. R1.3 each source's injury model, timepoint and resolution (cell or spot) recorded, so a mismatch with cryoinjury single cells is visible. | Four YAMLs in `proposals/loop/` (was `markers/`), sourced and checked against `var_names`. | Sources opened in full or the access failure stated; a presence check script. |
 | **G2 Scores** | R2.1 every cardiomyocyte scored on each axis with `score_genes` and a rank-based method. R2.2 cross-method agreement per axis. R2.3 a matched random gene-set null per axis. | Score table plus agreement and null summaries in `results/`. | Script outputs with provenance. |
 | **G3 Confounds** | R3.1 library size and genes detected, within library. R3.2 doublet score. R3.3 ambient-RNA proxy per library. R3.4 library-specific structure (Hr11 and chemistry: Hr24 and Hr27 are v3). R3.5 markers flagged on evidence. R3.6 a direct test of whether the rank-based score is independent of depth. | `results/confounds_*.csv`; flagged genes in the YAMLs. | Within-library statistics, not pooled ones. |
 | **G4 Co-occurrence** | R4.1 pairwise correlation and joint-high fractions per axis pair, per timepoint. R4.2 controlled for time, library and confounds. R4.3 a stated answer, coincide or come apart, with its scope. | `results/cooccurrence.csv`, one figure and the answer. | As R4.1 and R4.2, plus a null for joint-high fractions. |
@@ -99,7 +99,7 @@ Goal history: 2026-11-07 14:12, first version from the request, the slide, `READ
 
 After C001 and C002 (researcher; evidence R-E1–R-E13; reports [C001](cycles/C001/report.md), [C002](cycles/C002/report.md)).
 
-- **G1 Markers: drafts exist, evidence uneven.** Four candidate YAMLs in `markers/`, each gene sourced.
+- **G1 Markers: drafts exist, evidence uneven.** Four candidate YAMLs in `proposals/loop/` (moved from `markers/` for review), each gene sourced.
   Existing work does not give four separate marker sets: the same genes (*nppa*, *nppb*, *mustn1b*)
   are named for injury response, border zone and dedifferentiation. Border-zone is best supported
   (two or more independent sources, genes detected in a large share of CMs). Injury-responsive genes
@@ -182,8 +182,7 @@ an AR-specific CM cluster; 1–2% of CMs cycling at 7 dpi), which gives an expec
 proliferating tail. An eLife 2026 paper on *phlda2*+ primordial CMs, a CM subpopulation that could
 appear as a "state".
 
-**This dataset's own labels.** *ttn.2* names an authors' CM group (docs/data.md). It is circular and
-kept only as a comparison.
+**This dataset's own labels.** *ttn.2* is named in the source paper (Hu et al. 2022), so any *ttn.2* result is not found unaided. It is circular and kept only as a comparison.
 
 ## 5. Our experiments and results
 
@@ -201,8 +200,7 @@ axis stands out from random genes of the same expression on its high tail. The t
 closely that agreement proves little. The rank method is more depth-bound than score_genes, not
 less, though thinning to equal depth shows that this tie is technical and removable. Border-zone is
 the only axis whose genes nearly co-vary as a program. The Hr11 *nppa* lead survived depth matching
-and now points at ambient RNA as the next test. *ttn.2* behaves the same way, but that was hinted by
-an old doc, not found unaided.
+and now points at ambient RNA as the next test. *ttn.2* behaves the same way; *ttn.2* is named in the source paper (Hu et al. 2022), so any *ttn.2* result is not found unaided.
 
 | Cycle | Tried | Key result (evidence) | Signal | Does not show |
 |---|---|---|---|---|

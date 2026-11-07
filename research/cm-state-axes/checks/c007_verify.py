@@ -4,7 +4,7 @@
 Independent, score-free measure: per heart, share of ventricle-called cells (agent_chamber from
 results/c005_agent_labels.csv) with >= 2 distinct genes of the Li SD2 proliferating set detected,
 and the same after thinning every cell to 500 UMIs (seed 7).
-Usage: uv run python -I research/cm-state-axes/checks/c007_verify.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers/li2025_sd2_sets.tsv results/c005_agent_labels.csv results/c001_library_qc.csv
+Usage: uv run python -I research/cm-state-axes/checks/c007_verify.py data/clean/hu2022_cm_allgenes_sanitized.h5ad proposals/loop/li2025_sd2_sets.tsv results/c005_agent_labels.csv results/c001_library_qc.csv
 """
 
 import sys

@@ -9,7 +9,7 @@ import scipy.sparse as sp
 
 from zf.io import ALLOWED_OBS, sanitize_h5ad
 
-LABEL_COLS = ["CM.ident", "final.zoom", "pub_CMsubtypes", "leiden", "trashid", "work.ident3"]
+LABEL_COLS = ["annot_a", "annot_b", "subtype_x", "clusters", "flag_x", "annot_c"]  # stand-ins
 
 
 def _make_labelled(path):
@@ -33,7 +33,7 @@ def _make_labelled(path):
     var = pd.DataFrame({"means": rng.random(g)}, index=[f"g{i}" for i in range(g)])
     a = ad.AnnData(X=np.log1p(counts), obs=obs, var=var)
     a.layers["counts"] = counts
-    a.uns["leiden"] = {"params": {"resolution": 1.0}}
+    a.uns["clusters"] = {"params": {"resolution": 1.0}}
     a.obsm["X_umap"] = rng.random((n, 2))
     a.write_h5ad(path)
     return counts
@@ -45,7 +45,7 @@ def test_sanitize_keeps_only_allowlist(tmp_path):
     sanitize_h5ad(src, dst)
     out = ad.read_h5ad(dst)
     assert list(out.obs.columns) == list(ALLOWED_OBS)
-    assert out.uns == {} or "leiden" not in out.uns
+    assert out.uns == {} or "clusters" not in out.uns
     assert len(out.obsm) == 0
     # anndata 0.13 lists X as layers[None]; only named layer must be counts
     assert [k for k in out.layers if k is not None] == ["counts"]

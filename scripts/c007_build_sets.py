@@ -2,7 +2,7 @@
 
 Rule: research/cm-state-axes/cycles/C007/reading-rules.md section 1 (fixed before building).
 uv run python -I scripts/c007_build_sets.py research/cm-state-axes/sources/li2025_supp/MOESM5.xlsx \
-    data/clean/hu2022_cm_allgenes_sanitized.h5ad markers/li2025_sd2_sets.tsv
+    data/clean/hu2022_cm_allgenes_sanitized.h5ad proposals/loop/li2025_sd2_sets.tsv
 """
 
 import json

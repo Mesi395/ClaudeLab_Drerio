@@ -29,7 +29,15 @@ with h5py.File(path, "r") as f:
             hits.append(n)
             if any(
                 s in n.lower()
-                for s in ("ident", "zoom", "trash", "leiden", "subtype", "celltype", "cell_type")
+                for s in (
+                    "ident",
+                    "label",
+                    "annot",
+                    "cluster",
+                    "subtype",
+                    "celltype",
+                    "cell_type",
+                )  # token list generalised for the public repo
             )
             else None
         )

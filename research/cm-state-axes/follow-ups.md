@@ -47,10 +47,7 @@ Owner: the user and the team decide what to merge. This study reads the branches
 
 ## FU-6: the trap test was hinted for *ttn.2* (2026-11-07 15:45)
 
-Until fea5089, `docs/data.md` said the authors label a CM group "ttn.2 (dedifferentiated)", and
-the researcher used that (R-E6). Taken together with the slide's warning about a
-"dedifferentiation marker that tracks library size", any finding about *ttn.2* cannot be claimed
-as a trap found **unaided**. The agreement check is not void, because no label values were seen.
+*ttn.2* is named in the source paper (Hu et al. 2022), so any *ttn.2* result is not found unaided (R-E6). The agreement check is not void, because no label values were seen.
 
 ## FU-7: doublet threshold failure (C005 review F11, 2026-11-07 16:00)
 

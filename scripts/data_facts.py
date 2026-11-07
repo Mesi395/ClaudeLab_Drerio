@@ -2,7 +2,8 @@
 
 Reads ONLY the sanitised copy (see zf.io.sanitize_h5ad). Study cm-state-axes, cycle C001.
 
-uv run python scripts/data_facts.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers results
+uv run python scripts/data_facts.py data/clean/hu2022_cm_allgenes_sanitized.h5ad \
+    proposals/loop results
 """
 
 import json

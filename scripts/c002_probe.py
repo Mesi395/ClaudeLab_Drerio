@@ -1,7 +1,8 @@
 """C002 Probe: four candidate axes vs matched random sets and vs depth, within library.
 
 Reading rules: research/cm-state-axes/cycles/C002/reading-rules.md (fixed before running).
-uv run python scripts/c002_probe.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers results
+uv run python scripts/c002_probe.py data/clean/hu2022_cm_allgenes_sanitized.h5ad \
+    proposals/loop results
 """
 
 import json

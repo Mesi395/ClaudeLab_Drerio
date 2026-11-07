@@ -1,7 +1,8 @@
 """C003 Probe: positive control by time per heart (thinned scores, tail vs null), and the Hr11
 ambient-RNA test. Rules: research/cm-state-axes/cycles/C003/reading-rules.md (fixed first).
 
-uv run python scripts/c003_probe.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers results
+uv run python scripts/c003_probe.py data/clean/hu2022_cm_allgenes_sanitized.h5ad \
+    proposals/loop results
 """
 
 import json

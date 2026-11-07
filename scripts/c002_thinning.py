@@ -1,6 +1,7 @@
 """C002: binomial depth thinning to equal depth, then rescore (R3.6, stronger form).
 
-uv run python scripts/c002_thinning.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers results
+uv run python scripts/c002_thinning.py data/clean/hu2022_cm_allgenes_sanitized.h5ad \
+    proposals/loop results
 """
 
 import json

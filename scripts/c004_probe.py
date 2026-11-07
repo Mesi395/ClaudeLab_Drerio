@@ -1,7 +1,8 @@
 """C004: chamber call + validation, agent label file, ventricle-only positive control, G4 gate.
 
 Rules: research/cm-state-axes/cycles/C004/reading-rules.md (fixed 15:43 CET, before computing).
-uv run python scripts/c004_probe.py data/clean/hu2022_cm_allgenes_sanitized.h5ad markers results
+uv run python scripts/c004_probe.py data/clean/hu2022_cm_allgenes_sanitized.h5ad \
+    proposals/loop results
 """
 
 import json

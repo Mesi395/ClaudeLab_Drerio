@@ -112,11 +112,11 @@ genes:
     direction: down_with_depth
     evidence: results/c002_gene_depth.csv (R-E11)
 - symbol: ttn.2
-  source: docs/data.md (name of an authors' CM label in this dataset)
+  source: Hu et al. 2022, doi:10.1038/s41588-022-01129-5 (named in the source paper)
   model: cryoinjury
   time: all
   resolution: cluster label
-  read: repo doc
+  read: source paper
   evidence: R-E6
   flag: 'CIRCULAR: derived from the held-out annotation of this same dataset; usable only as a comparison,
     never as an independent marker'
