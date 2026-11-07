@@ -112,6 +112,17 @@ heart as a sanity check of that annotation; one table of every set, control and 
 the non-significant rows. Labellers count as agreeing only if they share no marker genes; the
 latent-class model assumes independent errors, so kappa 0 by construction is not evidence.
 
+### F. Does injury shift every cell a little, or switch on a subgroup? (added 2026-11-07, before its run)
+The question from the task owner's explanation: a population mean shift, or a high tail that grows.
+Per ventricle heart, cells at 600 UMIs or more thinned to exactly 600, two shape measures per set
+against 200 detection-matched decoy sets drawn within that heart: tail excess (share of cells above
+the decoys' 95th percentile, minus the decoys' share) and dispersion excess (log variance-to-mean of
+the set's summed counts across cells, minus the decoys' median). Both ignore a uniform level shift,
+which section A measures. Same test, contrasts and BH families as A
+(scripts/cell_tail_test.py). Decision: "a subgroup switches on" if tail excess q <= 0.05 and
+dispersion excess p <= 0.05 at the same contrast; "every cell shifts" if A found a shift and the
+dispersion excess did not move; otherwise "cannot tell at 600 UMIs".
+
 ## 3. Multiplicity
 Fixed sequence, floors stated beside every test:
 1. **7 dpi vs control, six primary sets, BH q ≤ 0.05** (the primary family).
