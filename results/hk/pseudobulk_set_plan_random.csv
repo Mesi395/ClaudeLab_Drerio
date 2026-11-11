@@ -1,0 +1,11 @@
+run,contrast,n_sets,share_p05
+raw,7v0,200,0.05
+raw,3v0,200,0.095
+raw,3v0_v2only,200,0.0
+raw,30v0,200,0.025
+raw,3v30,200,0.045
+thinned600,7v0,200,0.075
+thinned600,3v0,200,0.045
+thinned600,3v0_v2only,200,0.0
+thinned600,30v0,200,0.02
+thinned600,3v30,200,0.035

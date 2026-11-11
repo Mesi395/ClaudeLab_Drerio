@@ -37,3 +37,29 @@ A cell is **high-confidence** for an axis only if 1 to 4 all hold; an axis is **
 - `zf.confounds` could not run from the locked environment: scrublet's automatic threshold needs scikit-image, which was missing. Added with `uv add scikit-image`.
 - A missing automatic scrublet threshold (NaN) used to count as "sane" and call no doublets. It now falls back to the median threshold like Hr11.
 - Observation, not fixed: scrublet calls far fewer doublets than the 10x expected rate. In `results/hk/library_flags.tsv`, 8 of 22 libraries call none, and the median ratio `doublet_rate_full / doublet_expected_rate` is far below 1. So `doublet_flag` false is a weak clean-cell test (trust card item 3). Use `doublet_score` as a continuous covariate too, and treat the doublet check as low-power until scDblFinder or a lower threshold is compared.
+
+## 2026-11-07 16:00 — Labeling protocol v1, pre-registered before any axis call is looked at
+
+Owner directive 15:43: the deliverable is a fixed labeling protocol, graded by stability. Design by the senior reviewer (15:39) plus the owner's two statistical upgrades. Code `src/zf/protocol.py` (`label_axis(adata, genes)`), runner `scripts/run_protocol.py`, rules `docs/labeling-protocol.md`. Constants are fixed in the module and are not tuned on results.
+
+Differences from the trust card above, and why:
+- Decoys: 500 per axis (not 1,000), matched on detection rate within each library (20 bins), the reviewer's design; per-library matching makes the null follow each library's depth.
+- Thinning target T = 600 UMIs; cells below it get `low_depth` and the rank call only.
+- Two methods: UCell on raw ranks (max rank 1,500) and mean log-normalised expression on thinned counts; positive only if both agree.
+- Call: BH within heart, positive q ≤ 0.05, negative p ≥ 0.10 in both methods, the rest uncertain.
+- Vetoes to uncertain: doublet_flag, ≥2 non-CM (ambient) genes, hemoglobin fraction above the library 95th percentile, pct_mito > 30.
+- Gate: per heart positive fraction vs decoy false-positive rate (20 decoys re-called as pseudo-axes; one-sided binomial, p < 0.05); timepoint supported when ≥ floor(n/2)+1 hearts pass; high-confidence needs the gate to survive leave-one-heart-out.
+- Eligibility: within-heart partial Spearman |rho| ≥ 0.10 of the thinned score with log UMI or hemoglobin fraction ⇒ axis `depth_confounded`, no positives.
+- Stability metrics: thinning kappa (thinned vs unthinned calls), marker bootstrap (80% of genes, positive kept in ≥80% of resamples), leave-one-heart-out. Sensitivity: gate without Hr8 and Hr11 (morphine study).
+- Not done in v1 (time): meta-analysis, partial conjunction by Simes, the dip test, the taxonomy odds-ratio test, the multi-gene chamber score. Chamber strata use Card A's myosin call (57–87% accurate) for whole-heart libraries.
+
+## 2026-11-07 16:07 — Protocol v1 amendment after run 1 (mechanical defects, not tuning)
+
+Run 1 called 0 positives on every axis in every stratum. Two causes, both mechanical:
+- The empirical p (1 + #decoys ≥ score)/(1 + 500) cannot go below 1/501. BH within a heart of N cells then needs at least 4% of the heart's cells at that floor, so any rarer state is uncallable. Fix: scDRS-style pooled p (z against the cell's own decoys, ranked against 50 decoy columns' z's pooled over the library's cells).
+- The "≥2 non-CM genes" veto counted any of the 106 soup genes from `zf.confounds` and vetoed 18,947 of 32,044 cells (59%). Fix: the 4 fibroblast control genes of `config/axes.yaml`.
+No threshold, T, decoy count, gate or ρ cut changed. Run 1's tables were overwritten by run 2 (same paths).
+
+## 2026-11-07 16:12 — Dissociation control added (domain input 15:09); bootstrap cut to 5
+
+Added before run 3 results: dissociation/heat-shock control axis through the same protocol, per-heart level (`results/hk/dissociation_per_heart.csv`), injury × dissociation partial ρ and injury verdict without the top-10% dissociation cells (`results/hk/injury_vs_dissociation.csv`), ventricle − atrium contrast per heart (`results/hk/chamber_contrast.csv`). Run 2 was stopped (about 1.7 min per axis with 20 bootstraps); run 3 uses 5 bootstrap resamples to fit the 16:25 cut. Decisions in `docs/decisions.md`.

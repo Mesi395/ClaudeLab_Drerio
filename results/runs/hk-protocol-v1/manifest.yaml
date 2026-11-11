@@ -1,0 +1,48 @@
+schema: zf.run/v1
+run_id: hk-protocol-v1
+started: '2026-11-07T22:28:45+01:00'
+command: uv run python scripts/run_protocol.py
+git:
+  commit: 9fe5edd16ba400365c43f4187a03e860b4db0547
+  dirty: true
+versions:
+  zf: 0.1.0
+  scanpy: 1.12.5
+  anndata: 0.13.4
+  numpy: 2.5.4
+inputs:
+- path: data/cm_labelfree.h5ad
+  sha256: 49f63f83357167ca6be7af870d4e3e42352d16ac0e0e34743088b7a53c82f1c3
+- path: data/derived/cm_flags.tsv
+  sha256: 8ad52a057fd5a30f332cd8ba171946393c18dee4925d385f598e4d15e2d759b3
+params:
+  T: 600
+  B: 500
+  bins: 20
+  q_pos: 0.05
+  p_neg: 0.1
+  rho_max: 0.1
+  boot: 20
+  mito_max: 30.0
+  seed: 0
+outcomes:
+  injury_responsive:
+    depth_eligibility: pass
+    decoy_gate: flag
+    loho: unstable
+  border_zone:
+    depth_eligibility: pass
+    decoy_gate: flag
+    loho: unstable
+  dedifferentiated:
+    depth_eligibility: pass
+    decoy_gate: flag
+    loho: unstable
+  proliferating:
+    depth_eligibility: pass
+    decoy_gate: flag
+    loho: unstable
+  dissociation_control:
+    depth_eligibility: pass
+    decoy_gate: pass
+    loho: pass
